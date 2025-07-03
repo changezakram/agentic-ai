@@ -12,12 +12,13 @@ Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting d
 
 ## What Is Agentic AI?
 
-**Agentic AI** refers to intelligent systems that act with **intent and autonomy** to accomplish goals. These agents can perceive their environment, break complex problems into manageable steps, use tools or APIs, and adapt their actions over time. Think of them not as passive assistants, but as **proactive collaborators**.
+**Agentic AI** refers to intelligent systems that act with **intent, autonomy, and adaptability** to achieve defined goals. Unlike traditional AI, these agents not only respond to commands but also plan, decide, and act proactively — often without step-by-step human direction.
 
-Google Cloud describes agents as systems that include memory, planning, and tool use to operate in dynamic feedback loops. IBM and McKinsey expand on this, viewing agentic AI as **organizational actors** that behave like teammates, not just tools.
+They can perceive their environment, break down complex objectives into manageable tasks, interact with tools and APIs, and adapt their behavior based on feedback and context. In essence, they function as **proactive collaborators**, not just reactive assistants.
 
-> "Agentic AI systems are dynamic, goal-seeking entities that can plan and act autonomously." — IBM  
-> "Agentic AI redefines digital interaction from command to delegation." — Google Cloud
+Google Cloud defines agentic AI as systems with **memory, planning, and tool-use capabilities**, operating in dynamic feedback loops. IBM and McKinsey emphasize their role as **organizational actors** — capable of taking initiative, making decisions aligned with goals, and integrating seamlessly with human teams.
+
+> *“Agentic AI systems are dynamic, goal-seeking entities that can plan and act autonomously.” — IBM*
 
 ---
 
