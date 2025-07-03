@@ -2,63 +2,63 @@
   {
     "objectID": "gen-bi-vs-agentic-analytics.html",
     "href": "gen-bi-vs-agentic-analytics.html",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "",
     "text": "This guide explains the difference between Generative BI (Gen BI) and Agentic Analytics, with examples, use cases, roadmap, and example architectures."
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#overview",
     "href": "gen-bi-vs-agentic-analytics.html#overview",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "",
     "text": "This guide explains the difference between Generative BI (Gen BI) and Agentic Analytics, with examples, use cases, roadmap, and example architectures."
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#whats-the-difference",
     "href": "gen-bi-vs-agentic-analytics.html#whats-the-difference",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "2 🔷 What’s the difference?",
     "text": "2 🔷 What’s the difference?\n\n\n\n\n\n\n\n\nFeature\nGenerative BI\nAgentic Analytics\n\n\n\n\nDefinition\nUse of generative AI (e.g., LLMs) to make BI conversational and accessible\nUse of autonomous AI agents to monitor, reason, and act\n\n\nFocus\nNatural language querying & insight generation\nAutonomous problem-solving & action-taking\n\n\nUser Role\nUser asks → system answers\nAgent acts → user reviews/overrides\n\n\nTech Foundation\nLLMs, NLP, vector search\nAgents, reasoning, orchestration, planning\n\n\nGoal\nDemocratize data insights\nProactively optimize KPIs & take actions"
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#examples",
     "href": "gen-bi-vs-agentic-analytics.html#examples",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "3 🌟 Examples",
     "text": "3 🌟 Examples\n\n3.1 Generative BI\n✅ User asks: “Show me revenue trends by region last quarter.”\n✅ NLP translates → SQL → dashboard or insight.\n✅ Tools: Microsoft Copilot in Power BI, Tableau GPT, ThoughtSpot Sage, Looker.\n\n\n3.2 Agentic Analytics\n✅ Agent monitors churn → detects anomaly → runs analysis → recommends retention campaign → optionally triggers it.\n✅ Tools: LangChain Agents, AutoGen, CrewAI, IBM Watson Decision Support."
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#use-cases-in-banking",
     "href": "gen-bi-vs-agentic-analytics.html#use-cases-in-banking",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "4 🏦 Use Cases in Banking",
     "text": "4 🏦 Use Cases in Banking\n\n\n\n\n\n\n\nGenerative BI\nAgentic Analytics\n\n\n\n\nSelf-service dashboards and reports\nContinuous KPI monitoring and autonomous adjustment\n\n\nNatural-language queries on deposits, loans, churn\nDetects anomalies and launches root cause analysis\n\n\nAutomated dashboards and narratives\nAdjusts operations or triggers workflows autonomously"
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#roadmap-maturity-journey",
     "href": "gen-bi-vs-agentic-analytics.html#roadmap-maturity-journey",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "5 📈 Roadmap: Maturity Journey",
     "text": "5 📈 Roadmap: Maturity Journey\n\n\n\n\n\n\n\n\nStage\nDescription\nExample Outcome\n\n\n\n\n1. Traditional BI\nStatic dashboards\n“I can see my KPIs weekly.”\n\n\n2. Self-Service BI\nBusiness users build own reports\n“I can slice & dice myself.”\n\n\n3. Generative BI\nNLP-driven, automated insights\n“I can ask anything & get answers.”\n\n\n4. Augmented BI\nSystem suggests anomalies/trends\n“It highlights what matters.”\n\n\n5. Agentic Analytics\nAgents monitor & act autonomously\n“It adjusts operations proactively.”"
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#example-architectures",
     "href": "gen-bi-vs-agentic-analytics.html#example-architectures",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "6 🪜 Example Architectures",
     "text": "6 🪜 Example Architectures\n\n6.1 Generative BI\n[User]\n   ↓\n[LLM/NLP]\n   ↓\n[Semantic Layer + SQL Generator]\n   ↓\n[Data Warehouse]\n   ↓\n[BI Tool / Dashboard]\n\n\n\n6.2 Agentic Analytics\n               [Agent Framework]\n                     ↓\n   [Planner + Reasoner + Memory + Tools]\n                     ↓\n [Data Warehouse + Real-time Streams]\n                     ↓\n [BI Tools] & [Action APIs] & [Workflow Automation]\n                     ↓\n        [Feedback & Continuous Loop]"
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#key-building-blocks",
     "href": "gen-bi-vs-agentic-analytics.html#key-building-blocks",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "7 🛠️ Key Building Blocks",
     "text": "7 🛠️ Key Building Blocks\n✅ Data Layer: Snowflake, BigQuery, Redshift — clean, documented.\n✅ Semantic Layer: Business-friendly metrics & dimensions (e.g., dbt, AtScale).\n✅ LLM Integration: Embedded in BI tools (for Gen BI) or orchestrated (for agents).\n✅ Orchestration Layer: LangChain, AutoGen.\n✅ Action Layer: API connectors & workflow automation (e.g., Zapier, Airflow)."
   },
   {
     "objectID": "gen-bi-vs-agentic-analytics.html#in-short",
     "href": "gen-bi-vs-agentic-analytics.html#in-short",
-    "title": "Generative BI vs. Agentic Analytics — A Beginner’s Guide",
+    "title": "Generative BI vs. Agentic Analytics",
     "section": "8 🔷 In short",
     "text": "8 🔷 In short\n\nGenerative BI = “Talk to your data.”\nAgentic Analytics = “Your data solves problems for you.”\n\n\nIf you’d like, you can also: - 📄 Add visual diagrams of these architectures. - 🚀 Build a tailored roadmap for your organization. - 📋 Map these ideas to specific vendors & open-source tools.\nLet me know if you’d like help with any of these!"
   },

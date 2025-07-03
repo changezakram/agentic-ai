@@ -1,5 +1,5 @@
 ---
-title: "Generative BI vs. Agentic Analytics — A Beginner’s Guide"
+title: "Generative BI vs. Agentic Analytics"
 format: html
 toc: true
 number-sections: true
