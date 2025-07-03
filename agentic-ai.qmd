@@ -1,5 +1,5 @@
 ---
-title: "Generative Business Intelligence (Gen BI)"
+title: "Introduction to Agentic AI"
 format: html
 ---
 
