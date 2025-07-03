@@ -24,17 +24,17 @@ Google Cloud defines agentic AI as systems with **memory, planning, and tool-use
 
 ## How It Differs From Traditional and Generative AI
 
-| AI Type           | Behavior                          | Limitation                            |
-|-------------------|-----------------------------------|---------------------------------------|
-| **Traditional AI** | Rule-based or ML-based automation | Rigid, task-specific                  |
-| **Generative AI**  | Content creation via LLMs         | Reactive: one prompt = one response  |
-| **Agentic AI**     | Goal-oriented planning and action | Proactive, multi-step autonomy       |
+| **AI Type**       | **Behavior**                     | **Limitation**                         |
+|--------------------|----------------------------------|----------------------------------------|
+| **Traditional AI** | Rule-based or ML-based automation | Rigid, task-specific                   |
+| **Generative AI**  | Content creation via LLMs         | Reactive: one prompt → one response   |
+| **Agentic AI**     | Goal-oriented planning and action | Proactive, multi-step autonomy        |
 
-IBM outlines the progression clearly: generative AI creates content, while agentic AI **follows through** on tasks. Agentic systems interpret ambiguous instructions, plan multi-step workflows, and take initiative.
+IBM describes the progression clearly: generative AI creates content, while agentic AI **follows through** on tasks by interpreting ambiguous instructions, planning multi-step workflows, and taking initiative.
 
-McKinsey reinforces this distinction by showing that agentic systems take on decision-making responsibilities, factoring in **context, risk, and organizational goals**.
+McKinsey further notes that agentic systems assume decision-making responsibilities by incorporating **context, risk, and organizational goals** into their actions.
 
-> "Agentic AI combines generative power with goal decomposition, reasoning, and execution." — IBM
+> *“Agentic AI combines generative power with goal decomposition, reasoning, and execution.” — IBM*
 
 ---
 
