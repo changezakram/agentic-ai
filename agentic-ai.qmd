@@ -24,18 +24,17 @@ Google Cloud defines agentic AI as systems with **memory, planning, and tool-use
 
 ## How It Differs From Traditional and Generative AI
 
-| **AI Type**       | **Behavior**                     | **Limitation**                         |
-|--------------------|----------------------------------|----------------------------------------|
-| **Traditional AI** | Rule-based or ML-based automation | Rigid, task-specific                   |
-| **Generative AI**  | Content creation via LLMs         | Reactive: one prompt → one response   |
-| **Agentic AI**     | Goal-oriented planning and action | Proactive, multi-step autonomy        |
+| **AI Type**       | **Behavior**                               | **Limitation**                         |
+|--------------------|--------------------------------------------|----------------------------------------|
+| **Traditional AI** | Rule-based or ML-based automation          | Rigid, task-specific                   |
+| **Generative AI**  | Generates text, images, audio, or video using LLMs, diffusion, GANs, etc. | Reactive: one prompt → one response   |
+| **Agentic AI**     | Goal-oriented planning and action          | Proactive, multi-step autonomy        |
 
-IBM describes the progression clearly: generative AI creates content, while agentic AI **follows through** on tasks by interpreting ambiguous instructions, planning multi-step workflows, and taking initiative.
+IBM describes the progression clearly: generative AI creates content across modalities, while agentic AI **follows through** on tasks by interpreting ambiguous instructions, planning multi-step workflows, and taking initiative.
 
 McKinsey further notes that agentic systems assume decision-making responsibilities by incorporating **context, risk, and organizational goals** into their actions.
 
 > *“Agentic AI combines generative power with goal decomposition, reasoning, and execution.” — IBM*
-
 ---
 
 ## How Agentic AI Works
