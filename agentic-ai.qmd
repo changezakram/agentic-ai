@@ -1,15 +1,16 @@
 ---
-title: "Introduction to Agentic AI"
+title: "Agentic AI"
 format: html
 ---
 
-# The Rise of Agentic AI: A Beginner's Guide
+
+# Introduction
 
 Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting developments is the emergence of **Agentic AI**. Unlike traditional AI systems that simply respond to input, Agentic AI systems can reason, plan, act, and adapt autonomously. This blog post will walk you through the basics of Agentic AI—what it is, how it works, how it differs from other AI approaches, and why it matters.
 
 ---
 
-## 🧠 What Is Agentic AI?
+## What Is Agentic AI?
 
 **Agentic AI** refers to intelligent systems that act with **intent and autonomy** to accomplish goals. These agents can perceive their environment, break complex problems into manageable steps, use tools or APIs, and adapt their actions over time. Think of them not as passive assistants, but as **proactive collaborators**.
 
@@ -20,13 +21,13 @@ Google Cloud describes agents as systems that include memory, planning, and tool
 
 ---
 
-## 🔁 How It Differs From Traditional and Generative AI
+## How It Differs From Traditional and Generative AI
 
 | AI Type           | Behavior                          | Limitation                            |
-|------------------|-----------------------------------|---------------------------------------|
+|-------------------|-----------------------------------|---------------------------------------|
 | **Traditional AI** | Rule-based or ML-based automation | Rigid, task-specific                  |
-| **Generative AI** | Content creation via LLMs          | Reactive: one prompt = one response   |
-| **Agentic AI**     | Goal-oriented planning and action | Proactive, multi-step autonomy        |
+| **Generative AI**  | Content creation via LLMs         | Reactive: one prompt = one response  |
+| **Agentic AI**     | Goal-oriented planning and action | Proactive, multi-step autonomy       |
 
 IBM outlines the progression clearly: generative AI creates content, while agentic AI **follows through** on tasks. Agentic systems interpret ambiguous instructions, plan multi-step workflows, and take initiative.
 
@@ -36,7 +37,7 @@ McKinsey reinforces this distinction by showing that agentic systems take on dec
 
 ---
 
-## ⚙️ How Agentic AI Works
+## How Agentic AI Works
 
 Agentic AI is made possible by combining several key components:
 
@@ -52,29 +53,44 @@ McKinsey takes this further by introducing a **Decision-Making Maturity Model**,
 
 ---
 
-## 💼 Real-World Use Cases
+## Real-World Use Cases
 
-Agentic AI is already transforming industries:
+Agentic AI is already transforming industries. Below are **adoption rates by sector** and key use case categories (adapted from Bornet et al., 2024):
 
-### 🌐 Enterprise Operations
-- Document workflows, approvals, and compliance automation (IBM)
-- Supply chain monitoring and dynamic scheduling (McKinsey)
+### 📊 Adoption of Agentic AI by Industry
 
-### 🏛️ Customer Experience
-- Personalized omnichannel support agents (McKinsey)
-- Proactive outreach to reduce churn or upsell (McKinsey)
+| **Industry Sector**            | **Approx. Adoption (%)** | **Example Companies**               |
+|--------------------------------|---------------------------|-------------------------------------|
+| Technology & Software           | ~24%                      | Microsoft, Salesforce, BMC         |
+| Financial Services              | ~18%                      | JPMorgan, ING, Klarna              |
+| Retail & Consumer Goods         | ~16%                      | Best Buy, McDonald’s, Pets at Home |
+| Healthcare & Life Sciences      | ~12%                      | HCA Healthcare, Hackensack Meridian|
+| Professional Services           | ~10%                      | McKinsey, Accenture, Thomson Reuters|
+| Travel & Hospitality            | ~8%                       | IHG Hotels, Alaska Airlines        |
+| Manufacturing & Industrial      | ~6%                       | Continental, Fortenova Group       |
+| Other                           | ~6%                       | Various                             |
 
-### 💻 Knowledge Work
-- Agents that draft presentations, analyze KPIs, and schedule meetings (Google, McKinsey)
+### Top Agentic AI Use Case Categories and Reported Benefits
 
-### 🚀 Innovation & Strategy
-- AI collaborators that co-create new product strategies or simulate business scenarios (McKinsey)
+| **Use Case Category**          | **Approx. Adoption (%)** | **Reported Benefits**                          |
+|--------------------------------|---------------------------|-----------------------------------------------|
+| Customer Service & Support      | ~35%                      | 12–30% faster resolution, 20–40% lower costs, higher satisfaction |
+| Internal Operations             | ~25%                      | 30–90% time savings, 25–50% cost savings, reduced errors |
+| Sales & Marketing               | ~20%                      | 9–21% revenue increase, 15–25% higher conversions |
+| Security & Fraud Detection      | ~12%                      | 70% fraud reduction, faster detection, improved accuracy |
+| Specialized Industry Solutions  | ~8%                       | Industry-specific improvements, compliance gains |
 
-Early adopters report 20–30% reductions in support costs and 10–20% increases in customer satisfaction.
+### 📈 Notable Success Stories
+
+- Microsoft: ~9.4% revenue increase per seller, 20% more closed deals
+- JPMorgan: ~70% fraud reduction
+- McKinsey client: ~90% reduction in onboarding lead time, ~30% drop in administrative workload
+
+> *Source: Data adapted from Bornet et al., (2024), Agentic Artificial Intelligence.*
 
 ---
 
-## ⚠️ Key Risks
+## Key Risks
 
 With great autonomy comes greater responsibility—and risk.
 
@@ -88,9 +104,9 @@ IBM warns that agentic systems magnify the impact of AI errors:
 
 ---
 
-## 🔒 Risk Management Strategies
+## Risk Management Strategies
 
-McKinsey, IBM, and Google offer concrete mitigation strategies:
+McKinsey, IBM, and Google recommend strategies to mitigate risks:
 
 - **Bounded Autonomy**: Define task scope and tool permissions
 - **Human-in-the-loop**: Require approvals for high-stakes decisions
@@ -101,7 +117,17 @@ McKinsey, IBM, and Google offer concrete mitigation strategies:
 
 ---
 
-## 🌍 Broader Implications
+## Best Practices for Implementation
+
+From the *Agentic Artificial Intelligence* book:
+- Start with **pilot programs** in controlled environments
+- Use **hybrid human–AI workflows** to maintain oversight while leveraging automation
+- Scale gradually while building internal support through demonstrated success
+- Encourage agents and employees to learn from each other for continuous improvement
+
+---
+
+## Broader Implications
 
 Agentic AI is more than just a new technology—it’s a paradigm shift:
 
@@ -115,7 +141,7 @@ This will reshape work in both structure and culture. As McKinsey notes, organiz
 
 ---
 
-## ✅ Final Thoughts
+## Final Thoughts
 
 Agentic AI blends the creativity of generative models with the initiative of autonomous systems. It’s already transforming workflows, customer experiences, and decision-making processes across industries.
 
@@ -125,11 +151,12 @@ Stay tuned for more deep dives on tools, design patterns, and real-world example
 
 ---
 
-## 📚 References
+## References
 
 1. Google Cloud. (2024). [What are AI agents?](https://cloud.google.com/discover/what-are-ai-agents)  
 2. IBM Think. (2024). [What is Agentic AI?](https://www.ibm.com/think/topics/agentic-ai)  
 3. IBM Think. (2024). [Agentic AI vs. Generative AI](https://www.ibm.com/think/topics/agentic-ai-vs-generative-ai)  
 4. McKinsey & Company. (2024). [When can AI make good decisions? The rise of AI corporate citizens](https://www.mckinsey.com/capabilities/operations/our-insights/when-can-ai-make-good-decisions-the-rise-of-ai-corporate-citizens)  
 5. McKinsey & Company. (2024). [The future of work is agentic](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-future-of-work-is-agentic)  
-6. McKinsey & Company. (2024). [The future of customer experience: Embracing agentic AI](https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-customer-experience-embracing-agentic-ai)
+6. McKinsey & Company. (2024). [The future of customer experience: Embracing agentic AI](https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-customer-experience-embracing-agentic-ai)  
+7. Bornet, et al. (2024). *Agentic Artificial Intelligence*. Selected pages.
