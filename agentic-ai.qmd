@@ -1,0 +1,135 @@
+---
+title: "Generative Business Intelligence (Gen BI)"
+format: html
+---
+
+# The Rise of Agentic AI: A Beginner's Guide
+
+Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting developments is the emergence of **Agentic AI**. Unlike traditional AI systems that simply respond to input, Agentic AI systems can reason, plan, act, and adapt autonomously. This blog post will walk you through the basics of Agentic AI—what it is, how it works, how it differs from other AI approaches, and why it matters.
+
+---
+
+## 🧠 What Is Agentic AI?
+
+**Agentic AI** refers to intelligent systems that act with **intent and autonomy** to accomplish goals. These agents can perceive their environment, break complex problems into manageable steps, use tools or APIs, and adapt their actions over time. Think of them not as passive assistants, but as **proactive collaborators**.
+
+Google Cloud describes agents as systems that include memory, planning, and tool use to operate in dynamic feedback loops. IBM and McKinsey expand on this, viewing agentic AI as **organizational actors** that behave like teammates, not just tools.
+
+> "Agentic AI systems are dynamic, goal-seeking entities that can plan and act autonomously." — IBM  
+> "Agentic AI redefines digital interaction from command to delegation." — Google Cloud
+
+---
+
+## 🔁 How It Differs From Traditional and Generative AI
+
+| AI Type           | Behavior                          | Limitation                            |
+|------------------|-----------------------------------|---------------------------------------|
+| **Traditional AI** | Rule-based or ML-based automation | Rigid, task-specific                  |
+| **Generative AI** | Content creation via LLMs          | Reactive: one prompt = one response   |
+| **Agentic AI**     | Goal-oriented planning and action | Proactive, multi-step autonomy        |
+
+IBM outlines the progression clearly: generative AI creates content, while agentic AI **follows through** on tasks. Agentic systems interpret ambiguous instructions, plan multi-step workflows, and take initiative.
+
+McKinsey reinforces this distinction by showing that agentic systems take on decision-making responsibilities, factoring in **context, risk, and organizational goals**.
+
+> "Agentic AI combines generative power with goal decomposition, reasoning, and execution." — IBM
+
+---
+
+## ⚙️ How Agentic AI Works
+
+Agentic AI is made possible by combining several key components:
+
+1. **Reasoning Engine** (usually an LLM)  
+2. **Planner** (to decompose goals)  
+3. **Memory** (to retain context)  
+4. **Tool Use** (to interact with external systems)  
+5. **Feedback Loop** (to adapt in real time)
+
+Google calls this an architecture of "reasoning, memory, tools, and planning." IBM adds that these systems are typically built with a **modular wrapper** around a core LLM, which provides autonomy and coordination capabilities.
+
+McKinsey takes this further by introducing a **Decision-Making Maturity Model**, showing how agents evolve from assistive to autonomous roles.
+
+---
+
+## 💼 Real-World Use Cases
+
+Agentic AI is already transforming industries:
+
+### 🌐 Enterprise Operations
+- Document workflows, approvals, and compliance automation (IBM)
+- Supply chain monitoring and dynamic scheduling (McKinsey)
+
+### 🏛️ Customer Experience
+- Personalized omnichannel support agents (McKinsey)
+- Proactive outreach to reduce churn or upsell (McKinsey)
+
+### 💻 Knowledge Work
+- Agents that draft presentations, analyze KPIs, and schedule meetings (Google, McKinsey)
+
+### 🚀 Innovation & Strategy
+- AI collaborators that co-create new product strategies or simulate business scenarios (McKinsey)
+
+Early adopters report 20–30% reductions in support costs and 10–20% increases in customer satisfaction.
+
+---
+
+## ⚠️ Key Risks
+
+With great autonomy comes greater responsibility—and risk.
+
+- **Unintended Autonomy**: Agents may act without proper oversight
+- **Bias and Hallucinations**: Decisions may be based on flawed or biased reasoning
+- **Privacy Concerns**: Tool-using agents must handle sensitive data with care
+- **Brand Consistency**: In customer contexts, inappropriate tone or overpersonalization can damage trust
+
+IBM warns that agentic systems magnify the impact of AI errors:  
+> "A flawed generative response might misinform—a flawed agentic response might act on that misinformation."
+
+---
+
+## 🔒 Risk Management Strategies
+
+McKinsey, IBM, and Google offer concrete mitigation strategies:
+
+- **Bounded Autonomy**: Define task scope and tool permissions
+- **Human-in-the-loop**: Require approvals for high-stakes decisions
+- **Audit Trails**: Log all agent actions for transparency and review
+- **Brand & Tone Governance**: Use tone filters for customer-facing agents
+- **Scenario Testing**: Evaluate agent behavior in simulated environments
+- **Collaborative Governance**: Assign oversight responsibilities to cross-functional teams
+
+---
+
+## 🌍 Broader Implications
+
+Agentic AI is more than just a new technology—it’s a paradigm shift:
+
+- **From task execution to task ownership**
+- **From tools to teammates**
+- **From command-response to goal-driven collaboration**
+
+This will reshape work in both structure and culture. As McKinsey notes, organizations must evolve to become **agentic themselves**: more decentralized, flexible, and responsive.
+
+> "Agentic AI won’t just change how work is done—it will change what work means."
+
+---
+
+## ✅ Final Thoughts
+
+Agentic AI blends the creativity of generative models with the initiative of autonomous systems. It’s already transforming workflows, customer experiences, and decision-making processes across industries.
+
+To lead in this new era, organizations must not only deploy agentic systems but also redesign how humans and machines work together—with safety, purpose, and adaptability.
+
+Stay tuned for more deep dives on tools, design patterns, and real-world examples.
+
+---
+
+## 📚 References
+
+1. Google Cloud. (2024). [What are AI agents?](https://cloud.google.com/discover/what-are-ai-agents)  
+2. IBM Think. (2024). [What is Agentic AI?](https://www.ibm.com/think/topics/agentic-ai)  
+3. IBM Think. (2024). [Agentic AI vs. Generative AI](https://www.ibm.com/think/topics/agentic-ai-vs-generative-ai)  
+4. McKinsey & Company. (2024). [When can AI make good decisions? The rise of AI corporate citizens](https://www.mckinsey.com/capabilities/operations/our-insights/when-can-ai-make-good-decisions-the-rise-of-ai-corporate-citizens)  
+5. McKinsey & Company. (2024). [The future of work is agentic](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-future-of-work-is-agentic)  
+6. McKinsey & Company. (2024). [The future of customer experience: Embracing agentic AI](https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-customer-experience-embracing-agentic-ai)

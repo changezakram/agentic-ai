@@ -1,0 +1,117 @@
+---
+title: "Generative BI vs. Agentic Analytics — A Beginner’s Guide"
+format: html
+toc: true
+number-sections: true
+---
+
+## 📊 Overview
+
+This guide explains the difference between **Generative BI (Gen BI)** and **Agentic Analytics**, with examples, use cases, roadmap, and example architectures.
+
+---
+
+## 🔷 What’s the difference?
+
+| Feature | Generative BI | Agentic Analytics |
+|---------|----------------|--------------------|
+| **Definition** | Use of generative AI (e.g., LLMs) to make BI conversational and accessible | Use of autonomous AI agents to monitor, reason, and act |
+| **Focus** | Natural language querying & insight generation | Autonomous problem-solving & action-taking |
+| **User Role** | User asks → system answers | Agent acts → user reviews/overrides |
+| **Tech Foundation** | LLMs, NLP, vector search | Agents, reasoning, orchestration, planning |
+| **Goal** | Democratize data insights | Proactively optimize KPIs & take actions |
+
+---
+
+## 🌟 Examples
+
+### Generative BI
+✅ User asks: *"Show me revenue trends by region last quarter."*  
+✅ NLP translates → SQL → dashboard or insight.  
+✅ Tools: Microsoft Copilot in Power BI, Tableau GPT, ThoughtSpot Sage, Looker.
+
+### Agentic Analytics
+✅ Agent monitors churn → detects anomaly → runs analysis → recommends retention campaign → optionally triggers it.  
+✅ Tools: LangChain Agents, AutoGen, CrewAI, IBM Watson Decision Support.
+
+---
+
+## 🏦 Use Cases in Banking
+
+| Generative BI | Agentic Analytics |
+|---------------|--------------------|
+| Self-service dashboards and reports | Continuous KPI monitoring and autonomous adjustment |
+| Natural-language queries on deposits, loans, churn | Detects anomalies and launches root cause analysis |
+| Automated dashboards and narratives | Adjusts operations or triggers workflows autonomously |
+
+---
+
+## 📈 Roadmap: Maturity Journey
+
+| Stage | Description | Example Outcome |
+|-------|-------------|-----------------|
+| **1. Traditional BI** | Static dashboards | “I can see my KPIs weekly.” |
+| **2. Self-Service BI** | Business users build own reports | “I can slice & dice myself.” |
+| **3. Generative BI** | NLP-driven, automated insights | “I can ask anything & get answers.” |
+| **4. Augmented BI** | System suggests anomalies/trends | “It highlights what matters.” |
+| **5. Agentic Analytics** | Agents monitor & act autonomously | “It adjusts operations proactively.” |
+
+---
+
+## 🪜 Example Architectures
+
+### Generative BI
+
+```
+[User]
+   ↓
+[LLM/NLP]
+   ↓
+[Semantic Layer + SQL Generator]
+   ↓
+[Data Warehouse]
+   ↓
+[BI Tool / Dashboard]
+```
+
+---
+
+### Agentic Analytics
+
+```
+               [Agent Framework]
+                     ↓
+   [Planner + Reasoner + Memory + Tools]
+                     ↓
+ [Data Warehouse + Real-time Streams]
+                     ↓
+ [BI Tools] & [Action APIs] & [Workflow Automation]
+                     ↓
+        [Feedback & Continuous Loop]
+```
+
+---
+
+## 🛠️ Key Building Blocks
+
+✅ **Data Layer:** Snowflake, BigQuery, Redshift — clean, documented.  
+✅ **Semantic Layer:** Business-friendly metrics & dimensions (e.g., dbt, AtScale).  
+✅ **LLM Integration:** Embedded in BI tools (for Gen BI) or orchestrated (for agents).  
+✅ **Orchestration Layer:** LangChain, AutoGen.  
+✅ **Action Layer:** API connectors & workflow automation (e.g., Zapier, Airflow).
+
+---
+
+## 🔷 In short
+
+- **Generative BI = "Talk to your data."**
+- **Agentic Analytics = "Your data solves problems for you."**
+
+---
+
+If you’d like, you can also:
+- 📄 Add visual diagrams of these architectures.
+- 🚀 Build a tailored roadmap for your organization.
+- 📋 Map these ideas to specific vendors & open-source tools.
+
+Let me know if you’d like help with any of these!
