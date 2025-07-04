@@ -40,23 +40,15 @@ McKinsey further notes that agentic systems assume decision-making responsibilit
 
 ## How Agentic AI Works
 
-Agentic AI operates through a systematic process supported by distinct components. The process consists of sequential **steps**, while the components (or elements) enable and power those steps.
+Agentic AI follows a systematic process where each step is powered by key capabilities built into the system:
 
-### Steps in the Process:
-1. **Perceive** — The agent gathers and analyzes data from various sources to understand its environment and identify relevant patterns or entities.
-2. **Reason** — The agent formulates a plan, breaking the goal into actionable tasks based on context and knowledge.
-3. **Act** — The agent executes tasks by interacting with tools, APIs, and external systems.
-4. **Learn** — The agent monitors outcomes, collects feedback, and improves its strategies over time.
-5. **Adapt** — Over time, the agent refines its models and behavior to better meet organizational needs.
+1. **Perceive** — The agent collects and analyzes data from sensors, databases, and digital interfaces using its **memory** to understand the environment and identify key entities or patterns.
+2. **Reason** — Using a **reasoning engine** (often an LLM) and contextual **memory**, the agent formulates plans, decomposes goals, and decides on the best course of action.
+3. **Plan** — Supported by its **planner**, the agent organizes the tasks into a logical sequence to achieve the objective.
+4. **Act** — The agent executes the planned tasks by interacting with external systems and APIs through its **tool use** capabilities.
+5. **Learn** — Through a continuous **feedback loop** and updated **memory**, the agent monitors outcomes, learns from them, and refines its models to improve future performance.
 
-### Key Components Enabling These Steps:
-- **Reasoning Engine** — Powers the reasoning step by understanding the context, planning, and making decisions. Often implemented with an LLM.
-- **Planner** — Breaks goals into specific, ordered tasks.
-- **Memory** — Stores and recalls context and historical interactions to inform decisions.
-- **Tool Use** — Interfaces with external software, APIs, and databases to execute actions.
-- **Feedback Loop** — Captures and incorporates results to improve performance over time.
-
-Together, these components enable the agent to move through the steps effectively — perceiving, reasoning, acting, learning, and adapting.
+This integrated view shows how the components are not separate modules, but enablers embedded within the steps of the agent’s workflow, making the system proactive, adaptive, and goal-oriented.
 
 ---
 
