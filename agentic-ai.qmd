@@ -40,17 +40,23 @@ McKinsey further notes that agentic systems assume decision-making responsibilit
 
 ## How Agentic AI Works
 
-Agentic AI is made possible by combining several key components:
+Agentic AI operates through a systematic process supported by distinct components. The process consists of sequential **steps**, while the components (or elements) enable and power those steps.
 
-1. **Reasoning Engine** (usually an LLM)  
-2. **Planner** (to decompose goals)  
-3. **Memory** (to retain context)  
-4. **Tool Use** (to interact with external systems)  
-5. **Feedback Loop** (to adapt in real time)
+### Steps in the Process:
+1. **Perceive** — The agent gathers and analyzes data from various sources to understand its environment and identify relevant patterns or entities.
+2. **Reason** — The agent formulates a plan, breaking the goal into actionable tasks based on context and knowledge.
+3. **Act** — The agent executes tasks by interacting with tools, APIs, and external systems.
+4. **Learn** — The agent monitors outcomes, collects feedback, and improves its strategies over time.
+5. **Adapt** — Over time, the agent refines its models and behavior to better meet organizational needs.
 
-Google calls this an architecture of "reasoning, memory, tools, and planning." IBM adds that these systems are typically built with a **modular wrapper** around a core LLM, which provides autonomy and coordination capabilities.
+### Key Components Enabling These Steps:
+- **Reasoning Engine** — Powers the reasoning step by understanding the context, planning, and making decisions. Often implemented with an LLM.
+- **Planner** — Breaks goals into specific, ordered tasks.
+- **Memory** — Stores and recalls context and historical interactions to inform decisions.
+- **Tool Use** — Interfaces with external software, APIs, and databases to execute actions.
+- **Feedback Loop** — Captures and incorporates results to improve performance over time.
 
-McKinsey takes this further by introducing a **Decision-Making Maturity Model**, showing how agents evolve from assistive to autonomous roles.
+Together, these components enable the agent to move through the steps effectively — perceiving, reasoning, acting, learning, and adapting.
 
 ---
 
