@@ -54,9 +54,21 @@ This integrated view shows how the components are not separate modules, but enab
 
 ## Real-World Use Cases
 
-Agentic AI is already transforming industries. Below are **adoption rates by sector** and key use case categories (adapted from Bornet et al., 2024):
+Agentic AI is already transforming industries, delivering measurable benefits and enabling capabilities beyond traditional and generative AI. Below are illustrative examples and data showing how organizations are adopting and benefiting from these systems.
 
-### 📊 Adoption of Agentic AI by Industry
+### Illustrative Example: Loan Origination & Operations
+
+In financial services, agentic AI systems orchestrate the **loan origination journey end-to-end**, going beyond traditional AI workflows or generative AI insights. These agents:
+- Ingest real-time data from macroeconomic trends, customer behavior, regulatory changes, and sentiment analysis.
+- Assess creditworthiness, adjust pricing, recommend optimal product bundles, and flag anomalies for human review.
+- Collaborate with other agents in fraud detection, compliance, and capital allocation to optimize outcomes.
+
+In operations and customer service, agents dynamically rebalance workloads across call centers, resolve customer inquiries with contextual and emotionally intelligent responses, escalate only when human judgment is needed, and detect emerging patterns (e.g., loan performance divergence) before humans are even aware.
+
+In multiagent systems, a decentralized network of agents collaborate — one assessing creditworthiness, another modeling risk exposure, and a third ensuring compliance — working together to optimize customer journeys and manage trade-offs in real time.
+
+
+### Adoption of Agentic AI by Industry
 
 | **Industry Sector**            | **Approx. Adoption (%)** | **Example Companies**               |
 |--------------------------------|---------------------------|-------------------------------------|
@@ -79,7 +91,7 @@ Agentic AI is already transforming industries. Below are **adoption rates by sec
 | Security & Fraud Detection      | ~12%                      | 70% fraud reduction, faster detection, improved accuracy |
 | Specialized Industry Solutions  | ~8%                       | Industry-specific improvements, compliance gains |
 
-### 📈 Notable Success Stories
+### Notable Success Stories
 
 - Microsoft: ~9.4% revenue increase per seller, 20% more closed deals
 - JPMorgan: ~70% fraud reduction
