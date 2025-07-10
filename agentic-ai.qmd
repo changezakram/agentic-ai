@@ -18,8 +18,6 @@ They can perceive their environment, break down complex objectives into manageab
 
 Google Cloud defines agentic AI as systems with **memory, planning, and tool-use capabilities**, operating in dynamic feedback loops. IBM and McKinsey emphasize their role as **organizational actors** — capable of taking initiative, making decisions aligned with goals, and integrating seamlessly with human teams.
 
-> *“Agentic AI systems are dynamic, goal-seeking entities that can plan and act autonomously.” — IBM*
-
 ---
 
 ## How It Differs From Traditional and Generative AI
@@ -33,8 +31,6 @@ Google Cloud defines agentic AI as systems with **memory, planning, and tool-use
 IBM describes the progression clearly: generative AI creates content across modalities, while agentic AI **follows through** on tasks by interpreting ambiguous instructions, planning multi-step workflows, and taking initiative.
 
 McKinsey further notes that agentic systems assume decision-making responsibilities by incorporating **context, risk, and organizational goals** into their actions.
-
-> *“Agentic AI combines generative power with goal decomposition, reasoning, and execution.” — IBM*
 
 ---
 
