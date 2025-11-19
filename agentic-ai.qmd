@@ -13,15 +13,11 @@ This shift from reactive to proactive intelligence changes how organizations can
 
 ## What Is Agentic AI?
 
-Agentic AI systems act with intent and autonomy to achieve defined goals. They don't just respond—they plan, decide, and adapt without step-by-step human direction.
+Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don't just respond to commands—they pursue objectives.
 
-The core capabilities that distinguish these systems:
+Ask a generative AI system to "help with loan processing" and you'll get advice, templates, or summaries. Give an agentic system the same objective and it will actually process loans: pulling applicant data, running credit checks, calculating risk scores, checking compliance requirements, and flagging exceptions for human review. One provides information. The other completes work.
 
-- **Perception** — Understanding context from structured data, unstructured text, real-time feeds, and environmental signals
-- **Memory** — Maintaining state across interactions, remembering past decisions, and building on previous context rather than starting fresh each time
-- **Planning** — Decomposing complex objectives into sequenced tasks, anticipating dependencies, and adapting when conditions change
-- **Tool Use** — Calling external APIs, querying databases, running calculations, and integrating with existing systems to extend their native capabilities
-- **Learning** — Monitoring outcomes, adjusting strategies based on feedback, and improving performance over time through continuous optimization
+This difference matters because it changes what you can delegate to AI. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.
 
 > Consider how a loan application moves through a bank. A traditional system routes the application through fixed decision points. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn't just scale. It's whether the system can navigate complexity without constant human intervention.
 
@@ -32,17 +28,25 @@ The core capabilities that distinguish these systems:
 | Generative AI     | Creates content (text, images, code) based on learned patterns | Reactive: requires explicit prompts for each step          |
 | Agentic AI        | Pursues goals through multi-step planning and decision-making  | Requires oversight to prevent unintended autonomous actions |
 
+What makes this autonomy possible? Agentic systems combine several capabilities that earlier AI generations handled separately or not at all: maintaining context across interactions (memory), breaking complex goals into subtasks (planning), accessing external tools and data sources (tool use), and improving based on outcomes (learning). Section 3 explains how these capabilities work together in practice.
+
 ---
 
 # How Agentic AI Works
 
-An agentic system operates in a continuous loop of perception, reasoning, planning, action, and learning. Each component enables specific capabilities that allow the agent to interact with and adapt to its environment:
+Understanding what makes a system "agentic" is one thing. Seeing how it actually operates is another. Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. This isn't a one-time sequence. It's an ongoing loop that adapts as conditions change.
 
-- **Perceive** — Gather data from databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
-- **Reason** — Use LLMs or reasoning engines to evaluate the current state, assess options, and determine the best next steps.
-- **Plan** — Break complex objectives into ordered steps, identify dependencies, and adjust plans as new information emerges.
-- **Act** — Use tool capabilities to execute tasks (e.g., calling APIs, retrieving data, running calculations).
-- **Learn** — Incorporate feedback from the environment to refine strategies and improve over time.
+**Perceive** — The agent gathers data from available sources: databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
+
+**Reason** — A reasoning engine (typically a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. This isn't simple pattern matching—it involves weighing tradeoffs, anticipating consequences, and selecting strategies.
+
+**Plan** — The planner breaks complex objectives into discrete tasks, sequences them logically, and identifies dependencies. Consider a loan approval goal. The agent might plan to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one, and the agent adjusts the sequence if something fails.
+
+**Act** — Tool-use capabilities let the agent execute planned tasks by interacting with external systems. It might call an identity verification API, query a credit bureau database, run a calculation, update a CRM record, or send a notification. The agent chooses which tools to use based on what each step requires.
+
+**Learn** — Feedback loops capture outcomes and adjust future behavior. If a particular sequence of checks consistently flags false positives, the system refines its approach. If certain customer segments respond better to specific communication timing, the agent adapts its strategy.
+
+The cycle repeats continuously. A customer service agent might start with a standard response template, detect frustration in the customer's reply, shift to a different communication strategy, pull additional account context, and adjust its tone—all within a single conversation thread. Each iteration informs the next.
 
 
 ![Agent Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
