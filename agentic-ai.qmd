@@ -68,18 +68,11 @@ Most production deployments combine these patterns. A fraud detection system mig
 # Where Agentic AI Works Today
 Agentic AI is already deployed in production settings:
 
-- **Financial Services**: End-to-end loan processing, fraud detection, portfolio rebalancing
-- **Healthcare**: Clinical documentation, treatment recommendations, patient monitoring
-- **Software Development**: Code review, bug triage, test generation, deployment automation
-- **Customer Operations**: Inquiry handling, escalation, proactive outreach, routing
-- **Supply Chain**: Inventory planning, vendor negotiation, route optimization
-
-## Example: Loan Origination & Operations
-
-- **Data Integration**: Real-time data from economic, behavioral, regulatory, and sentiment sources
-- **Decision Support**: Risk analysis, product bundling, anomaly detection
-- **Operations Optimization**: Load balancing, intelligent routing, early warning systems
-- **Multi-Agent Coordination**: Risk agents, pricing agents, compliance agents, communication agents working together
+- **Financial Services**: End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation
+- **Healthcare**: Clinical documentation, treatment protocol recommendations, patient monitoring, insurance claims processing, and appointment optimization
+- **Software Development**: Code generation and review, bug diagnosis, test case creation, dependency management, and deployment automation
+- **Customer Operations**: Inquiry resolution, escalation routing, sentiment analysis, proactive outreach, and workload balancing across support teams
+- **Supply Chain**: Demand forecasting, inventory optimization, route planning, vendor negotiation support, and disruption response
 
 ---
 
