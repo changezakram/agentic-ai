@@ -3,111 +3,80 @@ title: "Agentic AI"
 format: html
 ---
 
-
 # Introduction
 
-Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting developments is the emergence of Agentic AI. Unlike traditional AI systems that simply respond to input, Agentic AI systems can reason, plan, act, and adapt autonomously. This blog post will walk you through the basics of Agentic AI—what it is, how it works, how it differs from other AI approaches, and why it matters.
+AI systems are gaining autonomy. The latest wave—Agentic AI—doesn't just answer questions or generate content on command. These systems plan, decide, and act on their own to achieve goals you set. Think of the difference between asking someone for directions versus hiring them to get you there. The first requires you to do the work. The second handles the complexity for you.
+
+This shift from reactive to proactive intelligence changes how organizations can deploy AI. Instead of building workflows around what the model can do in a single interaction, you can assign objectives and let the system figure out how to accomplish them. That capability is already reshaping operations in financial services, healthcare, customer support, and software development.
 
 ---
 
 ## What Is Agentic AI?
 
-**Agentic AI** refers to intelligent systems that act with intent, autonomy, and adaptability to achieve defined goals. Unlike traditional AI, these agents not only respond to commands but also plan, decide, and act proactively — often without step-by-step human direction.
+Agentic AI systems act with intent and autonomy to achieve defined goals. They don't just respond—they plan, decide, and adapt without step-by-step human direction.
 
-They can perceive their environment, break down complex objectives into manageable tasks, interact with tools and APIs, and adapt their behavior based on feedback and context. In essence, they function as proactive collaborators, not just reactive assistants.
+The core capabilities that distinguish these systems:
 
-Google Cloud defines agentic AI as systems with memory, planning, and tool-use capabilities, operating in dynamic feedback loops. IBM and McKinsey emphasize their role as organizational actors — capable of taking initiative, making decisions aligned with goals, and integrating seamlessly with human teams.
+- **Perception** — Understanding context from structured data, unstructured text, real-time feeds, and environmental signals
+- **Memory** — Maintaining state across interactions, remembering past decisions, and building on previous context rather than starting fresh each time
+- **Planning** — Decomposing complex objectives into sequenced tasks, anticipating dependencies, and adapting when conditions change
+- **Tool Use** — Calling external APIs, querying databases, running calculations, and integrating with existing systems to extend their native capabilities
+- **Learning** — Monitoring outcomes, adjusting strategies based on feedback, and improving performance over time through continuous optimization
+
+> Consider how a loan application moves through a bank. A traditional system routes the application through fixed decision points. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn't just scale. It's whether the system can navigate complexity without constant human intervention.
 
 
-| **AI Type**       | **Behavior**                               | **Limitation**                         |
-|--------------------|--------------------------------------------|----------------------------------------|
-| **Traditional AI** | Rule-based or ML-based automation          | Rigid, task-specific                   |
-| **Generative AI**  | Generates text, images, audio, or video using LLMs, diffusion, GANs, etc. | Reactive: one prompt → one response   |
-| **Agentic AI**     | Goal-oriented planning and action          | Proactive, multi-step autonomy        |
+| **AI Type**       | **What It Does**                                               | **Key Limitation**                                          |
+|-------------------|----------------------------------------------------------------|-------------------------------------------------------------|
+| Traditional AI    | Executes predefined rules or predictions from trained models   | Can't adapt to tasks outside its training scope             |
+| Generative AI     | Creates content (text, images, code) based on learned patterns | Reactive: requires explicit prompts for each step          |
+| Agentic AI        | Pursues goals through multi-step planning and decision-making  | Requires oversight to prevent unintended autonomous actions |
 
 
 ---
 
 # How Agentic AI Works
 
-Agentic AI follows a systematic process where each step is powered by key capabilities built into the system:
+An agentic system operates in a continuous cycle, not a single pass. Each component enables specific capabilities within that loop:
 
-1. **Perceive** — The agent collects and analyzes data from sensors, databases, and digital interfaces using its **memory** to understand the environment and identify key entities or patterns.
-2. **Reason** — Using a **reasoning engine** (often an LLM) and contextual **memory**, the agent formulates plans, decomposes goals, and decides on the best course of action.
-3. **Plan** — Supported by its **planner**, the agent organizes the tasks into a logical sequence to achieve the objective.
-4. **Act** — The agent executes the planned tasks by interacting with external systems and APIs through its **tool use** capabilities.
-5. **Learn** — Through a continuous **feedback loop** and updated **memory**, the agent monitors outcomes, learns from them, and refines its models to improve future performance.
+- **Perceive** — Gather data from databases, APIs, document repositories, or user inputs; store relevant memory context.
+- **Reason** — Use LLMs or reasoning engines to evaluate the current state and determine best options.
+- **Plan** — Break complex objectives into tasks, sequence them, and identify dependencies.
+- **Act** — Call tools, APIs, or other systems to execute planned steps.
+- **Learn** — Capture outcomes and refine strategies over time.
 
-This integrated view shows how the components are not separate modules, but enablers embedded within the steps of the agent’s workflow, making the system proactive, adaptive, and goal-oriented.
+This cycle runs continuously. For instance, a customer service agent may detect tone changes, shift strategies, pull additional context, and adjust language—all in real time.
 
 ---
 
 # Agentic Design Patterns
 
-Agentic AI systems often rely on recurring patterns to act autonomously and effectively. Here are four foundational design patterns commonly used in agent-based architectures:
+Production-grade agentic systems rely on core design patterns:
 
-- **Reflection**  
-  The agent evaluates its own past actions or decisions to improve future performance. This helps with error correction and adaptive behavior.
+- **Reflection**: Evaluate whether prior actions were successful and adjust reasoning.
+- **Tool Use**: Call external APIs or tools when internal knowledge isn't enough.
+- **Planning**: Develop a task plan before execution, revising it as conditions change.
+- **Multi-Agent Collaboration**: Delegate tasks to specialized agents that share context and coordinate.
 
-- **Tool Use**  
-  The agent leverages external tools or APIs—such as calculators, databases, or search engines—to complete tasks it can’t perform internally.
-
-- **Planning**  
-  The agent formulates a step-by-step plan before acting, especially for complex or multi-step goals. Planning improves coherence and task success.
-
-- **Multi-Agent Collaboration**  
-  Multiple agents coordinate or divide tasks, either cooperatively or competitively, to solve problems more efficiently.
-
-These patterns are often used in combination to build more powerful, flexible, and context-aware AI systems.
+Most systems combine these patterns in production. For example, a fraud detection system might plan its workflow, use tools for verification, reflect on its risk score thresholds, and coordinate with agents handling customer outreach or compliance.
 
 ---
 
-# Real-World Use Cases
+# Where Agentic AI Works Today
+Agentic AI is already deployed in production settings:
 
-Agentic AI is already transforming industries, delivering measurable benefits and enabling capabilities beyond traditional and generative AI. Below are illustrative examples and data showing how organizations are adopting and benefiting from these systems.
+- **Financial Services**: End-to-end loan processing, fraud detection, portfolio rebalancing
+- **Healthcare**: Clinical documentation, treatment recommendations, patient monitoring
+- **Software Development**: Code review, bug triage, test generation, deployment automation
+- **Customer Operations**: Inquiry handling, escalation, proactive outreach, routing
+- **Supply Chain**: Inventory planning, vendor negotiation, route optimization
 
-## Illustrative Example: Loan Origination & Operations
+## Example: Loan Origination & Operations
 
-In financial services, agentic AI systems orchestrate the **loan origination journey end-to-end**, going beyond traditional AI workflows or generative AI insights. These agents:
-- Ingest real-time data from macroeconomic trends, customer behavior, regulatory changes, and sentiment analysis.
-- Assess creditworthiness, adjust pricing, recommend optimal product bundles, and flag anomalies for human review.
-- Collaborate with other agents in fraud detection, compliance, and capital allocation to optimize outcomes.
-
-In operations and customer service, agents dynamically rebalance workloads across call centers, resolve customer inquiries with contextual and emotionally intelligent responses, escalate only when human judgment is needed, and detect emerging patterns (e.g., loan performance divergence) before humans are even aware.
-
-In multiagent systems, a decentralized network of agents collaborate — one assessing creditworthiness, another modeling risk exposure, and a third ensuring compliance — working together to optimize customer journeys and manage trade-offs in real time.
-
----
-
-# Key Risks
-
-With great autonomy comes greater responsibility—and risk.
-
-- **Unintended Autonomy**: Agents may act without proper oversight
-- **Bias and Hallucinations**: Decisions may be based on flawed or biased reasoning
-- **Privacy Concerns**: Tool-using agents must handle sensitive data with care
-- **Brand Consistency**: In customer contexts, inappropriate tone or overpersonalization can damage trust
-
----
-
-# Risk Management Strategies
-
-- **Bounded Autonomy**: Define task scope and tool permissions
-- **Human-in-the-loop**: Require approvals for high-stakes decisions
-- **Audit Trails**: Log all agent actions for transparency and review
-- **Brand & Tone Governance**: Use tone filters for customer-facing agents
-- **Scenario Testing**: Evaluate agent behavior in simulated environments
-- **Collaborative Governance**: Assign oversight responsibilities to cross-functional teams
-
----
-
-# Best Practices for Implementation
-
-From the *Agentic Artificial Intelligence* book:
-- Start with **pilot programs** in controlled environments
-- Use **hybrid human–AI workflows** to maintain oversight while leveraging automation
-- Scale gradually while building internal support through demonstrated success
-- Encourage agents and employees to learn from each other for continuous improvement
+- **Data Integration**: Real-time data from economic, behavioral, regulatory, and sentiment sources
+- **Decision Support**: Risk analysis, product bundling, anomaly detection
+- **Operations Optimization**: Load balancing, intelligent routing, early warning systems
+- **Multi-Agent Coordination**: Risk agents, pricing agents, compliance agents, communication agents working together
 
 ---
 

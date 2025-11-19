@@ -197,14 +197,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#how-agentic-ai-works" id="toc-how-agentic-ai-works" class="nav-link" data-scroll-target="#how-agentic-ai-works"><span class="header-section-number">2</span> How Agentic AI Works</a></li>
   <li><a href="#agentic-design-patterns" id="toc-agentic-design-patterns" class="nav-link" data-scroll-target="#agentic-design-patterns"><span class="header-section-number">3</span> Agentic Design Patterns</a></li>
-  <li><a href="#real-world-use-cases" id="toc-real-world-use-cases" class="nav-link" data-scroll-target="#real-world-use-cases"><span class="header-section-number">4</span> Real-World Use Cases</a>
+  <li><a href="#where-agentic-ai-works-today" id="toc-where-agentic-ai-works-today" class="nav-link" data-scroll-target="#where-agentic-ai-works-today"><span class="header-section-number">4</span> Where Agentic AI Works Today</a>
   <ul class="collapse">
-  <li><a href="#illustrative-example-loan-origination-operations" id="toc-illustrative-example-loan-origination-operations" class="nav-link" data-scroll-target="#illustrative-example-loan-origination-operations"><span class="header-section-number">4.1</span> Illustrative Example: Loan Origination &amp; Operations</a></li>
+  <li><a href="#example-loan-origination-operations" id="toc-example-loan-origination-operations" class="nav-link" data-scroll-target="#example-loan-origination-operations"><span class="header-section-number">4.1</span> Example: Loan Origination &amp; Operations</a></li>
   </ul></li>
-  <li><a href="#key-risks" id="toc-key-risks" class="nav-link" data-scroll-target="#key-risks"><span class="header-section-number">5</span> Key Risks</a></li>
-  <li><a href="#risk-management-strategies" id="toc-risk-management-strategies" class="nav-link" data-scroll-target="#risk-management-strategies"><span class="header-section-number">6</span> Risk Management Strategies</a></li>
-  <li><a href="#best-practices-for-implementation" id="toc-best-practices-for-implementation" class="nav-link" data-scroll-target="#best-practices-for-implementation"><span class="header-section-number">7</span> Best Practices for Implementation</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -232,41 +229,51 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
-<p>Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting developments is the emergence of Agentic AI. Unlike traditional AI systems that simply respond to input, Agentic AI systems can reason, plan, act, and adapt autonomously. This blog post will walk you through the basics of Agentic AI—what it is, how it works, how it differs from other AI approaches, and why it matters.</p>
+<p>AI systems are gaining autonomy. The latest wave—Agentic AI—doesn’t just answer questions or generate content on command. These systems plan, decide, and act on their own to achieve goals you set. Think of the difference between asking someone for directions versus hiring them to get you there. The first requires you to do the work. The second handles the complexity for you.</p>
+<p>This shift from reactive to proactive intelligence changes how organizations can deploy AI. Instead of building workflows around what the model can do in a single interaction, you can assign objectives and let the system figure out how to accomplish them. That capability is already reshaping operations in financial services, healthcare, customer support, and software development.</p>
 <hr>
 <section id="what-is-agentic-ai" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="what-is-agentic-ai"><span class="header-section-number">1.1</span> What Is Agentic AI?</h2>
-<p><strong>Agentic AI</strong> refers to intelligent systems that act with intent, autonomy, and adaptability to achieve defined goals. Unlike traditional AI, these agents not only respond to commands but also plan, decide, and act proactively — often without step-by-step human direction.</p>
-<p>They can perceive their environment, break down complex objectives into manageable tasks, interact with tools and APIs, and adapt their behavior based on feedback and context. In essence, they function as proactive collaborators, not just reactive assistants.</p>
-<p>Google Cloud defines agentic AI as systems with memory, planning, and tool-use capabilities, operating in dynamic feedback loops. IBM and McKinsey emphasize their role as organizational actors — capable of taking initiative, making decisions aligned with goals, and integrating seamlessly with human teams.</p>
+<p>Agentic AI systems act with intent and autonomy to achieve defined goals. They don’t just respond—they plan, decide, and adapt without step-by-step human direction.</p>
+<p>The core capabilities that distinguish these systems:</p>
+<ul>
+<li><strong>Perception</strong> — Understanding context from structured data, unstructured text, real-time feeds, and environmental signals</li>
+<li><strong>Memory</strong> — Maintaining state across interactions, remembering past decisions, and building on previous context rather than starting fresh each time</li>
+<li><strong>Planning</strong> — Decomposing complex objectives into sequenced tasks, anticipating dependencies, and adapting when conditions change</li>
+<li><strong>Tool Use</strong> — Calling external APIs, querying databases, running calculations, and integrating with existing systems to extend their native capabilities</li>
+<li><strong>Learning</strong> — Monitoring outcomes, adjusting strategies based on feedback, and improving performance over time through continuous optimization</li>
+</ul>
+<blockquote class="blockquote">
+<p>Consider how a loan application moves through a bank. A traditional system routes the application through fixed decision points. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn’t just scale. It’s whether the system can navigate complexity without constant human intervention.</p>
+</blockquote>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 44%">
 <col style="width: 42%">
-<col style="width: 38%">
 </colgroup>
 <thead>
 <tr class="header">
 <th><strong>AI Type</strong></th>
-<th><strong>Behavior</strong></th>
-<th><strong>Limitation</strong></th>
+<th><strong>What It Does</strong></th>
+<th><strong>Key Limitation</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Traditional AI</strong></td>
-<td>Rule-based or ML-based automation</td>
-<td>Rigid, task-specific</td>
+<td>Traditional AI</td>
+<td>Executes predefined rules or predictions from trained models</td>
+<td>Can’t adapt to tasks outside its training scope</td>
 </tr>
 <tr class="even">
-<td><strong>Generative AI</strong></td>
-<td>Generates text, images, audio, or video using LLMs, diffusion, GANs, etc.</td>
-<td>Reactive: one prompt → one response</td>
+<td>Generative AI</td>
+<td>Creates content (text, images, code) based on learned patterns</td>
+<td>Reactive: requires explicit prompts for each step</td>
 </tr>
 <tr class="odd">
-<td><strong>Agentic AI</strong></td>
-<td>Goal-oriented planning and action</td>
-<td>Proactive, multi-step autonomy</td>
+<td>Agentic AI</td>
+<td>Pursues goals through multi-step planning and decision-making</td>
+<td>Requires oversight to prevent unintended autonomous actions</td>
 </tr>
 </tbody>
 </table>
@@ -275,74 +282,52 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="how-agentic-ai-works" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> How Agentic AI Works</h1>
-<p>Agentic AI follows a systematic process where each step is powered by key capabilities built into the system:</p>
-<ol type="1">
-<li><strong>Perceive</strong> — The agent collects and analyzes data from sensors, databases, and digital interfaces using its <strong>memory</strong> to understand the environment and identify key entities or patterns.</li>
-<li><strong>Reason</strong> — Using a <strong>reasoning engine</strong> (often an LLM) and contextual <strong>memory</strong>, the agent formulates plans, decomposes goals, and decides on the best course of action.</li>
-<li><strong>Plan</strong> — Supported by its <strong>planner</strong>, the agent organizes the tasks into a logical sequence to achieve the objective.</li>
-<li><strong>Act</strong> — The agent executes the planned tasks by interacting with external systems and APIs through its <strong>tool use</strong> capabilities.</li>
-<li><strong>Learn</strong> — Through a continuous <strong>feedback loop</strong> and updated <strong>memory</strong>, the agent monitors outcomes, learns from them, and refines its models to improve future performance.</li>
-</ol>
-<p>This integrated view shows how the components are not separate modules, but enablers embedded within the steps of the agent’s workflow, making the system proactive, adaptive, and goal-oriented.</p>
+<p>An agentic system operates in a continuous cycle, not a single pass. Each component enables specific capabilities within that loop:</p>
+<ul>
+<li><strong>Perceive</strong> — Gather data from databases, APIs, document repositories, or user inputs; store relevant memory context.</li>
+<li><strong>Reason</strong> — Use LLMs or reasoning engines to evaluate the current state and determine best options.</li>
+<li><strong>Plan</strong> — Break complex objectives into tasks, sequence them, and identify dependencies.</li>
+<li><strong>Act</strong> — Call tools, APIs, or other systems to execute planned steps.</li>
+<li><strong>Learn</strong> — Capture outcomes and refine strategies over time.</li>
+</ul>
+<p>This cycle runs continuously. For instance, a customer service agent may detect tone changes, shift strategies, pull additional context, and adjust language—all in real time.</p>
 <hr>
 </section>
 <section id="agentic-design-patterns" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Agentic Design Patterns</h1>
-<p>Agentic AI systems often rely on recurring patterns to act autonomously and effectively. Here are four foundational design patterns commonly used in agent-based architectures:</p>
+<p>Production-grade agentic systems rely on core design patterns:</p>
 <ul>
-<li><p><strong>Reflection</strong><br>
-The agent evaluates its own past actions or decisions to improve future performance. This helps with error correction and adaptive behavior.</p></li>
-<li><p><strong>Tool Use</strong><br>
-The agent leverages external tools or APIs—such as calculators, databases, or search engines—to complete tasks it can’t perform internally.</p></li>
-<li><p><strong>Planning</strong><br>
-The agent formulates a step-by-step plan before acting, especially for complex or multi-step goals. Planning improves coherence and task success.</p></li>
-<li><p><strong>Multi-Agent Collaboration</strong><br>
-Multiple agents coordinate or divide tasks, either cooperatively or competitively, to solve problems more efficiently.</p></li>
+<li><strong>Reflection</strong>: Evaluate whether prior actions were successful and adjust reasoning.</li>
+<li><strong>Tool Use</strong>: Call external APIs or tools when internal knowledge isn’t enough.</li>
+<li><strong>Planning</strong>: Develop a task plan before execution, revising it as conditions change.</li>
+<li><strong>Multi-Agent Collaboration</strong>: Delegate tasks to specialized agents that share context and coordinate.</li>
 </ul>
-<p>These patterns are often used in combination to build more powerful, flexible, and context-aware AI systems.</p>
+<p>Most systems combine these patterns in production. For example, a fraud detection system might plan its workflow, use tools for verification, reflect on its risk score thresholds, and coordinate with agents handling customer outreach or compliance.</p>
 <hr>
 </section>
-<section id="real-world-use-cases" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Real-World Use Cases</h1>
-<p>Agentic AI is already transforming industries, delivering measurable benefits and enabling capabilities beyond traditional and generative AI. Below are illustrative examples and data showing how organizations are adopting and benefiting from these systems.</p>
-<section id="illustrative-example-loan-origination-operations" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="illustrative-example-loan-origination-operations"><span class="header-section-number">4.1</span> Illustrative Example: Loan Origination &amp; Operations</h2>
-<p>In financial services, agentic AI systems orchestrate the <strong>loan origination journey end-to-end</strong>, going beyond traditional AI workflows or generative AI insights. These agents: - Ingest real-time data from macroeconomic trends, customer behavior, regulatory changes, and sentiment analysis. - Assess creditworthiness, adjust pricing, recommend optimal product bundles, and flag anomalies for human review. - Collaborate with other agents in fraud detection, compliance, and capital allocation to optimize outcomes.</p>
-<p>In operations and customer service, agents dynamically rebalance workloads across call centers, resolve customer inquiries with contextual and emotionally intelligent responses, escalate only when human judgment is needed, and detect emerging patterns (e.g., loan performance divergence) before humans are even aware.</p>
-<p>In multiagent systems, a decentralized network of agents collaborate — one assessing creditworthiness, another modeling risk exposure, and a third ensuring compliance — working together to optimize customer journeys and manage trade-offs in real time.</p>
-<hr>
-</section>
-</section>
-<section id="key-risks" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Key Risks</h1>
-<p>With great autonomy comes greater responsibility—and risk.</p>
+<section id="where-agentic-ai-works-today" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Where Agentic AI Works Today</h1>
+<p>Agentic AI is already deployed in production settings:</p>
 <ul>
-<li><strong>Unintended Autonomy</strong>: Agents may act without proper oversight</li>
-<li><strong>Bias and Hallucinations</strong>: Decisions may be based on flawed or biased reasoning</li>
-<li><strong>Privacy Concerns</strong>: Tool-using agents must handle sensitive data with care</li>
-<li><strong>Brand Consistency</strong>: In customer contexts, inappropriate tone or overpersonalization can damage trust</li>
+<li><strong>Financial Services</strong>: End-to-end loan processing, fraud detection, portfolio rebalancing</li>
+<li><strong>Healthcare</strong>: Clinical documentation, treatment recommendations, patient monitoring</li>
+<li><strong>Software Development</strong>: Code review, bug triage, test generation, deployment automation</li>
+<li><strong>Customer Operations</strong>: Inquiry handling, escalation, proactive outreach, routing</li>
+<li><strong>Supply Chain</strong>: Inventory planning, vendor negotiation, route optimization</li>
+</ul>
+<section id="example-loan-origination-operations" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="example-loan-origination-operations"><span class="header-section-number">4.1</span> Example: Loan Origination &amp; Operations</h2>
+<ul>
+<li><strong>Data Integration</strong>: Real-time data from economic, behavioral, regulatory, and sentiment sources</li>
+<li><strong>Decision Support</strong>: Risk analysis, product bundling, anomaly detection</li>
+<li><strong>Operations Optimization</strong>: Load balancing, intelligent routing, early warning systems</li>
+<li><strong>Multi-Agent Coordination</strong>: Risk agents, pricing agents, compliance agents, communication agents working together</li>
 </ul>
 <hr>
 </section>
-<section id="risk-management-strategies" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Risk Management Strategies</h1>
-<ul>
-<li><strong>Bounded Autonomy</strong>: Define task scope and tool permissions</li>
-<li><strong>Human-in-the-loop</strong>: Require approvals for high-stakes decisions</li>
-<li><strong>Audit Trails</strong>: Log all agent actions for transparency and review</li>
-<li><strong>Brand &amp; Tone Governance</strong>: Use tone filters for customer-facing agents</li>
-<li><strong>Scenario Testing</strong>: Evaluate agent behavior in simulated environments</li>
-<li><strong>Collaborative Governance</strong>: Assign oversight responsibilities to cross-functional teams</li>
-</ul>
-<hr>
 </section>
-<section id="best-practices-for-implementation" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Best Practices for Implementation</h1>
-<p>From the <em>Agentic Artificial Intelligence</em> book: - Start with <strong>pilot programs</strong> in controlled environments - Use <strong>hybrid human–AI workflows</strong> to maintain oversight while leveraging automation - Scale gradually while building internal support through demonstrated success - Encourage agents and employees to learn from each other for continuous improvement</p>
-<hr>
-</section>
-<section id="references" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> References</h1>
+<section id="references" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> References</h1>
 <ol type="1">
 <li>Google Cloud. (2024). <a href="https://cloud.google.com/discover/what-are-ai-agents">What are AI agents?</a><br>
 </li>
