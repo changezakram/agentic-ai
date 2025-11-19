@@ -36,19 +36,20 @@ The core capabilities that distinguish these systems:
 
 # How Agentic AI Works
 
-An agentic system operates in a continuous cycle, not a single pass. Each component enables specific capabilities within that loop:
+An agentic system operates in a continuous loop of perception, reasoning, planning, action, and learning. Each component enables specific capabilities that allow the agent to interact with and adapt to its environment:
 
-- **Perceive** — Gather data from databases, APIs, document repositories, or user inputs; store relevant memory context.
-- **Reason** — Use LLMs or reasoning engines to evaluate the current state and determine best options.
-- **Plan** — Break complex objectives into tasks, sequence them, and identify dependencies.
-- **Act** — Call tools, APIs, or other systems to execute planned steps.
-- **Learn** — Capture outcomes and refine strategies over time.
+- **Perceive** — Gather data from databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
+- **Reason** — Use LLMs or reasoning engines to evaluate the current state, assess options, and determine the best next steps.
+- **Plan** — Break complex objectives into ordered steps, identify dependencies, and adjust plans as new information emerges.
+- **Act** — Use tool capabilities to execute tasks (e.g., calling APIs, retrieving data, running calculations).
+- **Learn** — Incorporate feedback from the environment to refine strategies and improve over time.
+
 
 ![Agent Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
 
 *Source: CS294/194-196: Agentic AI, UC Berkeley (2024)*
 
-This cycle runs continuously. For instance, a customer service agent may detect tone changes, shift strategies, pull additional context, and adjust language—all in real time.
+This cycle runs continuously. For instance, a customer service agent may detect tone changes, shift strategies, pull additional context, and adjust its language—all within a single interaction.
 
 ---
 
