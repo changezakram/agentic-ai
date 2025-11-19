@@ -42,6 +42,26 @@ This integrated view shows how the components are not separate modules, but enab
 
 ---
 
+# Agentic Design Patterns
+
+Agentic AI systems often rely on recurring patterns to act autonomously and effectively. Here are four foundational design patterns commonly used in agent-based architectures:
+
+- **Reflection**  
+  The agent evaluates its own past actions or decisions to improve future performance. This helps with error correction and adaptive behavior.
+
+- **Tool Use**  
+  The agent leverages external tools or APIs—such as calculators, databases, or search engines—to complete tasks it can’t perform internally.
+
+- **Planning**  
+  The agent formulates a step-by-step plan before acting, especially for complex or multi-step goals. Planning improves coherence and task success.
+
+- **Multi-Agent Collaboration**  
+  Multiple agents coordinate or divide tasks, either cooperatively or competitively, to solve problems more efficiently.
+
+These patterns are often used in combination to build more powerful, flexible, and context-aware AI systems.
+
+---
+
 # Real-World Use Cases
 
 Agentic AI is already transforming industries, delivering measurable benefits and enabling capabilities beyond traditional and generative AI. Below are illustrative examples and data showing how organizations are adopting and benefiting from these systems.
