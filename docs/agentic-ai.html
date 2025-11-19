@@ -281,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/agentic-ai-architecture.png" class="img-fluid figure-img"></p>
-<figcaption>Agent Architecture. <em>Source: CS294/194-196: Agentic AI, UC Berkeley (2024).</em></figcaption>
+<figcaption>Agentic AI Architecture. <em>Source: CS294/194-196: Agentic AI, UC Berkeley (2024).</em></figcaption>
 </figure>
 </div>
 <p><strong>Perceive</strong> — The agent gathers data from available sources: databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.</p>
@@ -296,12 +296,12 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="3"><span class="header-section-number">3</span> Agentic Design Patterns</h1>
 <p>Production-grade agentic systems rely on core design patterns:</p>
 <ul>
-<li><strong>Reflection</strong>: Evaluate whether prior actions were successful and adjust reasoning.</li>
-<li><strong>Tool Use</strong>: Call external APIs or tools when internal knowledge isn’t enough.</li>
-<li><strong>Planning</strong>: Develop a task plan before execution, revising it as conditions change.</li>
-<li><strong>Multi-Agent Collaboration</strong>: Delegate tasks to specialized agents that share context and coordinate.</li>
+<li><strong>Reflection</strong>: An agent that can’t critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach.</li>
+<li><strong>Tool Use</strong>: No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation. The agent decides when to use which tool based on the task requirements.</li>
+<li><strong>Planning</strong>: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates “following a script” from “solving a problem.”</li>
+<li><strong>Multi-Agent Collaboration</strong>: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.</li>
 </ul>
-<p>Most systems combine these patterns in production. For example, a fraud detection system might plan its workflow, use tools for verification, reflect on its risk score thresholds, and coordinate with agents handling customer outreach or compliance.</p>
+<p>Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.</p>
 <hr>
 </section>
 <section id="where-agentic-ai-works-today" class="level1" data-number="4">

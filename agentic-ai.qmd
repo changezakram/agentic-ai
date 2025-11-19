@@ -36,7 +36,7 @@ What makes this autonomy possible? Agentic systems combine several capabilities 
 
 Understanding what makes a system "agentic" is one thing. Seeing how it actually operates is another. Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. This isn't a one-time sequence. It's an ongoing loop that adapts as conditions change.
 
-![Agent Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
+![Agentic AI Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
 
 **Perceive** — The agent gathers data from available sources: databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
 
@@ -56,12 +56,12 @@ The cycle repeats continuously. A customer service agent might start with a stan
 
 Production-grade agentic systems rely on core design patterns:
 
-- **Reflection**: Evaluate whether prior actions were successful and adjust reasoning.
-- **Tool Use**: Call external APIs or tools when internal knowledge isn't enough.
-- **Planning**: Develop a task plan before execution, revising it as conditions change.
-- **Multi-Agent Collaboration**: Delegate tasks to specialized agents that share context and coordinate.
+- **Reflection**: An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach.
+- **Tool Use**: No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation. The agent decides when to use which tool based on the task requirements.
+- **Planning**: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates "following a script" from "solving a problem."
+- **Multi-Agent Collaboration**: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
-Most systems combine these patterns in production. For example, a fraud detection system might plan its workflow, use tools for verification, reflect on its risk score thresholds, and coordinate with agents handling customer outreach or compliance.
+Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.
 
 ---
 
