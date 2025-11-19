@@ -31,7 +31,7 @@ Google Cloud defines agentic AI as systems with **memory, planning, and tool-use
 
 ---
 
-## How Agentic AI Works
+# How Agentic AI Works
 
 Agentic AI follows a systematic process where each step is powered by key capabilities built into the system:
 
@@ -45,11 +45,11 @@ This integrated view shows how the components are not separate modules, but enab
 
 ---
 
-## Real-World Use Cases
+# Real-World Use Cases
 
 Agentic AI is already transforming industries, delivering measurable benefits and enabling capabilities beyond traditional and generative AI. Below are illustrative examples and data showing how organizations are adopting and benefiting from these systems.
 
-### Illustrative Example: Loan Origination & Operations
+## Illustrative Example: Loan Origination & Operations
 
 In financial services, agentic AI systems orchestrate the **loan origination journey end-to-end**, going beyond traditional AI workflows or generative AI insights. These agents:
 - Ingest real-time data from macroeconomic trends, customer behavior, regulatory changes, and sentiment analysis.
@@ -60,10 +60,9 @@ In operations and customer service, agents dynamically rebalance workloads acros
 
 In multiagent systems, a decentralized network of agents collaborate — one assessing creditworthiness, another modeling risk exposure, and a third ensuring compliance — working together to optimize customer journeys and manage trade-offs in real time.
 
-
 ---
 
-## Key Risks
+# Key Risks
 
 With great autonomy comes greater responsibility—and risk.
 
@@ -74,7 +73,7 @@ With great autonomy comes greater responsibility—and risk.
 
 ---
 
-## Risk Management Strategies
+# Risk Management Strategies
 
 - **Bounded Autonomy**: Define task scope and tool permissions
 - **Human-in-the-loop**: Require approvals for high-stakes decisions
@@ -85,7 +84,7 @@ With great autonomy comes greater responsibility—and risk.
 
 ---
 
-## Best Practices for Implementation
+# Best Practices for Implementation
 
 From the *Agentic Artificial Intelligence* book:
 - Start with **pilot programs** in controlled environments
@@ -95,10 +94,7 @@ From the *Agentic Artificial Intelligence* book:
 
 ---
 
-
----
-
-## References
+# References
 
 1. Google Cloud. (2024). [What are AI agents?](https://cloud.google.com/discover/what-are-ai-agents)  
 2. IBM Think. (2024). [What is Agentic AI?](https://www.ibm.com/think/topics/agentic-ai)  
