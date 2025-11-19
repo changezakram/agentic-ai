@@ -32,7 +32,6 @@ The core capabilities that distinguish these systems:
 | Generative AI     | Creates content (text, images, code) based on learned patterns | Reactive: requires explicit prompts for each step          |
 | Agentic AI        | Pursues goals through multi-step planning and decision-making  | Requires oversight to prevent unintended autonomous actions |
 
-
 ---
 
 # How Agentic AI Works
@@ -44,6 +43,10 @@ An agentic system operates in a continuous cycle, not a single pass. Each compon
 - **Plan** — Break complex objectives into tasks, sequence them, and identify dependencies.
 - **Act** — Call tools, APIs, or other systems to execute planned steps.
 - **Learn** — Capture outcomes and refine strategies over time.
+
+![Agent Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
+
+*Source: CS294/194-196: Agentic AI, UC Berkeley (2024)*
 
 This cycle runs continuously. For instance, a customer service agent may detect tone changes, shift strategies, pull additional context, and adjust language—all in real time.
 
