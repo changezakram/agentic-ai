@@ -36,6 +36,8 @@ What makes this autonomy possible? Agentic systems combine several capabilities 
 
 Understanding what makes a system "agentic" is one thing. Seeing how it actually operates is another. Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. This isn't a one-time sequence. It's an ongoing loop that adapts as conditions change.
 
+![Agent Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
+
 **Perceive** — The agent gathers data from available sources: databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
 
 **Reason** — A reasoning engine (typically a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. This isn't simple pattern matching—it involves weighing tradeoffs, anticipating consequences, and selecting strategies.
@@ -47,13 +49,6 @@ Understanding what makes a system "agentic" is one thing. Seeing how it actually
 **Learn** — Feedback loops capture outcomes and adjust future behavior. If a particular sequence of checks consistently flags false positives, the system refines its approach. If certain customer segments respond better to specific communication timing, the agent adapts its strategy.
 
 The cycle repeats continuously. A customer service agent might start with a standard response template, detect frustration in the customer's reply, shift to a different communication strategy, pull additional account context, and adjust its tone—all within a single conversation thread. Each iteration informs the next.
-
-
-![Agent Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
-
-*Source: CS294/194-196: Agentic AI, UC Berkeley (2024)*
-
-This cycle runs continuously. For instance, a customer service agent may detect tone changes, shift strategies, pull additional context, and adjust its language—all within a single interaction.
 
 ---
 
