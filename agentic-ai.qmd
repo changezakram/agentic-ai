@@ -15,8 +15,6 @@ This shift from reactive to proactive intelligence changes how organizations can
 
 Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don't just respond to commands—they pursue objectives.
 
-Ask a generative AI system to "help with loan processing" and you'll get advice, templates, or summaries. Give an agentic system the same objective and it will actually process loans: pulling applicant data, running credit checks, calculating risk scores, checking compliance requirements, and flagging exceptions for human review. One provides information. The other completes work.
-
 This difference matters because it changes what you can delegate to AI. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.
 
 > Consider how a loan application moves through a bank. A traditional system routes the application through fixed decision points. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn't just scale. It's whether the system can navigate complexity without constant human intervention.
