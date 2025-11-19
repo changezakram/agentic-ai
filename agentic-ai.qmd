@@ -6,21 +6,18 @@ format: html
 
 # Introduction
 
-Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting developments is the emergence of **Agentic AI**. Unlike traditional AI systems that simply respond to input, Agentic AI systems can reason, plan, act, and adapt autonomously. This blog post will walk you through the basics of Agentic AI—what it is, how it works, how it differs from other AI approaches, and why it matters.
+Artificial Intelligence (AI) is evolving rapidly, and one of the most exciting developments is the emergence of Agentic AI. Unlike traditional AI systems that simply respond to input, Agentic AI systems can reason, plan, act, and adapt autonomously. This blog post will walk you through the basics of Agentic AI—what it is, how it works, how it differs from other AI approaches, and why it matters.
 
 ---
 
 ## What Is Agentic AI?
 
-**Agentic AI** refers to intelligent systems that act with **intent, autonomy, and adaptability** to achieve defined goals. Unlike traditional AI, these agents not only respond to commands but also plan, decide, and act proactively — often without step-by-step human direction.
+**Agentic AI** refers to intelligent systems that act with intent, autonomy, and adaptability to achieve defined goals. Unlike traditional AI, these agents not only respond to commands but also plan, decide, and act proactively — often without step-by-step human direction.
 
-They can perceive their environment, break down complex objectives into manageable tasks, interact with tools and APIs, and adapt their behavior based on feedback and context. In essence, they function as **proactive collaborators**, not just reactive assistants.
+They can perceive their environment, break down complex objectives into manageable tasks, interact with tools and APIs, and adapt their behavior based on feedback and context. In essence, they function as proactive collaborators, not just reactive assistants.
 
-Google Cloud defines agentic AI as systems with **memory, planning, and tool-use capabilities**, operating in dynamic feedback loops. IBM and McKinsey emphasize their role as **organizational actors** — capable of taking initiative, making decisions aligned with goals, and integrating seamlessly with human teams.
+Google Cloud defines agentic AI as systems with memory, planning, and tool-use capabilities, operating in dynamic feedback loops. IBM and McKinsey emphasize their role as organizational actors — capable of taking initiative, making decisions aligned with goals, and integrating seamlessly with human teams.
 
----
-
-## How It Differs From Traditional and Generative AI
 
 | **AI Type**       | **Behavior**                               | **Limitation**                         |
 |--------------------|--------------------------------------------|----------------------------------------|
