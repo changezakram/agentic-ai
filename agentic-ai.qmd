@@ -70,6 +70,8 @@ Production-grade agentic systems rely on four core design patterns:
 
 - **Multi-Agent Collaboration**: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
+![Multi-Agent Pattern Pattern.](images/multi-agent-pattern.png)
+
 Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.
 
 ---
