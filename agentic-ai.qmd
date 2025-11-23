@@ -54,7 +54,7 @@ The cycle repeats continuously. A customer service agent might start with a stan
 
 Production-grade agentic systems rely on four core design patterns:
 
-![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/patterns.png)
+![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
 
 - **Reflection**: An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach.
 
