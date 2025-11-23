@@ -66,7 +66,7 @@ Production-grade agentic systems rely on four core design patterns:
 
 - **Planning**: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates "following a script" from "solving a problem."
 
-![Planning Pattern.](images/planning-pattern.png)
+![Planning Pattern.](images/PlanningPattern.png)
 
 - **Multi-Agent Collaboration**: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
