@@ -32,58 +32,77 @@ Agentic systems combine several capabilities that earlier AI generations handled
 
 # How Agentic AI Works
 
-Understanding what makes a system "agentic" is one thing. Seeing how it actually operates is another. Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. This isn't a one-time sequence. It's an ongoing loop that adapts as conditions change.
+Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. The cycle never stops. It adapts as conditions change.
 
 ![Agentic AI Architecture](images/AI-Agents-Architecture.png)
 
 **Perceive** — The agent gathers data from available sources: databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
 
-**Reason** — A reasoning engine (typically a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. This isn't simple pattern matching—it involves weighing tradeoffs, anticipating consequences, and selecting strategies.
+**Reason** — A reasoning engine (typically a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. It weighs tradeoffs, anticipates consequences, and selects strategies.
 
-**Plan** — The planner breaks complex objectives into discrete tasks, sequences them logically, and identifies dependencies. Consider a loan approval goal. The agent might plan to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one, and the agent adjusts the sequence if something fails.
+**Plan** — The planner breaks complex objectives into discrete tasks, sequences them logically, and identifies dependencies. For a loan approval goal, the agent might plan to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one, and the agent adjusts the sequence if something fails.
 
 **Act** — Tool-use capabilities let the agent execute planned tasks by interacting with external systems. It might call an identity verification API, query a credit bureau database, run a calculation, update a CRM record, or send a notification. The agent chooses which tools to use based on what each step requires.
 
 **Learn** — Feedback loops capture outcomes and adjust future behavior. If a particular sequence of checks consistently flags false positives, the system refines its approach. If certain customer segments respond better to specific communication timing, the agent adapts its strategy.
 
-The cycle repeats continuously. A customer service agent might start with a standard response template, detect frustration in the customer's reply, shift to a different communication strategy, pull additional account context, and adjust its tone—all within a single conversation thread. Each iteration informs the next.
+Each interaction informs the next. A customer service agent might start with a standard response template, detect frustration in the customer's reply, shift to a different communication strategy, pull additional account context, and adjust its tone—all within a single conversation thread.
+
+> These capabilities—perception, reasoning, planning, action, learning—don't work in isolation. They're orchestrated through specific design patterns.
 
 ---
 
 # Agentic Design Patterns
 
-Production-grade agentic systems rely on four core design patterns:
+Agentic systems rely on four core design patterns. Each solves a different problem, and real systems combine them.
 
 ![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
 
-- **Reflection**: An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach.
+**Reflection**:     
+An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach. Without reflection, agents repeat mistakes. With it, they improve with each iteration.
 
 ![Reflection Pattern.](images/reflection-pattern.png)
 
-- **Tool Use**: No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation. The agent decides when to use which tool based on the task requirements.
+**Tool Use**:     
+No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.
 
 ![Tool Use Pattern.](images/tooluse-pattern.png)
 
-- **Planning**: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates "following a script" from "solving a problem."
+The agent decides when to use which tool based on task requirements. This is how agents break free from their training data limitations—they reach out to the world for help.
+
+
+**Planning**:     
+Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.
 
 ![Planning Pattern.](images/PlanningPattern.png)
 
-- **Multi-Agent Collaboration**: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
+This separates "following a script" from "solving a problem." The agent doesn't just execute steps—it understands why each step matters and what to do when plans fall apart.
+
+
+- **Multi-Agent Collaboration**:    
+Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
 ![Multi-Agent Pattern Pattern.](images/multi-agent-pattern.png)
 
-Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.
+> Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.
+
 
 ---
 
 # Where Agentic AI Works Today
 Agentic AI is already deployed in production settings:
 
-- **Financial Services**: End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation
-- **Healthcare**: Clinical documentation, treatment protocol recommendations, patient monitoring, insurance claims processing, and appointment optimization
-- **Software Development**: Code generation and review, bug diagnosis, test case creation, dependency management, and deployment automation
-- **Customer Operations**: Inquiry resolution, escalation routing, sentiment analysis, proactive outreach, and workload balancing across support teams
-- **Supply Chain**: Demand forecasting, inventory optimization, route planning, vendor negotiation support, and disruption response
+**Financial Services** — End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation. Banks are using agents to handle tasks that previously required multiple specialists coordinating across systems.
+
+**Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, insurance claims processing, and appointment optimization. Agents help clinicians spend less time on paperwork and more time with patients.
+
+**Software Development** — Code generation and review, bug diagnosis, test case creation, dependency management, and deployment automation. Development teams use agents to handle routine coding tasks while they focus on architecture and product decisions.
+
+**Customer Operations** — Inquiry resolution, escalation routing, sentiment analysis, proactive outreach, and workload balancing across support teams. Agents handle tier-1 support while humans focus on complex cases requiring judgment and empathy.
+
+**Supply Chain** — Demand forecasting, inventory optimization, route planning, vendor negotiation support, and disruption response. Agents monitor thousands of variables and adjust plans as conditions change.
+
+The pattern across industries: agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
 
 ---
 
