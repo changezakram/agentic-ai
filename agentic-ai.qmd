@@ -54,6 +54,8 @@ The cycle repeats continuously. A customer service agent might start with a stan
 
 Production-grade agentic systems rely on core design patterns:
 
+![Agentic AI Patterns](images/agentic-ai-pattern.png)
+
 - **Reflection**: An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach.
 - **Tool Use**: No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation. The agent decides when to use which tool based on the task requirements.
 - **Planning**: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates "following a script" from "solving a problem."
