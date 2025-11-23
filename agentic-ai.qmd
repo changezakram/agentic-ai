@@ -52,7 +52,7 @@ The cycle repeats continuously. A customer service agent might start with a stan
 
 # Agentic Design Patterns
 
-Production-grade agentic systems rely on core design patterns:
+Production-grade agentic systems rely on four core design patterns:
 
 ![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/agentic-pattern.png)
 
