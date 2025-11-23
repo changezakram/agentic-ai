@@ -34,7 +34,7 @@ What makes this autonomy possible? Agentic systems combine several capabilities 
 
 Understanding what makes a system "agentic" is one thing. Seeing how it actually operates is another. Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. This isn't a one-time sequence. It's an ongoing loop that adapts as conditions change.
 
-![Agentic AI Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-ai-architecture.png)
+![Agentic AI Architecture. *Source: CS294/194-196: Agentic AI, UC Berkeley (2024).*](images/agentic-architecture.png)
 
 **Perceive** — The agent gathers data from available sources: databases, APIs, document repositories, sensor feeds, or user inputs. Memory systems store relevant context from prior interactions and decisions.
 
