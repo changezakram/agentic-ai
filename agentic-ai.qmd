@@ -61,6 +61,9 @@ Production-grade agentic systems rely on four core design patterns:
 ![Reflection Pattern.](images/reflection-pattern.png)
 
 - **Tool Use**: No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation. The agent decides when to use which tool based on the task requirements.
+
+![Tool Use Pattern.](images/tool-use-pattern.png)
+
 - **Planning**: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates "following a script" from "solving a problem."
 - **Multi-Agent Collaboration**: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
