@@ -102,7 +102,9 @@ Agentic AI is already deployed in production settings:
 
 **Supply Chain** — Demand forecasting, inventory optimization, route planning, vendor negotiation support, and disruption response. Agents monitor thousands of variables and adjust plans as conditions change.
 
-The pattern across industries: agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
+# Conclusion
+
+Agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
 
 ---
 
