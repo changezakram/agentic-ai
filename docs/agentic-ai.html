@@ -317,6 +317,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <ul>
 <li><strong>Planning</strong>: Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available. This is what separates “following a script” from “solving a problem.”</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/planning-pattern.png" class="img-fluid figure-img"></p>
+<figcaption>Planning Pattern.</figcaption>
+</figure>
+</div>
+<ul>
 <li><strong>Multi-Agent Collaboration</strong>: Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.</li>
 </ul>
 <p>Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.</p>
