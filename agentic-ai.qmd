@@ -79,7 +79,7 @@ Multi-step goals need structure. Before acting, effective agents map out the req
 This separates "following a script" from "solving a problem." The agent doesn't just execute steps—it understands why each step matters and what to do when plans fall apart.
 
 
-- **Multi-Agent Collaboration**:    
+**Multi-Agent Collaboration**:     
 Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
 ![Multi-Agent Pattern Pattern.](images/multi-agent-pattern.png)
