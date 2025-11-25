@@ -195,4 +195,4 @@ Agents handle structured complexity while humans handle judgment calls. As these
  
 [5] Microsoft. (2025). Fujitsu is revolutionizing sales efficiency with Azure AI Agent Service. https://www.microsoft.com/en/customers/story/21885-fujitsu-azure-ai-foundry
 
-[8] Microsoft. (2025). Agent Factory: The new era of agentic AI—common use cases and design patterns. https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/
+[6] Microsoft. (2025). Agent Factory: The new era of agentic AI—common use cases and design patterns. https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/
