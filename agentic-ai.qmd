@@ -118,6 +118,34 @@ A fraud investigation agent might flag suspicious transactions, gather supportin
 
 **Real systems combine patterns:** A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.
 
+
+
+
+# Choosing the Right Pattern
+
+Not every problem needs full autonomy. Here's how to decide:
+
+## Quick Selection Guide
+
+| **Your Situation**                                   | **Use This Pattern**                   |
+|------------------------------------------------------|----------------------------------------|
+| Predictable multi-step workflow                      | Planning + Tool Use                    |
+| High-stakes decision requiring approval              | Planning + Human in Loop               |
+| Customer service with varied requests                | Routing + Tool Use                     |
+| Investigation where each step reveals next action    | ReAct + Tool Use                       |
+| Output needs quality control                         | Add Reflection                         |
+| Requires specialized expertise                       | Multi-Agent (use sparingly)           |
+
+## Banking Essentials  
+**Always include:**
+
+- **Human in Loop** for loan approvals, fraud confirmations, or any decision affecting customer finances  
+- **Reflection** for regulatory reports and compliance documents  
+- **Audit trails** for all agent decisions (regulatory requirement)  
+
+> **Start Simple: ** Begin with the simplest pattern that might work. Add complexity only when you have clear evidence it's needed. Multi-agent systems can require analyzing 10–50+ LLM calls to debug a single failure. Start with Planning or Routing, add patterns as needed.
+
+
 ---
 
 # Where Agentic AI Works Today

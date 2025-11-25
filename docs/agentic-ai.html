@@ -204,9 +204,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#multi-agent-collaboration" id="toc-multi-agent-collaboration" class="nav-link" data-scroll-target="#multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration:</a></li>
   <li><a href="#human-in-the-loop" id="toc-human-in-the-loop" class="nav-link" data-scroll-target="#human-in-the-loop"><span class="header-section-number">3.5</span> Human in the Loop:</a></li>
   </ul></li>
-  <li><a href="#where-agentic-ai-works-today" id="toc-where-agentic-ai-works-today" class="nav-link" data-scroll-target="#where-agentic-ai-works-today"><span class="header-section-number">4</span> Where Agentic AI Works Today</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  <li><a href="#choosing-the-right-pattern" id="toc-choosing-the-right-pattern" class="nav-link" data-scroll-target="#choosing-the-right-pattern"><span class="header-section-number">4</span> Choosing the Right Pattern</a>
+  <ul class="collapse">
+  <li><a href="#quick-selection-guide" id="toc-quick-selection-guide" class="nav-link" data-scroll-target="#quick-selection-guide"><span class="header-section-number">4.1</span> Quick Selection Guide</a></li>
+  <li><a href="#banking-essentials" id="toc-banking-essentials" class="nav-link" data-scroll-target="#banking-essentials"><span class="header-section-number">4.2</span> Banking Essentials</a></li>
+  </ul></li>
+  <li><a href="#where-agentic-ai-works-today" id="toc-where-agentic-ai-works-today" class="nav-link" data-scroll-target="#where-agentic-ai-works-today"><span class="header-section-number">5</span> Where Agentic AI Works Today</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">6</span> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -382,11 +387,70 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Why this matters:</strong> This pattern is essential for responsible AI deployment in banking. It maintains regulatory compliance, preserves human accountability, and prevents the reputational damage that comes from automated decisions affecting customers’ financial lives. It’s not just best practice—it’s often legally required.</p>
 </blockquote>
 <p><strong>Real systems combine patterns:</strong> A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.</p>
+</section>
+</section>
+<section id="choosing-the-right-pattern" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Choosing the Right Pattern</h1>
+<p>Not every problem needs full autonomy. Here’s how to decide:</p>
+<section id="quick-selection-guide" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="quick-selection-guide"><span class="header-section-number">4.1</span> Quick Selection Guide</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 57%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Your Situation</strong></th>
+<th><strong>Use This Pattern</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Predictable multi-step workflow</td>
+<td>Planning + Tool Use</td>
+</tr>
+<tr class="even">
+<td>High-stakes decision requiring approval</td>
+<td>Planning + Human in Loop</td>
+</tr>
+<tr class="odd">
+<td>Customer service with varied requests</td>
+<td>Routing + Tool Use</td>
+</tr>
+<tr class="even">
+<td>Investigation where each step reveals next action</td>
+<td>ReAct + Tool Use</td>
+</tr>
+<tr class="odd">
+<td>Output needs quality control</td>
+<td>Add Reflection</td>
+</tr>
+<tr class="even">
+<td>Requires specialized expertise</td>
+<td>Multi-Agent (use sparingly)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="banking-essentials" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="banking-essentials"><span class="header-section-number">4.2</span> Banking Essentials</h2>
+<p><strong>Always include:</strong></p>
+<ul>
+<li><strong>Human in Loop</strong> for loan approvals, fraud confirmations, or any decision affecting customer finances<br>
+</li>
+<li><strong>Reflection</strong> for regulatory reports and compliance documents<br>
+</li>
+<li><strong>Audit trails</strong> for all agent decisions (regulatory requirement)</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Start Simple: </strong> Begin with the simplest pattern that might work. Add complexity only when you have clear evidence it’s needed. Multi-agent systems can require analyzing 10–50+ LLM calls to debug a single failure. Start with Planning or Routing, add patterns as needed.</p>
+</blockquote>
 <hr>
 </section>
 </section>
-<section id="where-agentic-ai-works-today" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Where Agentic AI Works Today</h1>
+<section id="where-agentic-ai-works-today" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Where Agentic AI Works Today</h1>
 <p>Agentic AI is already deployed in production settings:</p>
 <p><strong>Financial Services</strong> — End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation. Banks are using agents to handle tasks that previously required multiple specialists coordinating across systems.</p>
 <p><strong>Healthcare</strong> — Clinical documentation, treatment protocol recommendations, patient monitoring, insurance claims processing, and appointment optimization. Agents help clinicians spend less time on paperwork and more time with patients.</p>
@@ -394,13 +458,13 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Customer Operations</strong> — Inquiry resolution, escalation routing, sentiment analysis, proactive outreach, and workload balancing across support teams. Agents handle tier-1 support while humans focus on complex cases requiring judgment and empathy.</p>
 <p><strong>Supply Chain</strong> — Demand forecasting, inventory optimization, route planning, vendor negotiation support, and disruption response. Agents monitor thousands of variables and adjust plans as conditions change.</p>
 </section>
-<section id="conclusion" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
+<section id="conclusion" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Conclusion</h1>
 <p>Agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.</p>
 <hr>
 </section>
-<section id="references" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<section id="references" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> References</h1>
 <ol type="1">
 <li>Google Cloud. (2024). <a href="https://cloud.google.com/discover/what-are-ai-agents">What are AI agents?</a><br>
 </li>
