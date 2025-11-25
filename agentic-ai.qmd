@@ -58,7 +58,7 @@ Agentic systems rely on four core design patterns. Each solves a different probl
 
 ![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
 
-**Reflection**:     
+## Reflection:     
 An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. 
 
 **Best for:** Tasks where you need to check and improve quality before delivery. Works well for regulatory reports, customer communications, and compliance documents that have clear quality standards.
@@ -69,7 +69,7 @@ A customer service agent might review its drafted response for tone, clarity, an
 
 > **Why this matters:** Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires.
 
-**Tool Use**:     
+## Tool Use:     
 No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.
 
 ![**Figure:** A loan processing agent orchestrates multiple systems—pulling credit data, checking fraud indicators, and updating core banking—without human coordination.](images/tooluse-pattern.png)
@@ -77,7 +77,7 @@ No model knows everything or can do everything internally. Tool integration exte
 The agent decides when to use which tool based on task requirements. This is how agents break free from their training data limitations—they reach out to the world for help.
 
 
-**Planning**:     
+## Planning:     
 Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn't just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.
 
 ![**Figure:** Agents don't just follow scripts—they create plans, execute tasks, evaluate results, and adapt when goals aren't met.](images/PlanningPattern.png)
@@ -85,7 +85,7 @@ Multi-step goals need structure. Before acting, effective agents map out the req
 This separates "following a script" from "solving a problem." The agent doesn't just execute steps—it understands why each step matters and what to do when plans fall apart.
 
 
-**Multi-Agent Collaboration**:     
+## Multi-Agent Collaboration:     
 Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.
 
 ![**Figure:** Complex tasks require specialization. A supervisor agent coordinates specialist agents (market research, content creation, project management) toward a shared objective.](images/multi-agent-pattern.png)

@@ -196,7 +196,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-is-agentic-ai" id="toc-what-is-agentic-ai" class="nav-link" data-scroll-target="#what-is-agentic-ai"><span class="header-section-number">1.1</span> What Is Agentic AI?</a></li>
   </ul></li>
   <li><a href="#how-agentic-ai-works" id="toc-how-agentic-ai-works" class="nav-link" data-scroll-target="#how-agentic-ai-works"><span class="header-section-number">2</span> How Agentic AI Works</a></li>
-  <li><a href="#agentic-design-patterns" id="toc-agentic-design-patterns" class="nav-link" data-scroll-target="#agentic-design-patterns"><span class="header-section-number">3</span> Agentic Design Patterns</a></li>
+  <li><a href="#agentic-design-patterns" id="toc-agentic-design-patterns" class="nav-link" data-scroll-target="#agentic-design-patterns"><span class="header-section-number">3</span> Agentic Design Patterns</a>
+  <ul class="collapse">
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.1</span> Reflection:</a></li>
+  <li><a href="#tool-use" id="toc-tool-use" class="nav-link" data-scroll-target="#tool-use"><span class="header-section-number">3.2</span> Tool Use:</a></li>
+  <li><a href="#planning" id="toc-planning" class="nav-link" data-scroll-target="#planning"><span class="header-section-number">3.3</span> Planning:</a></li>
+  <li><a href="#multi-agent-collaboration" id="toc-multi-agent-collaboration" class="nav-link" data-scroll-target="#multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration:</a></li>
+  </ul></li>
   <li><a href="#where-agentic-ai-works-today" id="toc-where-agentic-ai-works-today" class="nav-link" data-scroll-target="#where-agentic-ai-works-today"><span class="header-section-number">4</span> Where Agentic AI Works Today</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
@@ -301,8 +307,9 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.</figcaption>
 </figure>
 </div>
-<p><strong>Reflection</strong>:<br>
-An agent that can’t critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course.</p>
+<section id="reflection" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.1</span> Reflection:</h2>
+<p>An agent that can’t critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course.</p>
 <p><strong>Best for:</strong> Tasks where you need to check and improve quality before delivery. Works well for regulatory reports, customer communications, and compliance documents that have clear quality standards.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -314,8 +321,10 @@ An agent that can’t critique its own output is just automation with extra step
 <blockquote class="blockquote">
 <p><strong>Why this matters:</strong> Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires.</p>
 </blockquote>
-<p><strong>Tool Use</strong>:<br>
-No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.</p>
+</section>
+<section id="tool-use" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="tool-use"><span class="header-section-number">3.2</span> Tool Use:</h2>
+<p>No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/tooluse-pattern.png" class="img-fluid figure-img"></p>
@@ -323,8 +332,10 @@ No model knows everything or can do everything internally. Tool integration exte
 </figure>
 </div>
 <p>The agent decides when to use which tool based on task requirements. This is how agents break free from their training data limitations—they reach out to the world for help.</p>
-<p><strong>Planning</strong>:<br>
-Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.</p>
+</section>
+<section id="planning" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="planning"><span class="header-section-number">3.3</span> Planning:</h2>
+<p>Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/PlanningPattern.png" class="img-fluid figure-img"></p>
@@ -332,8 +343,10 @@ Multi-step goals need structure. Before acting, effective agents map out the req
 </figure>
 </div>
 <p>This separates “following a script” from “solving a problem.” The agent doesn’t just execute steps—it understands why each step matters and what to do when plans fall apart.</p>
-<p><strong>Multi-Agent Collaboration</strong>:<br>
-Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.</p>
+</section>
+<section id="multi-agent-collaboration" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration:</h2>
+<p>Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/multi-agent-pattern.png" class="img-fluid figure-img"></p>
@@ -344,6 +357,7 @@ Complex problems often exceed what a single agent can handle efficiently. Multi-
 <p>Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.</p>
 </blockquote>
 <hr>
+</section>
 </section>
 <section id="where-agentic-ai-works-today" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Where Agentic AI Works Today</h1>

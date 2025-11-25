@@ -75,5 +75,33 @@
     "title": "Agentic AI",
     "section": "",
     "text": "Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don’t just respond to commands—they pursue objectives.\nHere’s why this matters: it changes what you can delegate to AI. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.\n\nConsider how a loan application moves through a bank. A traditional system routes applications through fixed decision points. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn’t just scale. It’s whether the system can navigate complexity without constant human intervention.\n\n\n\n\n\n\n\n\n\nAI Type\nWhat It Does\nKey Limitation\n\n\n\n\nTraditional AI\nExecutes predefined rules or predictions from trained models\nCan’t adapt to tasks outside its training scope\n\n\nGenerative AI\nCreates content (text, images, code) based on learned patterns\nReactive: requires explicit prompts for each step\n\n\nAgentic AI\nPursues goals through multi-step planning and decision-making\nRequires oversight to prevent unintended autonomous actions\n\n\n\nAgentic systems combine several capabilities that earlier AI generations handled separately or not at all: maintaining context across interactions (memory), breaking complex goals into subtasks (planning), accessing external tools and data sources (tool use), and improving based on outcomes (learning)."
+  },
+  {
+    "objectID": "agentic-ai.html#reflection",
+    "href": "agentic-ai.html#reflection",
+    "title": "Agentic AI",
+    "section": "3.1 Reflection:",
+    "text": "3.1 Reflection:\nAn agent that can’t critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course.\nBest for: Tasks where you need to check and improve quality before delivery. Works well for regulatory reports, customer communications, and compliance documents that have clear quality standards.\n\n\n\nFigure: Reflection lets agents critique and improve their own output before delivering results—turning potential errors into learning opportunities.\n\n\nA customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A credit analysis agent might validate whether its risk assessment considered all required factors and whether calculations are correct. Each iteration catches errors that would otherwise reach customers or regulators.\n\nWhy this matters: Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires."
+  },
+  {
+    "objectID": "agentic-ai.html#tool-use",
+    "href": "agentic-ai.html#tool-use",
+    "title": "Agentic AI",
+    "section": "3.2 Tool Use:",
+    "text": "3.2 Tool Use:\nNo model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.\n\n\n\nFigure: A loan processing agent orchestrates multiple systems—pulling credit data, checking fraud indicators, and updating core banking—without human coordination.\n\n\nThe agent decides when to use which tool based on task requirements. This is how agents break free from their training data limitations—they reach out to the world for help."
+  },
+  {
+    "objectID": "agentic-ai.html#planning",
+    "href": "agentic-ai.html#planning",
+    "title": "Agentic AI",
+    "section": "3.3 Planning:",
+    "text": "3.3 Planning:\nMulti-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.\n\n\n\nFigure: Agents don’t just follow scripts—they create plans, execute tasks, evaluate results, and adapt when goals aren’t met.\n\n\nThis separates “following a script” from “solving a problem.” The agent doesn’t just execute steps—it understands why each step matters and what to do when plans fall apart."
+  },
+  {
+    "objectID": "agentic-ai.html#multi-agent-collaboration",
+    "href": "agentic-ai.html#multi-agent-collaboration",
+    "title": "Agentic AI",
+    "section": "3.4 Multi-Agent Collaboration:",
+    "text": "3.4 Multi-Agent Collaboration:\nComplex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.\n\n\n\nFigure: Complex tasks require specialization. A supervisor agent coordinates specialist agents (market research, content creation, project management) toward a shared objective.\n\n\n\nMost production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems."
   }
 ]
