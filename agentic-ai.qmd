@@ -54,7 +54,7 @@ Each interaction informs the next. A customer service agent might start with a s
 
 # Agentic Design Patterns
 
-Agentic systems rely on four core design patterns. Each solves a different problem, and real systems combine them.
+Agentic systems rely on core design patterns. Each solves a different problem, and real systems combine them.
 
 ![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
 
@@ -107,6 +107,9 @@ Complex problems often exceed what a single agent can handle efficiently. Multi-
 For high-stakes decisions, full automation isn't always appropriate—or legal. Human-in-the-loop architectures let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving significant efficiency gains.
 
 **Best for:** High-stakes decisions where errors have serious consequences or regulatory requirements mandate human oversight. Essential when accountability must rest with humans, not algorithms.
+
+![**Figure:** Agents analyze and recommend, humans review and approve at critical decision points, maintaining accountability while gaining efficiency.](images/human-in-loop.png)
+
 
 Required in banking: Loan approvals, credit limit increases, account closures, fraud confirmations, compliance violations—any decision that significantly affects a customer's financial life or triggers regulatory scrutiny. A loan underwriting agent might analyze credit history, calculate risk scores, evaluate debt-to-income ratios, check compliance requirements, and recommend approval terms with detailed reasoning. But a human underwriter reviews the analysis and makes the final decision. The agent handles the time-consuming analysis across multiple data sources; the human applies judgment, considers context the model might miss, and takes responsibility for the outcome.
 A fraud investigation agent might flag suspicious transactions, gather supporting evidence from multiple systems, analyze patterns against known fraud schemes, and calculate confidence scores. But a human fraud analyst reviews the evidence, considers customer context, and makes the final determination to block transactions or contact the customer. The agent accelerates investigation; the human prevents false positives that damage customer relationships.
