@@ -151,16 +151,15 @@ Not every problem needs full autonomy. Here's how to decide:
 # Where Agentic AI Works Today
 Agentic AI is already deployed in production settings:
 
-**Financial Services** — End-to-end loan processing, fraud detection, regulatory compliance monitoring, and customer service automation. Early adopters report **60-80% time savings** in routine workflows and significant cost reductions in manual coordination tasks. 
+**Financial Services** — End-to-end loan processing, fraud detection, regulatory compliance monitoring, and customer service automation. Early adopters report 60-80% time savings in routine workflows and significant cost reductions in manual coordination tasks. 
 
-**Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, and insurance claims processing. Organizations report **67% reduction** in documentation time and **80% automation** of routine claims processing, with some incident investigations processed for **less than $1 per incident**.
+**Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, and insurance claims processing. Organizations report 67% reduction** in documentation time and 80% automation of routine claims processing, with some incident investigations processed for **less than $1 per incident.
 
-**Software Development** — Code generation and review, bug diagnosis, test case creation, and deployment automation. Development teams report **60% reduction** in QA time and requirements design cycles dropping from **weeks to days**.
+**Software Development** — Code generation and review, bug diagnosis, test case creation, and deployment automation. Development teams report 60% reduction** in QA time and requirements design cycles dropping from **weeks to days.
 
 **Customer Operations** — Inquiry resolution, escalation routing, sentiment analysis, and proactive outreach. Agents handle tier-1 support while humans focus on complex cases requiring judgment and empathy.
 
-
-> **The pattern across industries:** agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
+> Agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
 
 
 # Conclusion
