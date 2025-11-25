@@ -324,29 +324,38 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tool-use" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="tool-use"><span class="header-section-number">3.2</span> Tool Use:</h2>
-<p>No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.</p>
+<p>No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: credit bureaus for credit checks, fraud detection APIs for risk assessment, core banking systems for account data, and specialized databases for compliance rules.</p>
+<p><strong>Best for:</strong> Tasks requiring access to external systems, current information, or specialized capabilities beyond the LLM’s training. Essential when agents need to bridge the gap between reasoning and real-world action.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/tooluse-pattern.png" class="img-fluid figure-img"></p>
 <figcaption><strong>Figure:</strong> A loan processing agent orchestrates multiple systems—pulling credit data, checking fraud indicators, and updating core banking—without human coordination.</figcaption>
 </figure>
 </div>
-<p>The agent decides when to use which tool based on task requirements. This is how agents break free from their training data limitations—they reach out to the world for help.</p>
+<p>The agent decides when to use which tool based on task requirements. A loan processing agent might call a credit bureau for credit history, query a fraud detection system for risk indicators, check compliance databases for regulatory requirements, and update the core banking system with the decision—all without human coordination at each step.</p>
+<blockquote class="blockquote">
+<p><strong>Why this matters:</strong> Tool use is how agents break free from their training data limitations and interact with the real systems that run your business.</p>
+</blockquote>
 </section>
 <section id="planning" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="planning"><span class="header-section-number">3.3</span> Planning:</h2>
 <p>Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.</p>
+<p><strong>Best for:</strong> Complex, multi-step processes with dependencies where the path to completion can be mapped upfront. Most effective for predictable workflows that follow a logical sequence but may need adaptive replanning when steps fail.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/PlanningPattern.png" class="img-fluid figure-img"></p>
 <figcaption><strong>Figure:</strong> Agents don’t just follow scripts—they create plans, execute tasks, evaluate results, and adapt when goals aren’t met.</figcaption>
 </figure>
 </div>
-<p>This separates “following a script” from “solving a problem.” The agent doesn’t just execute steps—it understands why each step matters and what to do when plans fall apart.</p>
+<p>For a loan approval goal, the agent plans to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one. If identity verification fails, the agent adjusts its plan—perhaps requesting additional documentation or escalating to a human specialist.</p>
+<blockquote class="blockquote">
+<p><strong>Why this matters:</strong> This separates “following a script” from “solving a problem.” The agent understands why each step matters and what to do when plans fall apart.</p>
+</blockquote>
 </section>
 <section id="multi-agent-collaboration" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration:</h2>
 <p>Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.</p>
+<p><strong>Best for:</strong> Complex problems requiring specialized expertise where task decomposition provides clear benefits. Use sparingly—multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/multi-agent-pattern.png" class="img-fluid figure-img"></p>
@@ -354,8 +363,9 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>Most production deployments combine these patterns. A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and external threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems.</p>
+<p><strong>Important:</strong> Multi-agent systems require significant operational investment. Debugging a single failure may require analyzing 10-50+ LLM calls across multiple agents. Start with simpler patterns and add multi-agent architecture only when there’s clear evidence it’s needed.</p>
 </blockquote>
+<p><strong>Real systems combine patterns:</strong> A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.</p>
 <hr>
 </section>
 </section>
