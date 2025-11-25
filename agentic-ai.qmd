@@ -72,9 +72,12 @@ A customer service agent might review its drafted response for tone, clarity, an
 > **Why this matters:** Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires.
 
 ## Tool Use:     
-No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: credit bureaus for credit checks, fraud detection APIs for risk assessment, core banking systems for account data, and specialized databases for compliance rules.
+Agents without access to external systems are limited to what they learned during training. The Tool Use pattern enables agents to interact with APIs, databases, and specialized systems to ground their actions in current, accurate information.
 
-**Best for:** Tasks requiring access to external systems, current information, or specialized capabilities beyond the LLM's training. Essential when agents need to bridge the gap between reasoning and real-world action.
+Research demonstrates that LLMs cannot reliably self-verify factual information—external tools provide the ground truth needed for accurate verification, improving performance by 7-8$ points over self-critique alone[^2].
+
+**Best for:** Tasks requiring access to external systems, current information, or specialized capabilities. Essential when agents need to bridge the gap between 
+reasoning and real-world action.
 
 ![**Figure:** A loan processing agent orchestrates multiple systems—pulling credit data, checking fraud indicators, and updating core banking—without human coordination.](images/tooluse-pattern.png)
 
@@ -176,10 +179,8 @@ Agents handle structured complexity while humans handle judgment calls. As these
 
 
 [1] Madaan, A. et al. (2023). SELF-REFINE: Iterative Refinement with Self-Feedback. https://arxiv.org/pdf/2303.17651
-   
-[2] Shinn, N. et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. https://arxiv.org/pdf/2303.11366
-   
-[3] Gou, Z. et. al. (2024) CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. https://arxiv.org/pdf/2305.11738
+      
+[2] Gou, Z. et. al. (2024) CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. https://arxiv.org/pdf/2305.11738
 
  
 
