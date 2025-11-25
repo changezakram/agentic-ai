@@ -1,5 +1,5 @@
 ---
-title: "Agentic AI"
+title: "Agentic AI: How Intelligent Agents Will Transform Enterprise Workflows"
 format: html
 ---
 
