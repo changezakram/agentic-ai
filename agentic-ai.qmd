@@ -59,9 +59,11 @@ Agentic systems rely on core design patterns. Each solves a different problem, a
 ![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
 
 ## Reflection:     
-An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. 
+An agent that can't critique its own output is just automation with extra steps. Reflection pattern enables agents to evaluate and improve their outputs before finalizing them, mimicking how humans review their work.
 
-**Best for:** Tasks where you need to check and improve quality before delivery. Works well for regulatory reports, customer communications, and compliance documents that have clear quality standards.
+Research demonstrates that even state-of-the-art models like GPT-4 improve their outputs by ~20% through iterative self-feedback.^[1]^ The key is structured evaluation criteria—specific feedback on what needs improvement drives better refinements than generic critique.
+
+**Best for:** Tasks where you need to check and improve quality before finalizing. It works well for regulatory reports, customer communications, and compliance documents that have clear quality standards.
 
 ![**Figure:** Reflection lets agents critique and improve their own output before delivering results—turning potential errors into learning opportunities.](images/reflection-pattern.png)
 
