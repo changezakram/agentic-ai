@@ -151,7 +151,7 @@ Not every problem needs full autonomy. Here's how to decide:
 # Where Agentic AI Works Today
 Agentic AI is already deployed in production settings:
 
-**Financial Services** — End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation. Early adopters report **60-80% time savings** in routine workflows and significant cost reductions in manual coordination tasks. Banks are using agents to handle tasks that previously required multiple specialists coordinating across systems.
+**Financial Services** — End-to-end loan processing, fraud detection, regulatory compliance monitoring, and customer service automation. Early adopters report **60-80% time savings** in routine workflows and significant cost reductions in manual coordination tasks. 
 
 **Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, and insurance claims processing. Organizations report **67% reduction** in documentation time and **80% automation** of routine claims processing, with some incident investigations processed for **less than $1 per incident**.
 
@@ -177,4 +177,5 @@ Agents handle structured complexity while humans handle judgment calls. As these
 4. McKinsey & Company. (2024). [When can AI make good decisions? The rise of AI corporate citizens](https://www.mckinsey.com/capabilities/operations/our-insights/when-can-ai-make-good-decisions-the-rise-of-ai-corporate-citizens)  
 5. McKinsey & Company. (2024). [The future of work is agentic](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-future-of-work-is-agentic)  
 6. McKinsey & Company. (2024). [The future of customer experience: Embracing agentic AI](https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-customer-experience-embracing-agentic-ai)  
-7. Bornet, et al. (2024). *Agentic Artificial Intelligence*. Selected pages.
+7. Microsoft. 2025. [Fujitsu is revolutionizing sales efficiency with Azure AI Agent Service](https://www.microsoft.com/en/customers/story/21885-fujitsu-azure-ai-foundry)
+8. Microsoft. 2025. [Agent Factory: The new era of agentic AI—common use cases and design patterns](https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/)
