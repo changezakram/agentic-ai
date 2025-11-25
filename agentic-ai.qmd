@@ -87,14 +87,13 @@ The agent decides when to use which tool based on task requirements. A loan proc
 
 
 ## Planning:     
-Multi-step goals need structure. The Planning pattern enables agents to decompose complex problems into structured sequences of actions before execution begins.
+Multi-step goals need structure. Without a plan, agents jump between tasks or skip important steps. The Planning pattern enables agents to decompose complex problems into structured sequences of actions before execution begins.
 
 **Best for:** Multi-step problems where order matters and where breaking the problem into phases improves success rates. Essential when tasks have dependencies or when parallel execution can improve efficiency.
 
 ![**Figure:** Agents don't just follow scripts—they create plans, execute tasks, evaluate results, and adapt when goals aren't met.](images/PlanningPattern.png)
 
-A commercial loan application requires multiple verification steps: document extraction, financial analysis, credit scoring, industry benchmarking, and 
-collateral valuation. Effective planning manages dependencies—financial analysis can't begin until documents are extracted, but once complete, credit scoring, benchmarking, and collateral valuation can run in parallel. The agent plans this execution strategy upfront rather than discovering dependencies through trial and error.
+A commercial loan application requires multiple verification steps: document extraction, financial analysis, credit scoring, industry benchmarking, and collateral valuation. Effective planning manages dependencies—financial analysis can't begin until documents are extracted, but once complete, credit scoring, benchmarking, and collateral valuation can run in parallel. The agent plans this execution strategy upfront rather than discovering dependencies through trial and error.
 
 > **Why this matters:** Planning prevents wasted work from executing tasks in the wrong order or repeating steps. In banking, where each verification may involve expensive API calls or human review, planning the optimal execution path saves both time and cost.
 
@@ -107,6 +106,11 @@ Research demonstrates that multi-agent debate significantly improves performance
 **Best for:** Complex problems requiring specialized expertise where task decomposition provides clear benefits. Multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.
 
 ![**Figure:** Complex tasks require specialization. A supervisor agent coordinates specialist agents (market research, content creation, project management) toward a shared objective.](images/multi-agent-pattern.png)
+
+A fraud investigation might deploy specialized agents: one analyzes transaction patterns, another reviews customer history, a third checks against known fraud databases, and a 
+supervisor coordinates their findings into a comprehensive risk assessment. Each agent contributes expertise the others lack, and their collective analysis catches patterns no single agent would detect.
+
+> **Why this works:** Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems leverage specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.
 
 > **Important:** Multi-agent systems require significant operational investment. Debugging a single failure may require analyzing 10-50+ LLM calls across multiple agents. Start with simpler patterns and add multi-agent architecture only when there's clear evidence it's needed.
 

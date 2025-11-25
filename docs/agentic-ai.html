@@ -347,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="planning" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="planning"><span class="header-section-number">3.3</span> Planning:</h2>
-<p>Multi-step goals need structure. The Planning pattern enables agents to decompose complex problems into structured sequences of actions before execution begins.</p>
+<p>Multi-step goals need structure. Without a plan, agents jump between tasks or skip important steps. The Planning pattern enables agents to decompose complex problems into structured sequences of actions before execution begins.</p>
 <p><strong>Best for:</strong> Multi-step problems where order matters and where breaking the problem into phases improves success rates. Essential when tasks have dependencies or when parallel execution can improve efficiency.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -371,6 +371,10 @@ ul.task-list li input[type="checkbox"] {
 <figcaption><strong>Figure:</strong> Complex tasks require specialization. A supervisor agent coordinates specialist agents (market research, content creation, project management) toward a shared objective.</figcaption>
 </figure>
 </div>
+<p>A fraud investigation might deploy specialized agents: one analyzes transaction patterns, another reviews customer history, a third checks against known fraud databases, and a supervisor coordinates their findings into a comprehensive risk assessment. Each agent contributes expertise the others lack, and their collective analysis catches patterns no single agent would detect.</p>
+<blockquote class="blockquote">
+<p><strong>Why this works:</strong> Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems leverage specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.</p>
+</blockquote>
 <blockquote class="blockquote">
 <p><strong>Important:</strong> Multi-agent systems require significant operational investment. Debugging a single failure may require analyzing 10-50+ LLM calls across multiple agents. Start with simpler patterns and add multi-agent architecture only when there’s clear evidence it’s needed.</p>
 </blockquote>
