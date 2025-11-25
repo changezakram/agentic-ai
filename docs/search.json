@@ -116,7 +116,7 @@
     "href": "agentic-ai.html#quick-selection-guide",
     "title": "Agentic AI: How Intelligent Agents Will Transform Enterprise Workflows",
     "section": "4.1 Quick Selection Guide",
-    "text": "4.1 Quick Selection Guide\n\n\n\n\n\n\n\nYour Situation\nUse This Pattern\n\n\n\n\nPredictable multi-step workflow\nPlanning + Tool Use\n\n\nHigh-stakes decision requiring approval\nPlanning + Human in Loop\n\n\nCustomer service with varied requests\nRouting + Tool Use\n\n\nInvestigation where each step reveals next action\nReAct + Tool Use\n\n\nOutput needs quality control\nAdd Reflection\n\n\nRequires specialized expertise\nMulti-Agent (use sparingly)"
+    "text": "4.1 Quick Selection Guide\n\n\n\n\n\n\n\nTask\nUse This Pattern\n\n\n\n\nPredictable multi-step workflow\nPlanning + Tool Use\n\n\nHigh-stakes decision requiring approval\nPlanning + Human in Loop\n\n\nOutput needs quality control\nReflection + Tool Use\n\n\nRequires specialized expertise\nMulti-Agent (use sparingly)"
   },
   {
     "objectID": "agentic-ai.html#banking-essentials",

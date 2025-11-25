@@ -135,15 +135,13 @@ Not every problem needs full autonomy. Here's how to decide:
 
 ## Quick Selection Guide
 
-| **Your Situation**                                   | **Use This Pattern**                   |
+| **Task**                                             | **Use This Pattern**                   |
 |------------------------------------------------------|----------------------------------------|
 | Predictable multi-step workflow                      | Planning + Tool Use                    |
 | High-stakes decision requiring approval              | Planning + Human in Loop               |
-| Customer service with varied requests                | Routing + Tool Use                     |
-| Investigation where each step reveals next action    | ReAct + Tool Use                       |
-| Output needs quality control                         | Add Reflection                         |
-| Requires specialized expertise                       | Multi-Agent (use sparingly)           |
-
+| Output needs quality control                         | Reflection + Tool Use                  |
+| Requires specialized expertise                       | Multi-Agent (use sparingly)            |
+ 
 ## Banking Essentials  
 Keep humans in the loop for loan approvals, fraud confirmations, or anything that affects a customer's financial life. Build in reflection for regulatory reports—you need that quality check. And maintain audit trails for every agent decision. It's not optional; regulators will ask for them. 
 
