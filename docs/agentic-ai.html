@@ -332,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="tool-use" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="tool-use"><span class="header-section-number">3.2</span> Tool Use:</h2>
 <p>Agents without access to external systems are limited to what they learned during training. The Tool Use pattern enables agents to interact with APIs, databases, and specialized systems to ground their actions in current, accurate information.</p>
-<p>Research demonstrates that LLMs cannot reliably self-verify factual information—external tools provide the ground truth needed for accurate verification, improving performance by 7-8$ points over self-critique alone[^2].</p>
+<p>Research demonstrates that LLMs cannot reliably self-verify factual information—external tools provide the ground truth needed for accurate verification, improving performance by 7-8$ points over self-critique alone.<sup>2</sup></p>
 <p><strong>Best for:</strong> Tasks requiring access to external systems, current information, or specialized capabilities. Essential when agents need to bridge the gap between reasoning and real-world action.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -362,8 +362,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="multi-agent-collaboration" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration:</h2>
-<p>Complex problems often exceed what a single agent can handle efficiently. Multi-agent architectures distribute work across specialized agents that coordinate toward a shared objective. One agent might handle customer communication while another analyzes account history and a third checks fraud indicators. They share context, negotiate priorities, and escalate to human oversight when their combined capabilities hit limits.</p>
-<p><strong>Best for:</strong> Complex problems requiring specialized expertise where task decomposition provides clear benefits. Use sparingly—multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.</p>
+<p>Complex problems often require specialized expertise that no single agent possesses. Multi-agent architectures coordinate multiple specialized agents—each with distinct capabilities—to solve problems that exceed individual capacity.</p>
+<p>Research demonstrates that multi-agent debate significantly improves performance over single agents, with accuracy gains of 7-16 percentage points across reasoning and factuality tasks when agents critique and refine each other’s outputs.<sup>3</sup></p>
+<p><strong>Best for:</strong> Complex problems requiring specialized expertise where task decomposition provides clear benefits. Multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/multi-agent-pattern.png" class="img-fluid figure-img"></p>
@@ -471,6 +472,7 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="7"><span class="header-section-number">7</span> References</h1>
 <p>[1] Madaan, A. et al.&nbsp;(2023). SELF-REFINE: Iterative Refinement with Self-Feedback. https://arxiv.org/pdf/2303.17651</p>
 <p>[2] Gou, Z. et. al.&nbsp;(2024) CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. https://arxiv.org/pdf/2305.11738</p>
+<p>[3] Du, Y., Li et. al.&nbsp;(2023). Improving Factuality and Reasoning in Language Models through Multiagent Debate. https://arxiv.org/pdf/2305.14325</p>
 <ol type="1">
 <li>Google Cloud. (2024). <a href="https://cloud.google.com/discover/what-are-ai-agents">What are AI agents?</a><br>
 </li>
