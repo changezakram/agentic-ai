@@ -153,13 +153,21 @@ Keep humans in the loop for loan approvals, fraud confirmations, or anything tha
 # Where Agentic AI Works Today
 Agentic AI is already deployed in production settings:
 
-**Financial Services** — Banks are running agentic systems for loan processing, fraud detection, and compliance monitoring. Teams are saving 60-80% on routine workflows and cutting manual coordination costs significantly.
+**Financial Services** — Banks like Morgan Stanley are piloting research assistant agents that automatically pull evidence, cite sources, and summarize investment memos. BNY Mellon has launched Eliza, an internal agentic platform used by thousands of employees for knowledge retrieval and task automation.
 
-**Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, and insurance claims processing. Organizations report 67% reduction in documentation time and 80% automation of routine claims processing, with some incident investigations processed for less than $1 per incident.
+> Impact: 60–80% reduction in routine workflow time; major savings in manual coordination across departments.
 
-**Software Development** — Code generation and review, bug diagnosis, test case creation, and deployment automation. Development teams report 60% reduction in QA time and requirements design cycles dropping from weeks to days.
+**Healthcare** — Mayo Clinic and Mount Sinai are using clinical agent copilots for summarizing patient notes and assisting with protocol recommendations. Change Healthcare, part of UnitedHealth, has embedded agentic flows into claims processing—automating up to 80% of low-risk reviews.
 
-**Customer Operations** — Inquiry resolution, escalation routing, sentiment analysis, and proactive outreach. Agents handle tier-1 support while humans focus on complex cases requiring judgment and empathy.
+> Results: 67% reduction in documentation time; sub-$1 cost per automated incident review.
+
+**Software Development** — Replit has built Ghostwriter agents that help with full-stack code planning and debugging. Salesforce uses agentic architectures (via CodeGen agents) to assist internal developers with code reviews, test generation, and deployment routines.
+
+> Teams report 60% reduction in QA time and requirements design cycles cut from weeks to days.
+
+**Customer Operations** — Fujitsu, using Microsoft’s Azure AI Agent Services, deployed customer-facing agents for sales support and internal help desk routing. Vodafone uses agent-based routing to triage 30–40% of customer interactions before handing off to a human.
+
+> Tier-1 support automated, freeing humans for edge cases needing empathy and escalation.
 
 # Conclusion
 
