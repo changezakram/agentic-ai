@@ -170,6 +170,15 @@ Agents handle structured complexity while humans handle judgment calls. As these
 
 # References
 
+
+
+
+[1] Madaan, A. et al. (2023). SELF-REFINE: Iterative Refinement with Self-Feedback. https://arxiv.org/pdf/2303.17651
+[2] Shinn, N. et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. https://arxiv.org/pdf/2303.11366
+[3] Gou, Z. et. al. (2024) CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. https://arxiv.org/pdf/2305.11738
+
+
+
 1. Google Cloud. (2024). [What are AI agents?](https://cloud.google.com/discover/what-are-ai-agents)  
 2. IBM Think. (2024). [What is Agentic AI?](https://www.ibm.com/think/topics/agentic-ai)  
 3. IBM Think. (2024). [Agentic AI vs. Generative AI](https://www.ibm.com/think/topics/agentic-ai-vs-generative-ai)  
