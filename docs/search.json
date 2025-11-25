@@ -123,6 +123,6 @@
     "href": "agentic-ai.html#banking-essentials",
     "title": "Agentic AI",
     "section": "4.2 Banking Essentials",
-    "text": "4.2 Banking Essentials\nKeep humans in the loop for loan approvals, fraud confirmations, or anything that affects a customer’s financial life. Build in reflection for regulatory reports—you need that quality check. And maintain audit trails for every agent decision. It’s not optional; regulators will ask for them.\n\nStart Simple:  Begin with the simplest pattern that might work. Add complexity only when you have clear evidence it’s needed. Multi-agent systems can require analyzing 10–50+ LLM calls to debug a single failure. Start with Planning or Routing, add patterns as needed."
+    "text": "4.2 Banking Essentials\nKeep humans in the loop for loan approvals, fraud confirmations, or anything that affects a customer’s financial life. Build in reflection for regulatory reports—you need that quality check. And maintain audit trails for every agent decision. It’s not optional; regulators will ask for them.\n\nBegin with the simplest pattern that might work. Add complexity only when you have clear evidence it’s needed. Multi-agent systems can require analyzing 10–50+ LLM calls to debug a single failure. Start with Planning or Routing, add patterns as needed."
   }
 ]
