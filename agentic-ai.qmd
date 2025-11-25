@@ -151,15 +151,17 @@ Not every problem needs full autonomy. Here's how to decide:
 # Where Agentic AI Works Today
 Agentic AI is already deployed in production settings:
 
-**Financial Services** — End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation. Banks are using agents to handle tasks that previously required multiple specialists coordinating across systems.
+**Financial Services** — End-to-end loan processing, fraud detection, portfolio rebalancing, regulatory compliance monitoring, and customer service automation. Early adopters report **60-80% time savings** in routine workflows and significant cost reductions in manual coordination tasks. Banks are using agents to handle tasks that previously required multiple specialists coordinating across systems.
 
-**Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, insurance claims processing, and appointment optimization. Agents help clinicians spend less time on paperwork and more time with patients.
+**Healthcare** — Clinical documentation, treatment protocol recommendations, patient monitoring, and insurance claims processing. Organizations report **67% reduction** in documentation time and **80% automation** of routine claims processing, with some incident investigations processed for **less than $1 per incident**.
 
-**Software Development** — Code generation and review, bug diagnosis, test case creation, dependency management, and deployment automation. Development teams use agents to handle routine coding tasks while they focus on architecture and product decisions.
+**Software Development** — Code generation and review, bug diagnosis, test case creation, and deployment automation. Development teams report **60% reduction** in QA time and requirements design cycles dropping from **weeks to days**.
 
-**Customer Operations** — Inquiry resolution, escalation routing, sentiment analysis, proactive outreach, and workload balancing across support teams. Agents handle tier-1 support while humans focus on complex cases requiring judgment and empathy.
+**Customer Operations** — Inquiry resolution, escalation routing, sentiment analysis, and proactive outreach. Agents handle tier-1 support while humans focus on complex cases requiring judgment and empathy.
 
-**Supply Chain** — Demand forecasting, inventory optimization, route planning, vendor negotiation support, and disruption response. Agents monitor thousands of variables and adjust plans as conditions change.
+
+> **The pattern across industries:** agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
+
 
 # Conclusion
 
