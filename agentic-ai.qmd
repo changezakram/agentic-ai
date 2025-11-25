@@ -102,6 +102,17 @@ Complex problems often exceed what a single agent can handle efficiently. Multi-
 
 > **Important:** Multi-agent systems require significant operational investment. Debugging a single failure may require analyzing 10-50+ LLM calls across multiple agents. Start with simpler patterns and add multi-agent architecture only when there's clear evidence it's needed.
 
+
+## Human in the Loop:
+For high-stakes decisions, full automation isn't always appropriate—or legal. Human-in-the-loop architectures let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving significant efficiency gains.
+
+**Best for:** High-stakes decisions where errors have serious consequences or regulatory requirements mandate human oversight. Essential when accountability must rest with humans, not algorithms.
+
+Required in banking: Loan approvals, credit limit increases, account closures, fraud confirmations, compliance violations—any decision that significantly affects a customer's financial life or triggers regulatory scrutiny. A loan underwriting agent might analyze credit history, calculate risk scores, evaluate debt-to-income ratios, check compliance requirements, and recommend approval terms with detailed reasoning. But a human underwriter reviews the analysis and makes the final decision. The agent handles the time-consuming analysis across multiple data sources; the human applies judgment, considers context the model might miss, and takes responsibility for the outcome.
+A fraud investigation agent might flag suspicious transactions, gather supporting evidence from multiple systems, analyze patterns against known fraud schemes, and calculate confidence scores. But a human fraud analyst reviews the evidence, considers customer context, and makes the final determination to block transactions or contact the customer. The agent accelerates investigation; the human prevents false positives that damage customer relationships.
+
+> **Why this matters:** This pattern is essential for responsible AI deployment in banking. It maintains regulatory compliance, preserves human accountability, and prevents the reputational damage that comes from automated decisions affecting customers' financial lives. It's not just best practice—it's often legally required.
+
 **Real systems combine patterns:** A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.
 
 ---

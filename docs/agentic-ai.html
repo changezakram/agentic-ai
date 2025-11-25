@@ -202,6 +202,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tool-use" id="toc-tool-use" class="nav-link" data-scroll-target="#tool-use"><span class="header-section-number">3.2</span> Tool Use:</a></li>
   <li><a href="#planning" id="toc-planning" class="nav-link" data-scroll-target="#planning"><span class="header-section-number">3.3</span> Planning:</a></li>
   <li><a href="#multi-agent-collaboration" id="toc-multi-agent-collaboration" class="nav-link" data-scroll-target="#multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration:</a></li>
+  <li><a href="#human-in-the-loop" id="toc-human-in-the-loop" class="nav-link" data-scroll-target="#human-in-the-loop"><span class="header-section-number">3.5</span> Human in the Loop:</a></li>
   </ul></li>
   <li><a href="#where-agentic-ai-works-today" id="toc-where-agentic-ai-works-today" class="nav-link" data-scroll-target="#where-agentic-ai-works-today"><span class="header-section-number">4</span> Where Agentic AI Works Today</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
@@ -364,6 +365,15 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <blockquote class="blockquote">
 <p><strong>Important:</strong> Multi-agent systems require significant operational investment. Debugging a single failure may require analyzing 10-50+ LLM calls across multiple agents. Start with simpler patterns and add multi-agent architecture only when there’s clear evidence it’s needed.</p>
+</blockquote>
+</section>
+<section id="human-in-the-loop" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="human-in-the-loop"><span class="header-section-number">3.5</span> Human in the Loop:</h2>
+<p>For high-stakes decisions, full automation isn’t always appropriate—or legal. Human-in-the-loop architectures let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving significant efficiency gains.</p>
+<p><strong>Best for:</strong> High-stakes decisions where errors have serious consequences or regulatory requirements mandate human oversight. Essential when accountability must rest with humans, not algorithms.</p>
+<p>Required in banking: Loan approvals, credit limit increases, account closures, fraud confirmations, compliance violations—any decision that significantly affects a customer’s financial life or triggers regulatory scrutiny. A loan underwriting agent might analyze credit history, calculate risk scores, evaluate debt-to-income ratios, check compliance requirements, and recommend approval terms with detailed reasoning. But a human underwriter reviews the analysis and makes the final decision. The agent handles the time-consuming analysis across multiple data sources; the human applies judgment, considers context the model might miss, and takes responsibility for the outcome. A fraud investigation agent might flag suspicious transactions, gather supporting evidence from multiple systems, analyze patterns against known fraud schemes, and calculate confidence scores. But a human fraud analyst reviews the evidence, considers customer context, and makes the final determination to block transactions or contact the customer. The agent accelerates investigation; the human prevents false positives that damage customer relationships.</p>
+<blockquote class="blockquote">
+<p><strong>Why this matters:</strong> This pattern is essential for responsible AI deployment in banking. It maintains regulatory compliance, preserves human accountability, and prevents the reputational damage that comes from automated decisions affecting customers’ financial lives. It’s not just best practice—it’s often legally required.</p>
 </blockquote>
 <p><strong>Real systems combine patterns:</strong> A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.</p>
 <hr>
