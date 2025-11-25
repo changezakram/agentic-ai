@@ -347,17 +347,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="planning" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="planning"><span class="header-section-number">3.3</span> Planning:</h2>
-<p>Multi-step goals need structure. Before acting, effective agents map out the required sequence, identify potential obstacles, and establish decision points. A planning-enabled agent doesn’t just start executing—it reasons about the problem, develops a strategy, and adapts that strategy as new information becomes available.</p>
-<p><strong>Best for:</strong> Complex, multi-step processes with dependencies where the path to completion can be mapped upfront. Most effective for predictable workflows that follow a logical sequence but may need adaptive replanning when steps fail.</p>
+<p>Multi-step goals need structure. The Planning pattern enables agents to decompose complex problems into structured sequences of actions before execution begins.</p>
+<p><strong>Best for:</strong> Multi-step problems where order matters and where breaking the problem into phases improves success rates. Essential when tasks have dependencies or when parallel execution can improve efficiency.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/PlanningPattern.png" class="img-fluid figure-img"></p>
 <figcaption><strong>Figure:</strong> Agents don’t just follow scripts—they create plans, execute tasks, evaluate results, and adapt when goals aren’t met.</figcaption>
 </figure>
 </div>
-<p>For a loan approval goal, the agent plans to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one. If identity verification fails, the agent adjusts its plan—perhaps requesting additional documentation or escalating to a human specialist.</p>
+<p>A commercial loan application requires multiple verification steps: document extraction, financial analysis, credit scoring, industry benchmarking, and collateral valuation. Effective planning manages dependencies—financial analysis can’t begin until documents are extracted, but once complete, credit scoring, benchmarking, and collateral valuation can run in parallel. The agent plans this execution strategy upfront rather than discovering dependencies through trial and error.</p>
 <blockquote class="blockquote">
-<p><strong>Why this matters:</strong> This separates “following a script” from “solving a problem.” The agent understands why each step matters and what to do when plans fall apart.</p>
+<p><strong>Why this matters:</strong> Planning prevents wasted work from executing tasks in the wrong order or repeating steps. In banking, where each verification may involve expensive API calls or human review, planning the optimal execution path saves both time and cost.</p>
 </blockquote>
 </section>
 <section id="multi-agent-collaboration" class="level2" data-number="3.4">
