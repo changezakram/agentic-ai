@@ -174,8 +174,12 @@ Agents handle structured complexity while humans handle judgment calls. As these
 
 
 [1] Madaan, A. et al. (2023). SELF-REFINE: Iterative Refinement with Self-Feedback. https://arxiv.org/pdf/2303.17651
+   
 [2] Shinn, N. et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. https://arxiv.org/pdf/2303.11366
+   
 [3] Gou, Z. et. al. (2024) CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing. https://arxiv.org/pdf/2305.11738
+
+ 
 
 
 
