@@ -108,7 +108,7 @@ For high-stakes decisions, full automation isn't always appropriate—or legal. 
 
 **Best for:** High-stakes decisions where errors have serious consequences or regulatory requirements mandate human oversight. Essential when accountability must rest with humans, not algorithms.
 
-![**Figure:** Agents analyze and recommend, humans review and approve at critical decision points, maintaining accountability while gaining efficiency.](images/human-in-loop.png)
+![**Figure:** Agents analyze and recommend, humans review and approve at critical decision points, maintaining accountability while gaining efficiency.](images/human-in-loop-pattern.png)
 
 
 Required in banking: Loan approvals, credit limit increases, account closures, fraud confirmations, compliance violations—any decision that significantly affects a customer's financial life or triggers regulatory scrutiny. A loan underwriting agent might analyze credit history, calculate risk scores, evaluate debt-to-income ratios, check compliance requirements, and recommend approval terms with detailed reasoning. But a human underwriter reviews the analysis and makes the final decision. The agent handles the time-consuming analysis across multiple data sources; the human applies judgment, considers context the model might miss, and takes responsibility for the outcome.
