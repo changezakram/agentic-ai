@@ -59,9 +59,15 @@ Agentic systems rely on four core design patterns. Each solves a different probl
 ![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
 
 **Reflection**:     
-An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A data analysis agent might validate whether its query results actually answer the original question or if it needs to reformulate the approach. Without reflection, agents repeat mistakes. With it, they improve with each iteration.
+An agent that can't critique its own output is just automation with extra steps. Reflection mechanisms let systems evaluate whether their actions achieved the intended outcome, identify errors in reasoning, and adjust course. 
+
+**Best for:** Tasks where you need to check and improve quality before delivery. Works well for regulatory reports, customer communications, and compliance documents that have clear quality standards.
 
 ![**Figure:** Reflection lets agents critique and improve their own output before delivering results—turning potential errors into learning opportunities.](images/reflection-pattern.png)
+
+A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A credit analysis agent might validate whether its risk assessment considered all required factors and whether calculations are correct. Each iteration catches errors that would otherwise reach customers or regulators.
+
+> **Why this matters:** Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires.
 
 **Tool Use**:     
 No model knows everything or can do everything internally. Tool integration extends agent capabilities by connecting to external resources: calculators for precise math, search engines for current information, databases for domain-specific knowledge, code interpreters for computation, and specialized APIs for tasks like image analysis or language translation.
