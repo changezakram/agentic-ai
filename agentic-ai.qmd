@@ -69,7 +69,7 @@ Research demonstrates that even state-of-the-art models like GPT-4 improve their
 
 A customer service agent might review its drafted response for tone, clarity, and alignment with brand guidelines before sending. A credit analysis agent might validate whether its risk assessment considered all required factors and whether calculations are correct. Each iteration catches errors that would otherwise reach customers or regulators.
 
-> **Why this matters:** Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires.
+> Without reflection, agents repeat mistakes. With it, they improve with each iteration and maintain the quality standards banking requires.
 
 ## Tool Use     
 Agents without access to external systems are limited to what they learned during training. Tool Use gives agents direct access to your APIs, databases, and systems to ground their actions in current, accurate information.
@@ -83,7 +83,7 @@ reasoning and real-world action.
 
 The agent decides when to use which tool based on task requirements. A loan processing agent might call a credit bureau for credit history, query a fraud detection system for risk indicators, check compliance databases for regulatory requirements, and update the core banking system with the decision—all without human coordination at each step.
 
-> **Why this matters:** Tool use is how agents break free from their training data limitations and interact with the real systems that run your business.
+> Tool use breaks agents free from their training data limitations. Now they can interact with the real systems that run your business.
 
 
 ## Planning     
@@ -95,7 +95,7 @@ Multi-step goals need structure. Without a plan, agents jump between tasks or sk
 
 A commercial loan application requires multiple verification steps: document extraction, financial analysis, credit scoring, industry benchmarking, and collateral valuation. Effective planning manages dependencies—financial analysis can't begin until documents are extracted, but once complete, credit scoring, benchmarking, and collateral valuation can run in parallel. The agent plans this execution strategy upfront rather than discovering dependencies through trial and error.
 
-> **Why this matters:** Planning prevents wasted work from executing tasks in the wrong order or repeating steps. In banking, where each verification may involve expensive API calls or human review, planning the optimal execution path saves both time and cost.
+> Planning prevents wasted work from executing tasks in the wrong order or repeating steps. In banking, where each verification may involve expensive API calls or human review, planning the optimal execution path saves both time and cost.
 
 
 ## Multi-Agent Collaboration     
@@ -110,9 +110,7 @@ Research demonstrates that multi-agent debate significantly improves performance
 A fraud investigation might deploy specialized agents: one analyzes transaction patterns, another reviews customer history, a third checks against known fraud databases, and a 
 supervisor coordinates their findings into a comprehensive risk assessment. Each agent contributes expertise the others lack, and their collective analysis catches patterns no single agent would detect.
 
-> **Why this works:** Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems use specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.
-
-> Multi-agent systems are expensive to maintain. When something breaks, you might need to trace through 10-50+ LLM calls to find the problem. Don't go multi-agent unless simpler patterns can't handle it.
+> Multi-agent systems work like loan committees—different specialists bring different expertise. But they're expensive to maintain. When something breaks, you might trace through 10-50+ agent calls to find the problem. Don't go multi-agent unless simpler patterns can't handle it.
 
 
 ## Human in the Loop
@@ -126,7 +124,7 @@ For high-stakes decisions, full automation isn't always appropriate—or legal. 
 Required in banking: Loan approvals, credit limit increases, account closures, fraud confirmations, compliance violations—any decision that significantly affects a customer's financial life or triggers regulatory scrutiny. A loan underwriting agent might analyze credit history, calculate risk scores, evaluate debt-to-income ratios, check compliance requirements, and recommend approval terms with detailed reasoning. But a human underwriter reviews the analysis and makes the final decision. The agent handles the time-consuming analysis across multiple data sources; the human applies judgment, considers context the model might miss, and takes responsibility for the outcome.
 A fraud investigation agent might flag suspicious transactions, gather supporting evidence from multiple systems, analyze patterns against known fraud schemes, and calculate confidence scores. But a human fraud analyst reviews the evidence, considers customer context, and makes the final determination to block transactions or contact the customer. The agent accelerates investigation; the human prevents false positives that damage customer relationships.
 
-> **Why this matters:** This pattern is essential for responsible AI deployment in banking. It maintains regulatory compliance, preserves human accountability, and prevents the reputational damage that comes from automated decisions affecting customers' financial lives. It's not just best practice—it's often legally required.
+> This isn't optional in banking. Human-in-the-loop maintains regulatory compliance, preserves accountability, and prevents reputational damage from bad automated decisions. In many cases, it's legally required.
 
 **Real systems combine patterns:** A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.
 
