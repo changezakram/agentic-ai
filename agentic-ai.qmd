@@ -15,7 +15,7 @@ This shift from reactive to proactive intelligence changes how organizations can
 
 Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don't just respond to commands—they pursue objectives.
 
-Here's why this matters: it changes what you can delegate to AI. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.
+Here's why this matters: This changes what you can hand off to AI.. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.
 
 > Take loan processing as an example. Traditional systems route applications through fixed checkpoints. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn't just scale. It's whether the system can navigate complexity without constant human intervention.
 
@@ -23,7 +23,7 @@ Here's why this matters: it changes what you can delegate to AI. Traditional sys
 | **AI Type**       | **What It Does**                                               | **Key Limitation**                                          |
 |-------------------|----------------------------------------------------------------|-------------------------------------------------------------|
 | Traditional AI    | Executes predefined rules or predictions from trained models   | Can't adapt to tasks outside its training scope             |
-| Generative AI     | Creates content (text, images, code) based on learned patterns | Reactive: requires explicit prompts for each step          |
+| Generative AI     | Creates content (text, images, code) based on learned patterns | Reactive: requires explicit prompts for each step           |
 | Agentic AI        | Pursues goals through multi-step planning and decision-making  | Requires oversight to prevent unintended autonomous actions |
 
 Agentic systems maintain context across interactions (memory), break complex goals into subtasks (planning), access external tools and data sources (tool use), and improve based on outcomes (learning). Earlier AI generations handled these separately—or couldn't do them at all.
@@ -38,7 +38,7 @@ Agentic systems run in a continuous cycle—perceiving their environment, reason
 
 **Perceive** — The agent pulls data from available sources: databases, APIs, document repositories, or user inputs. It keeps relevant context in memory from past interactions.
 
-**Reason** — A reasoning engine (typically a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. It weighs tradeoffs, anticipates consequences, and selects strategies.
+**Reason** — A reasoning engine (usually a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. It weighs tradeoffs, anticipates consequences, and selects strategies.
 
 **Plan** — The planner breaks complex objectives into discrete tasks, sequences them logically, and identifies dependencies. For a loan approval goal, the agent might plan to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one, and the agent adjusts the sequence if something fails.
 
@@ -99,7 +99,7 @@ A commercial loan application requires multiple verification steps: document ext
 
 
 ## Multi-Agent Collaboration     
-Complex problems often require specialized expertise that no single agent possesses.  Multi-agent architectures coordinate multiple specialized agents—each with distinct capabilities—to solve problems that exceed individual capacity.
+Complex problems often require specialized expertise that no single agent possesses.  Multi-agent pattern coordinates multiple specialized agents—each with distinct capabilities—to solve problems that exceed individual capacity.
 
 Research demonstrates that multi-agent debate significantly improves performance over single agents, with accuracy gains of 7-16 percentage points across reasoning and factuality tasks when agents critique and refine each other's outputs.^3^
 
@@ -110,13 +110,13 @@ Research demonstrates that multi-agent debate significantly improves performance
 A fraud investigation might deploy specialized agents: one analyzes transaction patterns, another reviews customer history, a third checks against known fraud databases, and a 
 supervisor coordinates their findings into a comprehensive risk assessment. Each agent contributes expertise the others lack, and their collective analysis catches patterns no single agent would detect.
 
-> **Why this works:** Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems leverage specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.
+> **Why this works:** Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems use specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.
 
 > Multi-agent systems are expensive to maintain. When something breaks, you might need to trace through 10-50+ LLM calls to find the problem. Don't go multi-agent unless simpler patterns can't handle it.
 
 
 ## Human in the Loop
-For high-stakes decisions, full automation isn't always appropriate—or legal. Human-in-the-loop architectures let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving significant efficiency gains.
+For high-stakes decisions, full automation isn't always appropriate—or legal. Human-in-the-loop design let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving real efficiency gains.
 
 **Best for:** High-stakes decisions where errors have serious consequences or regulatory requirements mandate human oversight. Essential when accountability must rest with humans, not algorithms.
 
@@ -131,7 +131,7 @@ A fraud investigation agent might flag suspicious transactions, gather supportin
 **Real systems combine patterns:** A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.
 
 
-
+So which pattern should you use? It depends on what you're trying to solve.
 
 # Choosing the Right Pattern
 

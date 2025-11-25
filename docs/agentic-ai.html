@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-agentic-ai" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="what-is-agentic-ai"><span class="header-section-number">1.1</span> What Is Agentic AI?</h2>
 <p>Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don’t just respond to commands—they pursue objectives.</p>
-<p>Here’s why this matters: it changes what you can delegate to AI. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.</p>
+<p>Here’s why this matters: This changes what you can hand off to AI.. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.</p>
 <blockquote class="blockquote">
 <p>Take loan processing as an example. Traditional systems route applications through fixed checkpoints. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn’t just scale. It’s whether the system can navigate complexity without constant human intervention.</p>
 </blockquote>
@@ -294,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p><strong>Perceive</strong> — The agent pulls data from available sources: databases, APIs, document repositories, or user inputs. It keeps relevant context in memory from past interactions.</p>
-<p><strong>Reason</strong> — A reasoning engine (typically a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. It weighs tradeoffs, anticipates consequences, and selects strategies.</p>
+<p><strong>Reason</strong> — A reasoning engine (usually a large language model) analyzes the current state, evaluates options, and determines the best approach given the goal and constraints. It weighs tradeoffs, anticipates consequences, and selects strategies.</p>
 <p><strong>Plan</strong> — The planner breaks complex objectives into discrete tasks, sequences them logically, and identifies dependencies. For a loan approval goal, the agent might plan to: verify identity, pull credit history, calculate debt-to-income ratio, check against underwriting guidelines, and route to human review if red flags emerge. Each step depends on the previous one, and the agent adjusts the sequence if something fails.</p>
 <p><strong>Act</strong> — Tool-use capabilities let the agent execute planned tasks by interacting with external systems. It might call an identity verification API, query a credit bureau database, run a calculation, update a CRM record, or send a notification. The agent chooses which tools to use based on what each step requires.</p>
 <p><strong>Learn</strong> — Feedback loops capture outcomes and adjust future behavior. If a particular sequence of checks consistently flags false positives, the system refines its approach. If certain customer segments respond better to specific communication timing, the agent adapts its strategy.</p>
@@ -362,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="multi-agent-collaboration" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration</h2>
-<p>Complex problems often require specialized expertise that no single agent possesses. Multi-agent architectures coordinate multiple specialized agents—each with distinct capabilities—to solve problems that exceed individual capacity.</p>
+<p>Complex problems often require specialized expertise that no single agent possesses. Multi-agent pattern coordinates multiple specialized agents—each with distinct capabilities—to solve problems that exceed individual capacity.</p>
 <p>Research demonstrates that multi-agent debate significantly improves performance over single agents, with accuracy gains of 7-16 percentage points across reasoning and factuality tasks when agents critique and refine each other’s outputs.<sup>3</sup></p>
 <p><strong>Best for:</strong> Complex problems requiring specialized expertise where task decomposition provides clear benefits. Multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -373,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>A fraud investigation might deploy specialized agents: one analyzes transaction patterns, another reviews customer history, a third checks against known fraud databases, and a supervisor coordinates their findings into a comprehensive risk assessment. Each agent contributes expertise the others lack, and their collective analysis catches patterns no single agent would detect.</p>
 <blockquote class="blockquote">
-<p><strong>Why this works:</strong> Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems leverage specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.</p>
+<p><strong>Why this works:</strong> Just as a loan committee benefits from credit risk specialists, compliance experts, and relationship managers each contributing their perspective, multi-agent systems use specialized expertise. However, coordination overhead is real—a single error may require analyzing dozens of agent interactions to diagnose.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>Multi-agent systems are expensive to maintain. When something breaks, you might need to trace through 10-50+ LLM calls to find the problem. Don’t go multi-agent unless simpler patterns can’t handle it.</p>
@@ -381,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="human-in-the-loop" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="human-in-the-loop"><span class="header-section-number">3.5</span> Human in the Loop</h2>
-<p>For high-stakes decisions, full automation isn’t always appropriate—or legal. Human-in-the-loop architectures let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving significant efficiency gains.</p>
+<p>For high-stakes decisions, full automation isn’t always appropriate—or legal. Human-in-the-loop design let agents handle analysis and recommendations while humans make final decisions at critical checkpoints. This satisfies regulatory requirements while still achieving real efficiency gains.</p>
 <p><strong>Best for:</strong> High-stakes decisions where errors have serious consequences or regulatory requirements mandate human oversight. Essential when accountability must rest with humans, not algorithms.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -394,6 +394,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Why this matters:</strong> This pattern is essential for responsible AI deployment in banking. It maintains regulatory compliance, preserves human accountability, and prevents the reputational damage that comes from automated decisions affecting customers’ financial lives. It’s not just best practice—it’s often legally required.</p>
 </blockquote>
 <p><strong>Real systems combine patterns:</strong> A fraud detection system might use planning to structure its investigation, tool use to query transaction databases and threat feeds, reflection to validate its confidence in flagged cases, and multi-agent collaboration to coordinate with customer service and compliance systems. The supervisor agent ensures all pieces work together toward accurate fraud detection while maintaining audit trails for regulators.</p>
+<p>So which pattern should you use? It depends on what you’re trying to solve.</p>
 </section>
 </section>
 <section id="choosing-the-right-pattern" class="level1" data-number="4">
