@@ -13,9 +13,7 @@ This shift from reactive to proactive intelligence changes how organizations can
 
 ## What Is Agentic AI?
 
-Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don't just respond to commands—they pursue objectives.
-
-This changes what you can hand off to AI. Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.
+Agentic AI systems act with intent and autonomy to achieve defined goals. The key distinction: they don't just respond to commands—they pursue objectives.Traditional systems require you to orchestrate each step. Generative systems require you to prompt for each output. Agentic systems let you specify the outcome and trust the system to figure out how to get there.
 
 > Take loan processing as an example. Traditional systems route applications through fixed checkpoints. A generative AI chatbot might answer questions about loan requirements. An agentic system actually processes the application—pulling credit data, verifying employment, calculating risk-adjusted pricing, checking compliance rules, and routing exceptions to human reviewers when needed. The difference isn't just scale. It's whether the system can navigate complexity without constant human intervention.
 
@@ -34,7 +32,7 @@ Agentic systems maintain context across interactions (memory), break complex goa
 
 Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. The cycle runs continuously, adapting as conditions change.
 
-![**Figure:** Agents operate in a continuous action-feedback loop, using memory and reasoning to interact with external tools and data sources.](images/Architecture.png)
+![**Figure:** Agents operate in a continuous action-feedback loop, using memory and reasoning to interact with external tools and data sources.](images/AgenticArchitecture.png)
 
 **Perceive** — The agent pulls data from available sources: databases, APIs, document repositories, or user inputs. It keeps relevant context in memory from past interactions.
 
@@ -44,7 +42,7 @@ Agentic systems run in a continuous cycle—perceiving their environment, reason
 
 **Act** — Tool-use capabilities let the agent execute planned tasks by interacting with external systems. It might call an identity verification API, query a credit bureau database, run a calculation, update a CRM record, or send a notification. The agent chooses which tools to use based on what each step requires.
 
-**Learn** — The system captures outcomes and adjusts its behavior for next time. If a particular sequence of checks consistently flags false positives, the system refines its approach. If certain customer segments respond better to specific communication timing, the agent adapts its strategy.
+**Learn** — The system captures feedback and adjusts its behavior for next time. If a particular sequence of checks consistently flags false positives, the system refines its approach. If certain customer segments respond better to specific communication timing, the agent adapts its strategy.
 
 Each interaction informs the next. A customer service agent might start with a standard response template, detect frustration in the customer's reply, shift to a different communication strategy, pull additional account context, and adjust its tone—all within a single conversation thread.
 
@@ -188,3 +186,5 @@ Agents handle structured complexity while humans handle judgment calls. As these
 [5] Microsoft. (2025). Fujitsu is revolutionizing sales efficiency with Azure AI Agent Service. https://www.microsoft.com/en/customers/story/21885-fujitsu-azure-ai-foundry
 
 [6] Microsoft. (2025). Agent Factory: The new era of agentic AI—common use cases and design patterns. https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/
+
+
