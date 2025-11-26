@@ -83,7 +83,7 @@ The agent decides when to use which tool based on task requirements. A loan proc
 
 
 ## Planning     
-Multi-step goals need structure. Without planning, agents jump between tasks or skip steps. Planning breaks complex problems into sequences—agents map the approach before executing.
+Complex tasks need a plan.. Without planning, agents jump between tasks or skip steps. Planning breaks complex problems into sequences—agents map the approach before executing.
 
 **Best for:** Multi-step problems where order matters and where breaking the problem into phases improves success rates. Essential when tasks have dependencies or when parallel execution can improve efficiency.
 
