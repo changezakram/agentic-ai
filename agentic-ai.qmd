@@ -142,10 +142,12 @@ Not every problem needs full autonomy. Here's how to decide:
 | Output needs quality control                         | Reflection + Tool Use                  |
 | Requires specialized expertise                       | Multi-Agent (use sparingly)            |
  
-## Banking Essentials  
-Keep humans in the loop for loan approvals, fraud confirmations, or anything that affects a customer's financial life. Build in reflection for regulatory reports—you need that quality check. And maintain audit trails for every agent decision. It's not optional; regulators will ask for them. 
+## Banking Essentials   
+- **Human-in-Loop is mandatory** for loan approvals, fraud confirmations, or any decision affecting customer finances.
+- **Reflection is essential** for regulatory reports and compliance documents—quality checks aren't optional.
+- **Audit trails are required** for every agent decision. Regulators will ask.
 
-> Begin with the simplest pattern that might work. Add complexity only when you have clear evidence it's needed. Multi-agent systems can require analyzing 10–50+ LLM calls to debug a single failure. Start with Planning or Routing, add patterns as needed.
+> **Start simple.** Use the most basic pattern that solves your problem. Add complexity only with clear evidence it's needed. Multi-agent systems can require tracing 10–50+ LLM calls to debug a single failure—don't go there unless you must.
 
 
 ---
