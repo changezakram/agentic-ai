@@ -99,7 +99,9 @@ Some problems need multiple specialists. No single agent has all the expertise r
 
 Research demonstrates that multi-agent debate significantly improves performance over single agents, with accuracy gains of 7-16% points across reasoning and factuality tasks when agents critique and refine each other's outputs.^3^
 
-**Best for:** Complex problems requiring specialized expertise where task decomposition provides clear benefits. Multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.
+**Best for:** Complex problems requiring specialized expertise where task decomposition provides clear benefits.    
+
+Multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.
 
 ![**Figure:** Complex tasks require specialization. A supervisor agent coordinates specialist agents (market research, content creation, project management) toward a shared objective.](images/multi-agent-pattern.png)
 
