@@ -5,7 +5,7 @@ toc: true
 number-sections: true
 ---
 
-## 📊 Overview
+## Overview
 
 This guide explains the difference between **Generative BI (Gen BI)** and **Agentic Analytics**, with examples, use cases, roadmap, and example architectures.
 
@@ -23,7 +23,7 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## 🌟 Examples
+## Examples
 
 ### Generative BI
 ✅ User asks: *"Show me revenue trends by region last quarter."*  
@@ -92,7 +92,7 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## 🛠️ Key Building Blocks
+## Key Building Blocks
 
 ✅ **Data Layer:** Snowflake, BigQuery, Redshift — clean, documented.  
 ✅ **Semantic Layer:** Business-friendly metrics & dimensions (e.g., dbt, AtScale).  
@@ -102,7 +102,7 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## 🔷 In short
+## In short
 
 - **Generative BI = "Talk to your data."**
 - **Agentic Analytics = "Your data solves problems for you."**
