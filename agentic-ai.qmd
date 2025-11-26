@@ -155,21 +155,27 @@ Not every problem needs full autonomy. Here's how to decide:
 # Where Agentic AI Works Today
 Organizations are already running agentic systems in production:
 
-**Financial Services** — Banks like Morgan Stanley are piloting research assistant agents that automatically pull evidence, cite sources, and summarize investment memos. BNY Mellon launched Eliza, an internal agentic platform now used by thousands of employees for knowledge retrieval and task automation.
+**Financial Services**    
+Morgan Stanley rolled out AI assistants to 98% of its financial advisor teams. The tools help advisors pull insights from over 70,000 research reports. Document retrieval efficiency jumped from 20% to 80%, and advisors save 30 minutes per client meeting.<sup>7<sup>
+BNY Mellon launched Eliza, an internal AI platform now used by 96% of its 50,000 employees. The platform has over 100 AI agents handling tasks from payment processing to code repair.<sup>8,9</sup>
 
-> 60–80% reduction in routine workflow time; major savings in manual coordination across departments.
+> Major efficiency gains in knowledge retrieval; significant time savings on routine tasks.
 
-**Healthcare** — Mayo Clinic and Mount Sinai use clinical agent copilots to summarize patient notes and assist with protocol recommendations. Change Healthcare (UnitedHealth) embedded agentic flows into claims processing, automating up to 80% of low-risk reviews.
+**Healthcare**     
+Mayo Clinic deployed AI documentation assistants to 2,000+ physicians. Nurses save 30 seconds per patient message, adding up to 1,500 hours saved per month across the organization.<sup>10,11</sup>
+Mount Sinai rolled out AI copilots that turn physician conversations into clinical notes automatically. The system integrates directly with their medical records.<sup>12</sup>
 
-> 67% reduction in documentation time; sub-$1 cost per automated incident review.
+> Documentation time significantly reduced; clinicians report saving 30 minutes to 2 hours per day.
 
-**Software Development** — Replit built Ghostwriter agents for full-stack code planning and debugging. Salesforce uses agentic architectures (CodeGen agents) to assist internal developers with code reviews, test generation, and deployment routines.
+**Software Development**      
+JM Family built an AI system with specialized agents for requirements gathering, coding, documentation, and quality assurance. A coordinator agent manages the team.<sup>6</sup>
 
-> 60% reduction in QA time; requirements design cycles cut from weeks to days.
+> QA time cut by 60%; requirements cycles dropped from weeks to days.
 
-**Customer Operations** — Fujitsu deployed customer-facing agents (via Microsoft's Azure AI Agent Services) for sales support and help desk routing. Vodafone uses agent-based routing to triage 30–40% of customer interactions before handing off to humans.
+**Operations** 
+Fujitsu uses AI agents for sales support and proposal creation via Microsoft's Azure AI Agent Services. Production time for sales proposals dropped 67%.<sup>5,6</sup>
 
-> Tier-1 support automated, freeing humans for edge cases needing empathy and escalation.
+> Dramatic time savings in document creation and customer-facing operations.
 
 # Conclusion
 
@@ -191,4 +197,15 @@ Agents handle structured complexity while humans handle judgment calls. As these
 
 [6] Microsoft. (2025). Agent Factory: The new era of agentic AI—common use cases and design patterns. https://azure.microsoft.com/en-us/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns/
 
+[7] Morgan Stanley. (2023-2024). AI @ Morgan Stanley Platform. https://www.morganstanley.com/press-releases/morgan-stanley-research-announces-askresearchgpt
+
+[8] BNY Mellon. (2025). Artificial Intelligence at BNY. https://www.bny.com/corporate/global/en/about-us/technology-innovation/artificial-intelligence.html
+
+[9] PYMNTS. (2025). BNY Says 96% of Employees Use In-House AI Platform. https://www.pymnts.com/news/artificial-intelligence/2025/bny-says-96percent-employees-use-in-house-ai-platform/
+
+[10] Abridge. (2024). Mayo Clinic Expands Use of Abridge AI Platform. https://www.abridge.com/
+
+[11] Epic. (2024). AI for Clinicians: Mayo Clinic Case Study. https://www.epic.com/software/ai-clinicians/
+
+[12] Becker's Hospital Review. (2025). Mount Sinai to roll out Microsoft AI assistant for clinicians. https://www.beckershospitalreview.com/healthcare-information-technology/ai/mount-sinai-to-roll-out-microsoft-ai-assistant-for-clinicians/
 
