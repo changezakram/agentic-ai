@@ -32,7 +32,7 @@ Agentic systems maintain context across interactions (memory), break complex goa
 
 Agentic systems run in a continuous cycle—perceiving their environment, reasoning about options, planning actions, executing through tools, and learning from results. The cycle runs continuously, adapting as conditions change.
 
-![**Figure:** Agents operate in a continuous action-feedback loop, using memory and reasoning to interact with external tools and data sources.](images/AgenticArchitecture.png)
+![**Figure:** Agents operate in a continuous action-feedback loop, using memory and reasoning to interact with external tools and data sources.](images/AgenticAIArchitecture.png)
 
 **Perceive** — The agent pulls data from available sources: databases, APIs, document repositories, or user inputs. It keeps relevant context in memory from past interactions.
 
