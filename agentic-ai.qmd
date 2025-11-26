@@ -129,18 +129,20 @@ Loan approvals, credit limit increases, account closures, fraud confirmations, c
 
 
 
-# Choosing the Right Pattern
+# Pattern Selection with Banking Examples
 
 Not every problem needs full autonomy. Here's how to decide:
 
 ## Quick Selection Guide
 
-| **Task**                                             | **Use This Pattern**                   |
-|------------------------------------------------------|----------------------------------------|
-| Predictable multi-step workflow                      | Planning + Tool Use                    |
-| High-stakes decision requiring approval              | Planning + Human in Loop               |
-| Output needs quality control                         | Reflection + Tool Use                  |
-| Requires specialized expertise                       | Multi-Agent (use sparingly)            |
+| **Your Situation**                      | **Use This Pattern**                  | **Banking Example**                                                                 |
+|----------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------|
+| Predictable multi-step workflow        | `Planning + Tool Use`                | Account opening: KYC → credit check → document generation                           |
+| High-stakes decision requiring approval| `Planning + Human in Loop`           | Loan approval: agent analyzes risk, human approves                                  |
+| Output needs quality control           | `Reflection + Tool Use`              | Regulatory reports: draft → self-review → submit                                    |
+| Requires specialized expertise         | `Multi-Agent (use sparingly)`        | Fraud investigation: transaction, history, and threat agents                        |
+| Tasks evolve step by step              | `ReAct + Tool Use`                   | Suspicious activity monitoring: assess → investigate → escalate if needed           |
+
  
 ## Banking Essentials   
 - **Human-in-Loop is mandatory** for loan approvals, fraud detection, or any decision affecting customer experience.

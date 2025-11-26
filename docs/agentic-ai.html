@@ -204,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#multi-agent-collaboration" id="toc-multi-agent-collaboration" class="nav-link" data-scroll-target="#multi-agent-collaboration"><span class="header-section-number">3.4</span> Multi-Agent Collaboration</a></li>
   <li><a href="#human-in-the-loop" id="toc-human-in-the-loop" class="nav-link" data-scroll-target="#human-in-the-loop"><span class="header-section-number">3.5</span> Human in the Loop</a></li>
   </ul></li>
-  <li><a href="#choosing-the-right-pattern" id="toc-choosing-the-right-pattern" class="nav-link" data-scroll-target="#choosing-the-right-pattern"><span class="header-section-number">4</span> Choosing the Right Pattern</a>
+  <li><a href="#pattern-selection-with-banking-examples" id="toc-pattern-selection-with-banking-examples" class="nav-link" data-scroll-target="#pattern-selection-with-banking-examples"><span class="header-section-number">4</span> Pattern Selection with Banking Examples</a>
   <ul class="collapse">
   <li><a href="#quick-selection-guide" id="toc-quick-selection-guide" class="nav-link" data-scroll-target="#quick-selection-guide"><span class="header-section-number">4.1</span> Quick Selection Guide</a></li>
   <li><a href="#banking-essentials" id="toc-banking-essentials" class="nav-link" data-scroll-target="#banking-essentials"><span class="header-section-number">4.2</span> Banking Essentials</a></li>
@@ -388,38 +388,49 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 </section>
 </section>
-<section id="choosing-the-right-pattern" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Choosing the Right Pattern</h1>
+<section id="pattern-selection-with-banking-examples" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Pattern Selection with Banking Examples</h1>
 <p>Not every problem needs full autonomy. Here’s how to decide:</p>
 <section id="quick-selection-guide" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="quick-selection-guide"><span class="header-section-number">4.1</span> Quick Selection Guide</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 57%">
-<col style="width: 42%">
+<col style="width: 24%">
+<col style="width: 23%">
+<col style="width: 52%">
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Task</strong></th>
+<th><strong>Your Situation</strong></th>
 <th><strong>Use This Pattern</strong></th>
+<th><strong>Banking Example</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Predictable multi-step workflow</td>
-<td>Planning + Tool Use</td>
+<td><code>Planning + Tool Use</code></td>
+<td>Account opening: KYC → credit check → document generation</td>
 </tr>
 <tr class="even">
 <td>High-stakes decision requiring approval</td>
-<td>Planning + Human in Loop</td>
+<td><code>Planning + Human in Loop</code></td>
+<td>Loan approval: agent analyzes risk, human approves</td>
 </tr>
 <tr class="odd">
 <td>Output needs quality control</td>
-<td>Reflection + Tool Use</td>
+<td><code>Reflection + Tool Use</code></td>
+<td>Regulatory reports: draft → self-review → submit</td>
 </tr>
 <tr class="even">
 <td>Requires specialized expertise</td>
-<td>Multi-Agent (use sparingly)</td>
+<td><code>Multi-Agent (use sparingly)</code></td>
+<td>Fraud investigation: transaction, history, and threat agents</td>
+</tr>
+<tr class="odd">
+<td>Tasks evolve step by step</td>
+<td><code>ReAct + Tool Use</code></td>
+<td>Suspicious activity monitoring: assess → investigate → escalate if needed</td>
 </tr>
 </tbody>
 </table>
