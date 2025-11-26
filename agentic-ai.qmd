@@ -179,7 +179,7 @@ Fujitsu uses AI agents for sales support and proposal creation via Microsoft's A
 
 # Conclusion
 
-Agents handle structured complexity while humans handle judgment calls. As these systems improve, that boundary will shift, but the principle holds—agents excel at coordinating many moving parts, humans excel at navigating ambiguity and stakeholder relationships.
+Agents excel at coordination—pulling data from multiple systems, checking compliance, routing tasks. Humans excel at judgment—considering context, weighing tradeoffs, taking responsibility for outcomes. That division works. As the technology improves, agents will handle more of the coordination. But decisions that affect customers' financial lives will still need human judgment.
 
 ---
 
@@ -203,7 +203,7 @@ Agents handle structured complexity while humans handle judgment calls. As these
 
 [9] PYMNTS. (2025). BNY Says 96% of Employees Use In-House AI Platform. https://www.pymnts.com/news/artificial-intelligence/2025/bny-says-96percent-employees-use-in-house-ai-platform/
 
-[10] Abridge. (2024). Mayo Clinic Expands Use of Abridge AI Platform. https://www.abridge.com/
+[10] Abridge. (2024). Mayo Clinic Expands Use of Abridge AI Platform. https://www.abridge.com/press-release/mayo-clinic-announcement
 
 [11] Epic. (2024). AI for Clinicians: Mayo Clinic Case Study. https://www.epic.com/software/ai-clinicians/
 
