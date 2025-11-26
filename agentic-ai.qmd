@@ -54,8 +54,6 @@ Each interaction informs the next. A customer service agent might start with a s
 
 Agentic systems rely on core design patterns. Each solves a different problem, and real systems combine them.
 
-![How agentic AI systems reflect, plan, use tools, and collaborate to solve complex tasks.](images/AgenticAI-Patterns.png)
-
 ## Reflection     
 An agent that can't critique its own output is just automation with extra steps. Reflection lets agents evaluate and improve their outputs before finalizing them—the same quality check that humans do.
 
