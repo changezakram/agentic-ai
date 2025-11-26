@@ -116,13 +116,13 @@
     "href": "agentic-ai.html#quick-selection-guide",
     "title": "Agentic AI: How Intelligent Agents Will Transform Enterprise Workflows",
     "section": "4.1 Quick Selection Guide",
-    "text": "4.1 Quick Selection Guide\n\n\n\n\n\n\n\n\nYour Situation\nUse This Pattern\nBanking Example\n\n\n\n\nPredictable multi-step workflow\nPlanning + Tool Use\nAccount opening: KYC → credit check → document generation\n\n\nHigh-stakes decision requiring approval\nPlanning + Human in Loop\nLoan approval: agent analyzes risk, human approves\n\n\nOutput needs quality control\nReflection + Tool Use\nRegulatory reports: draft → self-review → submit\n\n\nRequires specialized expertise\nMulti-Agent (use sparingly)\nFraud investigation: transaction, history, and threat agents\n\n\nTasks evolve step by step\nReAct + Tool Use\nSuspicious activity monitoring: assess → investigate → escalate if needed"
+    "text": "4.1 Quick Selection Guide\n\n\n\n\n\n\n\n\nUse Case\nUse This Pattern\nExample\n\n\n\n\nPredictable multi-step workflow\nPlanning + Tool Use\nAccount opening: KYC → credit check → document generation\n\n\nHigh-stakes decision requiring approval\nPlanning + Human in Loop\nLoan approval: agent analyzes risk, human approves\n\n\nOutput needs quality control\nReflection + Tool Use\nRegulatory reports: draft → self-review → submit\n\n\nRequires specialized expertise\nMulti-Agent (use sparingly)\nFraud investigation: Fraud investigation: separate agents for transactions, history, and threat analysis\n\n\nTasks evolve step by step\nReAct + Tool Use\nSuspicious activity monitoring: assess → investigate → escalate if needed"
   },
   {
     "objectID": "agentic-ai.html#banking-essentials",
     "href": "agentic-ai.html#banking-essentials",
     "title": "Agentic AI: How Intelligent Agents Will Transform Enterprise Workflows",
     "section": "4.2 Banking Essentials",
-    "text": "4.2 Banking Essentials\n\nHuman-in-Loop is mandatory for loan approvals, fraud detection, or any decision affecting customer experience.\nReflection is essential for regulatory reports and compliance documents—quality checks aren’t optional.\nAudit trails are required for every agent decision. Regulators will ask.\n\n\nStart simple. Use the most basic pattern that solves your problem. Add complexity only with clear evidence it’s needed. Multi-agent systems can require tracing 10–50+ LLM calls to debug a single failure—don’t go there unless you must."
+    "text": "4.2 Banking Essentials\n\nHuman-in-Loop is mandatory for loan approvals, fraud detection, or any decision affecting customer finances.\nReflection is essential for regulatory reports and compliance documents—quality checks aren’t optional.\nAudit trails are required for every agent decision. Regulators will ask.\n\n\nStart simple. Use the simplest pattern that solves your problem. Add complexity only with clear evidence it’s needed. Multi-agent systems can require tracing 10–50+ LLM calls to debug a single failure—don’t go there unless you must."
   }
 ]
