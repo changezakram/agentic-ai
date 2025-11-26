@@ -137,11 +137,11 @@ Not every problem needs full autonomy. Here's how to decide:
 
 | **Use Case**                      | **Use This Pattern**                  | **Example**                                                                 |
 |----------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------|
-| Predictable multi-step workflow        | `Planning + Tool Use`                | Account opening: KYC → credit check → document generation                           |
-| High-stakes decision requiring approval| `Planning + Human in Loop`           | Loan approval: agent analyzes risk, human approves                                  |
-| Output needs quality control           | `Reflection + Tool Use`              | Regulatory reports: draft → self-review → submit                                    |
-| Requires specialized expertise         | `Multi-Agent (use sparingly)`        | Fraud investigation: Fraud investigation: separate agents for transactions, history, and threat analysis|
-| Tasks evolve step by step              | `ReAct + Tool Use`                   | Suspicious activity monitoring: assess → investigate → escalate if needed           |
+| Predictable multi-step workflow        | Planning + Tool Use                | Account opening: KYC → credit check → document generation                           |
+| High-stakes decision requiring approval| Planning + Human in Loop           | Loan approval: agent analyzes risk, human approves                                  |
+| Output needs quality control           | Reflection + Tool Use              | Regulatory reports: draft → self-review → submit                                    |
+| Requires specialized expertise         | Multi-Agent (use sparingly)        | Fraud investigation: Fraud investigation: separate agents for transactions, history, and threat analysis|
+| Tasks evolve step by step              | ReAct + Tool Use                   | Suspicious activity monitoring: assess → investigate → escalate if needed           |
 
  
 ## Banking Essentials   
