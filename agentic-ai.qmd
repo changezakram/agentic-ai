@@ -95,9 +95,9 @@ A commercial loan application requires multiple verification steps: document ext
 
 
 ## Multi-Agent Collaboration     
-Complex problems often require specialized expertise that no single agent possesses. The Multi-agent pattern coordinates specialized agents to tackle problems no single agent can handle alone.
+Some problems need multiple specialists. No single agent has all the expertise required. The Multi-agent pattern coordinates specialized agents to tackle what individual agents can't handle alone.
 
-Research demonstrates that multi-agent debate significantly improves performance over single agents, with accuracy gains of 7-16 percentage points across reasoning and factuality tasks when agents critique and refine each other's outputs.^3^
+Research demonstrates that multi-agent debate significantly improves performance over single agents, with accuracy gains of 7-16% points across reasoning and factuality tasks when agents critique and refine each other's outputs.^3^
 
 **Best for:** Complex problems requiring specialized expertise where task decomposition provides clear benefits. Multi-agent systems are expensive, high-latency, and difficult to debug. Reserve for tasks where the benefits of specialization clearly outweigh the operational complexity.
 
