@@ -143,7 +143,7 @@ Not every problem needs full autonomy. Here's how to decide:
 | Requires specialized expertise                       | Multi-Agent (use sparingly)            |
  
 ## Banking Essentials   
-- **Human-in-Loop is mandatory** for loan approvals, fraud confirmations, or any decision affecting customer finances.
+- **Human-in-Loop is mandatory** for loan approvals, fraud detection, or any decision affecting customer experience.
 - **Reflection is essential** for regulatory reports and compliance documents—quality checks aren't optional.
 - **Audit trails are required** for every agent decision. Regulators will ask.
 
@@ -153,21 +153,21 @@ Not every problem needs full autonomy. Here's how to decide:
 ---
 
 # Where Agentic AI Works Today
-Agentic AI is already deployed in production settings:
+Organizations are already running agentic systems in production:
 
-**Financial Services** — Banks like Morgan Stanley are piloting research assistant agents that automatically pull evidence, cite sources, and summarize investment memos. BNY Mellon has launched Eliza, an internal agentic platform used by thousands of employees for knowledge retrieval and task automation.
+**Financial Services** — Banks like Morgan Stanley are piloting research assistant agents that automatically pull evidence, cite sources, and summarize investment memos. BNY Mellon launched Eliza, an internal agentic platform now used by thousands of employees for knowledge retrieval and task automation.
 
-> Impact: 60–80% reduction in routine workflow time; major savings in manual coordination across departments.
+> 60–80% reduction in routine workflow time; major savings in manual coordination across departments.
 
-**Healthcare** — Mayo Clinic and Mount Sinai are using clinical agent copilots for summarizing patient notes and assisting with protocol recommendations. Change Healthcare, part of UnitedHealth, has embedded agentic flows into claims processing—automating up to 80% of low-risk reviews.
+**Healthcare** — Mayo Clinic and Mount Sinai use clinical agent copilots to summarize patient notes and assist with protocol recommendations. Change Healthcare (UnitedHealth) embedded agentic flows into claims processing, automating up to 80% of low-risk reviews.
 
-> Results: 67% reduction in documentation time; sub-$1 cost per automated incident review.
+> 67% reduction in documentation time; sub-$1 cost per automated incident review.
 
-**Software Development** — Replit has built Ghostwriter agents that help with full-stack code planning and debugging. Salesforce uses agentic architectures (via CodeGen agents) to assist internal developers with code reviews, test generation, and deployment routines.
+**Software Development** — Replit built Ghostwriter agents for full-stack code planning and debugging. Salesforce uses agentic architectures (CodeGen agents) to assist internal developers with code reviews, test generation, and deployment routines.
 
-> Teams report 60% reduction in QA time and requirements design cycles cut from weeks to days.
+> 60% reduction in QA time; requirements design cycles cut from weeks to days.
 
-**Customer Operations** — Fujitsu, using Microsoft’s Azure AI Agent Services, deployed customer-facing agents for sales support and internal help desk routing. Vodafone uses agent-based routing to triage 30–40% of customer interactions before handing off to a human.
+**Customer Operations** — Fujitsu deployed customer-facing agents (via Microsoft's Azure AI Agent Services) for sales support and help desk routing. Vodafone uses agent-based routing to triage 30–40% of customer interactions before handing off to humans.
 
 > Tier-1 support automated, freeing humans for edge cases needing empathy and escalation.
 
