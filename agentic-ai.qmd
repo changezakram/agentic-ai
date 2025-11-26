@@ -156,7 +156,7 @@ Not every problem needs full autonomy. Here's how to decide:
 Organizations are already running agentic systems in production:
 
 **Financial Services**    
-Morgan Stanley rolled out AI assistants to 98% of its financial advisor teams. The tools help advisors pull insights from over 70,000 research reports. Document retrieval efficiency jumped from 20% to 80%, and advisors save 30 minutes per client meeting.<sup>7<sup>
+Morgan Stanley rolled out AI assistants to 98% of its financial advisor teams. The tools help advisors pull insights from over 70,000 research reports. Document retrieval efficiency jumped from 20% to 80%, and advisors save 30 minutes per client meeting.<sup>7<sup>     
 BNY Mellon launched Eliza, an internal AI platform now used by 96% of its 50,000 employees. The platform has over 100 AI agents handling tasks from payment processing to code repair.<sup>8,9</sup>
 
 > Major efficiency gains in knowledge retrieval; significant time savings on routine tasks.
