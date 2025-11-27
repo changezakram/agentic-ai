@@ -1,5 +1,5 @@
 ---
-title: "Generative BI vs. Agentic Analytics"
+title: "Agentic Analytics"
 format: html
 toc: true
 number-sections: true
