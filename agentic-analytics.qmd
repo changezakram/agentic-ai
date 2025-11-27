@@ -7,9 +7,9 @@ number-sections: true
 
 # The Problem: Your Analytics Can't Keep Up
 
-Ten years ago, most companies ran on a few thousand rows of structured data a day—mostly neat records from CRMs and ERPs. Today, mobile logs and real-time streams push that number into the millions. The scale has changed entirely, yet teams are still trying to manage it with tools built for a slower world.
+Ten years ago, most companies worked with a few thousand rows of structured data per day — mainly clean records from CRMs, ERPs, and transactional systems. Today, mobile logs, app activity, and real-time streams push that number into the millions. The scale has changed entirely, yet teams are still trying to manage it with tools built for a slower world.
 
-Instead of driving strategy, your team pulls data in the morning, builds reports in the afternoon—and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.
+Instead of driving strategy, your team spends mornings pulling data, afternoons building reports — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.
 
 It’s an efficiency trap. According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it.
 
