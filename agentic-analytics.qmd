@@ -44,7 +44,7 @@ Starting around 2017, BI platforms added AI capabilities. They could automatical
 With the rise of Large Language Models, BI became conversational. Tools like Power BI Copilot and LangChain-based agents let users explore data through natural dialogue. Instead of clicking through dashboards, users could ask "Why did sales drop last month?" and get instant analysis with visualizations. But users still had to interpret results and decide on actions.
 
 
-**2023 Onward: Generative and Agentic BI**
+**2024 Onward: Agentic Analytics**
 
 Today we're entering the agentic era. These systems don't just answer questions—they take action. An agent doesn't just identify declining sales; it adjusts marketing spend, modifies pricing, and schedules customer outreach. Analytics is no longer about presenting data for human decisions. It's about intelligent systems that pursue goals autonomously while keeping humans in control of strategy.
 
