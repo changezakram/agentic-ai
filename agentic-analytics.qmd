@@ -23,19 +23,6 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## Examples
-
-### Generative BI      
-- User asks: *"Show me revenue trends by region last quarter."*  
-- NLP translates → SQL → dashboard or insight.  
-- Tools: Microsoft Copilot in Power BI, Tableau GPT, ThoughtSpot Sage, Looker.
-
-### Agentic Analytics        
-- Agent monitors churn → detects anomaly → runs analysis → recommends retention campaign → optionally triggers it.  
-- Tools: LangChain Agents, AutoGen, CrewAI, IBM Watson Decision Support.
-
----
-
 ## Use Cases in Banking
 
 | Generative BI | Agentic Analytics |
@@ -90,10 +77,5 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
         [Feedback & Continuous Loop]
 ```
 
----
 
-## In short
-
-- **Generative BI = "Talk to your data."**
-- **Agentic Analytics = "Your data solves problems for you."**
 

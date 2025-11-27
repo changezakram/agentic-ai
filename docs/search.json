@@ -21,39 +21,25 @@
     "text": "2 What’s the difference?\n\n\n\n\n\n\n\n\nFeature\nGenerative BI\nAgentic Analytics\n\n\n\n\nDefinition\nUse of generative AI (e.g., LLMs) to make BI conversational and accessible\nUse of autonomous AI agents to monitor, reason, and act\n\n\nFocus\nNatural language querying & insight generation\nAutonomous problem-solving & action-taking\n\n\nUser Role\nUser asks → system answers\nAgent acts → user reviews/overrides\n\n\nTech Foundation\nLLMs, NLP, vector search\nAgents, reasoning, orchestration, planning\n\n\nGoal\nDemocratize data insights\nProactively optimize KPIs & take actions"
   },
   {
-    "objectID": "agentic-analytics.html#examples",
-    "href": "agentic-analytics.html#examples",
-    "title": "Agentic Analytics",
-    "section": "3 Examples",
-    "text": "3 Examples\n\n3.1 Generative BI\n\nUser asks: “Show me revenue trends by region last quarter.”\n\nNLP translates → SQL → dashboard or insight.\n\nTools: Microsoft Copilot in Power BI, Tableau GPT, ThoughtSpot Sage, Looker.\n\n\n\n3.2 Agentic Analytics\n\nAgent monitors churn → detects anomaly → runs analysis → recommends retention campaign → optionally triggers it.\n\nTools: LangChain Agents, AutoGen, CrewAI, IBM Watson Decision Support."
-  },
-  {
     "objectID": "agentic-analytics.html#use-cases-in-banking",
     "href": "agentic-analytics.html#use-cases-in-banking",
     "title": "Agentic Analytics",
-    "section": "4 Use Cases in Banking",
-    "text": "4 Use Cases in Banking\n\n\n\n\n\n\n\nGenerative BI\nAgentic Analytics\n\n\n\n\nSelf-service dashboards and reports\nContinuous KPI monitoring and autonomous adjustment\n\n\nNatural-language queries on deposits, loans, churn\nDetects anomalies and launches root cause analysis\n\n\nAutomated dashboards and narratives\nAdjusts operations or triggers workflows autonomously"
+    "section": "3 Use Cases in Banking",
+    "text": "3 Use Cases in Banking\n\n\n\n\n\n\n\nGenerative BI\nAgentic Analytics\n\n\n\n\nSelf-service dashboards and reports\nContinuous KPI monitoring and autonomous adjustment\n\n\nNatural-language queries on deposits, loans, churn\nDetects anomalies and launches root cause analysis\n\n\nAutomated dashboards and narratives\nAdjusts operations or triggers workflows autonomously"
   },
   {
     "objectID": "agentic-analytics.html#roadmap-maturity-journey",
     "href": "agentic-analytics.html#roadmap-maturity-journey",
     "title": "Agentic Analytics",
-    "section": "5 Roadmap: Maturity Journey",
-    "text": "5 Roadmap: Maturity Journey\n\n\n\n\n\n\n\n\nStage\nDescription\nExample Outcome\n\n\n\n\n1. Traditional BI\nStatic dashboards\n“I can see my KPIs weekly.”\n\n\n2. Self-Service BI\nBusiness users build own reports\n“I can slice & dice myself.”\n\n\n3. Generative BI\nNLP-driven, automated insights\n“I can ask anything & get answers.”\n\n\n4. Augmented BI\nSystem suggests anomalies/trends\n“It highlights what matters.”\n\n\n5. Agentic Analytics\nAgents monitor & act autonomously\n“It adjusts operations proactively.”"
+    "section": "4 Roadmap: Maturity Journey",
+    "text": "4 Roadmap: Maturity Journey\n\n\n\n\n\n\n\n\nStage\nDescription\nExample Outcome\n\n\n\n\n1. Traditional BI\nStatic dashboards\n“I can see my KPIs weekly.”\n\n\n2. Self-Service BI\nBusiness users build own reports\n“I can slice & dice myself.”\n\n\n3. Generative BI\nNLP-driven, automated insights\n“I can ask anything & get answers.”\n\n\n4. Augmented BI\nSystem suggests anomalies/trends\n“It highlights what matters.”\n\n\n5. Agentic Analytics\nAgents monitor & act autonomously\n“It adjusts operations proactively.”"
   },
   {
     "objectID": "agentic-analytics.html#example-architectures",
     "href": "agentic-analytics.html#example-architectures",
     "title": "Agentic Analytics",
-    "section": "6 Example Architectures",
-    "text": "6 Example Architectures\n\n6.1 Generative BI\n[User]\n   ↓\n[LLM/NLP]\n   ↓\n[Semantic Layer + SQL Generator]\n   ↓\n[Data Warehouse]\n   ↓\n[BI Tool / Dashboard]\n\n\n\n6.2 Agentic Analytics\n               [Agent Framework]\n                     ↓\n   [Planner + Reasoner + Memory + Tools]\n                     ↓\n [Data Warehouse + Real-time Streams]\n                     ↓\n [BI Tools] & [Action APIs] & [Workflow Automation]\n                     ↓\n        [Feedback & Continuous Loop]"
-  },
-  {
-    "objectID": "agentic-analytics.html#in-short",
-    "href": "agentic-analytics.html#in-short",
-    "title": "Agentic Analytics",
-    "section": "7 In short",
-    "text": "7 In short\n\nGenerative BI = “Talk to your data.”\nAgentic Analytics = “Your data solves problems for you.”"
+    "section": "5 Example Architectures",
+    "text": "5 Example Architectures\n\n5.1 Generative BI\n[User]\n   ↓\n[LLM/NLP]\n   ↓\n[Semantic Layer + SQL Generator]\n   ↓\n[Data Warehouse]\n   ↓\n[BI Tool / Dashboard]\n\n\n\n5.2 Agentic Analytics\n               [Agent Framework]\n                     ↓\n   [Planner + Reasoner + Memory + Tools]\n                     ↓\n [Data Warehouse + Real-time Streams]\n                     ↓\n [BI Tools] & [Action APIs] & [Workflow Automation]\n                     ↓\n        [Feedback & Continuous Loop]"
   },
   {
     "objectID": "agentic-ai.html",
