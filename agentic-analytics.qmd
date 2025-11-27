@@ -7,9 +7,7 @@ number-sections: true
 
 # The Problem: Your Analytics Can't Keep Up
 
-According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it.^1^
-
-If that sounds familiar, you’re not alone.
+According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it.^1^ If that sounds familiar, you’re not alone.
 
 Your team pulls data in the morning, builds reports in the afternoon — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.
 
