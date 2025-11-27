@@ -11,7 +11,7 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## 🔷 What’s the difference?
+## What’s the difference?
 
 | Feature | Generative BI | Agentic Analytics |
 |---------|----------------|--------------------|

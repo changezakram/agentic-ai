@@ -17,8 +17,8 @@
     "objectID": "agentic-analytics.html#whats-the-difference",
     "href": "agentic-analytics.html#whats-the-difference",
     "title": "Generative BI vs. Agentic Analytics",
-    "section": "2 🔷 What’s the difference?",
-    "text": "2 🔷 What’s the difference?\n\n\n\n\n\n\n\n\nFeature\nGenerative BI\nAgentic Analytics\n\n\n\n\nDefinition\nUse of generative AI (e.g., LLMs) to make BI conversational and accessible\nUse of autonomous AI agents to monitor, reason, and act\n\n\nFocus\nNatural language querying & insight generation\nAutonomous problem-solving & action-taking\n\n\nUser Role\nUser asks → system answers\nAgent acts → user reviews/overrides\n\n\nTech Foundation\nLLMs, NLP, vector search\nAgents, reasoning, orchestration, planning\n\n\nGoal\nDemocratize data insights\nProactively optimize KPIs & take actions"
+    "section": "2 What’s the difference?",
+    "text": "2 What’s the difference?\n\n\n\n\n\n\n\n\nFeature\nGenerative BI\nAgentic Analytics\n\n\n\n\nDefinition\nUse of generative AI (e.g., LLMs) to make BI conversational and accessible\nUse of autonomous AI agents to monitor, reason, and act\n\n\nFocus\nNatural language querying & insight generation\nAutonomous problem-solving & action-taking\n\n\nUser Role\nUser asks → system answers\nAgent acts → user reviews/overrides\n\n\nTech Foundation\nLLMs, NLP, vector search\nAgents, reasoning, orchestration, planning\n\n\nGoal\nDemocratize data insights\nProactively optimize KPIs & take actions"
   },
   {
     "objectID": "agentic-analytics.html#examples",
