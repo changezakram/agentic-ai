@@ -7,13 +7,16 @@ number-sections: true
 
 # The Problem: Your Analytics Can't Keep Up
 
-A decade ago, businesses processed thousands of data points daily. Today, it's millions. But your analytics team hasn't grown 100x. They're drowning in data, armed with tools built for a simpler time. While they manually build reports, nimble startups are making decisions in milliseconds.
+According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it.^1^
 
-This isn't just about efficiency. It's about survival.
+If that sounds familiar, you’re not alone.
 
-Your teams spend mornings pulling data, afternoons building reports, and by evening the opportunity has passed. Whether you're in retail, healthcare, manufacturing, or finance—the story is the same. McKinsey found companies waste 60-70% of analytics time just preparing data. Only 30% goes to actual analysis.
+Your team pulls data in the morning, builds reports in the afternoon — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.
 
-That's about to change.
+The volume of data has exploded. Ten years ago, companies tracked thousands of data points a day. Now it’s millions. But the analytics process hasn’t kept up. Teams are still using tools built for a slower world.
+
+That needs to change.
+
 
 # The Evolution of Business Analytics
 
@@ -262,3 +265,9 @@ Organizations that figure this out will thrive. Those that wait will become case
 5. Set a pilot date—not next year, next quarter
 
 The future isn't about better dashboards. It's about analytics that don't just tell you what happened—they fix it before you even knew there was a problem.
+
+
+# References
+
+[1] https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/how-companies-can-use-dataops-to-jump-start-advanced-analytics
+
