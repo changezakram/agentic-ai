@@ -30,7 +30,7 @@ In the 1990s, organizations centralized their data. They built ETL pipelines to 
 
 In the 2000s, self-service BI democratized data access. Tools like Tableau and QlikView allowed business users to explore data on their own, without writing SQL or relying on IT. This era emphasized drag-and-drop visualizations, data discovery, and faster decision-making. Analysts could pull data into tools, join it manually, and build dashboards with minimal technical expertise.
 
-**2010s: Modern Cloud BI**
+**2010s: Cloud and Big Data Analytics**
 
 The 2010s introduced cloud-native analytics. Data moved from on-premise warehouses to scalable platforms like Snowflake, BigQuery, and Redshift. Tools like Looker and Power BI enabled centralized semantic layers, allowing consistent metric definitions across teams. DBT made data transformation accessible to analysts using SQL. The BI stack became modular and scalable.
 
