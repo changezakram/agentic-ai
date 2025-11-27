@@ -25,18 +25,18 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ## Examples
 
-### Generative BI
-✅ User asks: *"Show me revenue trends by region last quarter."*  
-✅ NLP translates → SQL → dashboard or insight.  
-✅ Tools: Microsoft Copilot in Power BI, Tableau GPT, ThoughtSpot Sage, Looker.
+### Generative BI      
+- User asks: *"Show me revenue trends by region last quarter."*  
+- NLP translates → SQL → dashboard or insight.  
+- Tools: Microsoft Copilot in Power BI, Tableau GPT, ThoughtSpot Sage, Looker.
 
-### Agentic Analytics
-✅ Agent monitors churn → detects anomaly → runs analysis → recommends retention campaign → optionally triggers it.  
-✅ Tools: LangChain Agents, AutoGen, CrewAI, IBM Watson Decision Support.
+### Agentic Analytics        
+- Agent monitors churn → detects anomaly → runs analysis → recommends retention campaign → optionally triggers it.  
+- Tools: LangChain Agents, AutoGen, CrewAI, IBM Watson Decision Support.
 
 ---
 
-## 🏦 Use Cases in Banking
+## Use Cases in Banking
 
 | Generative BI | Agentic Analytics |
 |---------------|--------------------|
@@ -46,7 +46,7 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## 📈 Roadmap: Maturity Journey
+## Roadmap: Maturity Journey
 
 | Stage | Description | Example Outcome |
 |-------|-------------|-----------------|
@@ -58,7 +58,7 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## 🪜 Example Architectures
+## Example Architectures
 
 ### Generative BI
 
@@ -92,26 +92,8 @@ This guide explains the difference between **Generative BI (Gen BI)** and **Agen
 
 ---
 
-## Key Building Blocks
-
-✅ **Data Layer:** Snowflake, BigQuery, Redshift — clean, documented.  
-✅ **Semantic Layer:** Business-friendly metrics & dimensions (e.g., dbt, AtScale).  
-✅ **LLM Integration:** Embedded in BI tools (for Gen BI) or orchestrated (for agents).  
-✅ **Orchestration Layer:** LangChain, AutoGen.  
-✅ **Action Layer:** API connectors & workflow automation (e.g., Zapier, Airflow).
-
----
-
 ## In short
 
 - **Generative BI = "Talk to your data."**
 - **Agentic Analytics = "Your data solves problems for you."**
 
----
-
-If you’d like, you can also:
-- 📄 Add visual diagrams of these architectures.
-- 🚀 Build a tailored roadmap for your organization.
-- 📋 Map these ideas to specific vendors & open-source tools.
-
-Let me know if you’d like help with any of these!
