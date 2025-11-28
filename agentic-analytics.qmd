@@ -138,20 +138,15 @@ To build a system that’s truly agentic—not just automated—you need a stron
 
 # Common Challenges (With Solutions)
 
-**"What if the AI makes mistakes?"**
-Start with low-risk decisions. Keep humans in the loop. Build confidence with small wins. Remember: humans make mistakes too, just slower and more expensive ones.
+**What if the AI makes mistakes?** Start with low-risk decisions. Keep humans in the loop. Build confidence with small wins. Remember: humans make mistakes too, just slower and more expensive ones.
 
-**"This sounds expensive"**
-Compare to your current costs: analyst salaries, error rates, missed opportunities. Most organizations see ROI within 6 months. Start small to prove value.
+**This sounds expensive** Compare to your current costs: analyst salaries, error rates, missed opportunities. Most organizations see ROI within 6 months. Start small to prove value.
 
-**"Our employees will resist"**
-Frame as augmentation, not replacement. Agents do boring work, humans do interesting work. Invest in training. Celebrate wins together.
+**Our employees will resist** Frame as augmentation, not replacement. Agents do boring work, humans do interesting work. Invest in training. Celebrate wins together.
 
-**"Our data isn't ready"**
-Perfect is the enemy of good. Start with your best data in one area. Fix as you go. Even 70% automation beats 0%.
+**Our data isn't ready** Perfect is the enemy of good. Start with your best data in one area. Fix as you go. Even 70% automation beats 0%.
 
-**"How do we maintain control?"**
-Build in circuit breakers. Set spending limits. Require human approval for irreversible actions. Monitor and adjust.
+**How do we maintain control?** Build in circuit breakers. Set spending limits. Require human approval for irreversible actions. Monitor and adjust.
 
 
 # Conclusion
