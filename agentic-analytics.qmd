@@ -94,50 +94,6 @@ Here’s how analytics has evolved across three generations — from dashboards,
 > While agentic systems can act autonomously, the level of human oversight depends on the context. For high-risk or high-impact decisions — such as patient care, pricing changes, or customer interactions — humans remain in the loop. For routine tasks with clear rules, agents can execute independently within set boundaries.
 
 
-# Real-World Examples Across Industries
-
-## Retail: Dynamic Pricing and Inventory
-A clothing retailer's agent notices a competitor dropped prices on winter coats. The agent:
-- Analyzes current inventory levels
-- Checks weather forecasts for cold snap timing
-- Adjusts prices by region to stay competitive
-- Increases orders for sizes running low
-- Alerts marketing to push winter coat promotions
-
-Result: 15% increase in winter coat sales, zero stockouts.
-
-## Healthcare: Patient Care Optimization
-Hospital agent monitors patient data and notices early sepsis indicators. The agent:
-- Immediately alerts the care team
-- Orders required lab tests
-- Reserves necessary equipment
-- Adjusts medication protocols per guidelines
-- Documents everything for compliance
-
-Result: 30% reduction in sepsis mortality, faster intervention times.
-
-## Manufacturing: Predictive Maintenance
-Factory agent detects unusual vibration patterns in critical equipment. The agent:
-- Schedules maintenance during next planned downtime
-- Orders replacement parts
-- Adjusts production schedule to minimize impact
-- Notifies technicians with specific repair instructions
-- Updates maintenance logs automatically
-
-Result: 40% reduction in unplanned downtime, millions saved.
-
-## E-commerce: Customer Experience
-Online marketplace agent sees customer struggling with checkout. The agent:
-- Identifies the specific issue (payment method declined)
-- Offers alternative payment options
-- Applies available discount to encourage completion
-- Sends follow-up email with saved cart
-- Flags UX issue for development team
-
-Result: 25% reduction in cart abandonment.
-
-
-
 # Agentic Analytics for Different Roles
 
 **Sales Teams**
