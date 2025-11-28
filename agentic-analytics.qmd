@@ -54,8 +54,6 @@ Most analytics tools today are still passive. They wait for users to ask questio
 
 Here’s what makes it different:
 
-**Here's what makes it different:**
-
 **It Sees Everything**  
 Agents monitor data streams in real-time. They read emails, scan documents, analyze sensor data, track social media. Nothing gets missed.
 
