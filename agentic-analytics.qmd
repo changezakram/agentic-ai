@@ -69,7 +69,7 @@ Here’s how analytics has evolved across three generations — from dashboards,
 |---------------------|----------------------------------------|------------------------------------|----------------------------------------|
 | **User Interaction** | Click through dashboards               | Ask questions in plain English     | Set goals and let agents work          |
 | **Insight Generation** | Navigate dashboards, apply filters      | Ask questions, interpret responses | Review and monitor suggested actions   |
-| **Speed to Insight** | Hours to days                          | Seconds to minutes                 | Already done before you ask            |
+| **Speed to Insight** | Minutes to hours                          | Seconds to minutes                 | Already done before you ask            |
 | **Output**           | Predefined dashboards                  | Dynamic answers                    | Completed actions                      |
 | **Decision Making**  | Fully manual                           | AI-assisted                        | AI-executed with oversight             |
 
