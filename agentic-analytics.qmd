@@ -54,11 +54,11 @@ Most analytics tools today are still passive. They wait for users to ask questio
 
 Here’s what makes it different:
 
-**It Monitors What Matters** - Agentic systems continuously scan key data sources including business systems, documents, emails, and sensors. They surface relevant signals without needing a human to pull the data.
+**It Monitors What Matters** — Agentic systems continuously scan key data sources including business systems, documents, emails, and sensors. They surface relevant signals without needing a human to pull the data.
 
-**It Understands Context** - When patterns change, the agent knows why. Seasonal fluctuation? Supply chain issue? Competitor move? It connects dots across systems to see the full picture.
+**It Understands Context** — When patterns change, the agent knows why. Seasonal fluctuation? Supply chain issue? Competitor move? It connects dots across systems to see the full picture.
 
-**It Takes Action** - Agents don't just flag issues—they fix them. Adjust pricing. Reroute shipments. Schedule staff. Update inventory. No waiting for approval on routine decisions.
+**It Takes Action** — Agents don't just flag issues—they fix them. Adjust pricing. Reroute shipments. Schedule staff. Update inventory. No waiting for approval on routine decisions.
 
 # Real-World Examples Across Industries
 
