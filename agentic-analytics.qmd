@@ -96,8 +96,6 @@ Here’s how analytics has evolved across three generations — from dashboards,
 
 # Building Your Agentic System
 
-## Five Essential Components
-
 To build a system that’s truly agentic—not just automated—you need a strong foundation. These five components ensure agents can act intelligently, safely, and at scale.
 
 **1. Clean Data Foundation:** Agents need accurate, connected data to make good decisions. If your data is messy or incomplete, they’ll make confident—but wrong—choices. Fix data quality first.
