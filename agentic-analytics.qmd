@@ -48,11 +48,11 @@ With the rise of Large Language Models, BI became conversational. Tools like Pow
 We are now entering the agentic era. These systems don't just answer questions—they can explain them, suggest next steps, and initiate actions. Unlike traditional BI tools that wait for user input, agentic systems can monitor data, apply business logic, and guide decisions in real time. They adjust for changing metrics, business rules, and thresholds. What makes them different isn’t just intelligence — it’s initiative. Agentic Analytics bridges the last mile from insight to action by closing the loop between data, decision, and execution.
 
 
-# How Agentic Analytics Actually Works
+# What Makes Analytics Agentic?
 
-Traditional analytics is like a security camera—it records everything and alerts you when something happens. You still have to watch and respond.
+Most analytics tools today are still passive. They wait for users to ask questions, click filters, or export data. Even with Gen AI, the burden of action still falls on the user. Agentic Analytics changes that. These systems don’t just answer — they act. They monitor conditions, interpret intent, propose actions, and, in many cases, carry out tasks automatically. In short, Agentic Analytics closes the loop between insight and action.
 
-Agentic analytics is like having a security guard who can see problems, make decisions, and take action.
+Here’s what makes it different:
 
 **Here's what makes it different:**
 
