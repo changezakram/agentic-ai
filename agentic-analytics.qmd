@@ -112,41 +112,41 @@ To build a system that’s truly agentic—not just automated—you need a stron
 
 # Implementation Roadmap
 
-## Months 1-3: Foundation
-- Audit data quality (fix the biggest gaps)
-- Choose first use case (customer service or inventory usually easiest)
+**Months 1-3: Foundation**     
+- Audit data quality (focus on biggest gaps)
+- Choose your first use case (customer service or inventory are often easiest)
 - Get stakeholder buy-in
-- Set success metrics
+- Define success metrics
 
-## Months 4-6: Pilot
-- Launch with one simple agent
+**Months 4-6: Pilot**      
+- Launch a simple agent for a targeted task
 - Keep humans closely involved
-- Measure everything: time saved, errors prevented, satisfaction scores
-- Target: 20% efficiency gain
+- Track impact: time saved, errors prevented, satisfaction
+- Aim for ~20% efficiency gain
 
-## Months 7-12: Scale
-- Add more use cases across departments
-- Connect agents so they share intelligence
-- Reduce human oversight for proven tasks
-- Target: 40% efficiency gain
+**Months 7-12: Scale**      
+- Add more agent use cases across departments
+- Connect agents to share knowledge and context
+- Reduce human oversight for trusted workflows
+- Target ~40% efficiency gain
 
-## Year 2: Transform
-- Agents running core processes
-- Predictive operations across the board
-- Fully automated routine decisions
-- Target: 60%+ efficiency gain
+**Year 2: Transform**     
+- Let agents run core business processes
+- Enable predictive operations across the board
+- Automate routine decisions with confidence
+- Target 60%+ efficiency gain
 
-# Common Challenges (With Solutions)
+# Common Challenges
 
-**What if the AI makes mistakes?** Start with low-risk decisions. Keep humans in the loop. Build confidence with small wins. Remember: humans make mistakes too, just slower and more expensive ones.
+**What if the AI makes mistakes? — ** Start with low-risk decisions. Keep humans in the loop. Build confidence with small wins. Remember: humans make mistakes too, just slower and more expensive ones.
 
-**This sounds expensive** Compare to your current costs: analyst salaries, error rates, missed opportunities. Most organizations see ROI within 6 months. Start small to prove value.
+**This sounds expensive — ** Compare to your current costs: analyst salaries, error rates, missed opportunities. Most organizations see ROI within 6 months. Start small to prove value.
 
-**Our employees will resist** Frame as augmentation, not replacement. Agents do boring work, humans do interesting work. Invest in training. Celebrate wins together.
+**Our employees will resist — ** Frame as augmentation, not replacement. Agents do boring work, humans do interesting work. Invest in training. Celebrate wins together.
 
-**Our data isn't ready** Perfect is the enemy of good. Start with your best data in one area. Fix as you go. Even 70% automation beats 0%.
+**Our data isn't ready — ** Perfect is the enemy of good. Start with your best data in one area. Fix as you go. Even 70% automation beats 0%.
 
-**How do we maintain control?** Build in circuit breakers. Set spending limits. Require human approval for irreversible actions. Monitor and adjust.
+**How do we maintain control? — ** Build in circuit breakers. Set spending limits. Require human approval for irreversible actions. Monitor and adjust.
 
 
 # Conclusion
