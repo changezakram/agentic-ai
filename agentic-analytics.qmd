@@ -91,8 +91,7 @@ Here’s how analytics has evolved across three generations — from dashboards,
 
 **E-commerce:** An agent sees a customer abandon their cart at checkout. It offers alternate payment methods, applies a discount, and emails the saved cart link — recovering the sale without human intervention.
 
-> Agentic systems are not fully autonomous. They’re designed to assist, not replace, human decision-making. Oversight, review, and escalation pathways are still essential.
-
+> While agentic systems can act autonomously, the level of human oversight depends on the context. For high-risk or high-impact decisions — such as patient care, pricing changes, or customer interactions — humans remain in the loop. For routine tasks with clear rules, agents can execute independently within set boundaries.
 
 
 # Real-World Examples Across Industries
