@@ -87,12 +87,12 @@ Here’s how analytics has evolved across three generations — from dashboards,
 ::: {.columns}
 
 ::: {.column width="50%"}
-### 🧥 Retail: Dynamic Pricing  
+### Retail: Dynamic Pricing  
 An agent detects a competitor’s price drop on winter coats. It adjusts pricing by region, reorders low-stock sizes, and alerts the marketing team.
 :::
 
 ::: {.column width="50%"}
-### 🏥 Healthcare: Early Intervention  
+### Healthcare: Early Intervention  
 An agent flags early signs of sepsis in patient vitals. It alerts the care team, orders labs, preps equipment, and logs actions for compliance.
 :::
 
@@ -101,12 +101,12 @@ An agent flags early signs of sepsis in patient vitals. It alerts the care team,
 ::: {.columns}
 
 ::: {.column width="50%"}
-### 🏭 Manufacturing: Predictive Maintenance  
+### Manufacturing: Predictive Maintenance  
 An agent detects abnormal equipment vibration. It schedules maintenance, orders parts, adjusts production, and updates maintenance logs.
 :::
 
 ::: {.column width="50%"}
-### 🛒 E-commerce: Checkout Recovery  
+### E-commerce: Checkout Recovery  
 An agent spots a user struggling at checkout. It suggests alternate payments, applies a discount, saves the cart, and notifies the UX team.
 :::
 
