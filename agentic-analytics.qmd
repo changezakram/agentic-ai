@@ -91,7 +91,7 @@ Here’s how analytics has evolved across three generations — from dashboards,
 
 **E-commerce:** An agent sees a customer abandon their cart at checkout. It offers alternate payment methods, applies a discount, and emails the saved cart link — recovering the sale without human intervention.
 
-> **Note:** Agentic systems are not fully autonomous. They’re designed to assist, not replace, human decision-making. Oversight, review, and escalation pathways are still essential.
+> Agentic systems are not fully autonomous. They’re designed to assist, not replace, human decision-making. Oversight, review, and escalation pathways are still essential.
 
 
 
