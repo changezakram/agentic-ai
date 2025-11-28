@@ -73,6 +73,7 @@ Here’s how analytics has evolved across three generations — from dashboards,
 | **Output**           | Predefined dashboards                  | Dynamic answers                    | Completed actions                      |
 | **Decision Making**  | Fully manual                           | AI-assisted                        | AI-executed with oversight             |
 
+> #### ℹ️ Note
 > In traditional BI tools like Power BI, most end users rely on prebuilt dashboards and don’t write queries. But they still need to interpret charts, apply filters, and manually extract meaning.
 >  
 > Generative BI reduces that burden by allowing users to ask questions in plain English. However, speed and accuracy still depend on how complete and well-structured the underlying data model is. If key metrics or fields are missing, answers may be delayed or misleading.  
