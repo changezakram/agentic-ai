@@ -243,17 +243,6 @@ Organizations that figure this out will thrive. Those that wait will become case
 
 ---
 
-**Take Action Today:**
-
-1. Identify your most manual, repetitive process
-2. Calculate the true cost (time + errors + opportunity)
-3. Map out what an agent could do instead
-4. Start conversations with vendors or partners
-5. Set a pilot date—not next year, next quarter
-
-The future isn't about better dashboards. It's about analytics that don't just tell you what happened—they fix it before you even knew there was a problem.
-
-
 # References
 
 [1] https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/how-companies-can-use-dataops-to-jump-start-advanced-analytics
