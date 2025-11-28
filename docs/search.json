@@ -7,34 +7,6 @@
     "text": "Ten years ago, most companies worked with a few thousand rows of structured data per day — mainly clean records from CRMs, ERPs, and transactional systems. Today, mobile logs, app activity, and real-time streams push that number into the millions. The scale has changed entirely, yet teams are still trying to manage it with tools built for a slower world.\nInstead of driving strategy, Analytics Team spends mornings pulling data, afternoons building reports — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.\nIt’s an efficiency trap. According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. This needs to change."
   },
   {
-    "objectID": "agentic-analytics.html#retail-dynamic-pricing",
-    "href": "agentic-analytics.html#retail-dynamic-pricing",
-    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.1 Retail: Dynamic Pricing",
-    "text": "5.1 Retail: Dynamic Pricing\nAn agent detects a competitor’s price drop on winter coats. It adjusts pricing by region, reorders low-stock sizes, and alerts the marketing team."
-  },
-  {
-    "objectID": "agentic-analytics.html#healthcare-early-intervention",
-    "href": "agentic-analytics.html#healthcare-early-intervention",
-    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.2 Healthcare: Early Intervention",
-    "text": "5.2 Healthcare: Early Intervention\nAn agent flags early signs of sepsis in patient vitals. It alerts the care team, orders labs, preps equipment, and logs actions for compliance."
-  },
-  {
-    "objectID": "agentic-analytics.html#manufacturing-predictive-maintenance",
-    "href": "agentic-analytics.html#manufacturing-predictive-maintenance",
-    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.3 Manufacturing: Predictive Maintenance",
-    "text": "5.3 Manufacturing: Predictive Maintenance\nAn agent detects abnormal equipment vibration. It schedules maintenance, orders parts, adjusts production, and updates maintenance logs."
-  },
-  {
-    "objectID": "agentic-analytics.html#e-commerce-checkout-recovery",
-    "href": "agentic-analytics.html#e-commerce-checkout-recovery",
-    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.4 E-commerce: Checkout Recovery",
-    "text": "5.4 E-commerce: Checkout Recovery\nAn agent spots a user struggling at checkout. It suggests alternate payments, applies a discount, saves the cart, and notifies the UX team."
-  },
-  {
     "objectID": "agentic-analytics.html#retail-dynamic-pricing-and-inventory",
     "href": "agentic-analytics.html#retail-dynamic-pricing-and-inventory",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
@@ -49,8 +21,8 @@
     "text": "6.2 Healthcare: Patient Care Optimization\nHospital agent monitors patient data and notices early sepsis indicators. The agent: - Immediately alerts the care team - Orders required lab tests - Reserves necessary equipment - Adjusts medication protocols per guidelines - Documents everything for compliance\nResult: 30% reduction in sepsis mortality, faster intervention times."
   },
   {
-    "objectID": "agentic-analytics.html#manufacturing-predictive-maintenance-1",
-    "href": "agentic-analytics.html#manufacturing-predictive-maintenance-1",
+    "objectID": "agentic-analytics.html#manufacturing-predictive-maintenance",
+    "href": "agentic-analytics.html#manufacturing-predictive-maintenance",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
     "section": "6.3 Manufacturing: Predictive Maintenance",
     "text": "6.3 Manufacturing: Predictive Maintenance\nFactory agent detects unusual vibration patterns in critical equipment. The agent: - Schedules maintenance during next planned downtime - Orders replacement parts - Adjusts production schedule to minimize impact - Notifies technicians with specific repair instructions - Updates maintenance logs automatically\nResult: 40% reduction in unplanned downtime, millions saved."

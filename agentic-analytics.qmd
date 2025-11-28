@@ -81,36 +81,19 @@ Here’s how analytics has evolved across three generations — from dashboards,
 - Agentic systems go further — they monitor live data, generate insights, and sometimes take action. The goal isn’t just automation, but intelligent delegation — with users staying in control.
 :::
 
-
 # Real-World Examples Across Industries
 
-::: {.columns}
+**Retail**  
+An agent detects that a competitor has dropped prices on winter coats. It adjusts regional pricing, reorders popular sizes, and alerts the marketing team — all before anyone notices a dip in sales.
 
-::: {.column width="50%"}
-## Retail: Dynamic Pricing  
-An agent detects a competitor’s price drop on winter coats. It adjusts pricing by region, reorders low-stock sizes, and alerts the marketing team.
-:::
+**Healthcare**  
+An agent monitoring patient vitals spots early signs of sepsis. It alerts the care team, orders labs, and preps equipment, helping doctors respond quickly and consistently.
 
-::: {.column width="50%"}
-## Healthcare: Early Intervention  
-An agent flags early signs of sepsis in patient vitals. It alerts the care team, orders labs, preps equipment, and logs actions for compliance.
-:::
+**Manufacturing**  
+A factory agent picks up abnormal vibration in a machine. It schedules maintenance, orders parts in advance, and adjusts the production schedule to avoid downtime.
 
-:::
-
-::: {.columns}
-
-::: {.column width="50%"}
-## Manufacturing: Predictive Maintenance  
-An agent detects abnormal equipment vibration. It schedules maintenance, orders parts, adjusts production, and updates maintenance logs.
-:::
-
-::: {.column width="50%"}
-## E-commerce: Checkout Recovery  
-An agent spots a user struggling at checkout. It suggests alternate payments, applies a discount, saves the cart, and notifies the UX team.
-:::
-
-:::
+**E-commerce**  
+An agent sees a customer abandon their cart at checkout. It offers alternate payment methods, applies a discount, and emails the saved cart link — recovering the sale without human intervention.
 
 
 
