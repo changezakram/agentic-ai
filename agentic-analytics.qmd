@@ -50,18 +50,15 @@ We are now entering the agentic era. These systems don't just answer questions�
 
 # What Makes Analytics Agentic?
 
-Most analytics tools today are still passive. They wait for users to ask questions, click filters, or export data. ven with Gen AI, the user still has to take action. Agentic Analytics changes that. These systems don’t just respond — they act. They monitor conditions, interpret intent, propose actions, and, in many cases, carry out tasks automatically. In short, Agentic Analytics closes the loop between insight and action.
+Most analytics tools today are still passive. They wait for users to ask questions, click filters, or export data. Even with Gen AI, the user still has to take action. Agentic Analytics changes that. These systems don’t just respond — they act. They monitor conditions, interpret intent, propose actions, and, in many cases, carry out tasks automatically. In short, Agentic Analytics closes the loop between insight and action.
 
 Here’s what makes it different:
 
-**It Sees Everything**  
-Agents monitor data streams in real-time. They read emails, scan documents, analyze sensor data, track social media. Nothing gets missed.
+**It Monitors What Matters** - Agentic systems continuously scan key data sources including business systems, documents, emails, and sensors. They surface relevant signals without needing a human to pull the data.
 
-**It Understands Context**  
-When patterns change, the agent knows why. Seasonal fluctuation? Supply chain issue? Competitor move? It connects dots across systems to see the full picture.
+**It Understands Context** - When patterns change, the agent knows why. Seasonal fluctuation? Supply chain issue? Competitor move? It connects dots across systems to see the full picture.
 
-**It Takes Action**  
-The game-changer. Agents don't just flag issues—they fix them. Adjust pricing. Reroute shipments. Schedule staff. Update inventory. No waiting for approval on routine decisions.
+**It Takes Action** - Agents don't just flag issues—they fix them. Adjust pricing. Reroute shipments. Schedule staff. Update inventory. No waiting for approval on routine decisions.
 
 # Real-World Examples Across Industries
 
