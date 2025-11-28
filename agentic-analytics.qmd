@@ -50,7 +50,7 @@ We are now entering the agentic era. These systems don't just answer questions�
 
 # What Makes Analytics Agentic?
 
-Most analytics tools today are still passive. They wait for users to ask questions, click filters, or export data. Even with Gen AI, the burden of action still falls on the user. Agentic Analytics changes that. These systems don’t just answer — they act. They monitor conditions, interpret intent, propose actions, and, in many cases, carry out tasks automatically. In short, Agentic Analytics closes the loop between insight and action.
+Most analytics tools today are still passive. They wait for users to ask questions, click filters, or export data. ven with Gen AI, the user still has to take action. Agentic Analytics changes that. These systems don’t just respond — they act. They monitor conditions, interpret intent, propose actions, and, in many cases, carry out tasks automatically. In short, Agentic Analytics closes the loop between insight and action.
 
 Here’s what makes it different:
 
