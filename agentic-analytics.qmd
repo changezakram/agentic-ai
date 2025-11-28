@@ -83,17 +83,13 @@ Here’s how analytics has evolved across three generations — from dashboards,
 
 # Real-World Examples Across Industries
 
-**Retail**  
-An agent detects that a competitor has dropped prices on winter coats. It adjusts regional pricing, reorders popular sizes, and alerts the marketing team — all before anyone notices a dip in sales.
+**Retail:** An agent detects that a competitor has dropped prices on winter coats. It adjusts regional pricing, reorders popular sizes, and alerts the marketing team — all before anyone notices a dip in sales.
 
-**Healthcare**  
-An agent monitoring patient vitals spots early signs of sepsis. It alerts the care team, orders labs, and preps equipment, helping doctors respond quickly and consistently.
+**Healthcare:** An agent monitoring patient vitals spots early signs of sepsis. It alerts the care team, orders labs, and preps equipment, helping doctors respond quickly and consistently.
 
-**Manufacturing**  
-A factory agent picks up abnormal vibration in a machine. It schedules maintenance, orders parts in advance, and adjusts the production schedule to avoid downtime.
+**Manufacturing:** A factory agent picks up abnormal vibration in a machine. It schedules maintenance, orders parts in advance, and adjusts the production schedule to avoid downtime.
 
-**E-commerce**  
-An agent sees a customer abandon their cart at checkout. It offers alternate payment methods, applies a discount, and emails the saved cart link — recovering the sale without human intervention.
+**E-commerce:** An agent sees a customer abandon their cart at checkout. It offers alternate payment methods, applies a discount, and emails the saved cart link — recovering the sale without human intervention.
 
 
 
