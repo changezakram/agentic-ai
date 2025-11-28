@@ -7,74 +7,95 @@
     "text": "Ten years ago, most companies worked with a few thousand rows of structured data per day — mainly clean records from CRMs, ERPs, and transactional systems. Today, mobile logs, app activity, and real-time streams push that number into the millions. The scale has changed entirely, yet teams are still trying to manage it with tools built for a slower world.\nInstead of driving strategy, Analytics Team spends mornings pulling data, afternoons building reports — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.\nIt’s an efficiency trap. According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. This needs to change."
   },
   {
-    "objectID": "agentic-analytics.html#real-world-examples-across-industries",
-    "href": "agentic-analytics.html#real-world-examples-across-industries",
+    "objectID": "agentic-analytics.html#retail-dynamic-pricing",
+    "href": "agentic-analytics.html#retail-dynamic-pricing",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "4.1 5. Real-World Examples Across Industries",
-    "text": "4.1 5. Real-World Examples Across Industries\n\n\n\n4.1.1 Retail: Dynamic Pricing\nAn agent detects a competitor’s price drop on winter coats. It adjusts pricing by region, reorders low-stock sizes, and alerts the marketing team.\n\n\n\n4.1.2 Healthcare: Early Intervention\nAn agent flags early signs of sepsis in patient vitals. It alerts the care team, orders labs, preps equipment, and logs actions for compliance.\n\n\n\n\n\n\n4.1.3 Manufacturing: Predictive Maintenance\nAn agent detects abnormal equipment vibration. It schedules maintenance, orders parts, adjusts production, and updates maintenance logs.\n\n\n\n4.1.4 E-commerce: Checkout Recovery\nAn agent spots a user struggling at checkout. It suggests alternate payments, applies a discount, saves the cart, and notifies the UX team."
+    "section": "5.1 Retail: Dynamic Pricing",
+    "text": "5.1 Retail: Dynamic Pricing\nAn agent detects a competitor’s price drop on winter coats. It adjusts pricing by region, reorders low-stock sizes, and alerts the marketing team."
+  },
+  {
+    "objectID": "agentic-analytics.html#healthcare-early-intervention",
+    "href": "agentic-analytics.html#healthcare-early-intervention",
+    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
+    "section": "5.2 Healthcare: Early Intervention",
+    "text": "5.2 Healthcare: Early Intervention\nAn agent flags early signs of sepsis in patient vitals. It alerts the care team, orders labs, preps equipment, and logs actions for compliance."
+  },
+  {
+    "objectID": "agentic-analytics.html#manufacturing-predictive-maintenance",
+    "href": "agentic-analytics.html#manufacturing-predictive-maintenance",
+    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
+    "section": "5.3 Manufacturing: Predictive Maintenance",
+    "text": "5.3 Manufacturing: Predictive Maintenance\nAn agent detects abnormal equipment vibration. It schedules maintenance, orders parts, adjusts production, and updates maintenance logs."
+  },
+  {
+    "objectID": "agentic-analytics.html#e-commerce-checkout-recovery",
+    "href": "agentic-analytics.html#e-commerce-checkout-recovery",
+    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
+    "section": "5.4 E-commerce: Checkout Recovery",
+    "text": "5.4 E-commerce: Checkout Recovery\nAn agent spots a user struggling at checkout. It suggests alternate payments, applies a discount, saves the cart, and notifies the UX team."
   },
   {
     "objectID": "agentic-analytics.html#retail-dynamic-pricing-and-inventory",
     "href": "agentic-analytics.html#retail-dynamic-pricing-and-inventory",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.1 Retail: Dynamic Pricing and Inventory",
-    "text": "5.1 Retail: Dynamic Pricing and Inventory\nA clothing retailer’s agent notices a competitor dropped prices on winter coats. The agent: - Analyzes current inventory levels - Checks weather forecasts for cold snap timing - Adjusts prices by region to stay competitive - Increases orders for sizes running low - Alerts marketing to push winter coat promotions\nResult: 15% increase in winter coat sales, zero stockouts."
+    "section": "6.1 Retail: Dynamic Pricing and Inventory",
+    "text": "6.1 Retail: Dynamic Pricing and Inventory\nA clothing retailer’s agent notices a competitor dropped prices on winter coats. The agent: - Analyzes current inventory levels - Checks weather forecasts for cold snap timing - Adjusts prices by region to stay competitive - Increases orders for sizes running low - Alerts marketing to push winter coat promotions\nResult: 15% increase in winter coat sales, zero stockouts."
   },
   {
     "objectID": "agentic-analytics.html#healthcare-patient-care-optimization",
     "href": "agentic-analytics.html#healthcare-patient-care-optimization",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.2 Healthcare: Patient Care Optimization",
-    "text": "5.2 Healthcare: Patient Care Optimization\nHospital agent monitors patient data and notices early sepsis indicators. The agent: - Immediately alerts the care team - Orders required lab tests - Reserves necessary equipment - Adjusts medication protocols per guidelines - Documents everything for compliance\nResult: 30% reduction in sepsis mortality, faster intervention times."
+    "section": "6.2 Healthcare: Patient Care Optimization",
+    "text": "6.2 Healthcare: Patient Care Optimization\nHospital agent monitors patient data and notices early sepsis indicators. The agent: - Immediately alerts the care team - Orders required lab tests - Reserves necessary equipment - Adjusts medication protocols per guidelines - Documents everything for compliance\nResult: 30% reduction in sepsis mortality, faster intervention times."
   },
   {
     "objectID": "agentic-analytics.html#manufacturing-predictive-maintenance-1",
     "href": "agentic-analytics.html#manufacturing-predictive-maintenance-1",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.3 Manufacturing: Predictive Maintenance",
-    "text": "5.3 Manufacturing: Predictive Maintenance\nFactory agent detects unusual vibration patterns in critical equipment. The agent: - Schedules maintenance during next planned downtime - Orders replacement parts - Adjusts production schedule to minimize impact - Notifies technicians with specific repair instructions - Updates maintenance logs automatically\nResult: 40% reduction in unplanned downtime, millions saved."
+    "section": "6.3 Manufacturing: Predictive Maintenance",
+    "text": "6.3 Manufacturing: Predictive Maintenance\nFactory agent detects unusual vibration patterns in critical equipment. The agent: - Schedules maintenance during next planned downtime - Orders replacement parts - Adjusts production schedule to minimize impact - Notifies technicians with specific repair instructions - Updates maintenance logs automatically\nResult: 40% reduction in unplanned downtime, millions saved."
   },
   {
     "objectID": "agentic-analytics.html#e-commerce-customer-experience",
     "href": "agentic-analytics.html#e-commerce-customer-experience",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.4 E-commerce: Customer Experience",
-    "text": "5.4 E-commerce: Customer Experience\nOnline marketplace agent sees customer struggling with checkout. The agent: - Identifies the specific issue (payment method declined) - Offers alternative payment options - Applies available discount to encourage completion - Sends follow-up email with saved cart - Flags UX issue for development team\nResult: 25% reduction in cart abandonment."
+    "section": "6.4 E-commerce: Customer Experience",
+    "text": "6.4 E-commerce: Customer Experience\nOnline marketplace agent sees customer struggling with checkout. The agent: - Identifies the specific issue (payment method declined) - Offers alternative payment options - Applies available discount to encourage completion - Sends follow-up email with saved cart - Flags UX issue for development team\nResult: 25% reduction in cart abandonment."
   },
   {
     "objectID": "agentic-analytics.html#five-essential-components",
     "href": "agentic-analytics.html#five-essential-components",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "7.1 Five Essential Components",
-    "text": "7.1 Five Essential Components\n1. Clean Data Foundation You can’t build on quicksand. Agents need accurate, connected data. Fix your data quality first, or agents will make confident wrong decisions.\n2. The Semantic Layer\nThink of it as a dictionary ensuring everyone—human and AI—speaks the same language. When an agent says “high-priority customer,” everyone knows exactly what that means.\n3. Integration Points Agents need to connect to everything: ERP, CRM, supply chain systems, external data feeds. APIs are your friend here.\n4. Control Framework Set clear rules about what agents can do alone versus what needs human approval. Start conservative, loosen over time.\n5. Audit System Every decision must be explainable. You need to know “why did the AI do that?” for both improvement and compliance."
+    "section": "8.1 Five Essential Components",
+    "text": "8.1 Five Essential Components\n1. Clean Data Foundation You can’t build on quicksand. Agents need accurate, connected data. Fix your data quality first, or agents will make confident wrong decisions.\n2. The Semantic Layer\nThink of it as a dictionary ensuring everyone—human and AI—speaks the same language. When an agent says “high-priority customer,” everyone knows exactly what that means.\n3. Integration Points Agents need to connect to everything: ERP, CRM, supply chain systems, external data feeds. APIs are your friend here.\n4. Control Framework Set clear rules about what agents can do alone versus what needs human approval. Start conservative, loosen over time.\n5. Audit System Every decision must be explainable. You need to know “why did the AI do that?” for both improvement and compliance."
   },
   {
     "objectID": "agentic-analytics.html#months-1-3-foundation",
     "href": "agentic-analytics.html#months-1-3-foundation",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "8.1 Months 1-3: Foundation",
-    "text": "8.1 Months 1-3: Foundation\n\nAudit data quality (fix the biggest gaps)\nChoose first use case (customer service or inventory usually easiest)\nGet stakeholder buy-in\nSet success metrics"
+    "section": "9.1 Months 1-3: Foundation",
+    "text": "9.1 Months 1-3: Foundation\n\nAudit data quality (fix the biggest gaps)\nChoose first use case (customer service or inventory usually easiest)\nGet stakeholder buy-in\nSet success metrics"
   },
   {
     "objectID": "agentic-analytics.html#months-4-6-pilot",
     "href": "agentic-analytics.html#months-4-6-pilot",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "8.2 Months 4-6: Pilot",
-    "text": "8.2 Months 4-6: Pilot\n\nLaunch with one simple agent\nKeep humans closely involved\nMeasure everything: time saved, errors prevented, satisfaction scores\nTarget: 20% efficiency gain"
+    "section": "9.2 Months 4-6: Pilot",
+    "text": "9.2 Months 4-6: Pilot\n\nLaunch with one simple agent\nKeep humans closely involved\nMeasure everything: time saved, errors prevented, satisfaction scores\nTarget: 20% efficiency gain"
   },
   {
     "objectID": "agentic-analytics.html#months-7-12-scale",
     "href": "agentic-analytics.html#months-7-12-scale",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "8.3 Months 7-12: Scale",
-    "text": "8.3 Months 7-12: Scale\n\nAdd more use cases across departments\nConnect agents so they share intelligence\nReduce human oversight for proven tasks\nTarget: 40% efficiency gain"
+    "section": "9.3 Months 7-12: Scale",
+    "text": "9.3 Months 7-12: Scale\n\nAdd more use cases across departments\nConnect agents so they share intelligence\nReduce human oversight for proven tasks\nTarget: 40% efficiency gain"
   },
   {
     "objectID": "agentic-analytics.html#year-2-transform",
     "href": "agentic-analytics.html#year-2-transform",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "8.4 Year 2: Transform",
-    "text": "8.4 Year 2: Transform\n\nAgents running core processes\nPredictive operations across the board\nFully automated routine decisions\nTarget: 60%+ efficiency gain"
+    "section": "9.4 Year 2: Transform",
+    "text": "9.4 Year 2: Transform\n\nAgents running core processes\nPredictive operations across the board\nFully automated routine decisions\nTarget: 60%+ efficiency gain"
   },
   {
     "objectID": "agentic-ai.html",
