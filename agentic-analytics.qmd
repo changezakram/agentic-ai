@@ -119,18 +119,6 @@ Result: 25% reduction in cart abandonment.
 
 
 
-## The Speed Difference
-
-**Supply chain disruption scenario:**
-
-**Traditional BI:** Weekly supply report → 5 days to identify and address shortage
-
-**Generative BI:** "Show me supply risks" → 2 hours to analyze and decide  
-
-**Agentic Analytics:** Shortage predicted, alternatives sourced, orders placed → You approve what agent arranged
-
-The pattern is clear: we're moving from asking about problems to having them already solved.
-
 # Agentic Analytics for Different Roles
 
 **Sales Teams**

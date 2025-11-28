@@ -35,13 +35,6 @@
     "text": "5.4 E-commerce: Customer Experience\nOnline marketplace agent sees customer struggling with checkout. The agent: - Identifies the specific issue (payment method declined) - Offers alternative payment options - Applies available discount to encourage completion - Sends follow-up email with saved cart - Flags UX issue for development team\nResult: 25% reduction in cart abandonment."
   },
   {
-    "objectID": "agentic-analytics.html#the-speed-difference",
-    "href": "agentic-analytics.html#the-speed-difference",
-    "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.5 The Speed Difference",
-    "text": "5.5 The Speed Difference\nSupply chain disruption scenario:\nTraditional BI: Weekly supply report → 5 days to identify and address shortage\nGenerative BI: “Show me supply risks” → 2 hours to analyze and decide\nAgentic Analytics: Shortage predicted, alternatives sourced, orders placed → You approve what agent arranged\nThe pattern is clear: we’re moving from asking about problems to having them already solved."
-  },
-  {
     "objectID": "agentic-analytics.html#five-essential-components",
     "href": "agentic-analytics.html#five-essential-components",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
