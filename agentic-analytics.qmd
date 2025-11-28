@@ -36,12 +36,12 @@ The 2010s introduced cloud-native analytics. Data moved from on-premise warehous
 
 **Late 2010s: Augmented Analytics**
 
-Starting around 2017, BI platforms added AI capabilities. They could automatically detect anomalies, and generate natural language insights. ThoughtSpot and Tableau’s "Ask Data" let users ask questions in plain English. Power BI introduced automated insights. Machine learning moved from data science teams into everyday analytics tools.
+Starting around 2017, BI platforms began adding AI capabilities — including anomaly detection, automated insights, and natural language summaries. ThoughtSpot and Tableau’s "Ask Data" let users ask questions in plain English. Power BI introduced automated insights. Machine learning moved from data science teams into everyday analytics tools.
 
 
 **Early 2020s: Generative BI**
 
-With the rise of Large Language Models, BI became conversational. Tools like Microsoft Copilot and LangChain-based agents let users explore data through natural dialogue. Instead of clicking through dashboards, users could ask "Why did sales drop last month?" and get instant analysis with visualizations. But users still had to interpret results and decide on actions.
+With the rise of Large Language Models, BI became conversational. Tools like Power BI Copilot and LangChain-based agents let users explore data through natural dialogue. Instead of clicking through dashboards, users could ask “Why did sales drop last month?” and receive visual summaries and explanations in real time. However, users still had to determine the next steps and take action on their own.
 
 **2024 Onward: Agentic Analytics**
 
