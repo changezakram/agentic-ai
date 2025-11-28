@@ -74,11 +74,11 @@ Here’s how analytics has evolved across three generations — from dashboards,
 | **Decision Making**  | Fully manual                           | AI-assisted                        | AI-executed with oversight             |
 
 ::: {.callout-note}
-- In traditional BI tools like Power BI, most end users rely on prebuilt dashboards and don’t write queries. But they still need to interpret charts, apply filters, and manually extract meaning.
-  
-- Generative BI reduces that burden by allowing users to ask questions in plain English. However, speed and accuracy still depend on how complete and well-structured the underlying data model is. If key metrics or fields are missing, answers may be delayed or misleading.  
- 
-- Agentic systems go further — they monitor live data, generate insights, and in some cases, carry out actions. The goal isn’t just automation, but intelligent delegation — with users staying in control.
+- Most users of tools like Power BI rely on prebuilt dashboards and don’t write queries — but they still need to interpret visuals, apply filters, and manually extract insights.
+
+- Generative BI reduces that burden by allowing users to ask questions in plain English. However, speed and accuracy still depend on how complete and well-structured the data model is. If key fields are missing, answers may be delayed or misleading.
+
+- Agentic systems go further — they monitor live data, generate insights, and sometimes take action. The goal isn’t just automation, but intelligent delegation — with users staying in control.
 :::
 
 
