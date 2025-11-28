@@ -60,6 +60,21 @@ Here’s what makes it different:
 
 **It Takes Action** — Agents don't just flag issues—they fix them. Adjust pricing. Reroute shipments. Schedule staff. Update inventory. No waiting for approval on routine decisions.
 
+
+# Traditional vs. Generative vs. Agentic BI
+
+Here’s how analytics has evolved across three generations — from dashboards, to dialogue, to delegation.
+
+| **Aspect**          | **Traditional BI**             | **Generative BI**                | **Agentic Analytics**               |
+|---------------------|--------------------------------|----------------------------------|-------------------------------------|
+| **User Interaction**| Click through dashboards       | Ask questions in plain English   | Set goals and let agents work       |
+| **Speed to Insight**| Hours to days                  | Seconds to minutes               | Already done before you ask         |
+| **Output**          | Static reports                 | Dynamic answers                  | Completed actions                   |
+| **Human Effort**    | Build queries, analyze results | Ask questions, interpret answers | Review outcomes, set strategy       |
+| **Decision Making** | Fully manual                   | AI-assisted                      | AI-executed with oversight          |
+
+
+
 # Real-World Examples Across Industries
 
 ## Retail: Dynamic Pricing and Inventory
@@ -102,17 +117,7 @@ Online marketplace agent sees customer struggling with checkout. The agent:
 
 Result: 25% reduction in cart abandonment.
 
-# The Complete Analytics Evolution: Traditional vs. Generative vs. Agentic
 
-| Aspect | Traditional BI | Generative BI | Agentic Analytics |
-|--------|---------------|---------------|-------------------|
-| **Era** | 2000-2015 | 2015-Present | 2024-Future |
-| **User Interaction** | Click through dashboards | Ask questions in plain English | Set goals and let agents work |
-| **Speed to Insight** | Hours to days | Seconds to minutes | Already done before you ask |
-| **Analysis Type** | Historical reporting | Real-time insights | Predictive prevention |
-| **Output** | Static reports | Dynamic answers | Completed actions |
-| **Human Effort** | Build queries, analyze results | Ask questions, interpret answers | Review outcomes, set strategy |
-| **Decision Making** | Fully manual | AI-assisted | AI-executed with oversight |
 
 ## The Speed Difference
 

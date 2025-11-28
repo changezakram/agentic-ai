@@ -10,36 +10,36 @@
     "objectID": "agentic-analytics.html#retail-dynamic-pricing-and-inventory",
     "href": "agentic-analytics.html#retail-dynamic-pricing-and-inventory",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "4.1 Retail: Dynamic Pricing and Inventory",
-    "text": "4.1 Retail: Dynamic Pricing and Inventory\nA clothing retailer’s agent notices a competitor dropped prices on winter coats. The agent: - Analyzes current inventory levels - Checks weather forecasts for cold snap timing - Adjusts prices by region to stay competitive - Increases orders for sizes running low - Alerts marketing to push winter coat promotions\nResult: 15% increase in winter coat sales, zero stockouts."
+    "section": "5.1 Retail: Dynamic Pricing and Inventory",
+    "text": "5.1 Retail: Dynamic Pricing and Inventory\nA clothing retailer’s agent notices a competitor dropped prices on winter coats. The agent: - Analyzes current inventory levels - Checks weather forecasts for cold snap timing - Adjusts prices by region to stay competitive - Increases orders for sizes running low - Alerts marketing to push winter coat promotions\nResult: 15% increase in winter coat sales, zero stockouts."
   },
   {
     "objectID": "agentic-analytics.html#healthcare-patient-care-optimization",
     "href": "agentic-analytics.html#healthcare-patient-care-optimization",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "4.2 Healthcare: Patient Care Optimization",
-    "text": "4.2 Healthcare: Patient Care Optimization\nHospital agent monitors patient data and notices early sepsis indicators. The agent: - Immediately alerts the care team - Orders required lab tests - Reserves necessary equipment - Adjusts medication protocols per guidelines - Documents everything for compliance\nResult: 30% reduction in sepsis mortality, faster intervention times."
+    "section": "5.2 Healthcare: Patient Care Optimization",
+    "text": "5.2 Healthcare: Patient Care Optimization\nHospital agent monitors patient data and notices early sepsis indicators. The agent: - Immediately alerts the care team - Orders required lab tests - Reserves necessary equipment - Adjusts medication protocols per guidelines - Documents everything for compliance\nResult: 30% reduction in sepsis mortality, faster intervention times."
   },
   {
     "objectID": "agentic-analytics.html#manufacturing-predictive-maintenance",
     "href": "agentic-analytics.html#manufacturing-predictive-maintenance",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "4.3 Manufacturing: Predictive Maintenance",
-    "text": "4.3 Manufacturing: Predictive Maintenance\nFactory agent detects unusual vibration patterns in critical equipment. The agent: - Schedules maintenance during next planned downtime - Orders replacement parts - Adjusts production schedule to minimize impact - Notifies technicians with specific repair instructions - Updates maintenance logs automatically\nResult: 40% reduction in unplanned downtime, millions saved."
+    "section": "5.3 Manufacturing: Predictive Maintenance",
+    "text": "5.3 Manufacturing: Predictive Maintenance\nFactory agent detects unusual vibration patterns in critical equipment. The agent: - Schedules maintenance during next planned downtime - Orders replacement parts - Adjusts production schedule to minimize impact - Notifies technicians with specific repair instructions - Updates maintenance logs automatically\nResult: 40% reduction in unplanned downtime, millions saved."
   },
   {
     "objectID": "agentic-analytics.html#e-commerce-customer-experience",
     "href": "agentic-analytics.html#e-commerce-customer-experience",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "4.4 E-commerce: Customer Experience",
-    "text": "4.4 E-commerce: Customer Experience\nOnline marketplace agent sees customer struggling with checkout. The agent: - Identifies the specific issue (payment method declined) - Offers alternative payment options - Applies available discount to encourage completion - Sends follow-up email with saved cart - Flags UX issue for development team\nResult: 25% reduction in cart abandonment."
+    "section": "5.4 E-commerce: Customer Experience",
+    "text": "5.4 E-commerce: Customer Experience\nOnline marketplace agent sees customer struggling with checkout. The agent: - Identifies the specific issue (payment method declined) - Offers alternative payment options - Applies available discount to encourage completion - Sends follow-up email with saved cart - Flags UX issue for development team\nResult: 25% reduction in cart abandonment."
   },
   {
     "objectID": "agentic-analytics.html#the-speed-difference",
     "href": "agentic-analytics.html#the-speed-difference",
     "title": "Beyond Dashboards: The Rise of Agentic Analytics",
-    "section": "5.1 The Speed Difference",
-    "text": "5.1 The Speed Difference\nSupply chain disruption scenario:\nTraditional BI: Weekly supply report → 5 days to identify and address shortage\nGenerative BI: “Show me supply risks” → 2 hours to analyze and decide\nAgentic Analytics: Shortage predicted, alternatives sourced, orders placed → You approve what agent arranged\nThe pattern is clear: we’re moving from asking about problems to having them already solved."
+    "section": "5.5 The Speed Difference",
+    "text": "5.5 The Speed Difference\nSupply chain disruption scenario:\nTraditional BI: Weekly supply report → 5 days to identify and address shortage\nGenerative BI: “Show me supply risks” → 2 hours to analyze and decide\nAgentic Analytics: Shortage predicted, alternatives sourced, orders placed → You approve what agent arranged\nThe pattern is clear: we’re moving from asking about problems to having them already solved."
   },
   {
     "objectID": "agentic-analytics.html#five-essential-components",
