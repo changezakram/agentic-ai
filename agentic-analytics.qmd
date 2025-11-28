@@ -94,33 +94,6 @@ Here’s how analytics has evolved across three generations — from dashboards,
 > While agentic systems can act autonomously, the level of human oversight depends on the context. For high-risk or high-impact decisions — such as patient care, pricing changes, or customer interactions — humans remain in the loop. For routine tasks with clear rules, agents can execute independently within set boundaries.
 
 
-# Agentic Analytics for Different Roles
-
-**Sales Teams**
-- Agent identifies warm leads and schedules follow-ups
-- Automatically updates CRM with interaction notes
-- Suggests personalized offers based on buying patterns
-
-**Operations Managers**  
-- Continuously optimizes resource allocation
-- Predicts and prevents bottlenecks
-- Automates routine scheduling decisions
-
-**Marketing Teams**
-- Real-time campaign optimization across channels
-- Automatic budget reallocation to top performers
-- Content generation and A/B testing at scale
-
-**Finance Teams**
-- Continuous forecasting and variance analysis
-- Automatic invoice processing and collections
-- Real-time cash flow optimization
-
-**HR Departments**
-- Predicts employee turnover risks
-- Automates initial candidate screening
-- Personalizes employee development plans
-
 # Building Your Agentic System
 
 ## Five Essential Components
