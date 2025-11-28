@@ -65,16 +65,15 @@ Here’s what makes it different:
 
 Here’s how analytics has evolved across three generations — from dashboards, to dialogue, to delegation.
 
-| **Aspect**           | **Traditional BI**                        | **Generative BI**                  | **Agentic Analytics**               |
-|----------------------|-------------------------------------------|------------------------------------|-------------------------------------|
-| **User Interaction** | Click through dashboards                  | Ask questions in plain English     | Set goals and let agents work       |
-| **Speed to Insight** | Hours to days                             | Seconds to minutes                 | Already done before you ask         |
-| **Output**           | Predefined dashboards                     | Dynamic answers                    | Completed actions                   |
-| **Insight Generation** | Navigate dashboards, apply filters         | Ask questions, interpret responses | Review and monitor suggested actions |
-| **Decision Making**  | Fully manual                              | AI-assisted                        | AI-executed with oversight          |
+| Aspect              | Traditional BI                        | Generative BI                      | Agentic Analytics                      |
+|---------------------|----------------------------------------|------------------------------------|----------------------------------------|
+| **User Interaction** | Click through dashboards               | Ask questions in plain English     | Set goals and let agents work          |
+| **Insight Generation** | Navigate dashboards, apply filters      | Ask questions, interpret responses | Review and monitor suggested actions   |
+| **Speed to Insight** | Hours to days                          | Seconds to minutes                 | Already done before you ask            |
+| **Output**           | Predefined dashboards                  | Dynamic answers                    | Completed actions                      |
+| **Decision Making**  | Fully manual                           | AI-assisted                        | AI-executed with oversight             |
 
 > In traditional BI tools like Power BI, most end users rely on prebuilt dashboards and don’t write queries — but they still need to interpret visuals, apply filters, and manually extract meaning. Generative and agentic systems reduce that burden by returning focused insights or actions directly.
-
 
 
 # Real-World Examples Across Industries
