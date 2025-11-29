@@ -85,6 +85,8 @@ Here’s how analytics has evolved across three generations — from dashboards,
 
 # Real-World Examples Across Industries
 
+**Banking:** An agent monitors transaction patterns and detects signs of account attrition. It automatically generates a personalized retention offer, alerts the relationship manager, and triggers an outbound message — reducing churn without manual review.
+
 **Retail:** An agent detects that a competitor has dropped prices on winter coats. It adjusts regional pricing, reorders popular sizes, and alerts the marketing team — all before anyone notices a dip in sales.
 
 **Healthcare:** An agent monitoring patient vitals spots early signs of sepsis. It alerts the care team, orders labs, and preps equipment, helping doctors respond quickly and consistently.
