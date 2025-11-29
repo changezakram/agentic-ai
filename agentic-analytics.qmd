@@ -134,18 +134,42 @@ Most agentic systems follow a simple loop:
 4. Act — with or without approval  
 :::
 
-# Common Challenges
+# Risks to Watch in Agentic Analytics — and How to Mitigate Them
 
-**What if the AI makes mistakes? — ** Start with low-risk decisions. Keep humans in the loop. Build confidence with small wins. Remember: humans make mistakes too, just slower and more expensive ones.
+Agentic systems represent the next leap in analytics — moving beyond dashboards and insights to systems that reason, decide, and act. But with this autonomy comes a new class of risks. These are no longer just about data quality or model accuracy. They're about **decision quality**, **goal alignment**, and **control**. Below are seven key risks that organizations must address, along with proven mitigation strategies.
 
-**This sounds expensive — ** Compare to your current costs: analyst salaries, error rates, missed opportunities. Most organizations see ROI within 6 months. Start small to prove value.
+**1. Inaccuracy & Hallucination**  
+Just like GenAI, agentic systems may act on flawed reasoning or hallucinated information — especially in open-ended or ambiguous situations. A conversational agent might confidently trigger an action based on a faulty interpretation. To mitigate this, it’s critical to start in low-risk domains, keep humans in the loop during early phases, and validate outputs before allowing agents to take autonomous actions.
 
-**Our employees will resist — ** Frame as augmentation, not replacement. Agents do boring work, humans do interesting work. Invest in training. Celebrate wins together.
+**2. Overtrust & Automation Bias**  
+As agents begin to explain their actions in fluent natural language, users may over-rely on their recommendations — even when confidence is low. This “automation bias” can cause risky behavior if users stop double-checking. A good mitigation strategy is to display uncertainty scores, build in approval checkpoints, and log decisions for transparency and review.
 
-**Our data isn't ready — ** Perfect is the enemy of good. Start with your best data in one area. Fix as you go. Even 70% automation beats 0%.
+**3. Goal Misalignment**  
+Agents act based on the goals we define. If those goals are vague or poorly aligned, agents can optimize the wrong outcomes. For example, a customer service agent might prioritize speed over quality. To prevent this, define clear, bounded goals and constraints. Simulate agent behavior in sandboxed environments before deployment to ensure alignment with real-world expectations.
 
-**How do we maintain control? — ** Build in circuit breakers. Set spending limits. Require human approval for irreversible actions. Monitor and adjust.
+**4. Security & Tool Access Risks**  
+The same autonomy that enables agents to trigger actions—like sending emails or invoking APIs—also creates surface area for misuse. If an agent has overly broad permissions, it can act in ways that compromise security. Limit tool access based on least-privilege principles, isolate critical actions behind human approval, and maintain audit logs of every tool invocation.
 
+**5. Data Privacy & Leakage**  
+Agents that rely on third-party APIs or external LLMs may inadvertently share sensitive data outside the organization. This risk grows in domains like healthcare, finance, or legal workflows. To mitigate, redact personal or confidential data before processing, and use self-hosted LLMs or secure APIs where data privacy is essential.
+
+**6. Regulatory Exposure**  
+Regulators are increasingly focused on explainability, accountability, and auditability. If an agent makes a high-impact decision—say, approving a loan or escalating a fraud alert—organizations must be able to show how and why the decision was made. Build explainability into every layer: log agent prompts, decisions, and tool usage. For regulated industries, treat agents as supervised systems with clear audit trails and human oversight.
+
+**7. Organizational Readiness Gaps**  
+Agentic analytics blurs the lines between data teams, product teams, and operations. Without clear roles and ownership, organizations may struggle to monitor agent behavior, update rules, or respond to unexpected issues. Assign responsible owners for every agent system, build monitoring dashboards, and schedule periodic alignment reviews to ensure continued business fit.
+
+---
+
+## Building a Governance Foundation for Agentic Analytics
+
+To manage these risks, organizations need more than technical solutions — they need **governance frameworks** that are proactive and context-aware. Begin by enforcing **human-in-the-loop (HITL)** checkpoints in all high-stakes domains. Establish **explainability and traceability** standards: whether through interpretable model frameworks, decision metadata, or visual logs of reasoning chains. Maintain detailed **prompt and output logging** so agent decisions can be reconstructed, reviewed, and improved over time.
+
+Also critical are **access controls and guardrails** — limit what agents can see or do without approval, and set boundaries around spending, volume, or tool usage. Periodically review whether the agents remain **aligned** with current business goals, policies, and risk thresholds. Practices like red teaming (simulating failure modes) can uncover vulnerabilities before they emerge in production.
+
+Not every agent needs full autonomy. Many organizations start with “copilot” modes where agents assist humans with recommendations, but defer final decisions. Over time, as trust and guardrails mature, selective automation can be introduced in well-scoped areas.
+
+---
 
 # Conclusion
 

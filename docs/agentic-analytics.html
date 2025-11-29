@@ -206,7 +206,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#intelligence-components-make-agents-smart" id="toc-intelligence-components-make-agents-smart" class="nav-link" data-scroll-target="#intelligence-components-make-agents-smart"><span class="header-section-number">6.2</span> Intelligence Components (Make Agents Smart)</a></li>
   <li><a href="#control-components-keep-things-safe" id="toc-control-components-keep-things-safe" class="nav-link" data-scroll-target="#control-components-keep-things-safe"><span class="header-section-number">6.3</span> Control Components (Keep Things Safe)</a></li>
   </ul></li>
-  <li><a href="#common-challenges" id="toc-common-challenges" class="nav-link" data-scroll-target="#common-challenges"><span class="header-section-number">7</span> Common Challenges</a></li>
+  <li><a href="#risks-to-watch-in-agentic-analytics-and-how-to-mitigate-them" id="toc-risks-to-watch-in-agentic-analytics-and-how-to-mitigate-them" class="nav-link" data-scroll-target="#risks-to-watch-in-agentic-analytics-and-how-to-mitigate-them"><span class="header-section-number">7</span> Risks to Watch in Agentic Analytics — and How to Mitigate Them</a>
+  <ul class="collapse">
+  <li><a href="#building-a-governance-foundation-for-agentic-analytics" id="toc-building-a-governance-foundation-for-agentic-analytics" class="nav-link" data-scroll-target="#building-a-governance-foundation-for-agentic-analytics"><span class="header-section-number">7.1</span> Building a Governance Foundation for Agentic Analytics</a></li>
+  </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8</span> Conclusion</a></li>
   </ul>
 </nav>
@@ -396,13 +399,31 @@ How Agentic Systems Operate
 </div>
 </section>
 </section>
-<section id="common-challenges" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Common Challenges</h1>
-<p><strong>What if the AI makes mistakes? — </strong> Start with low-risk decisions. Keep humans in the loop. Build confidence with small wins. Remember: humans make mistakes too, just slower and more expensive ones.</p>
-<p><strong>This sounds expensive — </strong> Compare to your current costs: analyst salaries, error rates, missed opportunities. Most organizations see ROI within 6 months. Start small to prove value.</p>
-<p><strong>Our employees will resist — </strong> Frame as augmentation, not replacement. Agents do boring work, humans do interesting work. Invest in training. Celebrate wins together.</p>
-<p><strong>Our data isn’t ready — </strong> Perfect is the enemy of good. Start with your best data in one area. Fix as you go. Even 70% automation beats 0%.</p>
-<p><strong>How do we maintain control? — </strong> Build in circuit breakers. Set spending limits. Require human approval for irreversible actions. Monitor and adjust.</p>
+<section id="risks-to-watch-in-agentic-analytics-and-how-to-mitigate-them" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Risks to Watch in Agentic Analytics — and How to Mitigate Them</h1>
+<p>Agentic systems represent the next leap in analytics — moving beyond dashboards and insights to systems that reason, decide, and act. But with this autonomy comes a new class of risks. These are no longer just about data quality or model accuracy. They’re about <strong>decision quality</strong>, <strong>goal alignment</strong>, and <strong>control</strong>. Below are seven key risks that organizations must address, along with proven mitigation strategies.</p>
+<p><strong>1. Inaccuracy &amp; Hallucination</strong><br>
+Just like GenAI, agentic systems may act on flawed reasoning or hallucinated information — especially in open-ended or ambiguous situations. A conversational agent might confidently trigger an action based on a faulty interpretation. To mitigate this, it’s critical to start in low-risk domains, keep humans in the loop during early phases, and validate outputs before allowing agents to take autonomous actions.</p>
+<p><strong>2. Overtrust &amp; Automation Bias</strong><br>
+As agents begin to explain their actions in fluent natural language, users may over-rely on their recommendations — even when confidence is low. This “automation bias” can cause risky behavior if users stop double-checking. A good mitigation strategy is to display uncertainty scores, build in approval checkpoints, and log decisions for transparency and review.</p>
+<p><strong>3. Goal Misalignment</strong><br>
+Agents act based on the goals we define. If those goals are vague or poorly aligned, agents can optimize the wrong outcomes. For example, a customer service agent might prioritize speed over quality. To prevent this, define clear, bounded goals and constraints. Simulate agent behavior in sandboxed environments before deployment to ensure alignment with real-world expectations.</p>
+<p><strong>4. Security &amp; Tool Access Risks</strong><br>
+The same autonomy that enables agents to trigger actions—like sending emails or invoking APIs—also creates surface area for misuse. If an agent has overly broad permissions, it can act in ways that compromise security. Limit tool access based on least-privilege principles, isolate critical actions behind human approval, and maintain audit logs of every tool invocation.</p>
+<p><strong>5. Data Privacy &amp; Leakage</strong><br>
+Agents that rely on third-party APIs or external LLMs may inadvertently share sensitive data outside the organization. This risk grows in domains like healthcare, finance, or legal workflows. To mitigate, redact personal or confidential data before processing, and use self-hosted LLMs or secure APIs where data privacy is essential.</p>
+<p><strong>6. Regulatory Exposure</strong><br>
+Regulators are increasingly focused on explainability, accountability, and auditability. If an agent makes a high-impact decision—say, approving a loan or escalating a fraud alert—organizations must be able to show how and why the decision was made. Build explainability into every layer: log agent prompts, decisions, and tool usage. For regulated industries, treat agents as supervised systems with clear audit trails and human oversight.</p>
+<p><strong>7. Organizational Readiness Gaps</strong><br>
+Agentic analytics blurs the lines between data teams, product teams, and operations. Without clear roles and ownership, organizations may struggle to monitor agent behavior, update rules, or respond to unexpected issues. Assign responsible owners for every agent system, build monitoring dashboards, and schedule periodic alignment reviews to ensure continued business fit.</p>
+<hr>
+<section id="building-a-governance-foundation-for-agentic-analytics" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="building-a-governance-foundation-for-agentic-analytics"><span class="header-section-number">7.1</span> Building a Governance Foundation for Agentic Analytics</h2>
+<p>To manage these risks, organizations need more than technical solutions — they need <strong>governance frameworks</strong> that are proactive and context-aware. Begin by enforcing <strong>human-in-the-loop (HITL)</strong> checkpoints in all high-stakes domains. Establish <strong>explainability and traceability</strong> standards: whether through interpretable model frameworks, decision metadata, or visual logs of reasoning chains. Maintain detailed <strong>prompt and output logging</strong> so agent decisions can be reconstructed, reviewed, and improved over time.</p>
+<p>Also critical are <strong>access controls and guardrails</strong> — limit what agents can see or do without approval, and set boundaries around spending, volume, or tool usage. Periodically review whether the agents remain <strong>aligned</strong> with current business goals, policies, and risk thresholds. Practices like red teaming (simulating failure modes) can uncover vulnerabilities before they emerge in production.</p>
+<p>Not every agent needs full autonomy. Many organizations start with “copilot” modes where agents assist humans with recommendations, but defer final decisions. Over time, as trust and guardrails mature, selective automation can be introduced in well-scoped areas.</p>
+<hr>
+</section>
 </section>
 <section id="conclusion" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Conclusion</h1>
