@@ -17,7 +17,7 @@ According to McKinsey, up to 80% of time in advanced analytics projects is spent
 
 To understand where we are going, we need to look at how the "distance to data" has shrunk over the last forty years.
 
-![**Figure:** Business Analytics: Key Milestones.](images/BI-Timeline.png)
+![**Figure:** The Evolution of Business Analytics — from batch reports on mainframes to autonomous agents.](images/Analytics-Evolution.png)
 
 **1980s: Early Reporting Systems**
 
