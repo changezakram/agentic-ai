@@ -11,7 +11,7 @@ Ten years ago, most companies worked with a few thousand rows of structured data
 
 Instead of driving strategy, Analytics team spends mornings pulling data, afternoons building reports — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.
 
-It’s an efficiency trap. According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. This needs to change.
+According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. Even after insights are found, teams often struggle to act on them fast enough. In a real-time world, that delay is a problem.
 
 # The Evolution of Business Analytics
 
