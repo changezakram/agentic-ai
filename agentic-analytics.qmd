@@ -100,27 +100,27 @@ To build a system that’s truly agentic—not just automated—you need a stron
 
 ## Foundation Components (Must-Have)
 
-- **1. Clean Data Foundation:** Agents need accurate, connected data to make good decisions. If your data is messy or incomplete, they’ll make confident—but wrong—choices. Fix data quality first.
+- **Clean Data Foundation:** Agents need accurate, connected data to make good decisions. If your data is messy or incomplete, they’ll make confident—but wrong—choices. Fix data quality first.
 
-- **2. The Semantic Layer:** Think of this as a shared dictionary. It ensures both humans and machines speak the same language. When an agent tags a “high-priority customer,” everyone—from sales to service—knows exactly what that means.
+- **The Semantic Layer:** Think of this as a shared dictionary. It ensures both humans and machines speak the same language. When an agent tags a “high-priority customer,” everyone—from sales to service—knows exactly what that means.
 
-- **3. Integration Points:** Agents need to connect to everything: ERP, CRM, supply chain systems, external data feeds. They need function calling capabilities to invoke specific functions through APIs—giving your agents hands, not just eyes.
+- **Integration Points:** Agents need to connect to everything: ERP, CRM, supply chain systems, external data feeds. They need function calling capabilities to invoke specific functions through APIs—giving your agents hands, not just eyes.
 
 ## Intelligence Components (Make Agents Smart)
 
-- **4. Agent Memory:** Your agents need to remember patterns over time. Agent memory stores past queries, user preferences, and analytical outcomes. An agent that remembers your seasonal patterns doesn't need to rediscover them every quarter.
+- **Agent Memory:** Your agents need to remember patterns over time. Agent memory stores past queries, user preferences, and analytical outcomes. An agent that remembers your seasonal patterns doesn't need to rediscover them every quarter.
 
-- **5. Data Storytelling:** Numbers without narrative are just noise. Agents should explain insights in ways different audiences understand—executive summaries for CEOs, technical analysis for data teams, action items for managers.
+- **Data Storytelling:** Numbers without narrative are just noise. Agents should explain insights in ways different audiences understand—executive summaries for CEOs, technical analysis for data teams, action items for managers.
 
-- **6. Embedded Analytics:** Don't make users hunt for insights. Embed agents where work happens—in your CRM, ERP, or communication tools. Analytics becomes invisible but everywhere.
+- **Embedded Analytics:** Don't make users hunt for insights. Embed agents where work happens—in your CRM, ERP, or communication tools. Analytics becomes invisible but everywhere.
 
 ## Control Components (Keep Things Safe)
 
-- **7. Governance Framework:** Set clear rules about what agents can do alone versus what needs approval. When the agent is 95% confident, let it act. When it's 60% confident, require human review.
+- **Governance Framework:** Set clear rules about what agents can do alone versus what needs approval. When the agent is 95% confident, let it act. When it's 60% confident, require human review.
 
-- **8. Audit and Explainability:** Every decision must be traceable. You need bias detection, natural language explanations, data lineage tracing, and uncertainty quantification.
+- **Audit and Explainability:** Every decision must be traceable. You need bias detection, natural language explanations, data lineage tracing, and uncertainty quantification.
 
-- **9. Platform Administration:** Track usage, manage costs, optimize performance. Without proper administration, costs spiral and performance degrades. Think of it as agents that tune themselves.
+- **Platform Administration:** Track usage, manage costs, optimize performance. Without proper administration, costs spiral and performance degrades. Think of it as agents that tune themselves.
 
 ::: {.callout-note title="How Agentic Systems Operate"}
 Most agentic systems follow a simple loop:  
