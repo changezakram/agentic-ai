@@ -11,7 +11,7 @@ Ten years ago, most companies worked with a few thousand rows of structured data
 
 Instead of driving strategy, Analytics team spends mornings pulling data, afternoons building reports — and by the time insights are ready, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can cost you customers, revenue, and competitive edge.
 
-According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. Even after insights are found, teams often struggle to act on them fast enough. In a real-time world, that delay is a problem.
+According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. Even after insights are found, teams often struggle to act on them fast enough. In a real-time world, this delay is a problem. What’s needed now is a shift — from data presentation to decision augmentation.
 
 # The Evolution of Business Analytics
 
@@ -122,6 +122,13 @@ To build a system that’s truly agentic—not just automated—you need a stron
 
 - **9. Platform Administration:** Track usage, manage costs, optimize performance. Without proper administration, costs spiral and performance degrades. Think of it as agents that tune themselves.
 
+::: {.callout-note title="How Agentic Systems Operate"}
+Most agentic systems follow a simple loop:  
+1. Set a goal  
+2. Monitor for signals  
+3. Simulate or suggest actions  
+4. Act — with or without approval  
+:::
 
 # Common Challenges
 
@@ -142,13 +149,8 @@ Most analytics teams are still stuck in a loop — pulling data, building dashbo
 
 Agentic Analytics breaks that cycle. These systems don’t wait for someone to ask the right question. They watch what’s happening, spot what matters, and either recommend or take action — all within guardrails.
 
-You don’t need to overhaul your stack to get started. Begin with one use case. Define a clear trigger. Let an agent monitor, suggest, or act. Once it works, expand to more workflows. The goal isn’t to build the smartest AI — it’s to help your team move faster, reduce manual effort, and make better decisions in the moment.
+You don’t need to overhaul your stack to get started. Begin with one use case. Define a clear trigger. Let an agent monitor, suggest, or act. Once it works, expand to more workflows. You don’t need the most advanced AI — you need systems that spot what matters and help your team act on it.
 
 The shift has already started. The only question is whether your analytics systems are built to keep up.
 
----
-
-# References
-
-[1] https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/how-companies-can-use-dataops-to-jump-start-advanced-analytics
 
