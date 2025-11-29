@@ -17,6 +17,8 @@ According to McKinsey, up to 80% of time in advanced analytics projects is spent
 
 To understand where we are going, we need to look at how the "distance to data" has shrunk over the last forty years.
 
+![**Figure:** Business Analytics: Key Milestones.](images/BI-Timeline.png)
+
 **1980s: Early Reporting Systems**
 
 Business Intelligence started in the 1980s with IT-led reporting systems. Reports were static, manually coded (often in COBOL or SAS), and generated on mainframes. Business users had no direct access—they received scheduled, printed reports. Everything was batch-processed, and changes required developer intervention.
