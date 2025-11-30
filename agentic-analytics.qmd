@@ -134,7 +134,7 @@ Most agentic systems follow a simple loop:
 4. Act — with or without approval  
 :::
 
-# Risks to Watch in Agentic Analytics — and How to Mitigate Them
+# Risks to Watch in Agentic Analytics
 
 Agentic systems represent the next leap in analytics — moving beyond dashboards and insights to systems that reason, decide, and act. But with this autonomy comes a new class of risks. These are no longer just about data quality or model accuracy. They're about **decision quality**, **goal alignment**, and **control**. Below are seven key risks that organizations must address, along with proven mitigation strategies.
 
