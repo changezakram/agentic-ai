@@ -9,7 +9,7 @@ number-sections: true
 
 Ten years ago, most companies worked with a few thousand rows of structured data per day — mainly clean records from CRMs, ERPs, and transactional systems. Today, mobile logs, app activity, and real-time streams push that number into the millions. The scale has changed entirely, yet teams are still trying to manage it with tools built for a slower world.
 
-Instead of helping shape strategy, many analytics teams are stuck in a loop — gathering data in the morning, building reports in the afternoon. By the time insights are generated, the decision has already been made. In fast-moving industries like retail, healthcare, and finance, that delay can mean lost customers, missed revenue, and falling behind the competition.
+Instead of helping shape strategy, many analytics teams are stuck doing manual work — pulling data, formatting reports, chasing down numbers. By the time insights are generated, the moment to act has passed. In fast-moving industries like retail, healthcare, and finance, that delay can mean lost customers, missed revenue, and falling behind the competition.
 
 According to McKinsey, up to 80% of time in advanced analytics projects is spent just preparing data — not analyzing it. Even after insights are found, teams often struggle to act on them fast enough. In a real-time world, this delay is a problem. What’s needed now is a shift — from data presentation to decision augmentation.
 
@@ -47,7 +47,7 @@ With the rise of Large Language Models, BI became conversational. Tools like Pow
 
 **2024 Onward: Agentic Analytics**
 
-We are now entering the agentic era. These systems don't just answer questions—they can **proactively explain them, suggest next steps, and take actions. Unlike traditional BI, agentic tools can monitor live data, analyze risks, and make context-aware decisions. They can identify patterns, propose solutions, and initiate workflows across systems. Agentic Analytics bridges the last mile from insight to impact — closing the loop between data, decision, and execution.
+We are now entering the agentic era. These systems don't just answer questions—they can proactively explain them, suggest next steps, and take actions. Unlike traditional BI, agentic tools can monitor live data, analyze risks, and make context-aware decisions. They can identify patterns, propose solutions, and initiate workflows across systems. Agentic Analytics bridges the last mile from insight to impact — closing the loop between data, decision, and execution.
 
 
 # What Makes Analytics Agentic?
@@ -61,6 +61,8 @@ Here’s what makes it different:
 **It Understands Context** — When patterns change, the agent knows why. Seasonal fluctuation? Supply chain issue? Competitor move? It connects dots across systems to see the full picture.
 
 **It Takes Action** — Agents don't just flag issues—they fix them. Adjust pricing. Reroute shipments. Schedule staff. Update inventory. No waiting for approval on routine decisions.
+
+> Agentic systems don’t just shorten time-to-insight — they reduce time-to-action.
 
 
 # Traditional vs. Generative vs. Agentic BI
