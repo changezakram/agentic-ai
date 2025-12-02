@@ -159,19 +159,31 @@ Not every problem needs full autonomy. Here's how to decide:
 Leading organizations are moving beyond pilots to deploy agentic systems that deliver real productivity gains.
 
 **Financial Services**    
-McKinsey’s QuantumBlack Labs implemented agentic workflows to automate credit memo drafting for a bank. An LLM acted as a "manager," creating work plans and delegating tasks to specialized sub-agents for data analysis and verification. The result was a **60% increase in credit analyst productivity**.
+BNY Mellon's Eliza platform reached 96% adoption across 50,000 employees. The bank now has over 100 AI agents running tasks from payment processing to code repair.<sup>8,9</sup>
 
-**Cybersecurity**     
-Darktrace uses autonomous AI agents to function like a digital immune system. Instead of just alerting humans to potential breaches, these agents continuously monitor network traffic and independently decide on the best course of action to neutralize complex cyberthreats in real time.
+McKinsey's QuantumBlack Labs automated credit memo drafting for a bank using agentic workflows. An LLM manager created work plans and assigned tasks to specialized sub-agents for data analysis and verification. Credit analyst productivity jumped as much as 60%. 
 
-**Sales & Operations**      
-Salesforce’s Agentforce platform enables organizations to deploy autonomous agents that handle end-to-end business functions. These agents can resolve support tickets, schedule meetings, and qualify sales leads without human intervention, allowing staff to focus on high-value strategy.
+> Analyst productivity improved 30-60%; major efficiency gains in workflow automation.
+
 
 **Software Development** 
-The platform GitLab integrates AI agents across the entire software lifecycle to automate repetitive coding tasks. When Ally Bank implemented this system, they increased their ability to deploy software updates by **55%**, significantly accelerating their development cycle.
-# Conclusion
+JM Family built a multi-agent system for software development—specialized agents handle requirements, coding, documentation, and QA, all managed by a coordinator agent. <sup>6</sup>
 
-> The shift is accelerating. McKinsey reports that job postings related to Agentic AI increased by 985% between 2023 and 2024, signaling a massive talent shift toward building these autonomous systems.
+Ally Bank adopted GitLab's AI-integrated platform and increased deployment speed by 55%, with significant cost savings. <sup>13</sup>
+
+> QA time down 60%; deployment speed up 55%; requirements cycles dropped from weeks to days.
+
+**Business Operations**      
+Salesforce's Agentforce platform lets companies deploy autonomous agents for multi-step tasks: resolving support tickets, scheduling meetings, qualifying sales leads.<sup>13</sup>
+
+Fujitsu cut sales proposal production time by 67% using AI agents through Microsoft's Azure AI Agent Services.<sup>5,6</sup>
+
+> Significant time savings in document creation and customer operations.
+
+**Cybersecurity**     
+Darktrace uses autonomous agents to detect and stop cyberthreats in real time. The agents monitor network traffic continuously, spot anomalies, and decide how to respond—all without human intervention.<sup>13</sup>
+
+> Real-time threat detection and autonomous response.
 
 ---
 
