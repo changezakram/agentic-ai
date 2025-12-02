@@ -163,7 +163,7 @@ BNY Mellon launched Eliza, an internal AI platform now used by 96% of its 50,000
 
 McKinsey's QuantumBlack Labs automated credit memo drafting for a bank using agentic workflows. An LLM manager created work plans and assigned tasks to specialized sub-agents for data analysis and verification. Credit analyst productivity jumped as much as 60%. <sup>11</sup>
 
-**Software Development** 
+**Software Development**      
 JM Family built a multi-agent system for software development—specialized agents handle requirements, coding, documentation, and QA, all managed by a coordinator agent. <sup>6</sup>
 
 GitLab integrates AI agents across the entire software lifecycle to automate repetitive coding tasks. When Ally Bank implemented this system, they increased their ability to deploy software updates by 55%, significantly accelerating their development cycle.<sup>12</sup>
