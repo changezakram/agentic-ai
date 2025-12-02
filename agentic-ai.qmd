@@ -161,7 +161,7 @@ Leading organizations are moving beyond pilots to deploy agentic systems that de
 **Financial Services**    
 BNY Mellon's Eliza platform reached 96% adoption across 50,000 employees. The bank now has over 100 AI agents running tasks from payment processing to code repair.<sup>8,9</sup>
 
-McKinsey's QuantumBlack Labs automated credit memo drafting for a bank using agentic workflows. An LLM manager created work plans and assigned tasks to specialized sub-agents for data analysis and verification. Credit analyst productivity jumped as much as 60%. 
+McKinsey's QuantumBlack Labs automated credit memo drafting for a bank using agentic workflows. An LLM manager created work plans and assigned tasks to specialized sub-agents for data analysis and verification. Credit analyst productivity jumped as much as 60%. <sup>13</sup>
 
 > Analyst productivity improved 30-60%; major efficiency gains in workflow automation.
 
@@ -212,4 +212,6 @@ Darktrace uses autonomous agents to detect and stop cyberthreats in real time. T
 [11] Epic. (2024). AI for Clinicians: Mayo Clinic Case Study. https://www.epic.com/software/ai-clinicians/
 
 [12] Becker's Hospital Review. (2025). Mount Sinai to roll out Microsoft AI assistant for clinicians. https://www.beckershospitalreview.com/healthcare-information-technology/ai/mount-sinai-to-roll-out-microsoft-ai-assistant-for-clinicians/
+
+[13] McKinsey Technology Trends Outlook 2025. https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech
 
