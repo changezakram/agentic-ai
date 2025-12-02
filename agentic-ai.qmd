@@ -155,33 +155,23 @@ Not every problem needs full autonomy. Here's how to decide:
 ---
 
 # Where Agentic AI Works Today
-Organizations are already running agentic systems in production:
+
+Leading organizations are moving beyond pilots to deploy agentic systems that deliver real productivity gains.
 
 **Financial Services**    
-Morgan Stanley rolled out AI assistants to 98% of its financial advisor teams. The tools help advisors pull insights from over 70,000 research reports. Document retrieval efficiency jumped from 20% to 80%, and advisors save 30 minutes per client meeting.^7^       
-BNY Mellon launched Eliza, an internal AI platform now used by 96% of its 50,000 employees. The platform has over 100 AI agents handling tasks from payment processing to code repair.<sup>8,9</sup>
+McKinsey’s QuantumBlack Labs implemented agentic workflows to automate credit memo drafting for a bank. An LLM acted as a "manager," creating work plans and delegating tasks to specialized sub-agents for data analysis and verification. The result was a **60% increase in credit analyst productivity**.
 
-> Major efficiency gains in knowledge retrieval; significant time savings on routine tasks.
+**Cybersecurity**     
+Darktrace uses autonomous AI agents to function like a digital immune system. Instead of just alerting humans to potential breaches, these agents continuously monitor network traffic and independently decide on the best course of action to neutralize complex cyberthreats in real time.
 
-**Healthcare**     
-Mayo Clinic deployed AI documentation assistants to 2,000+ physicians. Nurses save 30 seconds per patient message, adding up to 1,500 hours saved per month across the organization.<sup>10,11</sup>
-Mount Sinai rolled out AI copilots that turn physician conversations into clinical notes automatically. The system integrates directly with their medical records.<sup>12</sup>
+**Sales & Operations**      
+Salesforce’s Agentforce platform enables organizations to deploy autonomous agents that handle end-to-end business functions. These agents can resolve support tickets, schedule meetings, and qualify sales leads without human intervention, allowing staff to focus on high-value strategy.
 
-> Documentation time significantly reduced; clinicians report saving 30 minutes to 2 hours per day.
-
-**Software Development**      
-JM Family built an AI system with specialized agents for requirements gathering, coding, documentation, and quality assurance. A coordinator agent manages the team.<sup>6</sup>
-
-> QA time cut by 60%; requirements cycles dropped from weeks to days.
-
-**Operations** 
-Fujitsu uses AI agents for sales support and proposal creation via Microsoft's Azure AI Agent Services. Production time for sales proposals dropped 67%.<sup>5,6</sup>
-
-> Dramatic time savings in document creation and customer-facing operations.
-
+**Software Development** 
+The platform GitLab integrates AI agents across the entire software lifecycle to automate repetitive coding tasks. When Ally Bank implemented this system, they increased their ability to deploy software updates by **55%**, significantly accelerating their development cycle.
 # Conclusion
 
-Agents excel at coordination—pulling data from multiple systems, checking compliance, routing tasks. Humans excel at judgment—considering context, weighing tradeoffs, taking responsibility for outcomes. That division works. As the technology improves, agents will handle more of the coordination. But decisions that affect customers' financial lives will still need human judgment.
+> The shift is accelerating. McKinsey reports that job postings related to Agentic AI increased by 985% between 2023 and 2024, signaling a massive talent shift toward building these autonomous systems.
 
 ---
 
