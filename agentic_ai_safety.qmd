@@ -10,8 +10,7 @@ format:
 
 ## Introduction
 
-2025 has been frequently termed the **"Year of Agents."**  
-We have seen rapid advancements in frontier AI moving beyond simple text generation to autonomous web agents, coding agents, and even robotics.
+2025 has been frequently termed the **"Year of Agents."** We have seen rapid advancements in frontier AI moving beyond simple text generation to autonomous web agents, coding agents, and even robotics.
 
 However, as we deploy these agents, we face a critical reality: attackers always follow the footsteps of new technology. As AI agents begin to control more systems, the incentives for compromise rise, and the consequences of misuse become severe.
 
