@@ -129,15 +129,17 @@ Once compromised, agents chain actions across systems, turning small manipulatio
 
 ## Security Goals in Agentic Systems
 
-The core security objectives still trace back to the familiar **CIA triad—confidentiality, integrity, and availability**. However, in agentic systems, the scope of what must be protected expands dramatically.
+The core security objectives still trace back to the CIA triad—confidentiality, integrity, and availability. But in agentic systems, what needs protection expands significantly.
 
-Confidentiality now extends beyond traditional customer or enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and in some cases the model itself. A single leaked instruction or credential can allow an attacker to redirect the behavior of the entire system.
+**Confidentiality** extends beyond customer and enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and sometimes the model itself. A single leaked instruction or credential can redirect the entire system's behavior.
 
-Integrity is no longer limited to ensuring that business data has not been tampered with. It must also include the integrity of the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning process itself can be corrupted.
+**Integrity** includes more than business data accuracy. It must cover the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent's reasoning becomes corrupted.
 
-Availability is no longer just about uptime of a web service. In agentic systems, availability also includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.
+**Availability** means more than web service uptime. In agentic systems, it includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.
 
-In short, the **targets of protection multiply**, not just the consequences of failure.
+> For a bank deploying agents, confidentiality means protecting customer data and the agent's wire transfer instructions. Integrity means preventing attackers from manipulating the agent's fraud detection logic. Availability means the agent continues processing transactions during peak loads—because downtime now means frozen customer accounts, not just slow response times.
+
+The protection requirements multiply—not just the consequences of failure.
 
 ---
 
