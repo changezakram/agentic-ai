@@ -15,14 +15,12 @@ format:
     theme: cosmo
     toc: true
     toc-depth: 3
-title: Towards Building Safe and Secure Agentic AI
+title: Building Safe and Secure Agentic AI
 ---
 
 ## Introduction — The Year of Agents
 
 Modern AI has moved beyond text generation. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation - risk scales with autonomy.
-
-When agents control workflows and resources, failure radiates outward. A compromised agent doesn't just produce bad text—it executes harmful operations. Laboratory testing under controlled conditions isn't enough. We need to evaluate these systems against intelligent adversaries. Attackers already understand this. They view agents as a new attack surface: a way to manipulate decision-making logic at machine speed, with amplified impact.
 
 When agents control workflows and resources, failures get bigger. A compromised agent doesn't just produce bad text—it executes harmful operations. Laboratory testing under controlled conditions isn't enough. We need to evaluate these systems against intelligent adversaries. 
 
