@@ -196,83 +196,77 @@ The goal of evaluation isn't to prove a system is safe—that's impossible. The 
 
 ## Defenses in Agentic AI — Why Layered Security Is Mandatory
 
-No single control can secure an agentic system.
+No single defense can secure an agentic system.
 
-Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts will be bypassed. Filters will miss edge cases. Models will behave unexpectedly. Defense-in-depth is the only viable security strategy for agentic AI.
+Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Any individual defense will fail. Prompts will be bypassed. Filters will miss edge cases. Models will behave unexpectedly.
 
-Layered defense means that when one control fails, another prevents catastrophic impact. The goal isn't perfection at any single layer—it's system-level resilience.
+Defense-in-depth is the only viable security strategy. When one layer fails, another prevents catastrophic damage. The goal isn't perfection at any single layer—it's system-level resilience.
 
-Three principles guide effective agentic defense:
-
-Security must span input intake, model reasoning, tool invocation, execution, and monitoring—not concentrate in one place. Agents must operate with only the minimum authority required for their task, even when they appear trustworthy. Security controls should be embedded into system logic during design, not bolted on after deployment. In high-risk environments, this includes formal verification of policy and privilege boundaries.
+Security must span every stage: input intake, model reasoning, tool execution, and monitoring. Agents must operate with only the minimum authority required for their task, even when they appear trustworthy. Security controls should be embedded into system logic during design, not added after deployment. In high-risk environments, this includes formal verification of policy and privilege boundaries.
 
 ---
 
 ### Model Hardening — Raising the Cost of Exploitation
 
-Model hardening improves the base model's resistance to manipulation. This includes safety pre-training, post-training alignment techniques like reinforcement learning from human feedback (RLHF), and rigorous data cleaning to reduce harmful learned behaviors.
+Model hardening improves the base model's resistance to manipulation through safety pre-training, alignment techniques, and data quality controls that reduce harmful behaviors.
 
-These techniques are necessary but insufficient. Even carefully aligned models remain vulnerable to novel prompt constructions, indirect injections, and multi-step exploit chains. Model hardening is a risk-reduction layer, not a security boundary.
+These techniques are necessary but don't eliminate risk. Aligned models remain vulnerable to novel prompt attacks, indirect injections, and multi-step exploit chains. Model hardening raises the bar for attackers but doesn't block determined adversaries.
 
 ---
 
 ### Input Sanitization and Guardrails — Filtering Before Reasoning
 
-Before external data reaches the reasoning core, it should be normalized, scoped, and constrained.
+External data should be validated before the model processes it.
 
-Input sanitization includes detecting unsafe patterns, escaping special characters, applying schema validation, and enforcing structural constraints on what the model receives. Guardrails add semantic checks on content—for example, preventing requests that attempt to bypass authorization logic, generate executable payloads, or override system instructions.
+Input sanitization detects unsafe patterns, filters special characters, applies schema validation, and enforces structural constraints. Guardrails add checks on content—preventing requests that bypass authorization logic, generate executable payloads, or override system instructions.
 
-This layer is critical because it addresses risk before the model processes it, where malicious input is still fully visible and easier to control. Once harmful content is embedded into the internal reasoning chain, containment becomes far more difficult.
+This layer addresses risk while malicious input is still visible and easier to control. Once harmful content reaches the reasoning chain, containment becomes difficult.
 
 ---
 
 ### Policy Enforcement at the Tool Layer — Where Real Control Must Exist
 
-While prompts shape behavior, tools determine impact. True security control must reside at the tool and execution layer, not solely in the model.
+Prompts shape behavior. Tools determine impact. True security control must reside at the tool and execution layer, not solely in the model.
 
-Policy enforcement frameworks like ProAgent introduce programmable privilege control over tool usage. Instead of trusting the model to behave safely, every tool invocation is validated against explicit security policies.
+Policy enforcement frameworks like ProAgent introduce programmable privilege control over tool usage. Every tool invocation is validated against explicit security policies, not just the model's judgment.
 
-These policies start as static, human-defined rules—forbidding database deletion, restricting monetary transfers, or preventing external network access. They can also evolve dynamically. In context-aware systems, the agent can propose candidate policies based on risk signals observed during execution, which are then verified and enforced through a separate control layer.
+These policies can be static rules—forbidding database deletion, restricting monetary transfers, or preventing external network access. They can also evolve dynamically based on risk signals observed during execution, which are verified through a separate control layer.
 
 Consider a banking agent authorized to send money under normal circumstances. If a prompt injection attempt tries to redirect funds to an attacker-controlled account, the policy layer evaluates the request independently of the model's reasoning. The malicious tool call is blocked while legitimate transactions remain permitted. The agent continues functioning, but the attack is neutralized at execution.
-
-> The model may reason, but the policy engine decides.
 
 ---
 
 ### Privilege Separation — Containing the Blast Radius of Compromise
 
-Traditional secure systems avoid concentrating power in a single component. Agentic systems must adopt the same principle through explicit privilege separation.
+Secure systems avoid concentrating power in a single component. Agentic systems must adopt this principle through explicit privilege separation.
 
-Instead of deploying one monolithic agent with universal authority, the system is decomposed into components with sharply differentiated privileges. A common pattern divides the agent into a complex, unprivileged "worker" component and a simple, highly privileged "monitor" component.
+The system is decomposed into components with differentiated privileges. A common pattern divides the agent into an unprivileged "worker" component and a highly privileged "monitor" component.
 
-The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. Even if the worker is fully compromised, the attacker cannot directly inherit the monitor's authority.
+The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. If the worker is compromised, the attacker cannot inherit the monitor's authority.
 
-Frameworks like Privtrans automate this transformation by rewriting source code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.
+Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.
 
 ---
 
 ### Monitoring and Detection — Assuming Failure Will Happen
 
-Even with layered preventive controls, some attacks will succeed. Monitoring and detection are foundational, not optional.
+Some attacks will succeed despite layered defenses. Monitoring and detection are foundational, not optional.
 
-Real-time anomaly detection can flag suspicious information flows, abnormal tool usage patterns, unexpected execution paths, and deviations from historical behavioral baselines. These signals can trigger automated containment actions, human review, or full system shutdowns.
+Real-time anomaly detection flags suspicious information flows, abnormal tool usage, unexpected execution paths, and deviations from historical baselines. These signals trigger automated containment, human review, or full system shutdowns.
 
-In agentic systems, monitoring must address more than infrastructure metrics. It must track what the agent is trying to accomplish, how it interprets instructions, and whether its actions remain consistent with authorized goals.
+Monitoring must track more than infrastructure metrics. It must track what the agent is trying to accomplish, how it interprets instructions, and whether its actions remain consistent with authorized goals.
 
-Security becomes an ongoing process of observation, feedback, and adaptation—not a one-time configuration step.
+Security is an ongoing process of observation, feedback, and adaptation—not a one-time configuration.
 
 ---
 
 ### The Structural Insight
 
-What distinguishes secure agentic architecture from traditional application security is this:
-
-> Security can't be centralized at the perimeter. It must be distributed across the entire decision lifecycle of the agent.
+Security can't be centralized at the perimeter. It must be distributed across the entire decision lifecycle.
 
 Before the model: sanitization and input control. During reasoning: alignment and guardrails. At execution: policy enforcement and privilege control. After action: monitoring and detection.
 
-All of these layers must operate together. That's how the system achieves resilience.
+All layers must operate together to achieve resilience.
 
 ---
 
