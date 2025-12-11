@@ -113,9 +113,9 @@ This attack is difficult to catch. The system passes routine testing because the
 
 ### Why These Attacks Are Fundamentally Different
 
-The common thread isn't the mechanism—SQL, Python, retrieval, or prompts. It's an architectural shift. Traditional software executes what developers explicitly code. Agentic systems execute what they're convinced is the correct next action. This makes persuading the model as effective as exploiting technical vulnerabilities. Attackers don't need buffer overflows or memory corruption—they just need convincing language.
+Traditional software does what the code tells it to do. Agents do what they're convinced is the right thing to do—and attackers exploit this difference.
 
-The threat model expands to include natural language as an attack surface, data as executable instruction, reasoning as a controllable process, and tools as amplification mechanisms.
+In traditional systems, attackers need buffer overflows or memory corruption. With agents, they just need convincing language. Instead of exploiting technical vulnerabilities, they exploit the agent's reasoning process.
 
 Once compromised, agents chain actions across systems, turning small manipulations into cascading operational failures.
 
