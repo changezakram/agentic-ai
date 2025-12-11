@@ -308,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-agent-threat-landscape-where-attacks-enter-the-system" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="the-agent-threat-landscape-where-attacks-enter-the-system"><span class="header-section-number">3</span> The Agent Threat Landscape — Where Attacks Enter the System</h2>
 <p>Agentic systems have failure modes at every stage. Unlike traditional applications with fixed code paths, agents continuously ingest external inputs, construct prompts, invoke probabilistic reasoning, retrieve data, and execute real-world actions.</p>
-<p>Risks exist from deployment through operation. Models can be backdoored or poisoned. User inputs can contain adversarial instructions. Prompt construction can allow attackers to override system instructions. Model outputs—SQL, code, or tool calls—can trigger harmful operations in external systems.</p>
+<p>Risks exist throughout the model lifecycle. Before deployment, models can be compromised through malicious code or corrupted training data. During operation, user inputs can inject adversarial instructions, attackers can override system prompts, and model outputs can trigger harmful operations across connected systems.</p>
 <p>There’s no single entry point to defend. Every interface is an attack surface.</p>
 <hr>
 <section id="a-new-class-of-operational-attacks" class="level3" data-number="3.1">
