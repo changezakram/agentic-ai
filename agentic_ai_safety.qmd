@@ -69,7 +69,7 @@ These risks aren't abstract. They're being exploited in production systems today
 
 #### SQL Injection via LLMs
 
-In traditional applications, SQL injection happens when unsanitized input gets embedded in database queries. In agentic systems, the attack moves upstream. Attackers don't inject SQL—they instruct the model to generate it.
+In traditional applications, SQL injection happens when unsanitized input gets embedded in database queries. In agentic systems, the attack moves upstream. Attackers don't inject SQL — they instruct the model to generate it.
 
 In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.<sup>1</sup>
 
@@ -93,7 +93,7 @@ The model isn't just generating text—it's producing live executable attacks.
 
 Prompt injection remains one of the most critical threats to agentic systems.
 
-Direct prompt injection is straightforward: the attacker explicitly instructs the model to override its system instructions. This attack famously forced early chat systems to reveal internal prompts and safety rules.
+Direct prompt injection is straightforward — the attacker explicitly instructs the model to override its system instructions. This attack famously forced Microsoft's Bing Chat to reveal its internal prompts, safety rules, and codename "Sydney" in February 2023, when a Stanford student used the simple prompt "Ignore previous instructions."<sup>4</sup>
 
 Indirect prompt injection is more dangerous in agentic environments. The attacker doesn't interact with the agent directly. Instead, they embed adversarial instructions into external data sources the agent trusts.
 
@@ -313,8 +313,10 @@ The next phase of AI will be defined by whether we can trust the systems we empo
 
 ### References
 
-1. **CVE-2024-23751**: LlamaIndex SQL Injection. https://nvd.nist.gov/vuln/detail/CVE-2024-23751
+[1] CVE-2024-23751: LlamaIndex SQL Injection. https://nvd.nist.gov/vuln/detail/CVE-2024-23751
 
-2. **CVE-2024-7764**: Vanna.ai SQL Injection. https://www.cvedetails.com/cve/CVE-2024-7764/
+[2] CVE-2024-7764: Vanna.ai SQL Injection. https://www.cvedetails.com/cve/CVE-2024-7764/
 
-3. **CVE-2024-9439**: SuperAGI Remote Code Execution. https://www.cvedetails.com/cve/CVE-2024-9439/
+[3] CVE-2024-9439: SuperAGI Remote Code Execution. https://www.cvedetails.com/cve/CVE-2024-9439/
+
+[4] Greshake, K. et. al. (2023). Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. https://arxiv.org/abs/2302.12173
