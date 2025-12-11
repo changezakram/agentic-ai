@@ -20,7 +20,7 @@ title: Towards Building Safe and Secure Agentic AI
 
 ## Introduction — The Year of Agents
 
-Frontier AI has moved beyond static text generation. We are entering the era of agents—systems that observe, reason, plan, and act. These systems no longer sit passively behind chat interfaces; they interact directly with real systems, APIs, files, and networks.
+Modern AI has moved beyond simple text generation. We are entering the era of agents—systems that observe, reason, plan, and act. These systems no longer sit passively behind chat interfaces; they interact directly with real systems, APIs, files, and networks.
 
 This capabilities shift introduces a new reality: risk now scales directly with autonomy.
 
@@ -63,7 +63,7 @@ This hybrid nature is precisely what gives agents their power. It is also what m
 
 ---
 
-### Security Goals in Agentic Systems
+## Security Goals in Agentic Systems
 
 The core security objectives still trace back to the familiar **CIA triad—confidentiality, integrity, and availability**. However, in agentic systems, the scope of what must be protected expands dramatically.
 
