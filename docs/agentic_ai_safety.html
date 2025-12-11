@@ -215,10 +215,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#a-new-class-of-operational-attacks" id="toc-a-new-class-of-operational-attacks" class="nav-link" data-scroll-target="#a-new-class-of-operational-attacks"><span class="header-section-number">3.1</span> A New Class of Operational Attacks</a></li>
   <li><a href="#why-these-attacks-are-fundamentally-different" id="toc-why-these-attacks-are-fundamentally-different" class="nav-link" data-scroll-target="#why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.2</span> Why These Attacks Are Fundamentally Different</a></li>
   </ul></li>
-  <li><a href="#security-goals-in-agentic-systems" id="toc-security-goals-in-agentic-systems" class="nav-link" data-scroll-target="#security-goals-in-agentic-systems"><span class="header-section-number">4</span> Security Goals in Agentic Systems</a>
-  <ul class="collapse">
-  <li><a href="#why-the-attack-surface-expands" id="toc-why-the-attack-surface-expands" class="nav-link" data-scroll-target="#why-the-attack-surface-expands"><span class="header-section-number">4.1</span> Why the Attack Surface Expands</a></li>
-  </ul></li>
+  <li><a href="#security-goals-in-agentic-systems" id="toc-security-goals-in-agentic-systems" class="nav-link" data-scroll-target="#security-goals-in-agentic-systems"><span class="header-section-number">4</span> Security Goals in Agentic Systems</a></li>
   <li><a href="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" id="toc-evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="nav-link" data-scroll-target="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</a>
   <ul class="collapse">
   <li><a href="#black-box-red-teaming-for-agents" id="toc-black-box-red-teaming-for-agents" class="nav-link" data-scroll-target="#black-box-red-teaming-for-agents"><span class="header-section-number">5.1</span> Black-Box Red Teaming for Agents</a></li>
@@ -366,14 +363,6 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <p>The stakes are higher. When agents fail, they don’t just return error messages—they execute incorrect operations at scale.</p>
 <hr>
-<section id="why-the-attack-surface-expands" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="why-the-attack-surface-expands"><span class="header-section-number">4.1</span> Why the Attack Surface Expands</h3>
-<p>LLMs in production systems expand the attack surface. Traditional software only executes what developers explicitly program. Agents must process external inputs, ingest real-time data, and dynamically decide what actions to take.</p>
-<p>This creates new risk categories. Sensitive information can leak through model outputs. Prompts and tool instructions can be manipulated by external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious operations.</p>
-<p>These attacks don’t target a single vulnerability. They exploit the interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop.</p>
-<p>Agentic AI security requires more than traditional application security or conventional ML security. It’s a different security problem.</p>
-<hr>
-</section>
 </section>
 <section id="evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</h2>

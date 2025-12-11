@@ -137,18 +137,6 @@ The stakes are higher. When agents fail, they don't just return error messages�
 
 ---
 
-### Why the Attack Surface Expands
-
-LLMs in production systems expand the attack surface. Traditional software only executes what developers explicitly program. Agents must process external inputs, ingest real-time data, and dynamically decide what actions to take.
-
-This creates new risk categories. Sensitive information can leak through model outputs. Prompts and tool instructions can be manipulated by external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious operations.
-
-These attacks don't target a single vulnerability. They exploit the interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop.
-
-Agentic AI security requires more than traditional application security or conventional ML security. It's a different security problem.
-
----
-
 ## Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough
 
 Many AI risk programs make a critical mistake: they evaluate the language model and assume they've evaluated the system. This assumption fails completely in agentic AI.
