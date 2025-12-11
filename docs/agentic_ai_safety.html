@@ -422,32 +422,30 @@ ul.task-list li input[type="checkbox"] {
 <section id="defenses-in-agentic-ai-why-layered-security-is-mandatory" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="defenses-in-agentic-ai-why-layered-security-is-mandatory"><span class="header-section-number">6</span> Defenses in Agentic AI — Why Layered Security Is Mandatory</h2>
 <p>No single control can secure an agentic system.</p>
-<p>Because agents combine probabilistic reasoning, untrusted data, external tools, and autonomous execution, <strong>failure is inevitable at individual layers</strong>. Prompts will be bypassed. Filters will miss edge cases. Models will behave in unexpected ways. This reality makes <strong>defense-in-depth—not point solutions—the only viable security strategy</strong> for agentic AI.</p>
-<p>In this setting, layered defense means that when one control fails, another prevents catastrophic impact. The goal is not perfection at any single layer, but <strong>system-level resilience</strong>.</p>
-<p>Three foundational principles guide effective agentic defense architectures.</p>
-<p>First is <strong>defense-in-depth</strong> itself: security must be applied across input intake, model reasoning, tool invocation, execution, and monitoring—not concentrated in one place. Second is <strong>least privilege</strong>: agents must be given only the minimum authority required to perform their task, even when they appear trustworthy. Third is <strong>secure-by-design</strong>: wherever possible, security controls should be embedded into system logic rather than bolted on after deployment. In high-risk environments, this increasingly includes formal verification of policy and privilege boundaries.</p>
-<p>With these principles in place, we can now examine the most important defensive layers in practice.</p>
+<p>Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts will be bypassed. Filters will miss edge cases. Models will behave unexpectedly. Defense-in-depth is the only viable security strategy for agentic AI.</p>
+<p>Layered defense means that when one control fails, another prevents catastrophic impact. The goal isn’t perfection at any single layer—it’s system-level resilience.</p>
+<p>Three principles guide effective agentic defense:</p>
+<p>Security must span input intake, model reasoning, tool invocation, execution, and monitoring—not concentrate in one place. Agents must operate with only the minimum authority required for their task, even when they appear trustworthy. Security controls should be embedded into system logic during design, not bolted on after deployment. In high-risk environments, this includes formal verification of policy and privilege boundaries.</p>
 <hr>
 <section id="model-hardening-raising-the-cost-of-exploitation" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="model-hardening-raising-the-cost-of-exploitation"><span class="header-section-number">6.1</span> Model Hardening — Raising the Cost of Exploitation</h3>
-<p>Model hardening focuses on improving the base model’s resistance to manipulation. This includes safety pre-training, post-training alignment techniques such as reinforcement learning from human feedback (RLHF), and rigorous data cleaning to reduce the likelihood that harmful behaviors are learned or reinforced.</p>
-<p>These techniques are necessary, but they are not sufficient. Even the most carefully aligned models remain vulnerable to novel prompt constructions, indirect injections, and multi-step exploit chains. Model hardening should therefore be understood as a <strong>risk-reduction layer</strong>, not a security boundary.</p>
+<p>Model hardening improves the base model’s resistance to manipulation. This includes safety pre-training, post-training alignment techniques like reinforcement learning from human feedback (RLHF), and rigorous data cleaning to reduce harmful learned behaviors.</p>
+<p>These techniques are necessary but insufficient. Even carefully aligned models remain vulnerable to novel prompt constructions, indirect injections, and multi-step exploit chains. Model hardening is a risk-reduction layer, not a security boundary.</p>
 <hr>
 </section>
 <section id="input-sanitization-and-guardrails-filtering-before-reasoning" class="level3" data-number="6.2">
 <h3 data-number="6.2" class="anchored" data-anchor-id="input-sanitization-and-guardrails-filtering-before-reasoning"><span class="header-section-number">6.2</span> Input Sanitization and Guardrails — Filtering Before Reasoning</h3>
-<p>Before untrusted data ever reaches the reasoning core, it should be normalized, scoped, and constrained.</p>
-<p>Input sanitization includes detecting unsafe patterns, escaping special characters, applying schema validation, and enforcing structural constraints on what the model is allowed to receive. Guardrails add semantic checks on content—for example, preventing requests that attempt to bypass authorization logic, generate executable payloads, or override system instructions.</p>
-<p>This layer is critical because it addresses risk <strong>upstream of the model</strong>, where malicious input is still fully visible and easier to control. Once harmful content is embedded into the internal reasoning chain, containment becomes far more difficult.</p>
+<p>Before external data reaches the reasoning core, it should be normalized, scoped, and constrained.</p>
+<p>Input sanitization includes detecting unsafe patterns, escaping special characters, applying schema validation, and enforcing structural constraints on what the model receives. Guardrails add semantic checks on content—for example, preventing requests that attempt to bypass authorization logic, generate executable payloads, or override system instructions.</p>
+<p>This layer is critical because it addresses risk before the model processes it, where malicious input is still fully visible and easier to control. Once harmful content is embedded into the internal reasoning chain, containment becomes far more difficult.</p>
 <hr>
 </section>
 <section id="policy-enforcement-at-the-tool-layer-where-real-control-must-exist" class="level3" data-number="6.3">
 <h3 data-number="6.3" class="anchored" data-anchor-id="policy-enforcement-at-the-tool-layer-where-real-control-must-exist"><span class="header-section-number">6.3</span> Policy Enforcement at the Tool Layer — Where Real Control Must Exist</h3>
-<p>While prompts shape behavior, <strong>tools determine impact</strong>. For this reason, true security control must reside at the tool and execution layer, not solely in the model.</p>
-<p>Policy enforcement frameworks such as ProAgent (or Progent) introduce programmable privilege control over tool usage. Instead of trusting the model to behave safely, every tool invocation is validated against explicit security policies.</p>
-<p>These policies may begin as static, human-defined rules—such as forbidding database deletion, restricting monetary transfers, or preventing external network access—but they can also evolve dynamically. In context-aware systems, the agent itself can propose candidate policies based on risk signals observed during execution, which are then verified and enforced through a separate control plane.</p>
-<p>Consider a banking agent that is authorized to send money under normal circumstances. If a prompt injection attempt tries to redirect funds to an attacker-controlled account, the policy layer evaluates the request independently of the model’s reasoning. The malicious tool call is blocked, while legitimate transactions remain permitted. The agent continues functioning, but the attack is neutralized at the point of execution.</p>
-<p>This design reflects a critical security shift:</p>
+<p>While prompts shape behavior, tools determine impact. True security control must reside at the tool and execution layer, not solely in the model.</p>
+<p>Policy enforcement frameworks like ProAgent introduce programmable privilege control over tool usage. Instead of trusting the model to behave safely, every tool invocation is validated against explicit security policies.</p>
+<p>These policies start as static, human-defined rules—forbidding database deletion, restricting monetary transfers, or preventing external network access. They can also evolve dynamically. In context-aware systems, the agent can propose candidate policies based on risk signals observed during execution, which are then verified and enforced through a separate control layer.</p>
+<p>Consider a banking agent authorized to send money under normal circumstances. If a prompt injection attempt tries to redirect funds to an attacker-controlled account, the policy layer evaluates the request independently of the model’s reasoning. The malicious tool call is blocked while legitimate transactions remain permitted. The agent continues functioning, but the attack is neutralized at execution.</p>
 <blockquote class="blockquote">
 <p>The model may reason, but the policy engine decides.</p>
 </blockquote>
@@ -455,48 +453,39 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="privilege-separation-containing-the-blast-radius-of-compromise" class="level3" data-number="6.4">
 <h3 data-number="6.4" class="anchored" data-anchor-id="privilege-separation-containing-the-blast-radius-of-compromise"><span class="header-section-number">6.4</span> Privilege Separation — Containing the Blast Radius of Compromise</h3>
-<p>Traditional secure systems avoid concentrating power in a single execution context. Agentic systems must adopt the same principle through <strong>explicit privilege separation</strong>.</p>
+<p>Traditional secure systems avoid concentrating power in a single component. Agentic systems must adopt the same principle through explicit privilege separation.</p>
 <p>Instead of deploying one monolithic agent with universal authority, the system is decomposed into components with sharply differentiated privileges. A common pattern divides the agent into a complex, unprivileged “worker” component and a simple, highly privileged “monitor” component.</p>
-<p>The worker performs reasoning, planning, and interaction with untrusted data. The monitor evaluates and authorizes actions. Even if the worker is fully compromised, the attacker cannot directly inherit the monitor’s authority.</p>
-<p>Frameworks such as Privtrans automate this transformation by rewriting source code to enforce privilege boundaries at the architectural level. The result is a system where compromise is <strong>contained by construction</strong>, rather than mitigated after the fact.</p>
+<p>The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. Even if the worker is fully compromised, the attacker cannot directly inherit the monitor’s authority.</p>
+<p>Frameworks like Privtrans automate this transformation by rewriting source code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.</p>
 <hr>
 </section>
 <section id="monitoring-and-detection-assuming-failure-will-happen" class="level3" data-number="6.5">
 <h3 data-number="6.5" class="anchored" data-anchor-id="monitoring-and-detection-assuming-failure-will-happen"><span class="header-section-number">6.5</span> Monitoring and Detection — Assuming Failure Will Happen</h3>
-<p>Even with layered preventive controls, <strong>some attacks will eventually succeed</strong>. For this reason, monitoring and detection are not optional—they are foundational.</p>
+<p>Even with layered preventive controls, some attacks will succeed. Monitoring and detection are foundational, not optional.</p>
 <p>Real-time anomaly detection can flag suspicious information flows, abnormal tool usage patterns, unexpected execution paths, and deviations from historical behavioral baselines. These signals can trigger automated containment actions, human review, or full system shutdowns.</p>
-<p>In agentic systems, monitoring must address not only infrastructure metrics, but <strong>semantic behavior</strong>: what the agent is trying to accomplish, how it is interpreting instructions, and whether its actions remain consistent with authorized goals.</p>
-<p>Security in this context becomes an ongoing process of <strong>observation, feedback, and adaptation</strong>, not a one-time configuration step.</p>
+<p>In agentic systems, monitoring must address more than infrastructure metrics. It must track what the agent is trying to accomplish, how it interprets instructions, and whether its actions remain consistent with authorized goals.</p>
+<p>Security becomes an ongoing process of observation, feedback, and adaptation—not a one-time configuration step.</p>
 <hr>
 </section>
 <section id="the-structural-insight" class="level3" data-number="6.6">
 <h3 data-number="6.6" class="anchored" data-anchor-id="the-structural-insight"><span class="header-section-number">6.6</span> The Structural Insight</h3>
-<p>What ultimately distinguishes secure agentic architecture from traditional application security is this:</p>
+<p>What distinguishes secure agentic architecture from traditional application security is this:</p>
 <blockquote class="blockquote">
-<p><strong>Security can no longer be centralized at the perimeter. It must be distributed across the entire decision lifecycle of the agent.</strong></p>
+<p>Security can’t be centralized at the perimeter. It must be distributed across the entire decision lifecycle of the agent.</p>
 </blockquote>
-<ul>
-<li>Before the model: sanitization and input control<br>
-</li>
-<li>During reasoning: alignment and guardrails<br>
-</li>
-<li>At execution: policy enforcement and privilege control<br>
-</li>
-<li>After action: monitoring and detection</li>
-</ul>
-<p>Only when all of these layers operate together does the system achieve meaningful resilience.</p>
+<p>Before the model: sanitization and input control. During reasoning: alignment and guardrails. At execution: policy enforcement and privilege control. After action: monitoring and detection.</p>
+<p>All of these layers must operate together. That’s how the system achieves resilience.</p>
 <hr>
 </section>
 </section>
 <section id="conclusion-securing-the-age-of-autonomous-systems" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="conclusion-securing-the-age-of-autonomous-systems"><span class="header-section-number">7</span> Conclusion — Securing the Age of Autonomous Systems</h2>
-<p>Agentic AI marks a fundamental shift in how intelligent systems interact with the world. These are no longer isolated models producing text in response to prompts. They are <strong>complex hybrid systems</strong>, where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion dramatically expands the attack surface—and with it, the potential scale of harm.</p>
-<p>As a result, <strong>model-level evaluation alone is no longer sufficient</strong>. Security and risk must be assessed at the level where failures actually emerge: the full, end-to-end agentic system. Frameworks such as AgentXploit demonstrate why black-box, environment-based red teaming is essential for uncovering failure modes that traditional testing will never reveal.</p>
-<p>At the same time, meaningful protection cannot come from any single control. Secure agentic deployment demands <strong>defense-in-depth</strong>, combining model hardening, input sanitization, programmable policy enforcement, privilege separation, and continuous monitoring. In this new paradigm, models may reason—but <strong>policy engines decide, privilege boundaries contain damage, and monitoring assumes failure will eventually occur</strong>.</p>
-<p>Ultimately, the challenge of agentic AI security is not purely technical. It is <strong>architectural, operational, and organizational</strong>. The question is no longer whether agents will be deployed—they already are. The real question is whether they will be deployed <strong>with the level of rigor, resilience, and accountability that their autonomy now demands</strong>.</p>
-<p>For those interested in actively shaping this future, initiatives such as the <strong>AgentX competition</strong> provide an important opportunity. With dedicated tracks for both entrepreneurs and researchers, the competition advances not only what agents can do—but how safely and securely they can do it.</p>
-<p>The next phase of AI will not be defined by intelligence alone.<br>
-It will be defined by <strong>whether we can trust the systems we empower to act on our behalf</strong>.</p>
+<p>Agentic AI represents a shift in how intelligent systems interact with the world. These aren’t isolated models producing text in response to prompts. They’re complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.</p>
+<p>Model-level evaluation isn’t sufficient. Security and risk must be assessed at the level where failures actually emerge: the full, end-to-end agentic system. Frameworks like AgentXploit demonstrate why black-box, environment-based red teaming is essential for uncovering failure modes that traditional testing will never reveal.</p>
+<p>Meaningful protection requires defense-in-depth: model hardening, input sanitization, programmable policy enforcement, privilege separation, and continuous monitoring. Models may reason, but policy engines decide. Privilege boundaries contain damage. Monitoring assumes failure will occur.</p>
+<p>The challenge of agentic AI security is architectural, operational, and organizational. Agents are already being deployed. The real question is whether they’ll be deployed with the level of rigor, resilience, and accountability that their autonomy demands.</p>
+<p>For those interested in shaping this future, initiatives like the AgentX competition provide an important opportunity. With dedicated tracks for both entrepreneurs and researchers, the competition advances not only what agents can do—but how safely and securely they can do it.</p>
+<p>The next phase of AI will be defined by whether we can trust the systems we empower to act on our behalf.</p>
 
 
 </section>
