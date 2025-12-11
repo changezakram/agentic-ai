@@ -151,7 +151,7 @@ Risk emerges from component interaction, not individual components. Security eva
 
 Black-box red-teaming frameworks for agentic systems are emerging. AgentXploit provides a clear example of how adversarial testing must evolve.
 
-AgentXploit tests agents under realistic constraints: the attacker cannot modify the user's request and cannot observe or alter the agent's internal mechanics. The user query is assumed to be benign. The agent's code, prompts, and orchestration logic are inaccessible. The only control available to the attacker is the external environment.
+AgentXploit tests agents under realistic constraints. The attacker cannot modify the user's request and cannot observe or alter the agent's internal mechanics. The user query is assumed to be benign. The agent's code, prompts, and orchestration logic are inaccessible. The only control available to the attacker is the external environment.
 
 This design mirrors real-world conditions. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.
 The attack surface is the data ecosystem surrounding the agent, not the agent itself.
@@ -166,7 +166,7 @@ Each mutation is evaluated with a simple test: did the agent perform a prohibite
 
 This pass/fail signal feeds back into the search process, allowing the system to iteratively discover more effective attacks. Over time, the framework uncovers exploits that emerge only through multi-step reasoning inside the agent's planning loop.
 
-> We cannot enumerate all failure modes in advance. We must search for them adversarially.
+> We can't anticipate all the ways agents can be exploited. The only way to discover vulnerabilities is to attack the system the way adversaries would.
 
 ---
 
