@@ -113,11 +113,7 @@ This attack is difficult to catch. The system passes routine testing because the
 
 ### Why These Attacks Are Fundamentally Different
 
-The common thread isn't the mechanism—SQL, Python, retrieval, or prompts. It's an architectural shift:
-
-> Agents collapse the boundary between language, logic, and execution.
-
-Traditional software executes what developers explicitly code. Agentic systems execute what they're convinced is the correct next action. This makes persuading the model as effective as exploiting technical vulnerabilities. Attackers don't need buffer overflows or memory corruption—they just need convincing language.
+The common thread isn't the mechanism—SQL, Python, retrieval, or prompts. It's an architectural shift. Traditional software executes what developers explicitly code. Agentic systems execute what they're convinced is the correct next action. This makes persuading the model as effective as exploiting technical vulnerabilities. Attackers don't need buffer overflows or memory corruption—they just need convincing language.
 
 The threat model expands to include natural language as an attack surface, data as executable instruction, reasoning as a controllable process, and tools as amplification mechanisms.
 
@@ -320,3 +316,6 @@ The next phase of AI will be defined by whether we can trust the systems we empo
 [3] CVE-2024-9439: SuperAGI Remote Code Execution. https://www.cvedetails.com/cve/CVE-2024-9439/
 
 [4] Greshake, K. et. al. (2023). Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. https://arxiv.org/abs/2302.12173
+
+[5] Zou, A., et al. (2024). Phantom: General Trigger Attacks on Retrieval Augmented Language Generation. https://arxiv.org/abs/2405.20485
+
