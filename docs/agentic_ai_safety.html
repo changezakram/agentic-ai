@@ -358,13 +358,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="security-goals-in-agentic-systems" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="security-goals-in-agentic-systems"><span class="header-section-number">4</span> Security Goals in Agentic Systems</h2>
 <p>The core security objectives still trace back to the CIA triad—confidentiality, integrity, and availability. But in agentic systems, what needs protection expands significantly.</p>
-<p><strong>Confidentiality</strong> extends beyond customer and enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and sometimes the model itself. A single leaked instruction or credential can redirect the entire system’s behavior.</p>
-<p><strong>Integrity</strong> includes more than business data accuracy. It must cover the model itself, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning becomes corrupted.</p>
-<p><strong>Availability</strong> means more than web service uptime. In agentic systems, it includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.</p>
+<p><strong>Confidentiality</strong> extends beyond customer and enterprise data. It must also protect the agent’s internal instructions, API credentials, and operational logic. A single leaked instruction or credential can redirect the entire system’s behavior.</p>
+<p><strong>Integrity</strong> includes more than business data accuracy. It must cover the model itself, training data, retrieval databases, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning becomes corrupted.</p>
+<p><strong>Availability</strong> means more than web service uptime. In agentic systems, it includes sustained model performance, stable responses, and reliable tool execution. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.</p>
 <blockquote class="blockquote">
 <p>For a bank deploying agents, confidentiality means protecting customer data and the agent’s wire transfer instructions. Integrity means preventing attackers from manipulating the agent’s fraud detection logic. Availability means the agent continues processing transactions during peak loads—because downtime now means frozen customer accounts, not just slow response times.</p>
 </blockquote>
-<p>The protection requirements multiply—not just the consequences of failure.</p>
+<p>The stakes are higher. When agents fail, they don’t just return error messages—they execute incorrect operations at scale.</p>
 <hr>
 <section id="why-the-attack-surface-expands" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="why-the-attack-surface-expands"><span class="header-section-number">4.1</span> Why the Attack Surface Expands</h3>
