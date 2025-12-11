@@ -63,34 +63,6 @@ This hybrid nature is precisely what gives agents their power. It is also what m
 
 ---
 
-## Security Goals in Agentic Systems
-
-The core security objectives still trace back to the familiar **CIA triad—confidentiality, integrity, and availability**. However, in agentic systems, the scope of what must be protected expands dramatically.
-
-Confidentiality now extends beyond traditional customer or enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and in some cases the model itself. A single leaked instruction or credential can allow an attacker to redirect the behavior of the entire system.
-
-Integrity is no longer limited to ensuring that business data has not been tampered with. It must also include the integrity of the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning process itself can be corrupted.
-
-Availability is no longer just about uptime of a web service. In agentic systems, availability also includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.
-
-In short, the **targets of protection multiply**, not just the consequences of failure.
-
----
-
-### Why the Attack Surface Expands
-
-The introduction of LLMs into production systems dramatically increases the attack surface. Unlike traditional software, which only executes what it is explicitly programmed to do, agents must process **untrusted natural language**, ingest external data in real time, and dynamically decide what actions to take.
-
-This creates entirely new categories of risk.
-
-Sensitive information can be unintentionally revealed through model outputs. Prompts and tool instructions may be influenced by untrusted user input or poisoned external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious actions on otherwise trusted systems.
-
-Most importantly, these attacks do not target a single vulnerability. They exploit the **interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop**.
-
-This is why agentic AI security cannot be treated as a simple extension of traditional application security or even conventional ML security. It represents a **new class of cyber-physical and socio-technical risk**.
-
----
-
 ## The Agent Threat Landscape — Where Attacks Enter the System
 
 Once we examine the full lifecycle of an agentic system, a sobering reality emerges: **failure modes exist at every stage of the pipeline**. Unlike traditional applications, where code paths are fixed and tightly constrained, agentic systems are dynamic. They continuously ingest untrusted inputs, construct internal prompts, invoke probabilistic reasoning, retrieve external information, and execute real-world actions.
@@ -104,8 +76,6 @@ In an agentic pipeline, there is no single “front door” to defend. **Every i
 ### A New Class of Operational Attacks
 
 These risks are not abstract. They are already being exploited in real-world systems.
-
----
 
 #### A. SQL Injection via LLMs
 
@@ -169,6 +139,36 @@ This is why securing agentic AI cannot rely on traditional application security 
 - Tools as amplification mechanisms  
 
 Once an agent is compromised, its ability to chain actions across systems allows small manipulations to escalate into large operational failures.
+
+
+---
+
+## Security Goals in Agentic Systems
+
+The core security objectives still trace back to the familiar **CIA triad—confidentiality, integrity, and availability**. However, in agentic systems, the scope of what must be protected expands dramatically.
+
+Confidentiality now extends beyond traditional customer or enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and in some cases the model itself. A single leaked instruction or credential can allow an attacker to redirect the behavior of the entire system.
+
+Integrity is no longer limited to ensuring that business data has not been tampered with. It must also include the integrity of the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning process itself can be corrupted.
+
+Availability is no longer just about uptime of a web service. In agentic systems, availability also includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.
+
+In short, the **targets of protection multiply**, not just the consequences of failure.
+
+---
+
+### Why the Attack Surface Expands
+
+The introduction of LLMs into production systems dramatically increases the attack surface. Unlike traditional software, which only executes what it is explicitly programmed to do, agents must process **untrusted natural language**, ingest external data in real time, and dynamically decide what actions to take.
+
+This creates entirely new categories of risk.
+
+Sensitive information can be unintentionally revealed through model outputs. Prompts and tool instructions may be influenced by untrusted user input or poisoned external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious actions on otherwise trusted systems.
+
+Most importantly, these attacks do not target a single vulnerability. They exploit the **interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop**.
+
+This is why agentic AI security cannot be treated as a simple extension of traditional application security or even conventional ML security. It represents a **new class of cyber-physical and socio-technical risk**.
+
 
 ---
 

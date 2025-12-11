@@ -210,14 +210,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#llms-vs.-agents" id="toc-llms-vs.-agents" class="nav-link" data-scroll-target="#llms-vs.-agents"><span class="header-section-number">2.1</span> LLMs vs.&nbsp;Agents</a></li>
   <li><a href="#the-agentic-hybrid-system" id="toc-the-agentic-hybrid-system" class="nav-link" data-scroll-target="#the-agentic-hybrid-system"><span class="header-section-number">2.2</span> The Agentic Hybrid System</a></li>
   </ul></li>
-  <li><a href="#security-goals-in-agentic-systems" id="toc-security-goals-in-agentic-systems" class="nav-link" data-scroll-target="#security-goals-in-agentic-systems"><span class="header-section-number">3</span> Security Goals in Agentic Systems</a>
+  <li><a href="#the-agent-threat-landscape-where-attacks-enter-the-system" id="toc-the-agent-threat-landscape-where-attacks-enter-the-system" class="nav-link" data-scroll-target="#the-agent-threat-landscape-where-attacks-enter-the-system"><span class="header-section-number">3</span> The Agent Threat Landscape — Where Attacks Enter the System</a>
   <ul class="collapse">
-  <li><a href="#why-the-attack-surface-expands" id="toc-why-the-attack-surface-expands" class="nav-link" data-scroll-target="#why-the-attack-surface-expands"><span class="header-section-number">3.1</span> Why the Attack Surface Expands</a></li>
+  <li><a href="#a-new-class-of-operational-attacks" id="toc-a-new-class-of-operational-attacks" class="nav-link" data-scroll-target="#a-new-class-of-operational-attacks"><span class="header-section-number">3.1</span> A New Class of Operational Attacks</a></li>
+  <li><a href="#why-these-attacks-are-fundamentally-different" id="toc-why-these-attacks-are-fundamentally-different" class="nav-link" data-scroll-target="#why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.2</span> Why These Attacks Are Fundamentally Different</a></li>
   </ul></li>
-  <li><a href="#the-agent-threat-landscape-where-attacks-enter-the-system" id="toc-the-agent-threat-landscape-where-attacks-enter-the-system" class="nav-link" data-scroll-target="#the-agent-threat-landscape-where-attacks-enter-the-system"><span class="header-section-number">4</span> The Agent Threat Landscape — Where Attacks Enter the System</a>
+  <li><a href="#security-goals-in-agentic-systems" id="toc-security-goals-in-agentic-systems" class="nav-link" data-scroll-target="#security-goals-in-agentic-systems"><span class="header-section-number">4</span> Security Goals in Agentic Systems</a>
   <ul class="collapse">
-  <li><a href="#a-new-class-of-operational-attacks" id="toc-a-new-class-of-operational-attacks" class="nav-link" data-scroll-target="#a-new-class-of-operational-attacks"><span class="header-section-number">4.1</span> A New Class of Operational Attacks</a></li>
-  <li><a href="#why-these-attacks-are-fundamentally-different" id="toc-why-these-attacks-are-fundamentally-different" class="nav-link" data-scroll-target="#why-these-attacks-are-fundamentally-different"><span class="header-section-number">4.2</span> Why These Attacks Are Fundamentally Different</a></li>
+  <li><a href="#why-the-attack-surface-expands" id="toc-why-the-attack-surface-expands" class="nav-link" data-scroll-target="#why-the-attack-surface-expands"><span class="header-section-number">4.1</span> Why the Attack Surface Expands</a></li>
   </ul></li>
   <li><a href="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" id="toc-evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="nav-link" data-scroll-target="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</a>
   <ul class="collapse">
@@ -304,51 +304,32 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="security-goals-in-agentic-systems" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="security-goals-in-agentic-systems"><span class="header-section-number">3</span> Security Goals in Agentic Systems</h2>
-<p>The core security objectives still trace back to the familiar <strong>CIA triad—confidentiality, integrity, and availability</strong>. However, in agentic systems, the scope of what must be protected expands dramatically.</p>
-<p>Confidentiality now extends beyond traditional customer or enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and in some cases the model itself. A single leaked instruction or credential can allow an attacker to redirect the behavior of the entire system.</p>
-<p>Integrity is no longer limited to ensuring that business data has not been tampered with. It must also include the integrity of the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning process itself can be corrupted.</p>
-<p>Availability is no longer just about uptime of a web service. In agentic systems, availability also includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.</p>
-<p>In short, the <strong>targets of protection multiply</strong>, not just the consequences of failure.</p>
-<hr>
-<section id="why-the-attack-surface-expands" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="why-the-attack-surface-expands"><span class="header-section-number">3.1</span> Why the Attack Surface Expands</h3>
-<p>The introduction of LLMs into production systems dramatically increases the attack surface. Unlike traditional software, which only executes what it is explicitly programmed to do, agents must process <strong>untrusted natural language</strong>, ingest external data in real time, and dynamically decide what actions to take.</p>
-<p>This creates entirely new categories of risk.</p>
-<p>Sensitive information can be unintentionally revealed through model outputs. Prompts and tool instructions may be influenced by untrusted user input or poisoned external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious actions on otherwise trusted systems.</p>
-<p>Most importantly, these attacks do not target a single vulnerability. They exploit the <strong>interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop</strong>.</p>
-<p>This is why agentic AI security cannot be treated as a simple extension of traditional application security or even conventional ML security. It represents a <strong>new class of cyber-physical and socio-technical risk</strong>.</p>
-<hr>
-</section>
-</section>
-<section id="the-agent-threat-landscape-where-attacks-enter-the-system" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="the-agent-threat-landscape-where-attacks-enter-the-system"><span class="header-section-number">4</span> The Agent Threat Landscape — Where Attacks Enter the System</h2>
+<section id="the-agent-threat-landscape-where-attacks-enter-the-system" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="the-agent-threat-landscape-where-attacks-enter-the-system"><span class="header-section-number">3</span> The Agent Threat Landscape — Where Attacks Enter the System</h2>
 <p>Once we examine the full lifecycle of an agentic system, a sobering reality emerges: <strong>failure modes exist at every stage of the pipeline</strong>. Unlike traditional applications, where code paths are fixed and tightly constrained, agentic systems are dynamic. They continuously ingest untrusted inputs, construct internal prompts, invoke probabilistic reasoning, retrieve external information, and execute real-world actions.</p>
 <p>At the point of model deployment, risks already exist. A model may be flawed, intentionally backdoored, or compromised through a poisoned supply chain. During operation, user inputs may contain malicious intent, adversarial instructions, or carefully crafted payloads designed to manipulate the agent’s reasoning. During prompt construction, insufficient isolation between trusted system instructions and untrusted content may allow attackers to steer the model’s behavior. During execution, model-generated outputs—whether SQL, code, or tool instructions—may directly trigger harmful actions in external systems.</p>
 <p>In an agentic pipeline, there is no single “front door” to defend. <strong>Every interface becomes an attack surface.</strong></p>
 <hr>
-<section id="a-new-class-of-operational-attacks" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="a-new-class-of-operational-attacks"><span class="header-section-number">4.1</span> A New Class of Operational Attacks</h3>
+<section id="a-new-class-of-operational-attacks" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="a-new-class-of-operational-attacks"><span class="header-section-number">3.1</span> A New Class of Operational Attacks</h3>
 <p>These risks are not abstract. They are already being exploited in real-world systems.</p>
-<hr>
-<section id="a.-sql-injection-via-llms" class="level4" data-number="4.1.1">
-<h4 data-number="4.1.1" class="anchored" data-anchor-id="a.-sql-injection-via-llms"><span class="header-section-number">4.1.1</span> A. SQL Injection via LLMs</h4>
+<section id="a.-sql-injection-via-llms" class="level4" data-number="3.1.1">
+<h4 data-number="3.1.1" class="anchored" data-anchor-id="a.-sql-injection-via-llms"><span class="header-section-number">3.1.1</span> A. SQL Injection via LLMs</h4>
 <p>In traditional applications, SQL injection occurs when unsanitized input is embedded directly into a database query. In agentic systems, the attack vector shifts upstream. The attacker no longer injects SQL into a query—they instruct the language model to generate it.</p>
 <p>In one documented vulnerability involving LlamaIndex, a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a <code>DROP TABLE</code> statement, which was then executed without safeguards. The database was compromised not through malformed syntax, but through <strong>faithful obedience to a malicious natural language instruction</strong>.</p>
 <p>A similar class of vulnerability was observed in systems built with Vanna.ai. By injecting semicolon-delimited instructions into a query-generation prompt, attackers were able to chain a malicious SQL command after an otherwise legitimate operation. The database executed both.</p>
 <p>The core issue is not SQL itself. It is the <strong>delegation of executable authority to probabilistic reasoning without sufficient validation</strong>.</p>
 <hr>
 </section>
-<section id="b.-remote-code-execution-through-generated-code" class="level4" data-number="4.1.2">
-<h4 data-number="4.1.2" class="anchored" data-anchor-id="b.-remote-code-execution-through-generated-code"><span class="header-section-number">4.1.2</span> B. Remote Code Execution Through Generated Code</h4>
+<section id="b.-remote-code-execution-through-generated-code" class="level4" data-number="3.1.2">
+<h4 data-number="3.1.2" class="anchored" data-anchor-id="b.-remote-code-execution-through-generated-code"><span class="header-section-number">3.1.2</span> B. Remote Code Execution Through Generated Code</h4>
 <p>Many agents are designed to generate and then execute code—most commonly Python—to solve problems dynamically. This capability is powerful, but it also collapses the boundary between reasoning and execution.</p>
 <p>In a SuperAGI vulnerability, an attacker instructed the agent to generate Python code that imported the operating system module and deleted critical files. Because the system was configured to automatically execute model-generated code, the agent became a remote code execution engine. No traditional exploit payload was required. The model itself produced the malicious logic.</p>
 <p>In this setting, the model is not merely generating text—it is producing <strong>live executable attack artifacts</strong>.</p>
 <hr>
 </section>
-<section id="c.-prompt-injection-direct-and-indirect" class="level4" data-number="4.1.3">
-<h4 data-number="4.1.3" class="anchored" data-anchor-id="c.-prompt-injection-direct-and-indirect"><span class="header-section-number">4.1.3</span> C. Prompt Injection — Direct and Indirect</h4>
+<section id="c.-prompt-injection-direct-and-indirect" class="level4" data-number="3.1.3">
+<h4 data-number="3.1.3" class="anchored" data-anchor-id="c.-prompt-injection-direct-and-indirect"><span class="header-section-number">3.1.3</span> C. Prompt Injection — Direct and Indirect</h4>
 <p>Prompt injection remains one of the most fundamental threats to agentic systems.</p>
 <p>In direct prompt injection, the attacker explicitly instructs the model to override its prior system instructions. This class of attack was famously used to force early chat systems to reveal internal system prompts and safety rules.</p>
 <p>Indirect prompt injection is far more dangerous in agentic environments. Here, the attacker does not interact with the agent directly. Instead, they embed adversarial instructions into external data sources that the agent is designed to trust.</p>
@@ -356,16 +337,16 @@ ul.task-list li input[type="checkbox"] {
 <p>In this scenario, <strong>data becomes code</strong>.</p>
 <hr>
 </section>
-<section id="d.-backdoors-and-agent-poisoning" class="level4" data-number="4.1.4">
-<h4 data-number="4.1.4" class="anchored" data-anchor-id="d.-backdoors-and-agent-poisoning"><span class="header-section-number">4.1.4</span> D. Backdoors and Agent Poisoning</h4>
+<section id="d.-backdoors-and-agent-poisoning" class="level4" data-number="3.1.4">
+<h4 data-number="3.1.4" class="anchored" data-anchor-id="d.-backdoors-and-agent-poisoning"><span class="header-section-number">3.1.4</span> D. Backdoors and Agent Poisoning</h4>
 <p>A more subtle but highly dangerous class of attacks involves poisoning the agent’s memory or retrieval system.</p>
 <p>In “Agent Poison” scenarios, attackers inject adversarial content into a retrieval-augmented generation (RAG) database. During normal operation, the agent behaves correctly. The malicious behavior only activates when a specific trigger phrase appears in the input. At that point, the agent retrieves poisoned demonstrations that steer it toward harmful actions.</p>
 <p>This type of backdoor is especially difficult to detect because the system appears well-behaved under routine testing. The malicious logic lies dormant until activated.</p>
 <hr>
 </section>
 </section>
-<section id="why-these-attacks-are-fundamentally-different" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="why-these-attacks-are-fundamentally-different"><span class="header-section-number">4.2</span> Why These Attacks Are Fundamentally Different</h3>
+<section id="why-these-attacks-are-fundamentally-different" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.2</span> Why These Attacks Are Fundamentally Different</h3>
 <p>What unites these attack classes is not the specific mechanism—SQL, Python, retrieval, or prompts—but the deeper architectural shift:</p>
 <blockquote class="blockquote">
 <p><strong>Agents collapse the boundary between language, logic, and execution.</strong></p>
@@ -382,6 +363,24 @@ ul.task-list li input[type="checkbox"] {
 <li>Tools as amplification mechanisms</li>
 </ul>
 <p>Once an agent is compromised, its ability to chain actions across systems allows small manipulations to escalate into large operational failures.</p>
+<hr>
+</section>
+</section>
+<section id="security-goals-in-agentic-systems" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="security-goals-in-agentic-systems"><span class="header-section-number">4</span> Security Goals in Agentic Systems</h2>
+<p>The core security objectives still trace back to the familiar <strong>CIA triad—confidentiality, integrity, and availability</strong>. However, in agentic systems, the scope of what must be protected expands dramatically.</p>
+<p>Confidentiality now extends beyond traditional customer or enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and in some cases the model itself. A single leaked instruction or credential can allow an attacker to redirect the behavior of the entire system.</p>
+<p>Integrity is no longer limited to ensuring that business data has not been tampered with. It must also include the integrity of the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent’s reasoning process itself can be corrupted.</p>
+<p>Availability is no longer just about uptime of a web service. In agentic systems, availability also includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.</p>
+<p>In short, the <strong>targets of protection multiply</strong>, not just the consequences of failure.</p>
+<hr>
+<section id="why-the-attack-surface-expands" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="why-the-attack-surface-expands"><span class="header-section-number">4.1</span> Why the Attack Surface Expands</h3>
+<p>The introduction of LLMs into production systems dramatically increases the attack surface. Unlike traditional software, which only executes what it is explicitly programmed to do, agents must process <strong>untrusted natural language</strong>, ingest external data in real time, and dynamically decide what actions to take.</p>
+<p>This creates entirely new categories of risk.</p>
+<p>Sensitive information can be unintentionally revealed through model outputs. Prompts and tool instructions may be influenced by untrusted user input or poisoned external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious actions on otherwise trusted systems.</p>
+<p>Most importantly, these attacks do not target a single vulnerability. They exploit the <strong>interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop</strong>.</p>
+<p>This is why agentic AI security cannot be treated as a simple extension of traditional application security or even conventional ML security. It represents a <strong>new class of cyber-physical and socio-technical risk</strong>.</p>
 <hr>
 </section>
 </section>
