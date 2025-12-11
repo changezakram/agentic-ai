@@ -379,28 +379,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</h2>
-<p>A central mistake in many current AI risk programs is the assumption that evaluating the language model is equivalent to evaluating the system. This assumption breaks down completely in agentic AI.</p>
-<p>In traditional LLM deployments, safety testing often focuses on prompt behavior, toxicity, hallucinations, and alignment under controlled inputs. These tests remain necessary, but they are no longer sufficient. An agentic system is not a single model—it is a distributed, interactive decision pipeline composed of prompts, tools, memory, retrieval, execution layers, external data feeds, and third-party services.</p>
-<p>Risk does not emerge from any single component in isolation. It emerges from <strong>their interaction</strong>.</p>
-<p>As a result, meaningful security evaluation must shift from <strong>model-centric testing</strong> to <strong>end-to-end adversarial system evaluation</strong>.</p>
+<p>Many AI risk programs make a critical mistake: they evaluate the language model and assume they’ve evaluated the system. This assumption fails completely in agentic AI.</p>
+<p>Traditional LLM testing focuses on prompt behavior, toxicity, hallucinations, and alignment under controlled inputs. These tests remain necessary, but they’re insufficient. An agentic system isn’t a single model—it’s a distributed decision pipeline of prompts, tools, memory, retrieval, execution layers, external data feeds, and third-party services.</p>
+<p>Risk emerges from component interaction, not individual components. Security evaluation must shift from model-centric testing to end-to-end adversarial system evaluation.</p>
 <hr>
 <section id="black-box-red-teaming-for-agents" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="black-box-red-teaming-for-agents"><span class="header-section-number">5.1</span> Black-Box Red Teaming for Agents</h3>
-<p>One of the most important developments in this area is the emergence of <strong>black-box red-teaming frameworks for agentic systems</strong>. Among these, AgentXploit provides a particularly instructive example of how adversarial testing must evolve.</p>
-<p>AgentXploit is designed to test agents under a strict and highly realistic constraint:<br>
-the attacker <strong>cannot modify the user’s request</strong> and <strong>cannot observe or alter the internal mechanics of the agent</strong>. The user query is assumed to be completely benign. The agent’s code, prompts, and orchestration logic are treated as inaccessible.</p>
-<p>The only control available to the attacker is the <strong>external environment</strong>.</p>
-<p>This design decision is crucial because it mirrors the real-world operating conditions of many enterprise agents. In production, attackers rarely have direct access to internal prompts or orchestration logic. What they can influence—at scale—are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.</p>
-<p>Under this model, the attack surface becomes the <strong>data ecosystem surrounding the agent</strong>, not the agent itself.</p>
+<p>Black-box red-teaming frameworks for agentic systems are emerging. AgentXploit provides a clear example of how adversarial testing must evolve.</p>
+<p>AgentXploit tests agents under strict, realistic constraints: the attacker cannot modify the user’s request and cannot observe or alter the agent’s internal mechanics. The user query is assumed to be benign. The agent’s code, prompts, and orchestration logic are inaccessible.</p>
+<p>The only control available to the attacker is the external environment.</p>
+<p>This design mirrors real-world conditions. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.</p>
+<p>The attack surface becomes the data ecosystem surrounding the agent, not the agent itself.</p>
 <hr>
 </section>
 <section id="how-environment-based-attacks-are-discovered" class="level3" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="how-environment-based-attacks-are-discovered"><span class="header-section-number">5.2</span> How Environment-Based Attacks Are Discovered</h3>
-<p>Rather than relying on static test cases, AgentXploit uses a <strong>fuzzing-based adversarial search framework</strong> driven by Monte Carlo Tree Search (MCTS). Instead of mutating input prompts, the system mutates elements of the agent’s environment—web content, files, documents, and retrieved context.</p>
-<p>Each mutation is evaluated using a simple binary signal:<br>
-did the agent perform a prohibited action, or did it not?</p>
-<p>This success/failure signal is then fed back into the search process, allowing the system to iteratively evolve more effective attacks. Over time, the framework discovers highly non-obvious exploits that emerge only through multi-step reasoning inside the agent’s planning loop.</p>
-<p>This approach reflects a fundamental truth about agentic risk:</p>
+<p>AgentXploit uses a fuzzing-based adversarial search framework driven by Monte Carlo Tree Search. Instead of mutating input prompts, it mutates elements of the agent’s environment—web content, files, documents, and retrieved context.</p>
+<p>Each mutation is evaluated with a simple binary signal: did the agent perform a prohibited action, or not?</p>
+<p>This success/failure signal feeds back into the search process, allowing the system to iteratively evolve more effective attacks. Over time, the framework discovers exploits that emerge only through multi-step reasoning inside the agent’s planning loop.</p>
 <blockquote class="blockquote">
 <p>We cannot enumerate all failure modes in advance. We must search for them adversarially.</p>
 </blockquote>
@@ -408,21 +404,18 @@ did the agent perform a prohibited action, or did it not?</p>
 </section>
 <section id="a-real-world-style-exploit-scenario" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="a-real-world-style-exploit-scenario"><span class="header-section-number">5.3</span> A Real-World Style Exploit Scenario</h3>
-<p>To illustrate how subtle these failures can be, consider a shopping assistant agent designed to help users find products across retail sites. A benign user asks the agent to find a high-quality screen protector for their phone.</p>
-<p>An attacker does not alter this request. Instead, they post a malicious product review on a legitimate e-commerce page. Hidden inside the review is an instruction to the agent to visit an external website controlled by the attacker.</p>
-<p>The agent reads the review during normal browsing. It interprets the hidden instruction as part of the product evaluation process. Following its own reasoning chain, it obeys the instruction and navigates to the malicious site—potentially exposing itself to malware, credential theft, or further compromise.</p>
-<p>At no point was the agent “prompted” in the traditional sense.<br>
-It was <strong>misled by its environment</strong>.</p>
-<p>This class of attack is particularly dangerous because it bypasses nearly all conventional LLM safety filters. The content is routed through retrieval and reasoning layers before it ever reaches the model’s alignment mechanisms. By the time the model sees it, it appears as legitimate context, not adversarial input.</p>
+<p>Consider a shopping assistant agent that helps users find products across retail sites. A user asks the agent to find a high-quality screen protector for their phone. An attacker doesn’t alter this request. Instead, they post a malicious product review on a legitimate e-commerce page with a hidden instruction: visit an external website controlled by the attacker.</p>
+<p>The agent reads the review during normal browsing and interprets the hidden instruction as part of product evaluation. Following its reasoning chain, it navigates to the malicious site—potentially exposing itself to malware, credential theft, or further compromise.</p>
+<p>The agent was never “prompted” in the traditional sense. It was misled by its environment.</p>
+<p>This attack bypasses conventional LLM safety filters. The content routes through retrieval and reasoning layers before reaching the model’s alignment mechanisms. By the time the model sees it, it appears as legitimate context, not adversarial input.</p>
 <hr>
 </section>
 <section id="what-this-means-for-enterprise-risk-programs" class="level3" data-number="5.4">
 <h3 data-number="5.4" class="anchored" data-anchor-id="what-this-means-for-enterprise-risk-programs"><span class="header-section-number">5.4</span> What This Means for Enterprise Risk Programs</h3>
-<p>From a risk management perspective, the implications are profound.</p>
-<p>First, <strong>static prompt testing is insufficient</strong>. Passing safety benchmarks on a held-out prompt set does not demonstrate operational robustness under adversarial environmental pressure.</p>
-<p>Second, <strong>system-level evaluation must become continuous</strong>, not episodic. As agents learn, connect to new tools, ingest new data sources, and expand their capabilities, the attack surface evolves with them.</p>
-<p>Third, <strong>risk ownership can no longer sit solely with AI or security teams</strong>. Because agents span data pipelines, application execution, business logic, and external services, meaningful evaluation requires collaboration across security engineering, data governance, MLOps, compliance, and business operations.</p>
-<p>Ultimately, the goal of evaluation in agentic AI is not to prove that a system is safe. That goal is unattainable. The real objective is to <strong>continuously characterize how and where it can fail—before an adversary does</strong>.</p>
+<p>The implications for risk management are significant.</p>
+<p>Static prompt testing is insufficient. Passing safety benchmarks on held-out prompt sets doesn’t demonstrate robustness under adversarial environmental pressure. System-level evaluation must be continuous, not episodic. As agents learn, connect to new tools, ingest new data sources, and expand capabilities, the attack surface evolves.</p>
+<p>Risk ownership can’t sit solely with AI or security teams. Agents span data pipelines, application execution, business logic, and external services. Meaningful evaluation requires collaboration across security engineering, data governance, MLOps, compliance, and business operations.</p>
+<p>The goal of evaluation isn’t to prove a system is safe—that’s impossible. The objective is to continuously characterize how and where it can fail, before an adversary does.</p>
 <hr>
 </section>
 </section>
