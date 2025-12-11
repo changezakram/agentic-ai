@@ -127,7 +127,7 @@ The core security objectives still trace back to the CIA triad—confidentiality
 
 **Confidentiality** extends beyond customer and enterprise data. It must also protect system prompts, internal instructions, API credentials, orchestration logic, and sometimes the model itself. A single leaked instruction or credential can redirect the entire system's behavior.
 
-**Integrity** includes more than business data accuracy. It must cover the model supply chain, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent's reasoning becomes corrupted.
+**Integrity** includes more than business data accuracy. It must cover the model itself, training data, embeddings, retrieval pipelines, and tool execution paths. If any part of this chain is compromised, the agent's reasoning becomes corrupted.
 
 **Availability** means more than web service uptime. In agentic systems, it includes sustained model performance, inference stability, retrieval responsiveness, and tool execution reliability. An agent that times out, degrades, or fails mid-task can cause cascading operational failures.
 
