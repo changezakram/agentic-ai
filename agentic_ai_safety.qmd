@@ -274,15 +274,15 @@ All layers must operate together to achieve resilience.
 
 Agentic AI represents a shift in how intelligent systems interact with the world. These aren't isolated models producing text in response to prompts. They're complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.
 
-Model-level evaluation isn't sufficient. Security and risk must be assessed at the level where failures actually emerge: the full, end-to-end agentic system. Frameworks like AgentXploit demonstrate why black-box, environment-based red teaming is essential for uncovering failure modes that traditional testing will never reveal.
+Security must be assessed at the system level, not the model level. Frameworks like AgentXploit demonstrate why environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.
 
-Meaningful protection requires defense-in-depth: model hardening, input sanitization, programmable policy enforcement, privilege separation, and continuous monitoring. Models may reason, but policy engines decide. Privilege boundaries contain damage. Monitoring assumes failure will occur.
+Protection requires defense-in-depth. Model hardening raises the cost of exploitation. Input sanitization filters threats before they reach reasoning layers. Policy enforcement controls tool execution independent of the model's judgment. Privilege separation contains the blast radius of compromise. Continuous monitoring assumes breaches will occur and detects them when they do.
 
-The challenge of agentic AI security is architectural, operational, and organizational. Agents are already being deployed. The real question is whether they'll be deployed with the level of rigor, resilience, and accountability that their autonomy demands.
-
-For those interested in shaping this future, initiatives like the AgentX competition provide an important opportunity. With dedicated tracks for both entrepreneurs and researchers, the competition advances not only what agents can do—but how safely and securely they can do it.
+The challenge is architectural, operational, and organizational. Agents are already being deployed. The question is whether they'll be deployed with the rigor, resilience, and accountability that their autonomy demands.
 
 The next phase of AI will be defined by whether we can trust the systems we empower to act on our behalf.
+
+--- 
 
 ### References
 
