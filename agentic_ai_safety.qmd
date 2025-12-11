@@ -145,16 +145,13 @@ The protection requirements multiply—not just the consequences of failure.
 
 ### Why the Attack Surface Expands
 
-The introduction of LLMs into production systems dramatically increases the attack surface. Unlike traditional software, which only executes what it is explicitly programmed to do, agents must process **untrusted natural language**, ingest external data in real time, and dynamically decide what actions to take.
+LLMs in production systems expand the attack surface. Traditional software only executes what developers explicitly program. Agents must process external inputs, ingest real-time data, and dynamically decide what actions to take.
 
-This creates entirely new categories of risk.
+This creates new risk categories. Sensitive information can leak through model outputs. Prompts and tool instructions can be manipulated by external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious operations.
 
-Sensitive information can be unintentionally revealed through model outputs. Prompts and tool instructions may be influenced by untrusted user input or poisoned external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious actions on otherwise trusted systems.
+These attacks don't target a single vulnerability. They exploit the interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop.
 
-Most importantly, these attacks do not target a single vulnerability. They exploit the **interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop**.
-
-This is why agentic AI security cannot be treated as a simple extension of traditional application security or even conventional ML security. It represents a **new class of cyber-physical and socio-technical risk**.
-
+Agentic AI security requires more than traditional application security or conventional ML security. It's a different security problem.
 
 ---
 

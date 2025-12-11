@@ -370,11 +370,10 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="why-the-attack-surface-expands" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="why-the-attack-surface-expands"><span class="header-section-number">4.1</span> Why the Attack Surface Expands</h3>
-<p>The introduction of LLMs into production systems dramatically increases the attack surface. Unlike traditional software, which only executes what it is explicitly programmed to do, agents must process <strong>untrusted natural language</strong>, ingest external data in real time, and dynamically decide what actions to take.</p>
-<p>This creates entirely new categories of risk.</p>
-<p>Sensitive information can be unintentionally revealed through model outputs. Prompts and tool instructions may be influenced by untrusted user input or poisoned external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious actions on otherwise trusted systems.</p>
-<p>Most importantly, these attacks do not target a single vulnerability. They exploit the <strong>interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop</strong>.</p>
-<p>This is why agentic AI security cannot be treated as a simple extension of traditional application security or even conventional ML security. It represents a <strong>new class of cyber-physical and socio-technical risk</strong>.</p>
+<p>LLMs in production systems expand the attack surface. Traditional software only executes what developers explicitly program. Agents must process external inputs, ingest real-time data, and dynamically decide what actions to take.</p>
+<p>This creates new risk categories. Sensitive information can leak through model outputs. Prompts and tool instructions can be manipulated by external content. Models and embedding pipelines can be corrupted through supply-chain attacks. Tool invocations can be hijacked to perform malicious operations.</p>
+<p>These attacks don’t target a single vulnerability. They exploit the interaction between components—language, retrieval, reasoning, and action—inside a tightly coupled decision loop.</p>
+<p>Agentic AI security requires more than traditional application security or conventional ML security. It’s a different security problem.</p>
 <hr>
 </section>
 </section>
