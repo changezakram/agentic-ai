@@ -57,7 +57,7 @@ This hybrid architecture gives agents their power. It also makes them harder to 
 
 ## The Agent Threat Landscape — Where Attacks Enter the System
 
-Agentic systems have failure modes at every stage. Unlike traditional applications with fixed code paths, agents continuously ingest untrusted inputs, construct prompts, invoke probabilistic reasoning, retrieve external data, and execute real-world actions.
+Agentic systems have failure modes at every stage. Unlike traditional applications with fixed code paths, agents continuously ingest external inputs, construct prompts, invoke probabilistic reasoning, retrieve data, and execute real-world actions.
 
 Risks exist from deployment through operation. Models can be backdoored or poisoned. User inputs can contain adversarial instructions. Prompt construction can allow attackers to override system instructions. Model outputs—SQL, code, or tool calls—can trigger harmful operations in external systems.
 
