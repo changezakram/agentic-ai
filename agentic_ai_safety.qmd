@@ -260,7 +260,7 @@ Security is an ongoing process of observation, feedback, and adaptation—not a 
 
 ---
 
-### The Structural Insight
+### Security Across the Lifecycle
 
 Security can't be centralized at the perimeter. It must be distributed across the entire decision lifecycle.
 
