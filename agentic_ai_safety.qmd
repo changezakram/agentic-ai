@@ -35,27 +35,22 @@ When agents control workflows and resources, failures get bigger. A compromised 
 
 ### LLMs vs. Agents
 
-Most AI applications in production today are still **simple LLM applications**. A user submits text, the model processes it, and the system returns text. This linear interaction pattern underpins chatbots, summarization tools, search copilots, and many internal enterprise assistants. While powerful, these systems are ultimately **passive**. They respond, but they do not act.
+Most AI applications in production today are simple LLM applications. A user submits text, the model processes it, and the system returns text. This linear pattern underpins chatbots, summarization tools, and search copilots. These systems respond but don't act.
 
-Agentic AI fundamentally changes this structure.
+Agents change this. An agent observes its environment, reasons about goals, plans actions, retrieves knowledge, and executes operations through tools. The LLM is the cognitive core, but it's embedded in a decision-making loop that connects to real systems. The agent perceives, decides, and acts.
 
-An agent does not merely generate text. It observes its environment, reasons about goals, plans sequences of actions, retrieves external knowledge, and executes operations through tools. The large language model remains the cognitive core, but it is now embedded inside a much larger decision-making loop. The result is no longer a standalone model—it is a system that **perceives, thinks, and acts**.
+![**Figure:** LLMs generate text. Agents take action—and the security implications multiply.](images/LLM_vs_Agentic-AI.png){fig-align="center" width="800"}
 
-This shift transforms AI from a conversational interface into an **autonomous actor** operating inside real workflows.
-
+This transforms AI from a conversational interface into an autonomous actor inside production workflows.
 ---
 
 ### The Agentic Hybrid System
 
-From a systems perspective, an agent is best understood as a **hybrid (or compound) system**.
+Agents combine two types of components. Traditional software—APIs, databases, schedulers, business logic—follows deterministic rules and fixed execution paths. Neural components like LLMs add probabilistic reasoning and generative decision-making.
 
-Traditional software systems are composed of symbolic components: operating systems, application code, APIs, databases, browsers, schedulers, and business logic. These components follow deterministic rules and well-defined execution paths.
+Here's how they work together: a developer deploys the agent framework, users submit requests, the system builds prompts, calls the LLM, retrieves external data, evaluates options, and executes operations that affect real systems. The model's output isn't just information—it's operational.
 
-Agentic systems extend this foundation by embedding **non-symbolic neural components**, most notably large language models. These models introduce probabilistic reasoning, pattern-based inference, and generative decision-making into an otherwise deterministic environment.
-
-This combination creates a system with very different operational characteristics. A developer deploys the agent framework, users submit requests, the system constructs internal prompts, invokes the language model, retrieves external knowledge, evaluates possible actions, and then executes operations that may directly affect external systems. The model’s output is no longer informational—it can be **operational**.
-
-This hybrid nature is precisely what gives agents their power. It is also what makes them fundamentally harder to secure.
+This hybrid architecture gives agents their power. It also makes them harder to secure.
 
 ---
 
