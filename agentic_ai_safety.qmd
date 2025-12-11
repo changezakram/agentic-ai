@@ -42,6 +42,7 @@ Agents change this. An agent observes its environment, reasons about goals, plan
 ![**Figure:** LLMs generate text. Agents take action—and the security implications multiply.](images/LLM_vs_Agentic-AI.png){fig-align="center" width="800"}
 
 This transforms AI from a conversational interface into an autonomous actor inside production workflows.
+
 ---
 
 ### The Agentic Hybrid System
