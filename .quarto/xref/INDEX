@@ -10,5 +10,11 @@
   },
   "agentic_ai_safety.qmd": {
     "agentic_ai_safety.html": "3102f52b"
+  },
+  "multi_agent_orchestration.qmd": {
+    "multi_agent_orchestration.html": "7786b390"
+  },
+  "agentic_ai_roadmap.qmd": {
+    "agentic_ai_roadmap.html": "2b4b1cdf"
   }
 }
