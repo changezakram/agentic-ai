@@ -73,7 +73,7 @@ In traditional applications, SQL injection happens when unsanitized input gets e
 
 In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.
 
-![**Figure:** SQL Injection via LLM-Generated Code (CVE-2024-23751). A malicious prompt instructs the agent to generate a query that drops a database table. The LLM produces executable SQL without validating intent. If the database access tool lacks authorization controls, the destructive query executes.](images/SQL-Injection-via-LLMs.png){fig-align="center" width="700"}
+![**Figure:** SQL Injection via LLM-Generated Code (CVE-2024-23751). A malicious prompt instructs the agent to generate a query that drops a database table. The LLM produces executable SQL without validating intent. If the database access tool lacks authorization controls, the destructive query executes.](images/SQL-Injection-via-LLMs.png){fig-align="center" width="600"}
 
 
 Vanna.ai systems showed similar vulnerabilities (CVE-2024-7764). Attackers injected semicolon-delimited instructions into query prompts, chaining malicious SQL commands after legitimate operations. The database executed both.
