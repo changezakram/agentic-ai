@@ -93,11 +93,9 @@ The model isn't just generating text—it's producing live executable attacks.
 
 Prompt injection remains one of the most critical threats to agentic systems.
 
-Direct prompt injection is straightforward — the attacker explicitly instructs the model to override its system instructions. This attack famously forced Microsoft's Bing Chat to reveal its internal prompts, safety rules, and codename "Sydney" in February 2023, when a Stanford student used the simple prompt "Ignore previous instructions."<sup>4</sup>
+Direct prompt injection is straightforward — the attacker explicitly instructs the model to override its system instructions. This attack gained public attention in February 2023 when Microsoft's Bing Chat was manipulated to reveal its internal prompts, safety rules, and codename "Sydney."<sup>4</sup>
 
-Indirect prompt injection is more dangerous in agentic environments. The attacker doesn't interact with the agent directly. Instead, they embed adversarial instructions into external data sources the agent trusts.
-
-The attack flow is straightforward:
+Indirect prompt injection is more dangerous in agentic environments. The attacker doesn't interact with the agent directly. Instead, they embed adversarial instructions into external data sources the agent trusts. Here's how it works:
 
 ![**Figure: How Indirect Prompt Injection Works.** The attacker poisons external data sources. The agent retrieves and follows the hidden instructions, producing attacker-controlled responses. Source: Adapted from Liu et al. (2023)](images/prompt-injection.png){fig-align="center" width="700"}
 
