@@ -20,9 +20,9 @@ title: Building Safe and Secure Agentic AI
 
 ## Introduction — The Year of Agents
 
-In 2025, autonomous AI agents aren’t just a buzzword—they’re becoming central to enterprise strategy. McKinsey estimates that agentic AI systems could unlock $2.6 trillion to $4.4 trillion in annual value across more than 60 use cases, from customer service and software development to supply chain and compliance. 
+Autonomous AI agents aren’t just a buzzword—they’re becoming central to enterprise strategy. McKinsey estimates that agentic AI systems could unlock $2.6 trillion to $4.4 trillion in annual value across more than 60 use cases, from customer service and software development to supply chain and compliance. 
 
-Modern AI has moved beyond text generation. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy.
+That value is driven by a shift in how AI systems operate. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy.
 
 When agents control workflows and resources, failures get bigger. A compromised agent doesn't just produce bad text—it executes harmful operations. Laboratory testing under controlled conditions isn't enough. We need to evaluate these systems against intelligent adversaries. 
 
@@ -103,7 +103,7 @@ SuperAGI suffered from multiple remote code execution vulnerabilities (CVE-2024-
 
 Prompt injection remains one of the most critical threats to agentic systems.
 
-Direct prompt injection is straightforward — the attacker explicitly instructs the model to override its system instructions. This attack gained public attention in February 2023 when Microsoft's Bing Chat was manipulated to reveal its internal prompts, safety rules, and codename "Sydney."<sup>4</sup>
+Direct prompt injection is straightforward — the attacker explicitly instructs the model to override its system instructions. This attack gained public attention in February 2023 when Microsoft's Bing Chat was manipulated to reveal its internal prompts, safety rules, and codename "Sydney."<sup>2</sup>
 
 Indirect prompt injection is more dangerous in agentic environments. The attacker doesn't interact with the agent directly. Instead, they embed adversarial instructions into external data sources the agent trusts. Here's how it works:
 
@@ -320,18 +320,22 @@ The next phase of AI will be defined by whether we can trust the systems we empo
 
 ### References
 
-[1] CVE-2024-23751: LlamaIndex SQL Injection. https://nvd.nist.gov/vuln/detail/CVE-2024-23751
+[1] McKinsey. (2025). Deploying agentic AI with safety and security: A playbook for technology leaders. https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/deploying-agentic-ai-with-safety-and-security-a-playbook-for-technology-leaders
 
-[2] CVE-2024-7764: Vanna.ai SQL Injection. https://www.cvedetails.com/cve/CVE-2024-7764/
+[2] Greshake, K. et. al. (2023). Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. https://arxiv.org/abs/2302.12173
 
-[3] CVE-2024-9439: SuperAGI Remote Code Execution. https://www.cvedetails.com/cve/CVE-2024-9439/
+[3] Yupei Liu., et al. Formalizing and Benchmarking Prompt Injection Attacks and Defenses. https://arxiv.org/pdf/2310.12815
 
-[4] Greshake, K. et. al. (2023). Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. https://arxiv.org/abs/2302.12173
+[4] CVE-2024-23751: LlamaIndex SQL Injection. https://nvd.nist.gov/vuln/detail/CVE-2024-23751
 
-[5] Zou, A., et al. (2024). Phantom: General Trigger Attacks on Retrieval Augmented Language Generation. https://arxiv.org/abs/2405.20485
+[5] CVE-2024-7764: Vanna.ai SQL Injection. https://www.cvedetails.com/cve/CVE-2024-7764/
 
-[6] Saltzer, J. H., et al. (1975). The Protection of Information in Computer Systems. *Proceedings of the IEEE*, 63(9), 1278–1308.
+[6] CVE-2024-9439: SuperAGI Remote Code Execution. https://www.cvedetails.com/cve/CVE-2024-9439/
 
-[7] Yupei Liu., et al. Formalizing and Benchmarking Prompt Injection Attacks and Defenses. https://arxiv.org/pdf/2310.12815
+[7] Zou, A., et al. (2024). Phantom: General Trigger Attacks on Retrieval Augmented Language Generation. https://arxiv.org/abs/2405.20485
+
+[8] Saltzer, J. H., et al. (1975). The Protection of Information in Computer Systems. *Proceedings of the IEEE*, 63(9), 1278–1308.
+
+
 
 
