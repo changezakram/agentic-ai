@@ -154,13 +154,7 @@ The core security objectives still trace back to the CIA triad—confidentiality
 
 > For a bank deploying agents, confidentiality means protecting customer data and the agent's wire transfer instructions. Integrity means preventing attackers from manipulating the agent's fraud detection logic. Availability means the agent continues processing transactions during peak loads—because downtime now means frozen customer accounts, not just slow response times.
 
-The stakes are higher. When agents fail, they don't just return error messages—they execute incorrect operations at scale. This introduces a fourth critical dimension: **safety**.
-
-**Safety** means the system does not cause harm during normal operation, edge cases, failure modes, or under attack. This goes beyond preventing unauthorized access or data breaches. It means ensuring agents don't make decisions that result in financial loss, operational disruption, or harm to individuals—even when functioning as designed.
-
-In banking, safety failures take concrete forms. An agent might approve fraudulent loan applications based on manipulated data. It might miscalculate credit limits and create systemic risk. It could execute wire transfers to incorrect accounts. It might even make investment recommendations that violate fiduciary obligations.
-
-An agent can be secure (resistant to attacks) but unsafe (prone to harmful errors). It can also be safe in isolation but unsafe when deployed at scale or in unexpected contexts. Both dimensions require explicit design attention.
+The stakes are higher. When agents fail, they don't just return error messages—they execute incorrect operations at scale. 
 
 ---
 
