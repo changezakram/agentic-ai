@@ -327,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
 <p>In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a ‘DROP TABLE’ statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/SQL-Injection-via-LLMs.png" class="img-fluid figure-img" width="600"></p>
+<p><img src="images/SQL-Injection-via-LLMs_.png" class="img-fluid figure-img" width="500"></p>
 <figcaption><strong>Figure:</strong> SQL Injection via LLM-Generated Code (CVE-2024-23751). A malicious prompt instructs the agent to generate a query that drops a database table. The LLM produces executable SQL without validating intent. If the database access tool lacks authorization controls, the destructive query executes.</figcaption>
 </figure>
 </div>
