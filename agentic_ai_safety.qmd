@@ -22,7 +22,7 @@ title: Building Safe and Secure Agentic AI
 
 Autonomous AI agents aren’t just a buzzword—they’re becoming central to enterprise strategy. McKinsey estimates that agentic AI systems could unlock $2.6 trillion to $4.4 trillion in annual value across more than 60 use cases, from customer service and software development to supply chain and compliance.<sup>1</sup>
 
-That value is driven by a shift in how AI systems operate. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy.
+That value is driven by a shift in how AI systems operate. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy. It also scales with scope—the breadth of systems, data, and decisions an agent is allowed to touch.
 
 When agents control workflows and resources, failures get bigger. A compromised agent doesn't just produce bad text—it executes harmful operations. Laboratory testing under controlled conditions isn't enough. We need to evaluate these systems against intelligent adversaries. 
 
@@ -168,6 +168,8 @@ Traditional LLM testing focuses on prompt behavior, toxicity, hallucinations, an
 
 Risk emerges from component interaction, not individual components. Security evaluation must shift from model-centric testing to end-to-end system evaluation against intelligent adversaries.
 
+Evaluation must also account for how agent behavior changes as authority expands. An agent that appears safe in advisory mode may become dangerous when allowed to execute actions across systems.
+
 ---
 
 ### Black-Box Red Teaming for Agents
@@ -227,6 +229,8 @@ Agents combine probabilistic reasoning, external data, third-party tools, and au
 Technical controls alone are not sufficient; agentic systems also require clear ownership and operational structure.
 
 This includes defining who authorizes agent capabilities, who reviews failures, and how agents are modified or retired as systems evolve. Without explicit responsibility and escalation paths, even well-designed controls degrade over time.
+
+Agent risk is not binary. It increases as agents move from recommendation to execution, and from isolated tasks to multi-step workflows that span systems. Controls must therefore scale with both autonomy and scope—not just with model capability.
 
 Security must be layered. When one control fails, another prevents catastrophic damage. Three principles guide effective defense:
 
