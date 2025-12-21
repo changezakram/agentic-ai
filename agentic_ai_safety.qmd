@@ -196,13 +196,19 @@ The goal of evaluation isn't to prove a system is safe—that's impossible. The 
 
 ## Defenses in Agentic AI — Why Layered Security Is Mandatory
 
-No single defense can secure an agentic system.
+No single control can secure an agentic system.
 
-Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Any individual defense will fail. Prompts will be bypassed. Filters will miss edge cases. Models will behave unexpectedly.
+Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts get bypassed. Filters miss edge cases. Models behave unexpectedly.
 
-Defense-in-depth is the only viable security strategy. When one layer fails, another prevents catastrophic damage. The goal isn't perfection at any single layer—it's system-level resilience.
+Security must be layered. When one control fails, another prevents catastrophic damage. This defense-in-depth approach requires three foundational practices:
 
-Security must span every stage: input intake, model reasoning, tool execution, and monitoring. Agents must operate with only the minimum authority required for their task, even when they appear trustworthy. Security controls should be embedded into system logic during design, not added after deployment. In high-risk environments, this includes formal verification of policy and privilege boundaries.
+**Minimize authority at every layer.** Agents operate with the minimum permissions required for their task. Components are compartmentalized so compromise of one part doesn't grant system-wide access. This applies to model permissions, tool execution rights, data visibility, and operational scope.
+
+**Build security into the architecture.** Controls are embedded during design, not added after deployment. Policy enforcement happens at the system level, not just through model alignment. For high-risk environments, critical constraints undergo formal verification—mathematical proof that security properties hold under all conditions.
+
+**Assume breach and monitor continuously.** Security isn't a one-time configuration. It requires ongoing observation of agent behavior, detection of anomalies, and rapid response to deviations from expected patterns.
+
+In banking, this means an agent processing wire transfers operates with constrained authority: it can initiate transfers up to a threshold, but cannot modify its own authorization rules, access unrelated accounts, or execute operations outside its defined scope. Policy engines validate every transaction independently. Monitoring systems track behavioral patterns. If the agent is compromised, the damage is contained by design.
 
 ---
 

@@ -416,10 +416,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="defenses-in-agentic-ai-why-layered-security-is-mandatory" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="defenses-in-agentic-ai-why-layered-security-is-mandatory"><span class="header-section-number">6</span> Defenses in Agentic AI — Why Layered Security Is Mandatory</h2>
-<p>No single defense can secure an agentic system.</p>
-<p>Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Any individual defense will fail. Prompts will be bypassed. Filters will miss edge cases. Models will behave unexpectedly.</p>
-<p>Defense-in-depth is the only viable security strategy. When one layer fails, another prevents catastrophic damage. The goal isn’t perfection at any single layer—it’s system-level resilience.</p>
-<p>Security must span every stage: input intake, model reasoning, tool execution, and monitoring. Agents must operate with only the minimum authority required for their task, even when they appear trustworthy. Security controls should be embedded into system logic during design, not added after deployment. In high-risk environments, this includes formal verification of policy and privilege boundaries.</p>
+<p>No single control can secure an agentic system.</p>
+<p>Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts get bypassed. Filters miss edge cases. Models behave unexpectedly.</p>
+<p>Security must be layered. When one control fails, another prevents catastrophic damage. This defense-in-depth approach requires three foundational practices:</p>
+<p><strong>Minimize authority at every layer.</strong> Agents operate with the minimum permissions required for their task. Components are compartmentalized so compromise of one part doesn’t grant system-wide access. This applies to model permissions, tool execution rights, data visibility, and operational scope.</p>
+<p><strong>Build security into the architecture.</strong> Controls are embedded during design, not added after deployment. Policy enforcement happens at the system level, not just through model alignment. For high-risk environments, critical constraints undergo formal verification—mathematical proof that security properties hold under all conditions.</p>
+<p><strong>Assume breach and monitor continuously.</strong> Security isn’t a one-time configuration. It requires ongoing observation of agent behavior, detection of anomalies, and rapid response to deviations from expected patterns.</p>
+<p>In banking, this means an agent processing wire transfers operates with constrained authority: it can initiate transfers up to a threshold, but cannot modify its own authorization rules, access unrelated accounts, or execute operations outside its defined scope. Policy engines validate every transaction independently. Monitoring systems track behavioral patterns. If the agent is compromised, the damage is contained by design.</p>
 <hr>
 <section id="model-hardening-raising-the-cost-of-exploitation" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="model-hardening-raising-the-cost-of-exploitation"><span class="header-section-number">6.1</span> Model Hardening — Raising the Cost of Exploitation</h3>
