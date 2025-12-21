@@ -20,7 +20,7 @@ title: Building Safe and Secure Agentic AI
 
 ## Introduction — The Year of Agents
 
-Modern AI has moved beyond text generation. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation - risk scales with autonomy.
+Modern AI has moved beyond text generation. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy.
 
 When agents control workflows and resources, failures get bigger. A compromised agent doesn't just produce bad text—it executes harmful operations. Laboratory testing under controlled conditions isn't enough. We need to evaluate these systems against intelligent adversaries. 
 
@@ -76,7 +76,7 @@ These risks aren't abstract. They're being exploited in production systems today
 
 In traditional applications, SQL injection happens when unsanitized input gets embedded in database queries. In agentic systems, the attack moves upstream. Attackers don't inject SQL — they instruct the model to generate it.
 
-In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.
+In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction—not malformed syntax.
 
 ![**Figure:** SQL Injection via LLM-Generated Code (CVE-2024-23751). A malicious prompt instructs the agent to generate a query that drops a database table. The LLM produces executable SQL without validating intent. If the database access tool lacks authorization controls, the destructive query executes.](images/SQL-Injection-via-LLMs_.png){fig-align="center" width="500"}
 

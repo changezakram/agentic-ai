@@ -282,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction-the-year-of-agents" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="introduction-the-year-of-agents"><span class="header-section-number">1</span> Introduction — The Year of Agents</h2>
-<p>Modern AI has moved beyond text generation. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation - risk scales with autonomy.</p>
+<p>Modern AI has moved beyond text generation. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy.</p>
 <p>When agents control workflows and resources, failures get bigger. A compromised agent doesn’t just produce bad text—it executes harmful operations. Laboratory testing under controlled conditions isn’t enough. We need to evaluate these systems against intelligent adversaries.</p>
 <blockquote class="blockquote">
 <p>We’re no longer securing models. We’re securing autonomous decision-making systems.</p>
@@ -329,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sql-injection-via-llms" class="level4" data-number="3.1.1">
 <h4 data-number="3.1.1" class="anchored" data-anchor-id="sql-injection-via-llms"><span class="header-section-number">3.1.1</span> SQL Injection via LLMs</h4>
 <p>In traditional applications, SQL injection happens when unsanitized input gets embedded in database queries. In agentic systems, the attack moves upstream. Attackers don’t inject SQL — they instruct the model to generate it.</p>
-<p>In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a ‘DROP TABLE’ statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.</p>
+<p>In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a ‘DROP TABLE’ statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction—not malformed syntax.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/SQL-Injection-via-LLMs_.png" class="img-fluid figure-img" width="500"></p>
