@@ -325,8 +325,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 data-number="3.1.1" class="anchored" data-anchor-id="sql-injection-via-llms"><span class="header-section-number">3.1.1</span> SQL Injection via LLMs</h4>
 <p>In traditional applications, SQL injection happens when unsanitized input gets embedded in database queries. In agentic systems, the attack moves upstream. Attackers don’t inject SQL — they instruct the model to generate it.</p>
 <p>In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a ‘DROP TABLE’ statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.<sup>1</sup></p>
-<p>Vanna.ai systems showed similar vulnerabilities (CVE-2024-7764). Attackers injected semicolon-delimited instructions into query prompts, chaining malicious SQL commands after legitimate operations. The database executed both.</p>
-<p>The issue isn’t SQL. It’s delegating executable authority to probabilistic reasoning without validation.</p>
+<p>Vanna.ai systems showed similar vulnerabilities (CVE-2024-7764). Attackers injected semicolon-delimited instructions into query prompts, chaining malicious SQL commands after legitimate operations. The database executed both. A The issue isn’t SQL. It’s delegating executable authority to probabilistic reasoning without validation.</p>
 <hr>
 </section>
 <section id="remote-code-execution-through-generated-code" class="level4" data-number="3.1.2">
@@ -380,9 +379,10 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="black-box-red-teaming-for-agents" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="black-box-red-teaming-for-agents"><span class="header-section-number">5.1</span> Black-Box Red Teaming for Agents</h3>
-<p>Black-box red-teaming frameworks for agentic systems are emerging. AgentXploit provides a clear example of how adversarial testing must evolve.</p>
-<p>AgentXploit tests agents under realistic constraints. The attacker cannot modify the user’s request and cannot observe or alter the agent’s internal mechanics. The user query is assumed to be benign. The agent’s code, prompts, and orchestration logic are inaccessible. The only control available to the attacker is the external environment.</p>
-<p>This design mirrors real-world conditions. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds. The attack surface is the data ecosystem surrounding the agent, not the agent itself.</p>
+<p>Black-box red-teaming frameworks for agentic systems are emerging. AgentXploit—a research framework for testing agent security—provides a clear example of how adversarial testing must evolve.</p>
+<p>AgentXploit tests agents under strict, realistic constraints: the attacker cannot modify the user’s request and cannot observe or alter the agent’s internal mechanics. The user query is assumed to be benign. The agent’s code, prompts, and orchestration logic are inaccessible. The only control available to the attacker is the external environment.</p>
+<p>This constraint is intentional. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.</p>
+<p>The attack surface is the data ecosystem surrounding the agent, not the agent itself.</p>
 <hr>
 </section>
 <section id="how-environment-based-attacks-are-discovered" class="level3" data-number="5.2">
@@ -484,6 +484,7 @@ ul.task-list li input[type="checkbox"] {
 <p>[3] CVE-2024-9439: SuperAGI Remote Code Execution. https://www.cvedetails.com/cve/CVE-2024-9439/</p>
 <p>[4] Greshake, K. et. al.&nbsp;(2023). Not What You’ve Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. https://arxiv.org/abs/2302.12173</p>
 <p>[5] Zou, A., et al.&nbsp;(2024). Phantom: General Trigger Attacks on Retrieval Augmented Language Generation. https://arxiv.org/abs/2405.20485</p>
+<p>[6] Saltzer, J. H., et al.&nbsp;(1975). The Protection of Information in Computer Systems. <em>Proceedings of the IEEE</em>, 63(9), 1278–1308.</p>
 
 
 </section>

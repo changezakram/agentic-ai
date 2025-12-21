@@ -74,7 +74,7 @@ In traditional applications, SQL injection happens when unsanitized input gets e
 In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.<sup>1</sup>
 
 Vanna.ai systems showed similar vulnerabilities (CVE-2024-7764). Attackers injected semicolon-delimited instructions into query prompts, chaining malicious SQL commands after legitimate operations. The database executed both.
-
+A
 The issue isn't SQL. It's delegating executable authority to probabilistic reasoning without validation.
 
 ---
@@ -149,11 +149,12 @@ Risk emerges from component interaction, not individual components. Security eva
 
 ### Black-Box Red Teaming for Agents
 
-Black-box red-teaming frameworks for agentic systems are emerging. AgentXploit provides a clear example of how adversarial testing must evolve.
+Black-box red-teaming frameworks for agentic systems are emerging. AgentXploit—a research framework for testing agent security—provides a clear example of how adversarial testing must evolve.
 
-AgentXploit tests agents under realistic constraints. The attacker cannot modify the user's request and cannot observe or alter the agent's internal mechanics. The user query is assumed to be benign. The agent's code, prompts, and orchestration logic are inaccessible. The only control available to the attacker is the external environment.
+AgentXploit tests agents under strict, realistic constraints: the attacker cannot modify the user's request and cannot observe or alter the agent's internal mechanics. The user query is assumed to be benign. The agent's code, prompts, and orchestration logic are inaccessible. The only control available to the attacker is the external environment.
 
-This design mirrors real-world conditions. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.
+This constraint is intentional. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.
+
 The attack surface is the data ecosystem surrounding the agent, not the agent itself.
 
 ---
@@ -301,4 +302,7 @@ The next phase of AI will be defined by whether we can trust the systems we empo
 [4] Greshake, K. et. al. (2023). Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection. https://arxiv.org/abs/2302.12173
 
 [5] Zou, A., et al. (2024). Phantom: General Trigger Attacks on Retrieval Augmented Language Generation. https://arxiv.org/abs/2405.20485
+
+[6] Saltzer, J. H., et al. (1975). The Protection of Information in Computer Systems. *Proceedings of the IEEE*, 63(9), 1278–1308.
+
 
