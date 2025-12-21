@@ -298,16 +298,6 @@ Security is an ongoing process of observation, feedback, and adaptation—not a 
 
 ---
 
-### Security Across the Lifecycle
-
-Security can't be centralized at the perimeter. It must be distributed across the entire decision lifecycle.
-
-Before the model: sanitization and input control. During reasoning: alignment and guardrails. At execution: policy enforcement and privilege control. After action: monitoring and detection.
-
-All layers must operate together to achieve resilience.
-
----
-
 ## Conclusion — Securing the Age of Autonomous Systems
 
 Agentic AI represents a shift in how intelligent systems interact with the world. These aren't isolated models producing text in response to prompts. They're complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.
