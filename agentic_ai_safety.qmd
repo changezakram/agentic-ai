@@ -200,15 +200,15 @@ No single control can secure an agentic system.
 
 Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts get bypassed. Filters miss edge cases. Models behave unexpectedly.
 
-Security must be layered. When one control fails, another prevents catastrophic damage. This defense-in-depth approach requires three foundational practices:
+Security must be layered. When one control fails, another prevents catastrophic damage. Effective agentic defense requires three foundational principles:
 
-**Minimize authority at every layer.** Agents operate with the minimum permissions required for their task. Components are compartmentalized so compromise of one part doesn't grant system-wide access. This applies to model permissions, tool execution rights, data visibility, and operational scope.
+**Defense-in-depth.** Security controls must span multiple layers—input sanitization, model hardening, policy enforcement, privilege separation, and continuous monitoring. No single layer can stop all attacks. Each layer defends against different threat vectors, and all layers must operate together to achieve system resilience.
 
-**Build security into the architecture.** Controls are embedded during design, not added after deployment. Policy enforcement happens at the system level, not just through model alignment. For high-risk environments, critical constraints undergo formal verification—mathematical proof that security properties hold under all conditions.
+**Least privilege and privilege separation.** Agents operate with the minimum permissions required for their task. Components are compartmentalized so compromise of one part doesn't grant system-wide access. This applies to model permissions, tool execution rights, data visibility, and operational scope. Even trusted components are isolated from each other.
 
-**Assume breach and monitor continuously.** Security isn't a one-time configuration. It requires ongoing observation of agent behavior, detection of anomalies, and rapid response to deviations from expected patterns.
+**Secure-by-design and provably secure controls.** Security is embedded into system architecture from the start, not retrofitted after deployment. Policy enforcement happens at the system level, not just through model alignment. For high-risk environments like financial services, critical security constraints undergo formal verification. This provides mathematical proof that properties like authorization boundaries and privilege separation hold under all conditions.
 
-In banking, this means an agent processing wire transfers operates with constrained authority: it can initiate transfers up to a threshold, but cannot modify its own authorization rules, access unrelated accounts, or execute operations outside its defined scope. Policy engines validate every transaction independently. Monitoring systems track behavioral patterns. If the agent is compromised, the damage is contained by design.
+In practice, these principles work together. Consider a banking agent processing wire transfers. It operates with constrained authority (least privilege). It cannot modify authorization rules, access unrelated accounts, or execute operations outside its defined scope. These constraints are enforced through policy engines that validate every transaction (defense-in-depth). The enforcement logic is mathematically verified to prevent privilege escalation (provably secure). If the agent is compromised, the damage is architecturally contained.
 
 ---
 
