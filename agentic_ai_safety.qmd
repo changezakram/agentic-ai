@@ -62,7 +62,7 @@ Agentic systems have failure modes at every stage. Unlike traditional applicatio
 
 Risks exist throughout the model lifecycle. Before deployment, models can be compromised through malicious code or corrupted training data. During operation, user inputs can inject adversarial instructions, attackers can override system prompts, and model outputs can trigger harmful operations across connected systems.
 
-Agentic risk is rarely caused by a single failure. More often, it emerges from chained interactions—where a small weakness in one component propagates across tools, data sources, and downstream agents.
+Agentic risk is rarely caused by a single failure. More often, it emerges from chained interactions—where a small weakness in one component propagates across tools, data sources, and downstream agents. In these systems, agents don’t just inherit permissions; they amplify them by chaining tools, memory, and automation into continuous execution paths.
 
 This makes agentic systems fundamentally different from traditional applications. Risk accumulates through coordination, not just code defects.
 
