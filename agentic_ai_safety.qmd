@@ -312,7 +312,7 @@ The next phase of AI will be defined by whether we can trust the systems we empo
 
 --- 
 
-### References
+## References
 
 [1] McKinsey. (2025). Deploying agentic AI with safety and security: A playbook for technology leaders. https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/deploying-agentic-ai-with-safety-and-security-a-playbook-for-technology-leaders
 
