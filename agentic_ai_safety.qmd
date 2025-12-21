@@ -20,7 +20,7 @@ title: Building Safe and Secure Agentic AI
 
 ## Introduction — The Year of Agents
 
-Autonomous AI agents aren’t just a buzzword—they’re becoming central to enterprise strategy. McKinsey estimates that agentic AI systems could unlock $2.6 trillion to $4.4 trillion in annual value across more than 60 use cases, from customer service and software development to supply chain and compliance. 
+Autonomous AI agents aren’t just a buzzword—they’re becoming central to enterprise strategy. McKinsey estimates that agentic AI systems could unlock $2.6 trillion to $4.4 trillion in annual value across more than 60 use cases, from customer service and software development to supply chain and compliance.<sup>1</sup>
 
 That value is driven by a shift in how AI systems operate. Agents now observe, reason, plan, and act. They interact directly with production systems, APIs, databases, and networks—not just chat interfaces. This shift changes the security equation—risk scales with autonomy.
 
