@@ -71,11 +71,14 @@ These risks aren't abstract. They're being exploited in production systems today
 
 In traditional applications, SQL injection happens when unsanitized input gets embedded in database queries. In agentic systems, the attack moves upstream. Attackers don't inject SQL — they instruct the model to generate it.
 
-In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.<sup>1</sup>
+In a documented LlamaIndex vulnerability (CVE-2024-23751), a user prompted an agent to generate and execute a destructive database command. The model translated the natural language request into a 'DROP TABLE' statement and executed it without safeguards. The database was compromised through faithful obedience to a malicious instruction, not malformed syntax.
+
+![**Figure:** SQL Injection via LLM-Generated Code (CVE-2024-23751). A malicious prompt instructs the agent to generate a query that drops a database table. The LLM produces executable SQL without validating intent. If the database access tool lacks authorization controls, the destructive query executes.](images/SQL-Injection-via-LLM.png){fig-align="center" width="700"}
+
 
 Vanna.ai systems showed similar vulnerabilities (CVE-2024-7764). Attackers injected semicolon-delimited instructions into query prompts, chaining malicious SQL commands after legitimate operations. The database executed both.
-A
-The issue isn't SQL. It's delegating executable authority to probabilistic reasoning without validation.
+
+> The issue isn't SQL. It's delegating executable authority to probabilistic reasoning without validation.
 
 ---
 
@@ -83,9 +86,9 @@ The issue isn't SQL. It's delegating executable authority to probabilistic reaso
 
 Many agents generate and execute code—typically Python—to solve problems dynamically. This collapses the boundary between reasoning and execution.
 
-In a SuperAGI vulnerability (CVE-2024-9439, CVE-2025-51472), an attacker instructed the agent to generate Python code that imported the operating system module and deleted critical files. The system automatically executed the model-generated code, turning the agent into a remote code execution engine. No traditional exploit payload was needed. The model produced the malicious logic.<sup>3</sup>
+SuperAGI suffered from multiple remote code execution vulnerabilities (CVE-2024-9439, CVE-2025-51472). Attackers could instruct the agent to generate Python code that imported the operating system module and deleted critical files. The system automatically executed the model-generated code, turning the agent into a remote code execution engine. No traditional exploit payload was needed. The model produced the malicious logic.
 
-The model isn't just generating text—it's producing live executable attacks.
+> The model isn't just generating text—it's producing live executable attacks.
 
 ---
 
