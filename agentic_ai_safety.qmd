@@ -244,7 +244,7 @@ Security must be layered. When one control fails, another prevents catastrophic 
 
 **Least privilege.** Agents operate with minimum necessary permissions. Components are compartmentalized so compromising one part doesn't expose the entire system.
 
-**Secure-by-design.** Security is built into the architecture from the start. For high-risk systems, critical constraints undergo formal verification—mathematical proof that security properties hold.
+**Secure-by-design.** Security is built into the architecture from the start. For high-risk systems, critical constraints are proven to hold under all conditions—for example, proving an agent cannot transfer funds above a limit regardless of how it's prompted.
 
 Consider a banking agent processing wire transfers. It can initiate transfers up to a threshold but cannot modify authorization rules, access unrelated accounts, or operate outside defined boundaries. Policy engines validate every transaction. If the agent is compromised, the damage is contained.
 

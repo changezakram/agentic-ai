@@ -456,7 +456,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Security must be layered. When one control fails, another prevents catastrophic damage. Three principles guide effective defense:</p>
 <p><strong>Defense-in-depth.</strong> Controls span multiple layers—input sanitization, model hardening, policy enforcement, privilege separation, and monitoring. Each layer addresses different attack vectors.</p>
 <p><strong>Least privilege.</strong> Agents operate with minimum necessary permissions. Components are compartmentalized so compromising one part doesn’t expose the entire system.</p>
-<p><strong>Secure-by-design.</strong> Security is built into the architecture from the start. For high-risk systems, critical constraints undergo formal verification—mathematical proof that security properties hold.</p>
+<p><strong>Secure-by-design.</strong> Security is built into the architecture from the start. For high-risk systems, critical constraints are proven to hold under all conditions—for example, proving an agent cannot transfer funds above a limit regardless of how it’s prompted.</p>
 <p>Consider a banking agent processing wire transfers. It can initiate transfers up to a threshold but cannot modify authorization rules, access unrelated accounts, or operate outside defined boundaries. Policy engines validate every transaction. If the agent is compromised, the damage is contained.</p>
 <hr>
 <section id="model-hardening-raising-the-cost-of-exploitation" class="level3" data-number="6.1">
