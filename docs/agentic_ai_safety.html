@@ -514,7 +514,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The system is decomposed into components with differentiated privileges. A common pattern divides the agent into an unprivileged “worker” component and a highly privileged “monitor” component.</p>
 <p>The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. If the worker is compromised, the attacker cannot inherit the monitor’s authority.</p>
 <p>Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.</p>
-<p>Privilege separation directly addresses a core asymmetry in agentic security: attackers need only one successful exploit, while defenders must prevent them all. By isolating reasoning, data access, and execution into separate privilege domains, a compromised component cannot automatically escalate its authority. Causing harm then requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.</p>
+<p>Privilege separation limits the impact of inevitable failures by isolating reasoning, data access, and execution into separate privilege domains. A compromised component cannot automatically escalate its authority. Causing harm requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.</p>
 <hr>
 </section>
 <section id="monitoring-and-detection-assuming-failure-will-happen" class="level3" data-number="6.5">
@@ -532,14 +532,14 @@ ul.task-list li input[type="checkbox"] {
 <p>The only durable alternative is secure-by-construction design.</p>
 <p>Instead of reacting to attacks, systems are built with provable guarantees that certain failures cannot occur. Security properties are defined upfront—such as an agent cannot transfer funds above a fixed limit—and the architecture is verified to enforce them under all conditions. Entire classes of attacks become impossible by design.</p>
 <p>Advances in AI-assisted verification are beginning to make this approach practical at scale.<sup>9</sup> For banking agents, this enables provable transaction limits, guaranteed data isolation, verified privilege boundaries, and complete auditability—independent of model behavior.</p>
-<p>When AI accelerates attackers faster than defenders, the only way to win is to step out of the arms race. Secure-by-construction systems offer that path.</p>
+<p>When AI accelerates attackers faster than defenders, the only durable response is to step out of the arms race. Secure-by-construction systems offer that path.</p>
 <hr>
 </section>
 </section>
 <section id="conclusion-securing-the-age-of-autonomous-systems" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="conclusion-securing-the-age-of-autonomous-systems"><span class="header-section-number">7</span> Conclusion — Securing the Age of Autonomous Systems</h2>
 <p>Agentic AI represents a shift in how intelligent systems interact with the world. These aren’t isolated models producing text in response to prompts. They’re complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.</p>
-<p>Security must be assessed at the system level, not the model level. Frameworks like AgentXploit demonstrate why environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.</p>
+<p>Security must be assessed across the full agentic system—not inferred from model behavior alone. Frameworks like AgentXploit demonstrate why environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.</p>
 <p>Protection requires defense-in-depth. Model hardening raises the cost of exploitation. Input sanitization filters threats before they reach reasoning layers. Policy enforcement controls tool execution independent of the model’s judgment. Privilege separation contains the blast radius of compromise. Continuous monitoring assumes breaches will occur and detects them when they do.</p>
 <p>For high-stakes systems, these controls are a foundation—not an endpoint. Long-term trust will require architectures that enforce critical safety and security properties by design.</p>
 <p>The challenge is architectural, operational, and organizational. Agents are already being deployed. The question is whether they’ll be deployed with the rigor, resilience, and accountability that their autonomy demands.</p>

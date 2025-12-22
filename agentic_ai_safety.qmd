@@ -331,7 +331,7 @@ The worker performs reasoning, planning, and interaction with external data. The
 
 Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.
 
-Privilege separation directly addresses a core asymmetry in agentic security: attackers need only one successful exploit, while defenders must prevent them all. By isolating reasoning, data access, and execution into separate privilege domains, a compromised component cannot automatically escalate its authority. Causing harm then requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.
+Privilege separation limits the impact of inevitable failures by isolating reasoning, data access, and execution into separate privilege domains. A compromised component cannot automatically escalate its authority. Causing harm requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.
 
 ---
 
@@ -359,7 +359,7 @@ Instead of reacting to attacks, systems are built with provable guarantees that 
 
 Advances in AI-assisted verification are beginning to make this approach practical at scale.^9^ For banking agents, this enables provable transaction limits, guaranteed data isolation, verified privilege boundaries, and complete auditability—independent of model behavior.
 
-When AI accelerates attackers faster than defenders, the only way to win is to step out of the arms race. Secure-by-construction systems offer that path.
+When AI accelerates attackers faster than defenders, the only durable response is to step out of the arms race. Secure-by-construction systems offer that path.
 
 ---
 
@@ -367,7 +367,7 @@ When AI accelerates attackers faster than defenders, the only way to win is to s
 
 Agentic AI represents a shift in how intelligent systems interact with the world. These aren't isolated models producing text in response to prompts. They're complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.
 
-Security must be assessed at the system level, not the model level. Frameworks like AgentXploit demonstrate why environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.
+Security must be assessed across the full agentic system—not inferred from model behavior alone. Frameworks like AgentXploit demonstrate why environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.
 
 Protection requires defense-in-depth. Model hardening raises the cost of exploitation. Input sanitization filters threats before they reach reasoning layers. Policy enforcement controls tool execution independent of the model's judgment. Privilege separation contains the blast radius of compromise. Continuous monitoring assumes breaches will occur and detects them when they do.
 
