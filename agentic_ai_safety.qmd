@@ -151,6 +151,8 @@ In traditional systems, attackers need buffer overflows or memory corruption. Wi
 
 Once compromised, agents chain actions across systems, turning small manipulations into cascading operational failures.
 
+This creates a structural asymmetry. Attackers only need one successful manipulation; defenders must prevent them all. As agents gain autonomy and access, that imbalance widens. In banking, this makes defense-in-depth not a best practice, but a necessity.
+
 ---
 
 ## Security and Safety Goals in Agentic Systems
