@@ -368,8 +368,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="database-poisoning" class="level4" data-number="3.1.4">
 <h4 data-number="3.1.4" class="anchored" data-anchor-id="database-poisoning"><span class="header-section-number">3.1.4</span> Database Poisoning</h4>
 <p>Attackers can poison the databases that agents use for retrieval and memory.</p>
-<p>Here’s how it works: attackers inject malicious content into a RAG database. The agent operates normally until a specific trigger phrase appears in user input. When triggered, the agent retrieves the poisoned content and follows embedded instructions toward harmful actions.</p>
-<p>This attack is difficult to catch. The system passes routine testing because the malicious logic only activates under specific conditions.</p>
+<p>Malicious instructions are injected directly into the knowledge base. The agent continues to operate normally until a specific query or condition activates the payload. When triggered, the agent executes unauthorized actions—transferring funds, leaking data, or bypassing authorization checks.</p>
+<p>These attacks are difficult to detect. Standard testing often misses them because the malicious behavior remains dormant until precise conditions are met.</p>
+<p>This risk is not theoretical. Research from UC Berkeley demonstrates that poisoned retrieval databases can hijack agent behavior without retraining the model.<sup>9</sup> The malicious content can remain dormant until it is triggered.</p>
+<p>In banking, the exposure is broad. A customer service agent may leak account information. A fraud detection agent may ignore specific transaction patterns. A compliance agent may retrieve falsified regulatory guidance. Each agent becomes a delivery mechanism for targeted attacks.</p>
+<p>As a result, retrieval infrastructure becomes part of the attack surface. Traditional database security focused on access control and data integrity. Agentic systems also require protection against adversarial content designed to manipulate downstream behavior.</p>
 <hr>
 </section>
 <section id="chained-and-cross-agent-failures" class="level4" data-number="3.1.5">
