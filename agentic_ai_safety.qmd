@@ -373,6 +373,8 @@ Security must be assessed at the system level, not the model level. Frameworks l
 
 Protection requires defense-in-depth. Model hardening raises the cost of exploitation. Input sanitization filters threats before they reach reasoning layers. Policy enforcement controls tool execution independent of the model's judgment. Privilege separation contains the blast radius of compromise. Continuous monitoring assumes breaches will occur and detects them when they do.
 
+For high-stakes systems, these controls are a foundation—not an endpoint. Long-term trust will require architectures that enforce critical safety and security properties by design.
+
 The challenge is architectural, operational, and organizational. Agents are already being deployed. The question is whether they'll be deployed with the rigor, resilience, and accountability that their autonomy demands.
 
 The next phase of AI will be defined by whether we can trust the systems we empower to act on our behalf.
