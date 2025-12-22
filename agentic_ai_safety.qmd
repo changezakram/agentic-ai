@@ -155,6 +155,22 @@ For banking, this means treating models as untrusted components. Training pipeli
 
 ---
 
+#### Memorization Risk in Continuous Learning Agents
+
+Agentic systems increasingly rely on continuous learning—adapting from customer interactions, transaction patterns, and operational feedback. This creates privacy risks that go beyond traditional data breaches.
+
+Neural models do not just learn patterns; they retain fragments of their training data. Sensitive information can become embedded in model weights and later extracted through carefully constructed queries. This behavior does not require access to model internals and becomes more pronounced as models scale.
+
+For continuously learning agents, this risk compounds over time. Customer conversations, transaction details, internal procedures, and operational workflows can gradually accumulate inside the model. Once embedded, this data may surface in unexpected contexts, without logging or clear attribution.
+
+For banking agents, the consequences are severe. Exposure can include personally identifiable information, account details, credentials, and internal risk logic. Such leakage can violate privacy, security, and financial regulations—even when no external system has been breached.
+
+This risk changes how continuous learning must be treated. Memorization is unavoidable, and current mitigation techniques remain incomplete. As agents gain autonomy and learn directly from real-world interactions, privacy risk becomes structural rather than exceptional.
+
+For banks deploying agentic AI, this means operating under explicit uncertainty. Models must be treated as potential data stores, not just inference engines. Systems should be designed with the expectation that sensitive data will accumulate—even when safeguards are in place.
+
+---
+
 ### Why These Attacks Are Fundamentally Different
 
 Traditional software does what the code tells it to do. Agents do what they're convinced is the right thing to do—and attackers exploit this difference.

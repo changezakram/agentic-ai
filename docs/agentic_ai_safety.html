@@ -392,6 +392,16 @@ ul.task-list li input[type="checkbox"] {
 <p>For banking, this means treating models as untrusted components. Training pipelines, fine-tuning data, and vendor models require the same scrutiny as third-party software dependencies.</p>
 <hr>
 </section>
+<section id="memorization-risk-in-continuous-learning-agents" class="level4" data-number="3.1.7">
+<h4 data-number="3.1.7" class="anchored" data-anchor-id="memorization-risk-in-continuous-learning-agents"><span class="header-section-number">3.1.7</span> Memorization Risk in Continuous Learning Agents</h4>
+<p>Agentic systems increasingly rely on continuous learning—adapting from customer interactions, transaction patterns, and operational feedback. This creates privacy risks that go beyond traditional data breaches.</p>
+<p>Neural models do not just learn patterns; they retain fragments of their training data. Sensitive information can become embedded in model weights and later extracted through carefully constructed queries. This behavior does not require access to model internals and becomes more pronounced as models scale.</p>
+<p>For continuously learning agents, this risk compounds over time. Customer conversations, transaction details, internal procedures, and operational workflows can gradually accumulate inside the model. Once embedded, this data may surface in unexpected contexts, without logging or clear attribution.</p>
+<p>For banking agents, the consequences are severe. Exposure can include personally identifiable information, account details, credentials, and internal risk logic. Such leakage can violate privacy, security, and financial regulations—even when no external system has been breached.</p>
+<p>This risk changes how continuous learning must be treated. Memorization is unavoidable, and current mitigation techniques remain incomplete. As agents gain autonomy and learn directly from real-world interactions, privacy risk becomes structural rather than exceptional.</p>
+<p>For banks deploying agentic AI, this means operating under explicit uncertainty. Models must be treated as potential data stores, not just inference engines. Systems should be designed with the expectation that sensitive data will accumulate—even when safeguards are in place.</p>
+<hr>
+</section>
 </section>
 <section id="why-these-attacks-are-fundamentally-different" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.2</span> Why These Attacks Are Fundamentally Different</h3>
