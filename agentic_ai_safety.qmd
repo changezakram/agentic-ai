@@ -128,9 +128,9 @@ These attacks are difficult to detect. Standard testing often misses them becaus
 
 This risk is not theoretical. Research from UC Berkeley demonstrates that poisoned retrieval databases can hijack agent behavior without retraining the model.^9^ The malicious content can remain dormant until it is triggered.
 
-In banking, the exposure is broad. A customer service agent may leak account information. A fraud detection agent may ignore specific transaction patterns. A compliance agent may retrieve falsified regulatory guidance. Each agent becomes a delivery mechanism for targeted attacks.
-
 As a result, retrieval infrastructure becomes part of the attack surface. Traditional database security focused on access control and data integrity. Agentic systems also require protection against adversarial content designed to manipulate downstream behavior.
+
+> In banking, the exposure is broad. A customer service agent may leak account information. A fraud detection agent may ignore specific transaction patterns. A compliance agent may retrieve falsified regulatory guidance. Each agent becomes a delivery mechanism for targeted attacks.
 
 ---
 
