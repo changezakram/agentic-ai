@@ -428,7 +428,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</h2>
 <p>Many AI risk programs make a critical mistake — they evaluate the language model and assume they’ve evaluated the system. This assumption is dangerously incomplete. As a result, many organizations focus their testing on model behavior in isolation—leaving system-level failure modes largely unexamined.</p>
-<p>In practice, exploits rarely originate from the model alone. They emerge from interactions between the model, external data, tool execution, and downstream systems. Evaluating agentic AI therefore requires treating the agent as part of a broader operating system—not as a standalone model.</p>
+<p>In practice, exploits rarely originate from the model alone. They emerge from interactions between the model, external data, tool execution, and downstream systems.</p>
 <p>Traditional LLM testing focuses on prompt behavior, toxicity, hallucinations, and alignment under controlled inputs. These tests remain necessary, but they’re insufficient. An agentic system isn’t a single model—it’s a distributed decision pipeline of prompts, tools, memory, retrieval, execution layers, external data feeds, and third-party services.</p>
 <p>Risk emerges from component interaction, not individual components. Security evaluation must shift from model-centric testing to end-to-end system evaluation against intelligent adversaries.</p>
 <p>Evaluation must also account for how agent behavior changes as authority expands. An agent that appears safe in advisory mode may become dangerous when allowed to execute actions across systems.</p>
@@ -514,7 +514,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The system is decomposed into components with differentiated privileges. A common pattern divides the agent into an unprivileged “worker” component and a highly privileged “monitor” component.</p>
 <p>The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. If the worker is compromised, the attacker cannot inherit the monitor’s authority.</p>
 <p>Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.</p>
-<p>Privilege separation limits the impact of inevitable failures by isolating reasoning, data access, and execution into separate privilege domains. A compromised component cannot automatically escalate its authority. Causing harm requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.</p>
+<p>Privilege separation limits the impact of inevitable failures by isolating reasoning, data access, and execution. A compromised component cannot automatically escalate its authority. Causing harm requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.</p>
 <hr>
 </section>
 <section id="monitoring-and-detection-assuming-failure-will-happen" class="level3" data-number="6.5">
