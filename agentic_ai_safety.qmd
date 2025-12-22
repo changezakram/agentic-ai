@@ -126,7 +126,7 @@ Malicious instructions are injected directly into the knowledge base. The agent 
 
 These attacks are difficult to detect. Standard testing often misses them because the malicious behavior remains dormant until precise conditions are met.
 
-This risk is not theoretical. Research from UC Berkeley demonstrates that poisoned retrieval databases can hijack agent behavior without retraining the model.^9^ The malicious content can remain dormant until it is triggered.
+This risk is not theoretical. Research from UC Berkeley demonstrates that poisoned retrieval databases can hijack agent behavior without retraining the model.^9^ The malicious content can persist unnoticed until activation.
 
 As a result, retrieval infrastructure becomes part of the attack surface. Traditional database security focused on access control and data integrity. Agentic systems also require protection against adversarial content designed to manipulate downstream behavior.
 

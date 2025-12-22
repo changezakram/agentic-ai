@@ -370,7 +370,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Attackers can poison the databases that agents use for retrieval and memory.</p>
 <p>Malicious instructions are injected directly into the knowledge base. The agent continues to operate normally until a specific query or condition activates the payload. When triggered, the agent executes unauthorized actions—transferring funds, leaking data, or bypassing authorization checks.</p>
 <p>These attacks are difficult to detect. Standard testing often misses them because the malicious behavior remains dormant until precise conditions are met.</p>
-<p>This risk is not theoretical. Research from UC Berkeley demonstrates that poisoned retrieval databases can hijack agent behavior without retraining the model.<sup>9</sup> The malicious content can remain dormant until it is triggered.</p>
+<p>This risk is not theoretical. Research from UC Berkeley demonstrates that poisoned retrieval databases can hijack agent behavior without retraining the model.<sup>9</sup> The malicious content can persist unnoticed until activation.</p>
 <p>As a result, retrieval infrastructure becomes part of the attack surface. Traditional database security focused on access control and data integrity. Agentic systems also require protection against adversarial content designed to manipulate downstream behavior.</p>
 <blockquote class="blockquote">
 <p>In banking, the exposure is broad. A customer service agent may leak account information. A fraud detection agent may ignore specific transaction patterns. A compliance agent may retrieve falsified regulatory guidance. Each agent becomes a delivery mechanism for targeted attacks.</p>
