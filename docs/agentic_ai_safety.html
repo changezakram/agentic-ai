@@ -238,6 +238,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#policy-enforcement-at-the-tool-layer-where-real-control-must-exist" id="toc-policy-enforcement-at-the-tool-layer-where-real-control-must-exist" class="nav-link" data-scroll-target="#policy-enforcement-at-the-tool-layer-where-real-control-must-exist"><span class="header-section-number">6.3</span> Policy Enforcement at the Tool Layer — Where Real Control Must Exist</a></li>
   <li><a href="#privilege-separation-containing-the-blast-radius-of-compromise" id="toc-privilege-separation-containing-the-blast-radius-of-compromise" class="nav-link" data-scroll-target="#privilege-separation-containing-the-blast-radius-of-compromise"><span class="header-section-number">6.4</span> Privilege Separation — Containing the Blast Radius of Compromise</a></li>
   <li><a href="#monitoring-and-detection-assuming-failure-will-happen" id="toc-monitoring-and-detection-assuming-failure-will-happen" class="nav-link" data-scroll-target="#monitoring-and-detection-assuming-failure-will-happen"><span class="header-section-number">6.5</span> Monitoring and Detection — Assuming Failure Will Happen</a></li>
+  <li><a href="#secure-by-construction-the-only-long-term-solution" id="toc-secure-by-construction-the-only-long-term-solution" class="nav-link" data-scroll-target="#secure-by-construction-the-only-long-term-solution"><span class="header-section-number">6.6</span> Secure by Construction — The Only Long-Term Solution</a></li>
   </ul></li>
   <li><a href="#conclusion-securing-the-age-of-autonomous-systems" id="toc-conclusion-securing-the-age-of-autonomous-systems" class="nav-link" data-scroll-target="#conclusion-securing-the-age-of-autonomous-systems"><span class="header-section-number">7</span> Conclusion — Securing the Age of Autonomous Systems</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8</span> References</a></li>
@@ -486,6 +487,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="6.1" class="anchored" data-anchor-id="model-hardening-raising-the-cost-of-exploitation"><span class="header-section-number">6.1</span> Model Hardening — Raising the Cost of Exploitation</h3>
 <p>Model hardening improves the base model’s resistance to manipulation through safety pre-training, alignment techniques, and data quality controls that reduce harmful behaviors.</p>
 <p>These techniques are necessary but don’t eliminate risk. Aligned models remain vulnerable to novel prompt attacks, indirect injections, and multi-step exploit chains. Model hardening raises the bar for attackers but doesn’t block determined adversaries.</p>
+<p>Empirical evaluations reinforce this limitation. Studies such as Berkeley’s DecodingTrust show that alignment and safety training provide only partial protection. Determined adversaries continue to bypass safeguards through indirect manipulation and multi-step interactions. Model hardening raises the cost of exploitation, but it does not prevent it. It should be treated as a baseline defense—not a primary security control.</p>
 <hr>
 </section>
 <section id="input-sanitization-and-guardrails-filtering-before-reasoning" class="level3" data-number="6.2">
@@ -493,6 +495,7 @@ ul.task-list li input[type="checkbox"] {
 <p>External data should be validated before the model processes it.</p>
 <p>Input sanitization detects unsafe patterns, filters special characters, applies schema validation, and enforces structural constraints. Guardrails add checks on content—preventing requests that bypass authorization logic, generate executable payloads, or override system instructions.</p>
 <p>This layer addresses risk while malicious input is still visible and easier to control. Once harmful content reaches the reasoning chain, containment becomes difficult.</p>
+<p>For agentic systems, input validation must go beyond basic filtering. Guardrails should detect instruction-override attempts, identify where retrieved content comes from, and flag untrusted or manipulated sources before they influence decisions. Once malicious content becomes part of the agent’s planning loop, downstream controls are far less reliable.</p>
 <hr>
 </section>
 <section id="policy-enforcement-at-the-tool-layer-where-real-control-must-exist" class="level3" data-number="6.3">
@@ -500,7 +503,10 @@ ul.task-list li input[type="checkbox"] {
 <p>Prompts shape behavior. Tools determine impact. True security control must reside at the tool and execution layer, not solely in the model.</p>
 <p>Policy enforcement frameworks like ProAgent introduce programmable privilege control over tool usage. Every tool invocation is validated against explicit security policies, not just the model’s judgment.</p>
 <p>These policies can be static rules—forbidding database deletion, restricting monetary transfers, or preventing external network access. They can also evolve dynamically based on risk signals observed during execution, which are verified through a separate control layer.</p>
+<blockquote class="blockquote">
 <p>Consider a banking agent authorized to send money under normal circumstances. If a prompt injection attempt tries to redirect funds to an attacker-controlled account, the policy layer evaluates the request independently of the model’s reasoning. The malicious tool call is blocked while legitimate transactions remain permitted. The agent continues functioning, but the attack is neutralized at execution.</p>
+</blockquote>
+<p>Crucially, these controls operate independently of the model’s state. Policies are enforced regardless of prompt injection, hallucination, or model compromise. When a request cannot be evaluated with certainty, the system fails closed—denying execution by default and logging the decision for review.</p>
 <hr>
 </section>
 <section id="privilege-separation-containing-the-blast-radius-of-compromise" class="level3" data-number="6.4">
@@ -509,6 +515,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The system is decomposed into components with differentiated privileges. A common pattern divides the agent into an unprivileged “worker” component and a highly privileged “monitor” component.</p>
 <p>The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. If the worker is compromised, the attacker cannot inherit the monitor’s authority.</p>
 <p>Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.</p>
+<p>Privilege separation directly addresses a core asymmetry in agentic security: attackers need only one successful exploit, while defenders must prevent them all. By isolating reasoning, data access, and execution into separate privilege domains, a compromised component cannot automatically escalate its authority. Causing harm then requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.</p>
 <hr>
 </section>
 <section id="monitoring-and-detection-assuming-failure-will-happen" class="level3" data-number="6.5">
@@ -517,6 +524,16 @@ ul.task-list li input[type="checkbox"] {
 <p>Real-time anomaly detection flags suspicious information flows, abnormal tool usage, unexpected execution paths, and deviations from historical baselines. These signals trigger automated containment, human review, or full system shutdowns.</p>
 <p>Monitoring must track more than infrastructure metrics. It must track what the agent is trying to accomplish, how it interprets instructions, and whether its actions remain consistent with authorized goals.</p>
 <p>Security is an ongoing process of observation, feedback, and adaptation—not a one-time configuration.</p>
+<p>Emerging research suggests that monitoring may extend beyond external behavior into internal reasoning signals. Techniques such as representation-level monitoring aim to detect early signs of unsafe or deceptive behavior during execution, before actions are taken. While still experimental and without formal guarantees, these approaches point toward a future where monitoring spans both execution and reasoning—complementing traditional detection rather than replacing it.</p>
+<hr>
+</section>
+<section id="secure-by-construction-the-only-long-term-solution" class="level3" data-number="6.6">
+<h3 data-number="6.6" class="anchored" data-anchor-id="secure-by-construction-the-only-long-term-solution"><span class="header-section-number">6.6</span> Secure by Construction — The Only Long-Term Solution</h3>
+<p>Layered defenses are necessary, but they don’t change the underlying asymmetry: attackers need one success; defenders must prevent them all.<sup>9</sup> In high-stakes systems like banking, detection and patching will always lag determined adversaries.</p>
+<p>The only durable alternative is secure-by-construction design.</p>
+<p>Instead of reacting to attacks, systems are built with provable guarantees that certain failures cannot occur. Security properties are defined upfront—such as an agent cannot transfer funds above a fixed limit—and the architecture is verified to enforce them under all conditions. Entire classes of attacks become impossible by design.</p>
+<p>Advances in AI-assisted verification are beginning to make this approach practical at scale.<sup>9</sup> For banking agents, this enables provable transaction limits, guaranteed data isolation, verified privilege boundaries, and complete auditability—independent of model behavior.</p>
+<p>When AI accelerates attackers faster than defenders, the only way to win is to step out of the arms race. Secure-by-construction systems offer that path.</p>
 <hr>
 </section>
 </section>

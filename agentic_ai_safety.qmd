@@ -292,6 +292,8 @@ Model hardening improves the base model's resistance to manipulation through saf
 
 These techniques are necessary but don't eliminate risk. Aligned models remain vulnerable to novel prompt attacks, indirect injections, and multi-step exploit chains. Model hardening raises the bar for attackers but doesn't block determined adversaries.
 
+Empirical evaluations reinforce this limitation. Studies such as Berkeley’s DecodingTrust show that alignment and safety training provide only partial protection. Determined adversaries continue to bypass safeguards through indirect manipulation and multi-step interactions. Model hardening raises the cost of exploitation, but it does not prevent it. It should be treated as a baseline defense—not a primary security control.
+
 ---
 
 ### Input Sanitization and Guardrails — Filtering Before Reasoning
@@ -301,6 +303,9 @@ External data should be validated before the model processes it.
 Input sanitization detects unsafe patterns, filters special characters, applies schema validation, and enforces structural constraints. Guardrails add checks on content—preventing requests that bypass authorization logic, generate executable payloads, or override system instructions.
 
 This layer addresses risk while malicious input is still visible and easier to control. Once harmful content reaches the reasoning chain, containment becomes difficult.
+
+For agentic systems, input validation must go beyond basic filtering. Guardrails should detect instruction-override attempts, identify where retrieved content comes from, and flag untrusted or manipulated sources before they influence decisions. Once malicious content becomes part of the agent’s planning loop, downstream controls are far less reliable.
+
 
 ---
 
@@ -312,7 +317,9 @@ Policy enforcement frameworks like ProAgent introduce programmable privilege con
 
 These policies can be static rules—forbidding database deletion, restricting monetary transfers, or preventing external network access. They can also evolve dynamically based on risk signals observed during execution, which are verified through a separate control layer.
 
-Consider a banking agent authorized to send money under normal circumstances. If a prompt injection attempt tries to redirect funds to an attacker-controlled account, the policy layer evaluates the request independently of the model's reasoning. The malicious tool call is blocked while legitimate transactions remain permitted. The agent continues functioning, but the attack is neutralized at execution.
+> Consider a banking agent authorized to send money under normal circumstances. If a prompt injection attempt tries to redirect funds to an attacker-controlled account, the policy layer evaluates the request independently of the model's reasoning. The malicious tool call is blocked while legitimate transactions remain permitted. The agent continues functioning, but the attack is neutralized at execution.
+
+Crucially, these controls operate independently of the model’s state. Policies are enforced regardless of prompt injection, hallucination, or model compromise. When a request cannot be evaluated with certainty, the system fails closed—denying execution by default and logging the decision for review.
 
 ---
 
@@ -326,6 +333,8 @@ The worker performs reasoning, planning, and interaction with external data. The
 
 Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.
 
+Privilege separation directly addresses a core asymmetry in agentic security: attackers need only one successful exploit, while defenders must prevent them all. By isolating reasoning, data access, and execution into separate privilege domains, a compromised component cannot automatically escalate its authority. Causing harm then requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.
+
 ---
 
 ### Monitoring and Detection — Assuming Failure Will Happen
@@ -337,6 +346,22 @@ Real-time anomaly detection flags suspicious information flows, abnormal tool us
 Monitoring must track more than infrastructure metrics. It must track what the agent is trying to accomplish, how it interprets instructions, and whether its actions remain consistent with authorized goals.
 
 Security is an ongoing process of observation, feedback, and adaptation—not a one-time configuration.
+
+Emerging research suggests that monitoring may extend beyond external behavior into internal reasoning signals. Techniques such as representation-level monitoring aim to detect early signs of unsafe or deceptive behavior during execution, before actions are taken. While still experimental and without formal guarantees, these approaches point toward a future where monitoring spans both execution and reasoning—complementing traditional detection rather than replacing it.
+
+---
+
+### Secure by Construction — The Only Long-Term Solution
+
+Layered defenses are necessary, but they don’t change the underlying asymmetry: attackers need one success; defenders must prevent them all.^9^ In high-stakes systems like banking, detection and patching will always lag determined adversaries.
+
+The only durable alternative is secure-by-construction design.
+
+Instead of reacting to attacks, systems are built with provable guarantees that certain failures cannot occur. Security properties are defined upfront—such as an agent cannot transfer funds above a fixed limit—and the architecture is verified to enforce them under all conditions. Entire classes of attacks become impossible by design.
+
+Advances in AI-assisted verification are beginning to make this approach practical at scale.^9^ For banking agents, this enables provable transaction limits, guaranteed data isolation, verified privilege boundaries, and complete auditability—independent of model behavior.
+
+When AI accelerates attackers faster than defenders, the only way to win is to step out of the arms race. Secure-by-construction systems offer that path.
 
 ---
 
