@@ -143,7 +143,7 @@ These failures are difficult to detect because each individual step may appear v
 
 ---
 
-### Supply Chain Poisoning — Compromise Before Deployment
+#### Supply Chain Poisoning — Compromise Before Deployment
 
 Agentic systems can be compromised before they ever reach production. Training-time attacks introduce hidden behaviors that persist through fine-tuning, alignment, and deployment.
 
