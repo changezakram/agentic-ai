@@ -239,6 +239,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#privilege-separation-containing-the-blast-radius-of-compromise" id="toc-privilege-separation-containing-the-blast-radius-of-compromise" class="nav-link" data-scroll-target="#privilege-separation-containing-the-blast-radius-of-compromise"><span class="header-section-number">6.4</span> Privilege Separation — Containing the Blast Radius of Compromise</a></li>
   <li><a href="#monitoring-and-detection-assuming-failure-will-happen" id="toc-monitoring-and-detection-assuming-failure-will-happen" class="nav-link" data-scroll-target="#monitoring-and-detection-assuming-failure-will-happen"><span class="header-section-number">6.5</span> Monitoring and Detection — Assuming Failure Will Happen</a></li>
   <li><a href="#secure-by-construction-the-only-long-term-solution" id="toc-secure-by-construction-the-only-long-term-solution" class="nav-link" data-scroll-target="#secure-by-construction-the-only-long-term-solution"><span class="header-section-number">6.6</span> Secure by Construction — The Only Long-Term Solution</a></li>
+  <li><a href="#agentic-attack-defense-coverage" id="toc-agentic-attack-defense-coverage" class="nav-link" data-scroll-target="#agentic-attack-defense-coverage"><span class="header-section-number">6.7</span> Agentic Attack → Defense Coverage</a></li>
   </ul></li>
   <li><a href="#conclusion-securing-the-age-of-autonomous-systems" id="toc-conclusion-securing-the-age-of-autonomous-systems" class="nav-link" data-scroll-target="#conclusion-securing-the-age-of-autonomous-systems"><span class="header-section-number">7</span> Conclusion — Securing the Age of Autonomous Systems</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8</span> References</a></li>
@@ -533,6 +534,71 @@ ul.task-list li input[type="checkbox"] {
 <p>Instead of reacting to attacks, systems are built with provable guarantees that certain failures cannot occur. Security properties are defined upfront—such as an agent cannot transfer funds above a fixed limit—and the architecture is verified to enforce them under all conditions. Entire classes of attacks become impossible by design.</p>
 <p>Advances in AI-assisted verification are beginning to make this approach practical at scale.<sup>9</sup> For banking agents, this enables provable transaction limits, guaranteed data isolation, verified privilege boundaries, and complete auditability—independent of model behavior.</p>
 <p>When AI accelerates attackers faster than defenders, the only durable response is to step out of the arms race. Secure-by-construction systems offer that path.</p>
+<hr>
+</section>
+<section id="agentic-attack-defense-coverage" class="level3" data-number="6.7">
+<h3 data-number="6.7" class="anchored" data-anchor-id="agentic-attack-defense-coverage"><span class="header-section-number">6.7</span> Agentic Attack → Defense Coverage</h3>
+<p>Taken together, the attack classes and defenses form a layered coverage model. The table below summarizes how each major agentic attack vector is addressed—and where containment, not prevention, is the primary goal.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 25%">
+<col style="width: 24%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Attack Class</strong></th>
+<th><strong>What Can Go Wrong</strong></th>
+<th><strong>Primary Control</strong></th>
+<th><strong>Impact Containment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prompt Injection (Direct &amp; Indirect)</td>
+<td>Agent follows hidden or malicious instructions</td>
+<td>Input Sanitization &amp; Guardrails</td>
+<td>Policy Enforcement; Privilege Separation</td>
+</tr>
+<tr class="even">
+<td>LLM-Generated SQL Attacks</td>
+<td>Destructive queries executed faithfully</td>
+<td>Tool-Level Policy Controls</td>
+<td>Least Privilege; Monitoring</td>
+</tr>
+<tr class="odd">
+<td>Remote Code Execution</td>
+<td>Model generates and runs malicious code</td>
+<td>Execution Controls at Tool Layer</td>
+<td>Privilege Separation; Runtime Alerts</td>
+</tr>
+<tr class="even">
+<td>Retrieval / Database Poisoning</td>
+<td>Hidden instructions embedded in trusted data</td>
+<td>Source Validation &amp; Trust Controls</td>
+<td>Behavioral Monitoring; Red Teaming</td>
+</tr>
+<tr class="odd">
+<td>Chained / Cross-Agent Failures</td>
+<td>One agent escalates risk across workflows</td>
+<td>Privilege Separation</td>
+<td>End-to-End Monitoring</td>
+</tr>
+<tr class="even">
+<td>Training / Supply Chain Poisoning</td>
+<td>Backdoors embedded before deployment</td>
+<td>Evaluation &amp; Red Teaming</td>
+<td>Secure-by-Construction (Future)</td>
+</tr>
+<tr class="odd">
+<td>Memorization &amp; Data Leakage</td>
+<td>Sensitive data embedded in model weights</td>
+<td>Data Minimization by Design</td>
+<td>Monitoring; Architectural Controls</td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
 </section>

@@ -363,6 +363,22 @@ When AI accelerates attackers faster than defenders, the only durable response i
 
 ---
 
+### Agentic Attack → Defense Coverage
+
+Taken together, the attack classes and defenses form a layered coverage model. The table below summarizes how each major agentic attack vector is addressed—and where containment, not prevention, is the primary goal.
+
+| **Attack Class** | **What Can Go Wrong** | **Primary Control** | **Impact Containment** |
+|------------------|----------------------|---------------------|------------------------|
+| Prompt Injection (Direct & Indirect) | Agent follows hidden or malicious instructions | Input Sanitization & Guardrails | Policy Enforcement; Privilege Separation |
+| LLM-Generated SQL Attacks | Destructive queries executed faithfully | Tool-Level Policy Controls | Least Privilege; Monitoring |
+| Remote Code Execution | Model generates and runs malicious code | Execution Controls at Tool Layer | Privilege Separation; Runtime Alerts |
+| Retrieval / Database Poisoning | Hidden instructions embedded in trusted data | Source Validation & Trust Controls | Behavioral Monitoring; Red Teaming |
+| Chained / Cross-Agent Failures | One agent escalates risk across workflows | Privilege Separation | End-to-End Monitoring |
+| Training / Supply Chain Poisoning | Backdoors embedded before deployment | Evaluation & Red Teaming | Secure-by-Construction (Future) |
+| Memorization & Data Leakage | Sensitive data embedded in model weights | Data Minimization by Design | Monitoring; Architectural Controls |
+
+---
+
 ## Conclusion — Securing the Age of Autonomous Systems
 
 Agentic AI represents a shift in how intelligent systems interact with the world. These aren't isolated models producing text in response to prompts. They're complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.
