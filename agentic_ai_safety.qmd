@@ -143,6 +143,18 @@ These failures are difficult to detect because each individual step may appear v
 
 ---
 
+### Supply Chain Poisoning — Compromise Before Deployment
+
+Agentic systems can be compromised before they ever reach production. Training-time attacks introduce hidden behaviors that persist through fine-tuning, alignment, and deployment.
+
+Attackers inject malicious samples into training or fine-tuning data. The model behaves normally under most conditions but executes specific actions when triggered. Early work on image classifiers demonstrated this pattern—models behaved correctly under normal conditions but misidentified anyone wearing specific glasses as a target person. Similar backdoors can be introduced in language models. Once embedded, these backdoors survive safety training and remain invisible during testing.
+
+This creates supply chain risk. Models fine-tuned on internal data may ingest adversarial content. Malicious insiders can poison training pipelines. Vendor or open-source models may arrive pre-compromised. This changes the trust model. You cannot assume the agent itself is benign. Even with strong runtime controls, a backdoored model will execute its programmed behavior when triggered.
+
+For banking, this means treating models as untrusted components. Training pipelines, fine-tuning data, and vendor models require the same scrutiny as third-party software dependencies.
+
+---
+
 ### Why These Attacks Are Fundamentally Different
 
 Traditional software does what the code tells it to do. Agents do what they're convinced is the right thing to do—and attackers exploit this difference.

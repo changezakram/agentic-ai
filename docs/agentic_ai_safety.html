@@ -221,7 +221,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-agent-threat-landscape-where-attacks-enter-the-system" id="toc-the-agent-threat-landscape-where-attacks-enter-the-system" class="nav-link" data-scroll-target="#the-agent-threat-landscape-where-attacks-enter-the-system"><span class="header-section-number">3</span> The Agent Threat Landscape — Where Attacks Enter the System</a>
   <ul class="collapse">
   <li><a href="#a-new-class-of-operational-attacks" id="toc-a-new-class-of-operational-attacks" class="nav-link" data-scroll-target="#a-new-class-of-operational-attacks"><span class="header-section-number">3.1</span> A New Class of Operational Attacks</a></li>
-  <li><a href="#why-these-attacks-are-fundamentally-different" id="toc-why-these-attacks-are-fundamentally-different" class="nav-link" data-scroll-target="#why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.2</span> Why These Attacks Are Fundamentally Different</a></li>
+  <li><a href="#supply-chain-poisoning-compromise-before-deployment" id="toc-supply-chain-poisoning-compromise-before-deployment" class="nav-link" data-scroll-target="#supply-chain-poisoning-compromise-before-deployment"><span class="header-section-number">3.2</span> Supply Chain Poisoning — Compromise Before Deployment</a></li>
+  <li><a href="#why-these-attacks-are-fundamentally-different" id="toc-why-these-attacks-are-fundamentally-different" class="nav-link" data-scroll-target="#why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.3</span> Why These Attacks Are Fundamentally Different</a></li>
   </ul></li>
   <li><a href="#security-and-safety-goals-in-agentic-systems" id="toc-security-and-safety-goals-in-agentic-systems" class="nav-link" data-scroll-target="#security-and-safety-goals-in-agentic-systems"><span class="header-section-number">4</span> Security and Safety Goals in Agentic Systems</a></li>
   <li><a href="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" id="toc-evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="nav-link" data-scroll-target="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</a>
@@ -385,8 +386,16 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="why-these-attacks-are-fundamentally-different" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.2</span> Why These Attacks Are Fundamentally Different</h3>
+<section id="supply-chain-poisoning-compromise-before-deployment" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="supply-chain-poisoning-compromise-before-deployment"><span class="header-section-number">3.2</span> Supply Chain Poisoning — Compromise Before Deployment</h3>
+<p>Agentic systems can be compromised before they ever reach production. Training-time attacks introduce hidden behaviors that persist through fine-tuning, alignment, and deployment.</p>
+<p>Attackers inject malicious samples into training or fine-tuning data. The model behaves normally under most conditions but executes specific actions when triggered. Early work on image classifiers demonstrated this pattern—models behaved correctly under normal conditions but misidentified anyone wearing specific glasses as a target person. Similar backdoors can be introduced in language models. Once embedded, these backdoors survive safety training and remain invisible during testing.</p>
+<p>This creates supply chain risk. Models fine-tuned on internal data may ingest adversarial content. Malicious insiders can poison training pipelines. Vendor or open-source models may arrive pre-compromised. This changes the trust model. You cannot assume the agent itself is benign. Even with strong runtime controls, a backdoored model will execute its programmed behavior when triggered.</p>
+<p>For banking, this means treating models as untrusted components. Training pipelines, fine-tuning data, and vendor models require the same scrutiny as third-party software dependencies.</p>
+<hr>
+</section>
+<section id="why-these-attacks-are-fundamentally-different" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="why-these-attacks-are-fundamentally-different"><span class="header-section-number">3.3</span> Why These Attacks Are Fundamentally Different</h3>
 <p>Traditional software does what the code tells it to do. Agents do what they’re convinced is the right thing to do—and attackers exploit this difference.</p>
 <p>In traditional systems, attackers need buffer overflows or memory corruption. With agents, they just need convincing language. Instead of exploiting technical vulnerabilities, they exploit the agent’s reasoning process.</p>
 <p>Once compromised, agents chain actions across systems, turning small manipulations into cascading operational failures.</p>
