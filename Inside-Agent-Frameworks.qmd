@@ -7,6 +7,8 @@ format:
 number-sections: true
 ---
 
+This article assumes familiarity with agentic AI concepts such as planning, tool use, and human-in-the-loop. If you’re new to these ideas, start with *Introduction to Agentic AI*.
+
 Most banks experimenting with AI today are still operating at the level of prompts—asking models questions, generating summaries, or drafting content on demand. That approach works well for assistive use cases, but it breaks down when AI is expected to execute real work.
 
 Underwriting a loan, coordinating compliance reviews, or assembling regulatory submissions are not single requests. They are multi-step processes that unfold over time, touch multiple systems, and require judgment at key moments. This is where AI agents differ fundamentally from traditional generative AI.
@@ -77,6 +79,8 @@ Frameworks manage execution flow, state, retries, and tool coordination. Without
 
 Equally important is what frameworks do not do. They do not define approval authority, enforce policy thresholds, or provide audit-grade compliance reporting.
 
+Agent frameworks determine how an individual agent executes work. Orchestration determines how multiple agents coordinate, escalate, and operate within governed workflows.
+
 ---
 
 ## Two Framework Styles Banks Encounter
@@ -109,11 +113,15 @@ The framework plans and executes verification, affordability analysis, collatera
 
 Agents produce draft outcomes—not decisions—preserving accountability while reducing manual coordination.
 
+In regulated environments, human review occurs at defined workflow checkpoints—approving outcomes rather than supervising each agent action.
+
 ---
 
 ## Conclusion
 
 Agentic AI represents a shift from generating content to executing work. That shift is enabled not by models alone, but by systems that structure how agents plan, act, observe, and adapt over time.
+
+At scale, agents coordinate through orchestration patterns such as sequential handoffs, parallel fan-out and aggregation, supervisor–worker models, and event-driven execution.
 
 Agent frameworks play a central role by turning reasoning into execution. At the same time, they are deliberately incomplete. They manage execution mechanics, but they do not enforce enterprise approvals, policy controls, or regulatory accountability.
 
