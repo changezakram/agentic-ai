@@ -99,7 +99,7 @@ Frame each pattern with:
 ## Model Context Protocol - The Agent Language 
 
 **Opening:**
-"Agents need a common language. Without it, Agent A's output becomes garbage to Agent B."
+Agents need a common language. Without it, Agent A's output becomes garbage to Agent B.
 
 ### What MCP Solves
 
@@ -116,27 +116,6 @@ Frame each pattern with:
 | Static schemas | **Semantic understanding** |
 | Point-to-point | **Many-to-many agent communication** |
 
-### Concrete Example
-
-```json
-Credit Analysis Agent → MCP message to Compliance Agent:
-{
-  "applicant_id": "12345",
-  "credit_score": 720,
-  "debt_to_income": 38,
-  "risk_tier": "medium",
-  "uncertainty": "Recent job change (3 months ago), income verification pending",
-  "action_needed": "sanctions_screening, employment_verification"
-}
-
-Compliance Agent response:
-{
-  "sanctions_status": "clear",
-  "employment_verified": true,
-  "verification_source": "The Work Number API",
-  "proceed": true
-}
-```
 
 ### Why This Matters
 
