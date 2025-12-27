@@ -1,0 +1,124 @@
+---
+title: "How AI Agents Execute Work: Inside Agent Frameworks"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+number-sections: true
+---
+
+Most banks experimenting with AI today are still operating at the level of prompts—asking models questions, generating summaries, or drafting content on demand. That approach works well for assistive use cases, but it breaks down when AI is expected to execute real work.
+
+Underwriting a loan, coordinating compliance reviews, or assembling regulatory submissions are not single requests. They are multi-step processes that unfold over time, touch multiple systems, and require judgment at key moments. This is where AI agents differ fundamentally from traditional generative AI.
+
+Agents are not prompts. They are systems—designed to plan work, execute actions, observe outcomes, and adjust as conditions change.
+
+---
+
+## 1. From Prompts to Systems
+
+Traditional generative AI follows a request–response pattern: a user submits a prompt, the model generates an answer, and the interaction ends. This model works well for drafting, summarization, and search. It struggles when tasks require coordination across steps, systems, and time.
+
+Operational work in banks rarely fits into a single interaction. Mortgage underwriting, for example, involves document collection, verification, risk assessment, pricing, compliance checks, and escalation.
+
+::: {.figure}
+**Figure 1 (Placeholder):** Prompt-based AI vs. Agentic AI — single-step responses compared with multi-step, stateful execution across systems.
+:::
+
+Agents address this gap by shifting AI from answering questions to managing work as it progresses.
+
+---
+
+## 2. The Agent Execution Loop
+
+At the core of every agentic system is a continuous execution loop:
+
+**Intent → Plan → Act → Observe → Adjust**
+
+Execution begins with intent. Unlike a prompt, intent defines the objective to be achieved—such as preparing an underwriting package or running a stress testing scenario—without prescribing how the task must be completed.
+
+::: {.figure}
+**Figure 2 (Placeholder):** The Agent Execution Loop showing how agents plan, act, observe outcomes, and adapt over time.
+:::
+
+The agent then plans a path forward by decomposing the objective into executable steps. It acts by invoking tools and systems, observes outcomes, and adjusts based on results—retrying, escalating, or proceeding as appropriate.
+
+This adaptive loop allows agents to operate in environments where not every case follows the same path.
+
+---
+
+## 3. Core Building Blocks of an Agent
+
+This execution loop does not emerge automatically from a language model. It depends on supporting capabilities that turn reasoning into reliable system behavior:
+
+- Planning  
+- Tool use  
+- Memory and state  
+- Retries and failure handling  
+- Guardrails and escalation rules  
+
+::: {.figure}
+**Figure 3 (Placeholder):** Core components of an AI agent — planning, tools, memory/state, guardrails, and execution control.
+:::
+
+Together, these capabilities transform language models into systems that can execute work—clarifying why agents cannot be reduced to prompts or APIs.
+
+---
+
+## 4. What Agent Frameworks Actually Do
+
+Agent frameworks package these building blocks into a structured runtime. They do not add intelligence beyond what the underlying models provide, nor do they replace enterprise systems. Their role is to make execution repeatable, observable, and controllable.
+
+Frameworks manage execution flow, state, retries, and tool coordination. Without them, teams must hand-code these behaviors repeatedly—introducing fragility and inconsistency.
+
+::: {.figure}
+**Figure 4 (Placeholder):** Where agent frameworks sit — between foundation models and enterprise systems, structuring execution but not governing outcomes.
+:::
+
+Equally important is what frameworks do not do. They do not define approval authority, enforce policy thresholds, or provide audit-grade compliance reporting.
+
+---
+
+## 5. Two Framework Styles Banks Encounter
+
+In practice, agent frameworks tend to follow one of two design styles.
+
+**Graph-based, stateful frameworks** model execution as explicit steps and transitions. State is tracked externally, making execution paths visible and auditable—well suited to regulated, multi-step processes.
+
+**Planner-based, skill-oriented frameworks** rely on dynamic planning. Agents decide which actions to take at runtime based on context and available tools. This model offers flexibility but can reduce predictability if not constrained.
+
+::: {.figure}
+**Figure 5 (Placeholder):** Comparison of graph-based vs. planner-based agent frameworks across control, flexibility, and auditability.
+:::
+
+Most banks will encounter both styles. The choice depends on autonomy level and regulatory exposure.
+
+---
+
+## 6. Mortgage Underwriting Through the Lens of Agent Frameworks
+
+Mortgage underwriting illustrates how these concepts work in practice. It is an L2 use case—too complex for simple automation, yet too regulated for full autonomy.
+
+From the agent’s perspective, the objective is not to approve a loan. It is to prepare a complete underwriting package for human review.
+
+::: {.figure}
+**Figure 6 (Placeholder):** L2 mortgage underwriting workflow showing experience agents handling intake, domain agents generating draft outcomes, intelligence-layer coordination, and human approval.
+:::
+
+The framework plans and executes verification, affordability analysis, collateral evaluation, pricing, and compliance checks. Explicit state tracks progress and exceptions. When thresholds are crossed, the case is escalated with a structured summary.
+
+Agents produce draft outcomes—not decisions—preserving accountability while reducing manual coordination.
+
+---
+
+## Conclusion
+
+Agentic AI represents a shift from generating content to executing work. That shift is enabled not by models alone, but by systems that structure how agents plan, act, observe, and adapt over time.
+
+Agent frameworks play a central role by turning reasoning into execution. At the same time, they are deliberately incomplete. They manage execution mechanics, but they do not enforce enterprise approvals, policy controls, or regulatory accountability.
+
+Mortgage underwriting makes this boundary clear. Agents coordinate and prepare work efficiently, while humans retain responsibility for judgment and approval. This separation—between execution and governance—is what makes agentic systems viable in regulated environments.
+
+Understanding agent frameworks is necessary, but not sufficient. To scale agents safely across the enterprise, banks need orchestration layers that embed agents into governed workflows.
+
+In the next post, we’ll examine how workflow orchestration platforms provide that control—and why agentic AI succeeds only when execution and governance are designed together.
