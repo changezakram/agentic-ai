@@ -369,37 +369,8 @@ Focus ONLY on **orchestration-specific governance** (different from single-agent
 
 ---
 
-## Section 8: Getting Started - A 90-Day Roadmap 
 
-### Days 1-30: Foundation
-
-- **Week 1:** Inventory existing agents (what do you already have?)
-- **Week 2:** Map 3 candidate workflows for orchestration (pick one sequential, one parallel, one hierarchical)
-- **Week 3:** Select orchestration platform (platform vs. custom decision)
-- **Week 4:** Define governance model (agent registry, permission model, audit requirements)
-
-### Days 31-60: Pilot
-
-- **Week 5-6:** Implement simplest pattern (sequential pipeline for one workflow)
-- **Week 7:** Test with synthetic data (validate handoffs, error handling)
-- **Week 8:** Production pilot with 10% traffic (monitor, measure, iterate)
-
-### Days 61-90: Scale
-
-- **Week 9:** Add second pattern (parallel or event-driven)
-- **Week 10:** Expand pilot to 50% traffic
-- **Week 11:** Build monitoring dashboards (workflow health, agent performance, error tracking)
-- **Week 12:** Plan next 3 workflows, document lessons learned
-
-### Success Metrics
-
-- Workflow completion rate (target >95%)
-- Average workflow duration (vs. manual baseline)
-- Human escalation rate (target <15%)
-- Agent handoff failures (target <2%)
-- Cost per workflow (human time + compute)
-
-### Common Pitfalls to Avoid
+## Common Pitfalls to Avoid
 
 - ❌ Starting with most complex workflow → Start simple, prove orchestration value
 - ❌ Over-engineering governance upfront → Implement minimum controls, iterate
