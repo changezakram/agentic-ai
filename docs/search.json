@@ -376,5 +376,12 @@
     "title": "How AI Agents Execute Work: Inside Agent Frameworks",
     "section": "7 Conclusion",
     "text": "7 Conclusion\nAgentic AI represents a shift from generating content to executing work. That shift is enabled not by models alone, but by systems that structure how agents plan, act, observe, and adapt over time.\nAt scale, agents coordinate through orchestration patterns such as sequential handoffs, parallel fan-out and aggregation, supervisor–worker models, and event-driven execution.\nAgent frameworks play a central role by turning reasoning into execution. At the same time, they are deliberately incomplete. They manage execution mechanics, but they do not enforce enterprise approvals, policy controls, or regulatory accountability.\nMortgage underwriting makes this boundary clear. Agents coordinate and prepare work efficiently, while humans retain responsibility for judgment and approval. This separation—between execution and governance—is what makes agentic systems viable in regulated environments.\nUnderstanding agent frameworks is necessary, but not sufficient. To scale agents safely across the enterprise, banks need orchestration layers that embed agents into governed workflows.\nIn the next post, we’ll examine how workflow orchestration platforms provide that control—and why agentic AI succeeds only when execution and governance are designed together."
+  },
+  {
+    "objectID": "Inside-Agent-Frameworks.html#references-further-reading",
+    "href": "Inside-Agent-Frameworks.html#references-further-reading",
+    "title": "How AI Agents Execute Work: Inside Agent Frameworks",
+    "section": "8 References & Further Reading",
+    "text": "8 References & Further Reading\n\nYao, S., et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models.\nLangChain / LangGraph Documentation. https://docs.langchain.com\nMicrosoft Semantic Kernel Documentation. https://learn.microsoft.com/en-us/semantic-kernel/\nOpenAI. Function Calling and Tool Use in LLMs. https://platform.openai.com/docs/guides/function-calling\nJiang, Z., et al. (2025). On the Emergence of Agentic Behavior and Instability in Adaptive Systems.\nU.S. Federal Reserve. SR 11-7: Model Risk Management (Supervisory Guidance)"
   }
 ]

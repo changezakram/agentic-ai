@@ -130,3 +130,19 @@ Mortgage underwriting makes this boundary clear. Agents coordinate and prepare w
 Understanding agent frameworks is necessary, but not sufficient. To scale agents safely across the enterprise, banks need orchestration layers that embed agents into governed workflows.
 
 In the next post, we’ll examine how workflow orchestration platforms provide that control—and why agentic AI succeeds only when execution and governance are designed together.
+
+
+## References & Further Reading
+
+1. Yao, S., et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models.
+
+2. LangChain / LangGraph Documentation. https://docs.langchain.com
+
+3. Microsoft Semantic Kernel Documentation. https://learn.microsoft.com/en-us/semantic-kernel/
+
+4. OpenAI. Function Calling and Tool Use in LLMs. https://platform.openai.com/docs/guides/function-calling
+
+5. Jiang, Z., et al. (2025). On the Emergence of Agentic Behavior and Instability in Adaptive Systems.
+
+6. U.S. Federal Reserve. SR 11-7: Model Risk Management (Supervisory Guidance)
+
