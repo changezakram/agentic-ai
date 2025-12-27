@@ -15,7 +15,7 @@ Agents are not prompts. They are systems—designed to plan work, execute action
 
 ---
 
-## 1. From Prompts to Systems
+## From Prompts to Systems
 
 Traditional generative AI follows a request–response pattern: a user submits a prompt, the model generates an answer, and the interaction ends. This model works well for drafting, summarization, and search. It struggles when tasks require coordination across steps, systems, and time.
 
@@ -29,7 +29,7 @@ Agents address this gap by shifting AI from answering questions to managing work
 
 ---
 
-## 2. The Agent Execution Loop
+## The Agent Execution Loop
 
 At the core of every agentic system is a continuous execution loop:
 
@@ -47,7 +47,7 @@ This adaptive loop allows agents to operate in environments where not every case
 
 ---
 
-## 3. Core Building Blocks of an Agent
+## Core Building Blocks of an Agent
 
 This execution loop does not emerge automatically from a language model. It depends on supporting capabilities that turn reasoning into reliable system behavior:
 
@@ -65,7 +65,7 @@ Together, these capabilities transform language models into systems that can exe
 
 ---
 
-## 4. What Agent Frameworks Actually Do
+## What Agent Frameworks Actually Do
 
 Agent frameworks package these building blocks into a structured runtime. They do not add intelligence beyond what the underlying models provide, nor do they replace enterprise systems. Their role is to make execution repeatable, observable, and controllable.
 
@@ -79,7 +79,7 @@ Equally important is what frameworks do not do. They do not define approval auth
 
 ---
 
-## 5. Two Framework Styles Banks Encounter
+## Two Framework Styles Banks Encounter
 
 In practice, agent frameworks tend to follow one of two design styles.
 
@@ -95,7 +95,7 @@ Most banks will encounter both styles. The choice depends on autonomy level and 
 
 ---
 
-## 6. Mortgage Underwriting Through the Lens of Agent Frameworks
+## Mortgage Underwriting Through the Lens of Agent Frameworks
 
 Mortgage underwriting illustrates how these concepts work in practice. It is an L2 use case—too complex for simple automation, yet too regulated for full autonomy.
 

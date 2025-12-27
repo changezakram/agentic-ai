@@ -211,12 +211,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#from-prompts-to-systems" id="toc-from-prompts-to-systems" class="nav-link active" data-scroll-target="#from-prompts-to-systems"><span class="header-section-number">1</span> 1. From Prompts to Systems</a></li>
-  <li><a href="#the-agent-execution-loop" id="toc-the-agent-execution-loop" class="nav-link" data-scroll-target="#the-agent-execution-loop"><span class="header-section-number">2</span> 2. The Agent Execution Loop</a></li>
-  <li><a href="#core-building-blocks-of-an-agent" id="toc-core-building-blocks-of-an-agent" class="nav-link" data-scroll-target="#core-building-blocks-of-an-agent"><span class="header-section-number">3</span> 3. Core Building Blocks of an Agent</a></li>
-  <li><a href="#what-agent-frameworks-actually-do" id="toc-what-agent-frameworks-actually-do" class="nav-link" data-scroll-target="#what-agent-frameworks-actually-do"><span class="header-section-number">4</span> 4. What Agent Frameworks Actually Do</a></li>
-  <li><a href="#two-framework-styles-banks-encounter" id="toc-two-framework-styles-banks-encounter" class="nav-link" data-scroll-target="#two-framework-styles-banks-encounter"><span class="header-section-number">5</span> 5. Two Framework Styles Banks Encounter</a></li>
-  <li><a href="#mortgage-underwriting-through-the-lens-of-agent-frameworks" id="toc-mortgage-underwriting-through-the-lens-of-agent-frameworks" class="nav-link" data-scroll-target="#mortgage-underwriting-through-the-lens-of-agent-frameworks"><span class="header-section-number">6</span> 6. Mortgage Underwriting Through the Lens of Agent Frameworks</a></li>
+  <li><a href="#from-prompts-to-systems" id="toc-from-prompts-to-systems" class="nav-link active" data-scroll-target="#from-prompts-to-systems"><span class="header-section-number">1</span> From Prompts to Systems</a></li>
+  <li><a href="#the-agent-execution-loop" id="toc-the-agent-execution-loop" class="nav-link" data-scroll-target="#the-agent-execution-loop"><span class="header-section-number">2</span> The Agent Execution Loop</a></li>
+  <li><a href="#core-building-blocks-of-an-agent" id="toc-core-building-blocks-of-an-agent" class="nav-link" data-scroll-target="#core-building-blocks-of-an-agent"><span class="header-section-number">3</span> Core Building Blocks of an Agent</a></li>
+  <li><a href="#what-agent-frameworks-actually-do" id="toc-what-agent-frameworks-actually-do" class="nav-link" data-scroll-target="#what-agent-frameworks-actually-do"><span class="header-section-number">4</span> What Agent Frameworks Actually Do</a></li>
+  <li><a href="#two-framework-styles-banks-encounter" id="toc-two-framework-styles-banks-encounter" class="nav-link" data-scroll-target="#two-framework-styles-banks-encounter"><span class="header-section-number">5</span> Two Framework Styles Banks Encounter</a></li>
+  <li><a href="#mortgage-underwriting-through-the-lens-of-agent-frameworks" id="toc-mortgage-underwriting-through-the-lens-of-agent-frameworks" class="nav-link" data-scroll-target="#mortgage-underwriting-through-the-lens-of-agent-frameworks"><span class="header-section-number">6</span> Mortgage Underwriting Through the Lens of Agent Frameworks</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7</span> Conclusion</a></li>
   </ul>
 </nav>
@@ -248,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Agents are not prompts. They are systems—designed to plan work, execute actions, observe outcomes, and adjust as conditions change.</p>
 <hr>
 <section id="from-prompts-to-systems" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="from-prompts-to-systems"><span class="header-section-number">1</span> 1. From Prompts to Systems</h2>
+<h2 data-number="1" class="anchored" data-anchor-id="from-prompts-to-systems"><span class="header-section-number">1</span> From Prompts to Systems</h2>
 <p>Traditional generative AI follows a request–response pattern: a user submits a prompt, the model generates an answer, and the interaction ends. This model works well for drafting, summarization, and search. It struggles when tasks require coordination across steps, systems, and time.</p>
 <p>Operational work in banks rarely fits into a single interaction. Mortgage underwriting, for example, involves document collection, verification, risk assessment, pricing, compliance checks, and escalation.</p>
 <div class="figure">
@@ -258,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="the-agent-execution-loop" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="the-agent-execution-loop"><span class="header-section-number">2</span> 2. The Agent Execution Loop</h2>
+<h2 data-number="2" class="anchored" data-anchor-id="the-agent-execution-loop"><span class="header-section-number">2</span> The Agent Execution Loop</h2>
 <p>At the core of every agentic system is a continuous execution loop:</p>
 <p><strong>Intent → Plan → Act → Observe → Adjust</strong></p>
 <p>Execution begins with intent. Unlike a prompt, intent defines the objective to be achieved—such as preparing an underwriting package or running a stress testing scenario—without prescribing how the task must be completed.</p>
@@ -270,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="core-building-blocks-of-an-agent" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="core-building-blocks-of-an-agent"><span class="header-section-number">3</span> 3. Core Building Blocks of an Agent</h2>
+<h2 data-number="3" class="anchored" data-anchor-id="core-building-blocks-of-an-agent"><span class="header-section-number">3</span> Core Building Blocks of an Agent</h2>
 <p>This execution loop does not emerge automatically from a language model. It depends on supporting capabilities that turn reasoning into reliable system behavior:</p>
 <ul>
 <li>Planning<br>
@@ -290,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="what-agent-frameworks-actually-do" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="what-agent-frameworks-actually-do"><span class="header-section-number">4</span> 4. What Agent Frameworks Actually Do</h2>
+<h2 data-number="4" class="anchored" data-anchor-id="what-agent-frameworks-actually-do"><span class="header-section-number">4</span> What Agent Frameworks Actually Do</h2>
 <p>Agent frameworks package these building blocks into a structured runtime. They do not add intelligence beyond what the underlying models provide, nor do they replace enterprise systems. Their role is to make execution repeatable, observable, and controllable.</p>
 <p>Frameworks manage execution flow, state, retries, and tool coordination. Without them, teams must hand-code these behaviors repeatedly—introducing fragility and inconsistency.</p>
 <div class="figure">
@@ -300,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="two-framework-styles-banks-encounter" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="two-framework-styles-banks-encounter"><span class="header-section-number">5</span> 5. Two Framework Styles Banks Encounter</h2>
+<h2 data-number="5" class="anchored" data-anchor-id="two-framework-styles-banks-encounter"><span class="header-section-number">5</span> Two Framework Styles Banks Encounter</h2>
 <p>In practice, agent frameworks tend to follow one of two design styles.</p>
 <p><strong>Graph-based, stateful frameworks</strong> model execution as explicit steps and transitions. State is tracked externally, making execution paths visible and auditable—well suited to regulated, multi-step processes.</p>
 <p><strong>Planner-based, skill-oriented frameworks</strong> rely on dynamic planning. Agents decide which actions to take at runtime based on context and available tools. This model offers flexibility but can reduce predictability if not constrained.</p>
@@ -311,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="mortgage-underwriting-through-the-lens-of-agent-frameworks" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="mortgage-underwriting-through-the-lens-of-agent-frameworks"><span class="header-section-number">6</span> 6. Mortgage Underwriting Through the Lens of Agent Frameworks</h2>
+<h2 data-number="6" class="anchored" data-anchor-id="mortgage-underwriting-through-the-lens-of-agent-frameworks"><span class="header-section-number">6</span> Mortgage Underwriting Through the Lens of Agent Frameworks</h2>
 <p>Mortgage underwriting illustrates how these concepts work in practice. It is an L2 use case—too complex for simple automation, yet too regulated for full autonomy.</p>
 <p>From the agent’s perspective, the objective is not to approve a loan. It is to prepare a complete underwriting package for human review.</p>
 <div class="figure">
