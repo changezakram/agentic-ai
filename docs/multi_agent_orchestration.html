@@ -246,13 +246,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#section-1-why-single-agents-arent-enough" id="toc-section-1-why-single-agents-arent-enough" class="nav-link active" data-scroll-target="#section-1-why-single-agents-arent-enough"><span class="header-section-number">1</span> Section 1: Why Single Agents Aren’t Enough</a></li>
-  <li><a href="#section-2-the-four-orchestration-patterns" id="toc-section-2-the-four-orchestration-patterns" class="nav-link" data-scroll-target="#section-2-the-four-orchestration-patterns"><span class="header-section-number">2</span> Section 2: The Four Orchestration Patterns</a></li>
-  <li><a href="#section-3-model-context-protocol---the-agent-language" id="toc-section-3-model-context-protocol---the-agent-language" class="nav-link" data-scroll-target="#section-3-model-context-protocol---the-agent-language"><span class="header-section-number">3</span> Section 3: Model Context Protocol - The Agent Language</a></li>
-  <li><a href="#section-4-orchestration-architecture---the-control-center" id="toc-section-4-orchestration-architecture---the-control-center" class="nav-link" data-scroll-target="#section-4-orchestration-architecture---the-control-center"><span class="header-section-number">4</span> Section 4: Orchestration Architecture - The Control Center</a></li>
-  <li><a href="#section-5-deep-dive-use-case---corporate-loan-origination" id="toc-section-5-deep-dive-use-case---corporate-loan-origination" class="nav-link" data-scroll-target="#section-5-deep-dive-use-case---corporate-loan-origination"><span class="header-section-number">5</span> Section 5: Deep-Dive Use Case - Corporate Loan Origination</a></li>
-  <li><a href="#section-6-governance-for-multi-agent-systems" id="toc-section-6-governance-for-multi-agent-systems" class="nav-link" data-scroll-target="#section-6-governance-for-multi-agent-systems"><span class="header-section-number">6</span> Section 6: Governance for Multi-Agent Systems</a></li>
-  <li><a href="#section-7-vendor-landscape-build-vs.-buy" id="toc-section-7-vendor-landscape-build-vs.-buy" class="nav-link" data-scroll-target="#section-7-vendor-landscape-build-vs.-buy"><span class="header-section-number">7</span> Section 7: Vendor Landscape &amp; Build vs.&nbsp;Buy</a></li>
+  <li><a href="#why-single-agents-arent-enough" id="toc-why-single-agents-arent-enough" class="nav-link active" data-scroll-target="#why-single-agents-arent-enough"><span class="header-section-number">1</span> Why Single Agents Aren’t Enough</a></li>
+  <li><a href="#the-four-orchestration-patterns" id="toc-the-four-orchestration-patterns" class="nav-link" data-scroll-target="#the-four-orchestration-patterns"><span class="header-section-number">2</span> The Four Orchestration Patterns</a></li>
+  <li><a href="#model-context-protocol---the-agent-language" id="toc-model-context-protocol---the-agent-language" class="nav-link" data-scroll-target="#model-context-protocol---the-agent-language"><span class="header-section-number">3</span> Model Context Protocol - The Agent Language</a></li>
+  <li><a href="#orchestration-architecture---the-control-center" id="toc-orchestration-architecture---the-control-center" class="nav-link" data-scroll-target="#orchestration-architecture---the-control-center"><span class="header-section-number">4</span> Orchestration Architecture - The Control Center</a></li>
+  <li><a href="#deep-dive-use-case---corporate-loan-origination" id="toc-deep-dive-use-case---corporate-loan-origination" class="nav-link" data-scroll-target="#deep-dive-use-case---corporate-loan-origination"><span class="header-section-number">5</span> Deep-Dive Use Case - Corporate Loan Origination</a></li>
+  <li><a href="#governance-for-multi-agent-systems" id="toc-governance-for-multi-agent-systems" class="nav-link" data-scroll-target="#governance-for-multi-agent-systems"><span class="header-section-number">6</span> Governance for Multi-Agent Systems</a></li>
+  <li><a href="#vendor-landscape-build-vs.-buy" id="toc-vendor-landscape-build-vs.-buy" class="nav-link" data-scroll-target="#vendor-landscape-build-vs.-buy"><span class="header-section-number">7</span> Vendor Landscape &amp; Build vs.&nbsp;Buy</a></li>
   <li><a href="#common-pitfalls-to-avoid" id="toc-common-pitfalls-to-avoid" class="nav-link" data-scroll-target="#common-pitfalls-to-avoid"><span class="header-section-number">8</span> Common Pitfalls to Avoid</a></li>
   </ul>
 </nav>
@@ -279,16 +279,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="section-1-why-single-agents-arent-enough" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="section-1-why-single-agents-arent-enough"><span class="header-section-number">1</span> Section 1: Why Single Agents Aren’t Enough</h2>
-<p><strong>Opening Hook:</strong> “A credit approval agent that operates in isolation isn’t autonomous—it’s blind. It can’t see the compliance agent’s sanctions screening, the pricing agent’s market analysis, or the risk agent’s portfolio exposure. The result: decisions made with incomplete context.”</p>
+<section id="why-single-agents-arent-enough" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="why-single-agents-arent-enough"><span class="header-section-number">1</span> Why Single Agents Aren’t Enough</h2>
+<p>A credit approval agent that operates in isolation isn’t autonomous—it’s blind. It can’t see the compliance agent’s sanctions screening, the pricing agent’s market analysis, or the risk agent’s portfolio exposure. The result: decisions made with incomplete context.</p>
 <p><strong>Key Points:</strong> - Real banking workflows require 3-10 agents working together - The coordination challenge: context sharing, state management, error handling, human escalation - Why this matters NOW: LLMs can reason, but orchestration determines whether they’re useful or chaotic</p>
-<p><strong>Example Teaser:</strong> “Consider corporate loan origination…”</p>
-<p><strong>Transition:</strong> “The question isn’t whether to use multiple agents—it’s how to orchestrate them.”</p>
+<p>The question isn’t whether to use multiple agents—it’s how to orchestrate them.</p>
 <hr>
 </section>
-<section id="section-2-the-four-orchestration-patterns" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="section-2-the-four-orchestration-patterns"><span class="header-section-number">2</span> Section 2: The Four Orchestration Patterns</h2>
+<section id="the-four-orchestration-patterns" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="the-four-orchestration-patterns"><span class="header-section-number">2</span> The Four Orchestration Patterns</h2>
 <p>Frame each pattern with: 1. Pattern name + visual metaphor 2. Banking use case (specific, detailed) 3. When to use it 4. Governance consideration</p>
 <section id="pattern-1-sequential-pipeline" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="pattern-1-sequential-pipeline"><span class="header-section-number">2.1</span> Pattern 1: Sequential Pipeline</h3>
@@ -323,8 +322,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="section-3-model-context-protocol---the-agent-language" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="section-3-model-context-protocol---the-agent-language"><span class="header-section-number">3</span> Section 3: Model Context Protocol - The Agent Language</h2>
+<section id="model-context-protocol---the-agent-language" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="model-context-protocol---the-agent-language"><span class="header-section-number">3</span> Model Context Protocol - The Agent Language</h2>
 <p><strong>Opening:</strong> “Agents need a common language. Without it, Agent A’s output becomes garbage to Agent B.”</p>
 <section id="what-mcp-solves" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="what-mcp-solves"><span class="header-section-number">3.1</span> What MCP Solves</h3>
@@ -404,8 +403,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="section-4-orchestration-architecture---the-control-center" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="section-4-orchestration-architecture---the-control-center"><span class="header-section-number">4</span> Section 4: Orchestration Architecture - The Control Center</h2>
+<section id="orchestration-architecture---the-control-center" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="orchestration-architecture---the-control-center"><span class="header-section-number">4</span> Orchestration Architecture - The Control Center</h2>
 <p>Frame as <strong>“The Banking Orchestration Stack”</strong> - 4 layers:</p>
 <section id="layer-1-workflow-engine" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="layer-1-workflow-engine"><span class="header-section-number">4.1</span> Layer 1: Workflow Engine</h3>
@@ -457,8 +456,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="section-5-deep-dive-use-case---corporate-loan-origination" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="section-5-deep-dive-use-case---corporate-loan-origination"><span class="header-section-number">5</span> Section 5: Deep-Dive Use Case - Corporate Loan Origination</h2>
+<section id="deep-dive-use-case---corporate-loan-origination" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="deep-dive-use-case---corporate-loan-origination"><span class="header-section-number">5</span> Deep-Dive Use Case - Corporate Loan Origination</h2>
 <p><strong>Scenario:</strong> “Supremo Corporation applies for €50M credit facility for European expansion. The orchestration system coordinates 7 agents across 3 departments over 5 business days.”</p>
 <section id="act-1-data-gathering-parallel" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="act-1-data-gathering-parallel"><span class="header-section-number">5.1</span> Act 1: Data Gathering (Parallel)</h3>
@@ -526,8 +525,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="section-6-governance-for-multi-agent-systems" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="section-6-governance-for-multi-agent-systems"><span class="header-section-number">6</span> Section 6: Governance for Multi-Agent Systems</h2>
+<section id="governance-for-multi-agent-systems" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="governance-for-multi-agent-systems"><span class="header-section-number">6</span> Governance for Multi-Agent Systems</h2>
 <p>Focus ONLY on <strong>orchestration-specific governance</strong> (different from single-agent governance in Blog 1)</p>
 <section id="new-governance-requirements" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="new-governance-requirements"><span class="header-section-number">6.1</span> New Governance Requirements</h3>
@@ -613,8 +612,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="section-7-vendor-landscape-build-vs.-buy" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="section-7-vendor-landscape-build-vs.-buy"><span class="header-section-number">7</span> Section 7: Vendor Landscape &amp; Build vs.&nbsp;Buy</h2>
+<section id="vendor-landscape-build-vs.-buy" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="vendor-landscape-build-vs.-buy"><span class="header-section-number">7</span> Vendor Landscape &amp; Build vs.&nbsp;Buy</h2>
 <section id="the-build-vs.-buy-decision-matrix" class="level3" data-number="7.1">
 <h3 data-number="7.1" class="anchored" data-anchor-id="the-build-vs.-buy-decision-matrix"><span class="header-section-number">7.1</span> The Build vs.&nbsp;Buy Decision Matrix</h3>
 <table class="caption-top table">
