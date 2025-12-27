@@ -4,21 +4,7 @@ format: html
 toc: true
 ---
 
-## Strategic Positioning
-
-**What makes THIS blog different from generic multi-agent content:**
-- Banking-specific patterns (not generic tech examples)
-- Regulatory/governance angle (unique to financial services)
-- Practical implementation roadmap (not just theory)
-- Vendor evaluation framework (helps CTOs make decisions)
-
-**Target Audience:** CTOs, Chief Data Officers, Enterprise Architects, Head of AI/ML
-
-**Target Length:** 2,500-3,000 words
-
----
-
-## Section 1: Why Single Agents Aren't Enough (250 words)
+## Section 1: Why Single Agents Aren't Enough 
 
 **Opening Hook:**
 "A credit approval agent that operates in isolation isn't autonomous—it's blind. It can't see the compliance agent's sanctions screening, the pricing agent's market analysis, or the risk agent's portfolio exposure. The result: decisions made with incomplete context."
@@ -34,7 +20,7 @@ toc: true
 
 ---
 
-## Section 2: The Four Orchestration Patterns (600 words)
+## Section 2: The Four Orchestration Patterns 
 
 Frame each pattern with:
 1. Pattern name + visual metaphor
@@ -113,7 +99,7 @@ Frame each pattern with:
 
 ---
 
-## Section 3: Model Context Protocol - The Agent Language (350 words)
+## Section 3: Model Context Protocol - The Agent Language 
 
 **Opening:**
 "Agents need a common language. Without it, Agent A's output becomes garbage to Agent B."
@@ -168,7 +154,7 @@ Compliance Agent response:
 
 ---
 
-## Section 4: Orchestration Architecture - The Control Center (400 words)
+## Section 4: Orchestration Architecture - The Control Center 
 
 Frame as **"The Banking Orchestration Stack"** - 4 layers:
 
@@ -210,7 +196,7 @@ Frame as **"The Banking Orchestration Stack"** - 4 layers:
 
 ---
 
-## Section 5: Deep-Dive Use Case - Corporate Loan Origination (500 words)
+## Section 5: Deep-Dive Use Case - Corporate Loan Origination 
 
 **Scenario:**
 "Supremo Corporation applies for €50M credit facility for European expansion. The orchestration system coordinates 7 agents across 3 departments over 5 business days."
@@ -269,7 +255,7 @@ Frame as **"The Banking Orchestration Stack"** - 4 layers:
 
 ---
 
-## Section 6: Governance for Multi-Agent Systems (350 words)
+## Section 6: Governance for Multi-Agent Systems 
 
 Focus ONLY on **orchestration-specific governance** (different from single-agent governance in Blog 1)
 
@@ -316,7 +302,7 @@ Focus ONLY on **orchestration-specific governance** (different from single-agent
 
 ---
 
-## Section 7: Vendor Landscape & Build vs. Buy (400 words)
+## Section 7: Vendor Landscape & Build vs. Buy 
 
 ### The Build vs. Buy Decision Matrix
 
@@ -383,7 +369,7 @@ Focus ONLY on **orchestration-specific governance** (different from single-agent
 
 ---
 
-## Section 8: Getting Started - A 90-Day Roadmap (300 words)
+## Section 8: Getting Started - A 90-Day Roadmap 
 
 ### Days 1-30: Foundation
 
