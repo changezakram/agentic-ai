@@ -1,0 +1,121 @@
+---
+title: "Workflow Orchestration for Agentic AI: Governing Execution at Scale"
+format: html
+---
+
+As banks move from experimenting with individual AI agents to deploying them across real business workflows, a new challenge emerges. Execution alone is not enough. When multiple agents interact—sharing data, triggering actions, and escalating outcomes—the risk shifts from model accuracy to system coordination.
+
+This is where workflow orchestration becomes essential. Orchestration does not make agents smarter. It makes them governable. It defines how agents coordinate, where human approval occurs, how exceptions are handled, and how regulators can trace decisions end to end.
+
+In this article, we examine why orchestration is the missing layer in most agentic AI discussions—and how banks can design it without sacrificing speed, accountability, or trust.
+
+---
+
+## Execution vs. Orchestration: A Necessary Distinction
+
+As banks move beyond single-agent experiments, it becomes critical to distinguish between execution and orchestration. These terms are often used interchangeably, but they represent fundamentally different responsibilities in an agentic system.
+
+Agent frameworks govern execution. They determine how an individual agent plans tasks, invokes tools, manages state, retries failed actions, and produces outputs. Frameworks answer questions such as: What steps should the agent take? What happens if a tool fails? How does the agent know it has completed its task?
+
+Orchestration governs coordination. It determines how multiple agents work together within a broader business workflow—how tasks are sequenced, when agents run in parallel, where approvals occur, how exceptions are escalated, and how outcomes are audited.
+
+This distinction matters most in regulated environments. A mortgage underwriting agent may execute income verification flawlessly. A separate agent may assess collateral risk. A third may draft pricing terms. Without orchestration, these agents operate as isolated workers. With orchestration, they become a governed system.
+
+Crucially, orchestration does not make agents smarter. It makes them accountable. It embeds agent execution inside enterprise workflows that reflect policy, regulatory requirements, and organizational authority. In practice, this means separating how work is done from how work is governed—a separation that traditional automation platforms already enforce, and agentic systems must now replicate.
+
+---
+
+## Core Orchestration Patterns in Agentic Systems
+
+As agentic systems scale, banks tend to converge on a small number of orchestration patterns. These patterns define how agents coordinate, not how they reason.
+
+### Sequential Handoffs
+
+In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.
+
+This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
+
+### Parallel Fan-Out and Aggregation
+
+Some workflows benefit from parallel execution. In fan-out orchestration, multiple agents run simultaneously against the same case—analyzing income, collateral, market conditions, or regulatory constraints in parallel. Their outputs are then aggregated and reconciled before proceeding.
+
+This pattern compresses timelines without sacrificing control. It is particularly effective when independent analyses can be performed concurrently but still require a consolidated decision or human review at the end.
+
+### Supervisor–Worker Models
+
+In supervisor–worker orchestration, a coordinating component assigns tasks to specialized agents, monitors progress, and resolves conflicts. The supervisor does not perform domain work itself; it manages execution flow and escalation.
+
+This pattern mirrors how teams operate in practice. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.
+
+### Event-Driven Execution
+
+In event-driven orchestration, agents respond to triggers rather than predefined steps. Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically.
+
+This pattern is powerful but requires strong governance. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
+
+---
+
+## Human Review Happens at Workflow Boundaries
+
+A common misconception in agentic AI discussions is that human-in-the-loop means humans supervising every agent action. In practice, this model does not scale—and in regulated environments, it is neither necessary nor desirable.
+
+In well-designed agentic systems, humans review outcomes, not execution steps. Orchestration defines explicit checkpoints where human judgment is required, while allowing agents to execute preparatory and analytical work autonomously within those boundaries.
+
+This mirrors how banks already operate. Credit officers do not manually verify every document or calculation; they review synthesized information, assess exceptions, and approve decisions. Agentic systems simply automate the work leading up to that judgment point.
+
+Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited.
+
+By placing human review at workflow boundaries, banks preserve accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.
+
+---
+
+## Orchestration as the Control Plane
+
+As agentic systems scale, orchestration evolves from a coordination mechanism into a control plane. This control plane governs how work is initiated, executed, reviewed, and audited across agents.
+
+Orchestration provides four critical capabilities:
+
+- **State and Context Management** ensures continuity across long-running workflows, tracking what has completed, what is pending, and what conditions must be met next.  
+- **Policy Enforcement and Guardrails** ensure that agents operate only within approved boundaries, enforcing escalation rules, thresholds, and separation of duties.  
+- **Exception Handling and Escalation** define how systems respond when cases deviate from the expected path, preventing silent failures or uncontrolled loops.  
+- **Auditability and Replayability** create a complete execution record—critical for regulatory review, investigation, and continuous improvement.
+
+Seen this way, orchestration is not optional. It is the governance backbone of agentic AI.
+
+---
+
+## Banking Example: CCAR and Stress Testing
+
+Stress testing and CCAR represent one of the most demanding environments for agentic systems. These workflows span months, involve dozens of models and data sources, require repeated scenario changes, and are subject to intense regulatory scrutiny.
+
+An orchestrated agentic approach decomposes this work into agent-driven tasks—data preparation, scenario application, model execution, result aggregation, and documentation drafting—coordinated by orchestration rather than manual handoffs.
+
+Orchestration enables parallel execution where possible, enforces sequencing where required, pauses at review checkpoints, and captures every decision and override. Timeline compression comes from automation and parallelization—not from skipping controls.
+
+Humans remain central. Model risk teams approve scenarios. Finance leaders review consolidated results. Senior management signs off on submissions. What changes is the nature of their work: from coordination to judgment.
+
+CCAR illustrates a broader truth. Agents accelerate execution. Orchestration preserves trust.
+
+---
+
+## Build vs. Buy in an Agentic World
+
+As banks scale agentic AI, orchestration raises a practical question: what should we build, and where should we partner?
+
+Banks should own orchestration logic that encodes policy, governance, and accountability—workflow structure, approval points, escalation rules, and audit requirements. These reflect institutional knowledge and must evolve with regulation and risk appetite.
+
+Vendors add value where capabilities are horizontal and repeatable: workflow engines, case management, observability, and enterprise integrations. These platforms provide reliable scaffolding without dictating business logic.
+
+The right balance combines vendor infrastructure with in-house ownership of governance and decision boundaries.
+
+---
+
+## Conclusion
+
+Agentic AI shifts banking systems from generating content to executing work. But execution alone does not create trust. As agents scale, coordination becomes the central challenge.
+
+Orchestration does not make agents more intelligent. It makes them governable. It defines how agents interact, where human judgment is required, how exceptions are handled, and how regulators can trace decisions end to end.
+
+Agent frameworks determine how work gets done. Orchestration determines whether that work can be trusted.
+
+Banks that design orchestration deliberately will not just move faster—they will move forward with confidence, accountability, and regulatory credibility.
