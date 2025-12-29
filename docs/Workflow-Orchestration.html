@@ -484,11 +484,11 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="6.7" class="anchored" data-anchor-id="underestimating-production-complexity"><span class="header-section-number">6.7</span> Underestimating Production Complexity</h3>
 <p>The Problem: Teams successfully demonstrate orchestrated agents in controlled environments, only to face cascading failures when workflows hit production scale. What works for 10 workflows per day breaks at 10,000. The Solution: Address core production challenges from the start:</p>
 <ul>
-<li><p>State Management: Banking workflows like loan origination span days or weeks. Orchestration must maintain state across system restarts, agent failures, and infrastructure changes. Implement persistent state stores with versioning and recovery capabilities.</p></li>
-<li><p>Fault Isolation: When one agent in an orchestrated workflow fails, the entire system shouldn’t collapse. Design orchestration with circuit breakers—if the fraud detection agent is down, route to enhanced manual review rather than halting all loan processing.</p></li>
-<li><p>Timeout Discipline: Anthropic’s research system enforces 30-180 second timeouts per agent depending on task complexity. Banks must similarly bound execution—a credit analysis agent that runs indefinitely defeats automation’s purpose. Set aggressive timeouts with graceful degradation.</p></li>
-<li><p>Debugging Complexity: Debugging orchestrated systems is fundamentally different from traditional software. A single workflow might involve dozens of agent interactions, making root cause analysis challenging. Build comprehensive logging from day one, with the ability to replay exact workflows with point-in-time data.</p></li>
-<li><p>Cost Control at Scale: Multi-agent workflows can generate massive API costs if not carefully managed. Implement token optimization, intelligent caching of expensive operations, and tiered processing (simple models for routine tasks, advanced models only when necessary).</p></li>
+<li><p><strong>State Management:</strong> Banking workflows like loan origination span days or weeks. Orchestration must maintain state across system restarts, agent failures, and infrastructure changes. Implement persistent state stores with versioning and recovery capabilities.</p></li>
+<li><p><strong>Fault Isolation:</strong> When one agent in an orchestrated workflow fails, the entire system shouldn’t collapse. Design orchestration with circuit breakers—if the fraud detection agent is down, route to enhanced manual review rather than halting all loan processing.</p></li>
+<li><p><strong>Timeout Discipline:</strong> Anthropic’s research system enforces 30-180 second timeouts per agent depending on task complexity. Banks must similarly bound execution—a credit analysis agent that runs indefinitely defeats automation’s purpose. Set aggressive timeouts with graceful degradation.</p></li>
+<li><p><strong>Debugging Complexity:</strong> Debugging orchestrated systems is fundamentally different from traditional software. A single workflow might involve dozens of agent interactions, making root cause analysis challenging. Build comprehensive logging from day one, with the ability to replay exact workflows with point-in-time data.</p></li>
+<li><p><strong>Cost Control at Scale:</strong> Multi-agent workflows can generate massive API costs if not carefully managed. Implement token optimization, intelligent caching of expensive operations, and tiered processing (simple models for routine tasks, advanced models only when necessary).</p></li>
 </ul>
 <p>Production-ready orchestration requires engineering discipline equal to any mission-critical system. The elegance of agent coordination means nothing if the system fails under real-world load.</p>
 <hr>
@@ -519,21 +519,25 @@ ul.task-list li input[type="checkbox"] {
 <section id="measuring-orchestration-effectiveness" class="level3" data-number="7.2">
 <h3 data-number="7.2" class="anchored" data-anchor-id="measuring-orchestration-effectiveness"><span class="header-section-number">7.2</span> Measuring Orchestration Effectiveness</h3>
 <p>As OpenAI’s guidance emphasizes, “evals are the cornerstone of successful agent development.” For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer’s unique contribution to system reliability and business outcomes.</p>
-<p><strong>Orchestration-Specific Metrics:</strong></p>
-<p>Workflow Completion Rate: Percentage of workflows reaching successful conclusion without manual intervention. Target: &gt;90% for routine workflows, &gt;60% for complex cases.</p>
-<p>Handoff Success Rate: Percentage of successful data and context transfers between agents. Each failed handoff represents orchestration failure, not agent failure. Target: &gt;99.5%.</p>
-<p>Orchestration Overhead: Time added by orchestration (routing decisions, state management, guardrail checks) versus direct agent execution. Target: &lt;10% for sequential workflows, &lt;25% for complex parallel workflows.</p>
-<p>System-Level Accuracy Improvement: How orchestration improves overall accuracy compared to individual agent performance. Anthropic’s research system achieved 95%+ system accuracy with 90% component accuracy through orchestrated verification loops.</p>
-<p>Cost per Orchestrated Workflow: Total compute, API, and infrastructure costs divided by successful workflow completions. Critical for ROI calculations.</p>
+<section id="orchestration-specific-metrics" class="level4" data-number="7.2.1">
+<h4 data-number="7.2.1" class="anchored" data-anchor-id="orchestration-specific-metrics"><span class="header-section-number">7.2.1</span> Orchestration-Specific Metrics:</h4>
+<p><strong>Workflow Completion Rate:</strong> Percentage of workflows reaching successful conclusion without manual intervention. Target: &gt;90% for routine workflows, &gt;60% for complex cases.</p>
+<p><strong>Handoff Success Rate:</strong> Percentage of successful data and context transfers between agents. Each failed handoff represents orchestration failure, not agent failure. Target: &gt;99.5%.</p>
+<p><strong>Orchestration Overhead:</strong> Time added by orchestration (routing decisions, state management, guardrail checks) versus direct agent execution. Target: &lt;10% for sequential workflows, &lt;25% for complex parallel workflows.</p>
+<p><strong>System-Level Accuracy Improvement:</strong> How orchestration improves overall accuracy compared to individual agent performance. Anthropic’s research system achieved 95%+ system accuracy with 90% component accuracy through orchestrated verification loops.</p>
+<p><strong>Cost per Orchestrated Workflow:</strong> Total compute, API, and infrastructure costs divided by successful workflow completions. Critical for ROI calculations.</p>
 <p>Recovery Success Rate: Percentage of workflows that successfully recover from agent failures or timeouts through orchestration-managed fallbacks.</p>
-<p><strong>Business Impact Metrics:</strong></p>
-<p>Time-to-Decision Reduction: How much faster orchestrated workflows complete versus manual processes (e.g., loan approvals in hours versus days)</p>
-<p>Compliance Rate: Percentage of orchestrated workflows meeting all regulatory requirements without manual correction</p>
-<p>Operational Cost Savings: Reduction in human hours required per workflow</p>
-<p>Customer Experience Scores: Improvement in satisfaction from faster, more consistent service</p>
+</section>
+<section id="business-impact-metrics" class="level4" data-number="7.2.2">
+<h4 data-number="7.2.2" class="anchored" data-anchor-id="business-impact-metrics"><span class="header-section-number">7.2.2</span> Business Impact Metrics:</h4>
+<p><strong>Time-to-Decision Reduction:</strong> How much faster orchestrated workflows complete versus manual processes (e.g., loan approvals in hours versus days)</p>
+<p><strong>Compliance Rate:</strong> Percentage of orchestrated workflows meeting all regulatory requirements without manual correction</p>
+<p><strong>Operational Cost Savings:</strong> Reduction in human hours required per workflow</p>
+<p><strong>Customer Experience Scores:</strong> Improvement in satisfaction from faster, more consistent service</p>
 <p>These metrics create feedback loops for continuous improvement. Orchestration that doesn’t demonstrate measurable improvement across these dimensions isn’t delivering value—regardless of individual agent sophistication.</p>
 <p>Seen this way, orchestration is not optional. It is the governance backbone of agentic AI.</p>
 <hr>
+</section>
 </section>
 </section>
 <section id="real-world-implementations-banks-leading-the-way" class="level2" data-number="8">
