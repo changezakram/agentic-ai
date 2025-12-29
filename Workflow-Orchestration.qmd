@@ -309,6 +309,30 @@ Banks that design orchestration deliberately will not just move faster—they wi
 
 ## References
 
+[1] Boston Consulting Group. (2024). "Executive Perspectives: Supply Chains Unlocking the Value Potential." October 2024. Retrieved from: https://media-publications.bcg.com/BCG-Executive-Perspectives-Unlocking-Impact-from-AI-Supply-Chains-EP4-7Oct2024.pdf
+
+[2] Deloitte Insights. (2025). "How banks can supercharge intelligent automation with agentic AI." Deloitte Center for Financial Services. August 13, 2025. Retrieved from: https://www.deloitte.com/us/en/insights/industry/financial-services/agentic-ai-banking.html
+
+[3] Digital Commerce 360. (2025). "McKinsey: AI agents, not chatbots, drive future enterprise value." July 28, 2025. Retrieved from: https://www.digitalcommerce360.com/2025/07/28/mckinsey-ai-agents-enterprise-value/
+
+[4] McKinsey & Company. (2025). "CEO strategies for leading in the age of agentic AI." McKinsey Capabilities/QuantumBlack. Retrieved from: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-change-agent-goals-decisions-and-implications-for-ceos-in-the-agentic-age
+
+[5] Everest Group. (2025). "Banking on Autonomous Agents: Embracing Agentic AI in Financial Services." Everest Group Research Portal. August 8, 2025. Retrieved from: https://www.everestgrp.com/blog/banking-on-autonomous-agents-embracing-agentic-ai-in-financial-services-blog.html
+
+[6] Anthropic. (2024). "How we built our multi-agent research system." Retrieved from: https://www.anthropic.com/engineering/multi-agent-research-system
+
+[7] AWS. (2025). "Agentic AI in Financial Services: Choosing the Right Pattern for Multi-Agent Systems." Amazon Web Services Blog. Retrieved from: https://aws.amazon.com/blogs/industries/agentic-ai-in-financial-services-choosing-the-right-pattern-for-multi-agent-systems/
+
+[8] Microsoft Azure Architecture Center. (2024). "AI Agent Orchestration Patterns." Retrieved from: https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
+
+[9] Microsoft. (2025). "Semantic Kernel: Multi-agent Orchestration." DevBlogs. May 27, 2025. Retrieved from: https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-multi-agent-orchestration/
+
+[10] OpenAI. (2024). "A Practical Guide to Building Agents." Retrieved from: https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
+
+[11] Enterprise AI Executive. (2025). "McKinsey: 715 executives on building AI ventures." November 2, 2025. Retrieved from: https://enterpriseaiexecutive.ai/p/mckinsey-715-executives-on-building-ai-ventures
+
+[12] McKinsey & Company. (2025). "The agentic organization: Contours of the next paradigm for the AI era." September 26, 2025. Retrieved from: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
+
 
 
 
