@@ -267,21 +267,21 @@ ul.task-list li input[type="checkbox"] {
 <p>The value of orchestration extends beyond operational efficiency—it fundamentally transforms how quickly banks can adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.</p>
 <section id="timeline-acceleration" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="timeline-acceleration"><span class="header-section-number">2.1</span> Timeline Acceleration</h3>
-<p>McKinsey research reveals that orchestrated agent systems can accelerate technology modernization timelines by 40-50% while reducing costs by more than 40%. One global bank achieved even more dramatic results, cutting its IT modernization timelines by over 50% by deploying orchestrated agents to assist engineering teams. This acceleration comes not from individual agent performance but from eliminating handoff delays and coordination overhead.</p>
+<p>McKinsey research reveals that orchestrated agent systems can accelerate technology modernization timelines by 40-50% while reducing costs by more than 40%<sup>4</sup>. One global bank achieved even more dramatic results, cutting its IT modernization timelines by over 50% by deploying orchestrated agents to assist engineering teams.<sup>3</sup> This acceleration comes not from individual agent performance but from eliminating handoff delays and coordination overhead.</p>
 </section>
 <section id="efficiency-gains-at-scale" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="efficiency-gains-at-scale"><span class="header-section-number">2.2</span> Efficiency Gains at Scale</h3>
-<p>Boston Consulting Group’s analysis of advanced multi-agent implementations shows that when agents collaborate across processes through proper orchestration, organizations achieve 30-50% improvements in efficiency and execution speed. These gains compound as workflows become more complex—the very scenarios where traditional automation fails.</p>
+<p>Boston Consulting Group’s analysis of advanced multi-agent implementations shows that when agents collaborate across processes through proper orchestration, organizations achieve 30-50% improvements in efficiency and execution speed.<sup>1</sup> These gains compound as workflows become more complex—the very scenarios where traditional automation fails.</p>
 </section>
 <section id="operational-transformation" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="operational-transformation"><span class="header-section-number">2.3</span> Operational Transformation</h3>
 <p>Financial institutions implementing multi-agent orchestration for specific workflows report transformative outcomes:</p>
 <ul>
-<li>KYC Processing: Deloitte research documents multi-agent KYC workflows reducing onboarding time from days to minutes, with agents handling document verification, risk scoring, and regulatory filing in parallel<br>
+<li>KYC Processing: Deloitte research documents multi-agent KYC workflows reducing onboarding time from days to minutes, with agents handling document verification, risk scoring, and regulatory filing in parallel<sup>2</sup><br>
 </li>
-<li>Market Data Analysis: A financial services firm using orchestrated agents to clean and interpret complex market data projects $3 million in annual savings<br>
+<li>Market Data Analysis: A financial services firm using orchestrated agents to clean and interpret complex market data projects $3 million in annual savings<sup>3</sup><br>
 </li>
-<li>Credit Analysis: Banks report 60% productivity gains for credit analysts when orchestrated agents handle memo generation, risk assessment, and documentation</li>
+<li>Credit Analysis: Banks report 60% productivity gains for credit analysts when orchestrated agents handle memo generation, risk assessment, and documentation<sup>3</sup></li>
 </ul>
 </section>
 <section id="the-compound-effect" class="level3" data-number="2.4">
@@ -293,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="core-orchestration-patterns-in-agentic-systems" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="core-orchestration-patterns-in-agentic-systems"><span class="header-section-number">3</span> Core Orchestration Patterns in Agentic Systems</h2>
 <p>As agentic systems scale, banks tend to converge on a small number of orchestration patterns. These patterns define how agents coordinate, not how they reason.</p>
-<p>Workflows must be configurable, interruptible, and reversible. In banking, this means policies can be updated without rewriting agent code, processes can pause for human review or external events, and transactions can be unwound if errors are detected downstream. These properties are not optional in regulated environments—they are fundamental requirements for trustworthy orchestration.</p>
+<p>Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In banking, this means policies can be updated without rewriting agent code, processes can pause for human review or external events, and transactions can be unwound if errors are detected downstream. These properties are not optional in regulated environments—they are fundamental requirements for trustworthy orchestration.</p>
 <section id="sequential-handoffs" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sequential-handoffs"><span class="header-section-number">3.1</span> Sequential Handoffs</h3>
 <p>In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.</p>
@@ -486,7 +486,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p><strong>State Management:</strong> Banking workflows like loan origination span days or weeks. Orchestration must maintain state across system restarts, agent failures, and infrastructure changes. Implement persistent state stores with versioning and recovery capabilities.</p></li>
 <li><p><strong>Fault Isolation:</strong> When one agent in an orchestrated workflow fails, the entire system shouldn’t collapse. Design orchestration with circuit breakers—if the fraud detection agent is down, route to enhanced manual review rather than halting all loan processing.</p></li>
-<li><p><strong>Timeout Discipline:</strong> Anthropic’s research system enforces 30-180 second timeouts per agent depending on task complexity. Banks must similarly bound execution—a credit analysis agent that runs indefinitely defeats automation’s purpose. Set aggressive timeouts with graceful degradation.</p></li>
+<li><p><strong>Timeout Discipline:</strong> Anthropic’s research system enforces 30-180 second timeouts per agent depending on task complexity.<sup>6</sup> Banks must similarly bound execution—a credit analysis agent that runs indefinitely defeats automation’s purpose. Set aggressive timeouts with graceful degradation.</p></li>
 <li><p><strong>Debugging Complexity:</strong> Debugging orchestrated systems is fundamentally different from traditional software. A single workflow might involve dozens of agent interactions, making root cause analysis challenging. Build comprehensive logging from day one, with the ability to replay exact workflows with point-in-time data.</p></li>
 <li><p><strong>Cost Control at Scale:</strong> Multi-agent workflows can generate massive API costs if not carefully managed. Implement token optimization, intelligent caching of expensive operations, and tiered processing (simple models for routine tasks, advanced models only when necessary).</p></li>
 </ul>
@@ -509,7 +509,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <section id="implementing-guardrails-across-the-orchestration-layer" class="level3" data-number="7.1">
 <h3 data-number="7.1" class="anchored" data-anchor-id="implementing-guardrails-across-the-orchestration-layer"><span class="header-section-number">7.1</span> Implementing Guardrails Across the Orchestration Layer</h3>
-<p>Effective orchestration requires multiple types of guardrails operating in concert, as OpenAI’s framework outlines:</p>
+<p>Effective orchestration requires multiple types of guardrails operating in concert:<sup>10</sup></p>
 <p><strong>Input Guardrails:</strong> Screen requests before they reach agents—blocking prompt injections, PII leakage attempts, and requests that violate policy. In banking, this includes sanctions screening, authentication validation, and regulatory compliance checks at workflow initiation.</p>
 <p><strong>Output Guardrails:</strong> Validate agent responses before they reach downstream systems or users. This prevents hallucinated account numbers, ensures numerical accuracy in financial calculations, blocks disclosure of sensitive information, and prevents agents from providing regulated advice without proper authorization.</p>
 <p><strong>Execution Guardrails:</strong> Monitor and constrain agent actions during workflow execution. These include transaction value thresholds, rate limits on external API calls, geographic restrictions, time-of-day constraints, and automatic halts when agents attempt operations outside their authorized scope.</p>
@@ -518,13 +518,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="measuring-orchestration-effectiveness" class="level3" data-number="7.2">
 <h3 data-number="7.2" class="anchored" data-anchor-id="measuring-orchestration-effectiveness"><span class="header-section-number">7.2</span> Measuring Orchestration Effectiveness</h3>
-<p>As OpenAI’s guidance emphasizes, “evals are the cornerstone of successful agent development.” For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer’s unique contribution to system reliability and business outcomes.</p>
+<p>Eevals are the cornerstone of successful agent development.<sup>10</sup> For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer’s unique contribution to system reliability and business outcomes.</p>
 <section id="orchestration-specific-metrics" class="level4" data-number="7.2.1">
 <h4 data-number="7.2.1" class="anchored" data-anchor-id="orchestration-specific-metrics"><span class="header-section-number">7.2.1</span> Orchestration-Specific Metrics:</h4>
 <p><strong>Workflow Completion Rate:</strong> Percentage of workflows reaching successful conclusion without manual intervention. Target: &gt;90% for routine workflows, &gt;60% for complex cases.</p>
 <p><strong>Handoff Success Rate:</strong> Percentage of successful data and context transfers between agents. Each failed handoff represents orchestration failure, not agent failure. Target: &gt;99.5%.</p>
 <p><strong>Orchestration Overhead:</strong> Time added by orchestration (routing decisions, state management, guardrail checks) versus direct agent execution. Target: &lt;10% for sequential workflows, &lt;25% for complex parallel workflows.</p>
-<p><strong>System-Level Accuracy Improvement:</strong> How orchestration improves overall accuracy compared to individual agent performance. Anthropic’s research system achieved 95%+ system accuracy with 90% component accuracy through orchestrated verification loops.</p>
+<p><strong>System-Level Accuracy Improvement:</strong> How orchestration improves overall accuracy compared to individual agent performance. Anthropic’s research system achieved 95%+ system accuracy with 90% component accuracy through orchestrated verification loops.<sup>6</sup></p>
 <p><strong>Cost per Orchestrated Workflow:</strong> Total compute, API, and infrastructure costs divided by successful workflow completions. Critical for ROI calculations.</p>
 <p>Recovery Success Rate: Percentage of workflows that successfully recover from agent failures or timeouts through orchestration-managed fallbacks.</p>
 </section>
@@ -545,15 +545,15 @@ ul.task-list li input[type="checkbox"] {
 <p>Forward-thinking financial institutions are already demonstrating that orchestrated agent systems can be deployed without wholesale infrastructure replacement. These implementations offer valuable lessons for banks planning their own orchestration strategies.</p>
 <section id="modular-overlay-approach" class="level3" data-number="8.1">
 <h3 data-number="8.1" class="anchored" data-anchor-id="modular-overlay-approach"><span class="header-section-number">8.1</span> Modular Overlay Approach</h3>
-<p>Metro Bank successfully deployed Covecta-powered lending agents without modifying its core loan origination system. The orchestration layer sits above existing infrastructure, intercepting workflows at key decision points and returning enriched decisions back to legacy systems. This approach delivered immediate value while preserving system stability.</p>
+<p>Metro Bank successfully deployed Covecta-powered lending agents without modifying its core loan origination system.<sup>5</sup> The orchestration layer sits above existing infrastructure, intercepting workflows at key decision points and returning enriched decisions back to legacy systems. This approach delivered immediate value while preserving system stability.</p>
 </section>
 <section id="platform-enhancement-strategy" class="level3" data-number="8.2">
 <h3 data-number="8.2" class="anchored" data-anchor-id="platform-enhancement-strategy"><span class="header-section-number">8.2</span> Platform Enhancement Strategy</h3>
-<p>JPMorgan Chase layered AI agents atop its wholesale banking platforms through Coach AI and Kasisto integrations. Rather than replacing existing systems, the bank’s orchestration framework augments human workers by providing real-time insights, suggested actions, and automated routine tasks. Bankers maintain control while agents handle research and preparation.</p>
+<p>JPMorgan Chase layered AI agents atop its wholesale banking platforms through Coach AI and Kasisto integrations.<sup>5</sup> Rather than replacing existing systems, the bank’s orchestration framework augments human workers by providing real-time insights, suggested actions, and automated routine tasks. Bankers maintain control while agents handle research and preparation.</p>
 </section>
 <section id="legacy-modernization-acceleration" class="level3" data-number="8.3">
 <h3 data-number="8.3" class="anchored" data-anchor-id="legacy-modernization-acceleration"><span class="header-section-number">8.3</span> Legacy Modernization Acceleration</h3>
-<p>Westpac demonstrates how orchestration can accelerate transformation rather than just optimize existing processes. The bank used orchestrated agents to migrate COBOL code to modern languages without disrupting its parallel cloud modernization initiative. Agents handled code analysis, translation, and testing in coordinated workflows, compressing a multi-year project into months.</p>
+<p>Westpac demonstrates how orchestration can accelerate transformation rather than just optimize existing processes.<sup>5</sup> The bank used orchestrated agents to migrate COBOL code to modern languages without disrupting its parallel cloud modernization initiative. Agents handled code analysis, translation, and testing in coordinated workflows, compressing a multi-year project into months.</p>
 </section>
 <section id="cross-functional-orchestration" class="level3" data-number="8.4">
 <h3 data-number="8.4" class="anchored" data-anchor-id="cross-functional-orchestration"><span class="header-section-number">8.4</span> Cross-Functional Orchestration</h3>
@@ -578,7 +578,7 @@ ul.task-list li input[type="checkbox"] {
 <p>As banks scale agentic AI, orchestration raises a practical question: what should we build, and where should we partner?</p>
 <p>Banks should own orchestration logic that encodes policy, governance, and accountability—workflow structure, approval points, escalation rules, and audit requirements. These reflect institutional knowledge and must evolve with regulation and risk appetite.</p>
 <p>Vendors add value where capabilities are horizontal and repeatable: workflow engines, case management, observability, and enterprise integrations. These platforms provide reliable scaffolding without dictating business logic.</p>
-<p>Importantly, as Microsoft’s architectural guidance emphasizes, organizational paradigms coexist—banks need not abandon existing systems wholesale. The agentic orchestration layer can operate alongside traditional workflows, allowing gradual migration and reducing transformation risk. This coexistence strategy is particularly valuable for banks with substantial investments in existing automation infrastructure. Banks can preserve what works while selectively introducing agent-based capabilities where they add the most value.</p>
+<p>Importantly, as Microsoft’s architectural guidance emphasizes, organizational paradigms coexist<sup>8</sup>—banks need not abandon existing systems wholesale. The agentic orchestration layer can operate alongside traditional workflows, allowing gradual migration and reducing transformation risk. This coexistence strategy is particularly valuable for banks with substantial investments in existing automation infrastructure. Banks can preserve what works while selectively introducing agent-based capabilities where they add the most value.</p>
 <p>The right balance combines vendor infrastructure with in-house ownership of governance and decision boundaries. This hybrid approach allows banks to move at different speeds across different domains—aggressive in customer service, cautious in risk management—while maintaining a coherent orchestration strategy.</p>
 <hr>
 </section>
@@ -586,7 +586,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="10" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">10</span> Conclusion</h2>
 <p>Agentic AI shifts banking systems from generating content to executing work. But execution alone does not create trust. As agents scale, coordination becomes the central challenge.</p>
 <p>Orchestration does not make agents more intelligent. It makes them governable. It defines how agents interact, where human judgment is required, how exceptions are handled, and how regulators can trace decisions end to end.</p>
-<p>The evidence is compelling: banks implementing orchestrated multi-agent systems are achieving 40-50% acceleration in modernization timelines, 30-50% efficiency gains in complex workflows, and millions in documented savings. But perhaps more importantly, they are building the foundation for continuous adaptation in an AI-driven future.</p>
+<p>The evidence is compelling: banks implementing orchestrated multi-agent systems are achieving 40-50% acceleration in modernization timelines<sup>4</sup>, 30-50% efficiency gains in complex workflows<sup>1</sup>, and millions in documented savings<sup>3</sup>. But perhaps more importantly, they are building the foundation for continuous adaptation in an AI-driven future.</p>
 <p>The formula is clear: Agent = LLM + Tools + Orchestration. While the industry races to improve the first two components, the third remains the key differentiator. Agent frameworks determine how work gets done. Orchestration determines whether that work can be trusted.</p>
 <p>Banks that design orchestration deliberately will not just move faster—they will move forward with confidence, accountability, and regulatory credibility. In a world where AI capabilities double every few months, the winners won’t be those with the smartest agents—they’ll be those with the most governable systems.</p>
 <hr>
