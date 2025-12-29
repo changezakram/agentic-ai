@@ -29,7 +29,7 @@ Crucially, orchestration does not make agents smarter. It makes them accountable
 
 ---
 
-##The Business Case: Quantifying Orchestration Value
+## The Business Case: Quantifying Orchestration Value
 
 The value of orchestration extends beyond operational efficiency—it fundamentally transforms how quickly banks can adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.
 
@@ -98,42 +98,18 @@ Understanding where your organization stands—and where it needs to go—is cri
 
 ### Traditional Maturity Levels
 
-**Level 1:** Single-Agent Tasks
-**Characteristics:** Individual agents handle discrete, well-defined tasks. No coordination between agents.
+| Level | Stage                    | Characteristics                                                                 | Examples                                                     | Technology                                                        | Governance                                   |
+|------:|--------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------|
+| Level 1 | Single-Agent Tasks       | Individual agents handle discrete, well-defined tasks. No coordination between agents. | Document classification, data extraction, simple Q&A        | Basic LLM integration, simple API calls                           | Manual oversight of each agent output        |
+| Level 2 | Sequential Handoffs      | Agents work in predefined sequences. Output from one becomes input to the next. | Loan application processing, compliance review workflows     | Workflow engines, basic orchestration frameworks                   | Checkpoint approvals between stages          |
+| Level 3 | Parallel Execution       | Multiple agents work simultaneously on different aspects of the same problem.  | Multi-source risk assessment, comprehensive market analysis  | Advanced orchestration platforms (AWS Agent Squad, Semantic Kernel) | Consolidated review points, exception handling |
+| Level 4 | Dynamic Orchestration    | Workflows adapt based on intermediate results and external events.              | Real-time fraud response, adaptive customer service          | Event-driven architectures, intelligent routing                   | Policy-based guardrails, automated escalation |
+| Level 5 | Self-Organizing Networks | Agents autonomously form teams and workflows based on objectives.               | Complex trading strategies, enterprise-wide optimization     | Emergent AI systems, swarm intelligence                            | Outcome-based controls, continuous monitoring |
 
-Examples: Document classification, data extraction, simple Q&A
-Technology: Basic LLM integration, simple API calls
-Governance: Manual oversight of each agent output
 
-Level 2: Sequential Handoffs
-Characteristics: Agents work in predefined sequences. Output from one becomes input to the next.
-
-Examples: Loan application processing, compliance review workflows
-Technology: Workflow engines, basic orchestration frameworks
-Governance: Checkpoint approvals between stages
-
-Level 3: Parallel Execution with Aggregation
-Characteristics: Multiple agents work simultaneously on different aspects of the same problem.
-
-Examples: Multi-source risk assessment, comprehensive market analysis
-Technology: Advanced orchestration platforms (AWS Agent Squad, Semantic Kernel)
-Governance: Consolidated review points, exception handling
-
-Level 4: Dynamic Orchestration
-Characteristics: Workflows adapt based on intermediate results and external events.
-
-Examples: Real-time fraud response, adaptive customer service
-Technology: Event-driven architectures, intelligent routing
-Governance: Policy-based guardrails, automated escalation
-
-Level 5: Self-Organizing Networks
-Characteristics: Agents autonomously form teams and workflows based on objectives.
-
-Examples: Complex trading strategies, enterprise-wide optimization
-Technology: Emergent AI systems, swarm intelligence
-Governance: Outcome-based controls, continuous monitoring
 
 ### The Autonomy Perspective
+
 OpenAI's autonomy framework provides another critical lens for understanding orchestration maturity:
 
 L1 (Chatbots): Simple response generation without tool use—no orchestration needed
@@ -342,7 +318,7 @@ Banks that design orchestration deliberately will not just move faster—they wi
 
 ---
 
-##References
+## References
 
 
 
