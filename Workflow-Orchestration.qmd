@@ -107,30 +107,19 @@ Understanding where your organization stands—and where it needs to go—is cri
 | Level 5 | Self-Organizing Networks | Agents autonomously form teams and workflows based on objectives.               | Complex trading strategies, enterprise-wide optimization     | Emergent AI systems, swarm intelligence                            | Outcome-based controls, continuous monitoring |
 
 
-
 ### The Autonomy Perspective
 
-OpenAI's autonomy framework provides another critical lens for understanding orchestration maturity:
+Another critical lens for understanding orchestration maturity comes from the industry's autonomy framework:
 
-L1 (Chatbots): Simple response generation without tool use—no orchestration needed
-L2 (Reasoners): Agents that analyze and solve problems systematically—limited orchestration
-L3 (Agents): Systems that interact with environments through tools—orchestration becomes critical
-L4 (Innovators): Agents that learn and create new capabilities—orchestration enables emergence
-L5 (Organizations): Fully autonomous systems operating independently—orchestration is the organization
+| Level | Type          | Capability                                               | Orchestration Role                    |
+|:-----:|---------------|----------------------------------------------------------|---------------------------------------|
+| L1    | Chatbots      | Simple response generation without tool use              | No orchestration needed               |
+| L2    | Reasoners     | Analyze and solve problems systematically                | Limited orchestration                 |
+| L3    | Agents        | Interact with environments through tools                 | Orchestration becomes critical        |
+| L4    | Innovators    | Learn and create new capabilities                        | Orchestration enables emergence       |
+| L5    | Organizations | Fully autonomous systems operating independently         | Orchestration IS the organization     |
 
 Most banks today operate at L2, experimenting with L3. Effective orchestration is the bridge that enables progression from L3 (individual agents with tools) to L5 (coordinated autonomous organizations). The jump from L3 to L4 represents not just a technology shift but a fundamental change in how work is conceived and governed.
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ---
