@@ -25,7 +25,9 @@ Multi-agent systems transform how organizations tackle complexity by breaking do
 
 This distinction matters most in regulated environments. A mortgage underwriting agent may execute income verification flawlessly. A separate agent may assess collateral risk. A third may draft pricing terms. Without orchestration, these agents operate as isolated workers. With orchestration, they become a governed system.
 
-Crucially, orchestration does not make agents smarter. It makes them accountable. It embeds agent execution inside enterprise workflows that reflect policy, regulatory requirements, and organizational authority. In practice, this means separating how work is done from how work is governed—a separation that traditional automation platforms already enforce, and agentic systems must now replicate.
+Crucially, orchestration embeds agent execution inside enterprise workflows that reflect policy, regulatory requirements, and organizational authority. In practice, this means separating how work is done from how work is governed—a separation that traditional automation platforms already enforce, and agentic systems must now replicate.
+
+Crucially, orchestration embeds agent execution inside enterprise workflows
 
 ---
 
@@ -141,7 +143,7 @@ By placing human review at workflow boundaries, banks preserve accountability wh
 
 ## Common Pitfalls: Learning from Failed Orchestrations
 
-As banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is critical for successful orchestration.
+When banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is critical for successful orchestration.
 
 ### Agent Washing
 
@@ -281,7 +283,7 @@ These implementations share common success factors:
 
 ## Build vs. Buy in an Agentic World
 
-As banks scale agentic AI, orchestration raises a practical question: what should we build, and where should we partner?
+Scaling agentic AI raises a practical question: what should we build, and where should we partner?
 
 Banks should own orchestration logic that encodes policy, governance, and accountability—workflow structure, approval points, escalation rules, and audit requirements. These reflect institutional knowledge and must evolve with regulation and risk appetite.
 

@@ -259,7 +259,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Orchestration governs coordination. It determines how multiple agents work together within a broader business workflow—how tasks are sequenced, when agents run in parallel, where approvals occur, how exceptions are escalated, and how outcomes are audited.</p>
 <p>Multi-agent systems transform how organizations tackle complexity by breaking down problems into specialized units of work, with each agent optimized for distinct models, task-solving approaches, knowledge, tools, and compute resources. This specialization—mirroring strategies found in human teamwork—is precisely what makes orchestration essential rather than optional. When agents become specialized, coordination becomes critical.</p>
 <p>This distinction matters most in regulated environments. A mortgage underwriting agent may execute income verification flawlessly. A separate agent may assess collateral risk. A third may draft pricing terms. Without orchestration, these agents operate as isolated workers. With orchestration, they become a governed system.</p>
-<p>Crucially, orchestration does not make agents smarter. It makes them accountable. It embeds agent execution inside enterprise workflows that reflect policy, regulatory requirements, and organizational authority. In practice, this means separating how work is done from how work is governed—a separation that traditional automation platforms already enforce, and agentic systems must now replicate.</p>
+<p>Crucially, orchestration embeds agent execution inside enterprise workflows that reflect policy, regulatory requirements, and organizational authority. In practice, this means separating how work is done from how work is governed—a separation that traditional automation platforms already enforce, and agentic systems must now replicate.</p>
+<p>Crucially, orchestration embeds agent execution inside enterprise workflows</p>
 <hr>
 </section>
 <section id="the-business-case-quantifying-orchestration-value" class="level2" data-number="2">
@@ -455,7 +456,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="common-pitfalls-learning-from-failed-orchestrations" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="common-pitfalls-learning-from-failed-orchestrations"><span class="header-section-number">6</span> Common Pitfalls: Learning from Failed Orchestrations</h2>
-<p>As banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is critical for successful orchestration.</p>
+<p>When banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is critical for successful orchestration.</p>
 <section id="agent-washing" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="agent-washing"><span class="header-section-number">6.1</span> Agent Washing</h3>
 <p>The Problem: Organizations create the illusion of multi-agent systems by using orchestration layers merely to host single functions—like wrapping individual Lambda functions with a “supervisor” that adds no real coordination value. The Solution: True orchestration requires dynamic tool selection, data sharing between agents, and intelligent routing based on context. If your supervisor simply calls predetermined agents in sequence, you have workflow automation, not orchestration.</p>
@@ -575,7 +576,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="build-vs.-buy-in-an-agentic-world" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="build-vs.-buy-in-an-agentic-world"><span class="header-section-number">9</span> Build vs.&nbsp;Buy in an Agentic World</h2>
-<p>As banks scale agentic AI, orchestration raises a practical question: what should we build, and where should we partner?</p>
+<p>Scaling agentic AI raises a practical question: what should we build, and where should we partner?</p>
 <p>Banks should own orchestration logic that encodes policy, governance, and accountability—workflow structure, approval points, escalation rules, and audit requirements. These reflect institutional knowledge and must evolve with regulation and risk appetite.</p>
 <p>Vendors add value where capabilities are horizontal and repeatable: workflow engines, case management, observability, and enterprise integrations. These platforms provide reliable scaffolding without dictating business logic.</p>
 <p>Importantly, as Microsoft’s architectural guidance emphasizes, organizational paradigms coexist<sup>8</sup>—banks need not abandon existing systems wholesale. The agentic orchestration layer can operate alongside traditional workflows, allowing gradual migration and reducing transformation risk. This coexistence strategy is particularly valuable for banks with substantial investments in existing automation infrastructure. Banks can preserve what works while selectively introducing agent-based capabilities where they add the most value.</p>
