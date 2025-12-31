@@ -43,8 +43,8 @@ Boston Consulting Group's analysis of advanced multi-agent implementations shows
 
 Financial institutions implementing multi-agent orchestration for specific workflows report transformative outcomes:
 
-- KYC Processing: Deloitte research documents multi-agent KYC workflows reducing onboarding time from days to minutes, with agents handling document verification, risk scoring, and regulatory filing in parallel<sup>2</sup>      
-- Credit Analysis: Banks report 60% productivity gains for credit analysts when orchestrated agents handle memo generation, risk assessment, and documentation<sup>3</sup>       
+- **KYC Processing:** Deloitte research documents multi-agent KYC workflows reducing onboarding time from days to minutes, with agents handling document verification, risk scoring, and regulatory filing in parallel<sup>2</sup>      
+- **Credit Analysis:** Banks report 60% productivity gains for credit analysts when orchestrated agents handle memo generation, risk assessment, and documentation<sup>3</sup>       
 
 The true value emerges when orchestration enables what was previously impossible. This shift—from incremental improvement to end-to-end process transformation—is where orchestration delivers exponential returns.
 
