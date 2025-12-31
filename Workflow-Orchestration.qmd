@@ -90,7 +90,7 @@ This pattern excels in scenarios requiring differentiated service levels or risk
 
 ## System Orchestration Maturity
 
-Understanding where your organization stands—and where it needs to go—is essential for planning your orchestration journey. This section provides two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.
+Understanding where your organization stands—and where it needs to go—is essential for planning your orchestration journey. This section introduces two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.
 
 ### System Workflow Maturity
 
@@ -105,7 +105,7 @@ Understanding where your organization stands—and where it needs to go—is ess
 
 ### Individual Agent Capability
 
-This framework does not replace the system workflow maturity model above; it provides a complementary lens focused on individual agent capability rather than workflow governance.
+This framework does not replace the system workflow maturity framework above; it provides a complementary lens focused on individual agent capability rather than workflow governance.
 
 | Level | Type          | Capability                                               | Orchestration Role                    |
 |:-----:|---------------|----------------------------------------------------------|---------------------------------------|
