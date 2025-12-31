@@ -21,8 +21,6 @@ Agent frameworks govern execution. They determine how an individual agent plans 
 
 Orchestration governs coordination. It determines how multiple agents work together within a broader business workflow—how tasks are sequenced, when agents run in parallel, where approvals occur, how exceptions are escalated, and how outcomes are audited.
 
-Multi-agent systems break complex problems into specialized units of work. Each agent optimizes for specific models, tools, and approaches. This specialization—mirroring strategies found in human teamwork—is precisely what makes orchestration essential rather than optional. When agents become specialized, coordination becomes critical.
-
 This distinction matters most in regulated environments. A mortgage underwriting agent may execute income verification flawlessly. A separate agent may assess collateral risk. A third may draft pricing terms. Without orchestration, these agents operate as isolated workers. With orchestration, they become a governed system.
 
 Crucially, orchestration embeds agent execution inside enterprise workflows that reflect policy, regulatory requirements, and organizational authority. In practice, this means separating how work is done from how work is governed—a separation that traditional automation platforms already enforce, and agentic systems must now replicate.
@@ -46,11 +44,9 @@ Boston Consulting Group's analysis of advanced multi-agent implementations shows
 Financial institutions implementing multi-agent orchestration for specific workflows report transformative outcomes:
 
 - KYC Processing: Deloitte research documents multi-agent KYC workflows reducing onboarding time from days to minutes, with agents handling document verification, risk scoring, and regulatory filing in parallel<sup>2</sup>      
-- Market Data Analysis: A financial services firm using orchestrated agents to clean and interpret complex market data projects $3 million in annual savings<sup>3</sup>      
 - Credit Analysis: Banks report 60% productivity gains for credit analysts when orchestrated agents handle memo generation, risk assessment, and documentation<sup>3</sup>       
 
-### The Compound Effect
-The true value emerges when orchestration enables what was previously impossible. When agents can reliably coordinate across departments—sharing context, triggering workflows, and escalating exceptions—banks can redesign entire processes rather than optimizing individual steps. This shift from incremental improvement to process transformation is where orchestration delivers exponential returns.
+The true value emerges when orchestration enables what was previously impossible. This shift—from incremental improvement to end-to-end process transformation—is where orchestration delivers exponential returns.
 
 ---
 
