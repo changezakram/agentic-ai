@@ -145,7 +145,7 @@ When banks scale their agentic implementations, certain failure patterns emerge 
 ### Over-Engineering Simple Workflows
 
 **The Problem:** Teams build complex multi-agent orchestrations for tasks that a single agent—or even traditional automation—could handle effectively.       
-The Solution: Start with single agents for well-defined tasks. Only introduce orchestration when you need parallel processing, dynamic routing, or complex state management. Complexity should be justified by measurable benefits.
+**The Solution:** Start with single agents for well-defined tasks. Only introduce orchestration when you need parallel processing, dynamic routing, or complex state management. Complexity should be justified by measurable benefits.
 
 ### Insufficient Audit Trails
 **The Problem:** Orchestration obscures the decision path, making it impossible to understand why a particular outcome was reached or which agent contributed what insight.       
