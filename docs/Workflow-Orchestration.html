@@ -452,31 +452,38 @@ ul.task-list li input[type="checkbox"] {
 <p>When banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is key for successful orchestration.</p>
 <section id="agent-washing" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="agent-washing"><span class="header-section-number">6.1</span> Agent Washing</h3>
-<p>The Problem: Organizations create the illusion of multi-agent systems by using orchestration layers merely to host single functions—like wrapping individual Lambda functions with a “supervisor” that adds no real coordination value. The Solution: True orchestration requires dynamic tool selection, data sharing between agents, and intelligent routing based on context. If your supervisor simply calls predetermined agents in sequence, you have workflow automation, not orchestration.</p>
+<p><strong>The Problem:</strong> Organizations create the illusion of multi-agent systems by using orchestration layers merely to host single functions—like wrapping individual Lambda functions with a “supervisor” that adds no real coordination value.<br>
+<strong>The Solution:</strong> True orchestration requires dynamic tool selection, data sharing between agents, and intelligent routing based on context. If your supervisor simply calls predetermined agents in sequence, you have workflow automation, not orchestration.</p>
 </section>
 <section id="over-engineering-simple-workflows" class="level3" data-number="6.2">
 <h3 data-number="6.2" class="anchored" data-anchor-id="over-engineering-simple-workflows"><span class="header-section-number">6.2</span> Over-Engineering Simple Workflows</h3>
-<p>The Problem: Teams build complex multi-agent orchestrations for tasks that a single agent—or even traditional automation—could handle effectively. The Solution: Start with single agents for well-defined tasks. Only introduce orchestration when you need parallel processing, dynamic routing, or complex state management. Complexity should be justified by measurable benefits.</p>
+<p><strong>The Problem:</strong> Teams build complex multi-agent orchestrations for tasks that a single agent—or even traditional automation—could handle effectively.<br>
+The Solution: Start with single agents for well-defined tasks. Only introduce orchestration when you need parallel processing, dynamic routing, or complex state management. Complexity should be justified by measurable benefits.</p>
 </section>
 <section id="insufficient-audit-trails" class="level3" data-number="6.3">
 <h3 data-number="6.3" class="anchored" data-anchor-id="insufficient-audit-trails"><span class="header-section-number">6.3</span> Insufficient Audit Trails</h3>
-<p>The Problem: Orchestration obscures the decision path, making it impossible to understand why a particular outcome was reached or which agent contributed what insight. The Solution: Build complete logging from day one. Every agent interaction, data transformation, and routing decision must be captured. In regulated environments, the audit trail is as important as the outcome itself.</p>
+<p><strong>The Problem:</strong> Orchestration obscures the decision path, making it impossible to understand why a particular outcome was reached or which agent contributed what insight.<br>
+<strong>The Solution:</strong> Build complete logging from day one. Every agent interaction, data transformation, and routing decision must be captured. In regulated environments, the audit trail is as important as the outcome itself.</p>
 </section>
 <section id="missing-exception-handling" class="level3" data-number="6.4">
 <h3 data-number="6.4" class="anchored" data-anchor-id="missing-exception-handling"><span class="header-section-number">6.4</span> Missing Exception Handling</h3>
-<p>The Problem: Orchestrations fail catastrophically when agents return unexpected results or when external systems become unavailable. The Solution: Design for failure. Define explicit fallback paths, timeout policies, and escalation procedures. Every orchestration should gracefully degrade rather than halt entirely.</p>
+<p><strong>The Problem:</strong> Orchestrations fail catastrophically when agents return unexpected results or when external systems become unavailable.<br>
+<strong>The Solution:</strong> Design for failure. Define explicit fallback paths, timeout policies, and escalation procedures. Every orchestration should gracefully degrade rather than halt entirely.</p>
 </section>
 <section id="rigid-human-escalation" class="level3" data-number="6.5">
 <h3 data-number="6.5" class="anchored" data-anchor-id="rigid-human-escalation"><span class="header-section-number">6.5</span> Rigid Human Escalation</h3>
-<p>The Problem: Systems require human intervention for every edge case, creating bottlenecks that eliminate efficiency gains. The Solution: Implement intelligent escalation that considers context, risk levels, and business impact. Low-risk exceptions might proceed with logging; high-risk scenarios trigger immediate human review.</p>
+<p><strong>The Problem:</strong> Systems require human intervention for every edge case, creating bottlenecks that eliminate efficiency gains.<br>
+<strong>The Solution:</strong> Implement intelligent escalation that considers context, risk levels, and business impact. Low-risk exceptions might proceed with logging; high-risk scenarios trigger immediate human review.</p>
 </section>
 <section id="poor-performance-monitoring" class="level3" data-number="6.6">
 <h3 data-number="6.6" class="anchored" data-anchor-id="poor-performance-monitoring"><span class="header-section-number">6.6</span> Poor Performance Monitoring</h3>
-<p>The Problem: Teams lack visibility into orchestration performance, making it impossible to identify bottlenecks or optimize workflows. The Solution: Instrument every aspect of orchestration—agent response times, queue depths, error rates, and business metrics. Real-time dashboards should show both technical and business KPIs.</p>
+<p><strong>The Problem:</strong> Teams lack visibility into orchestration performance, making it impossible to identify bottlenecks or optimize workflows.<br>
+<strong>The Solution:</strong> Instrument every aspect of orchestration—agent response times, queue depths, error rates, and business metrics. Real-time dashboards should show both technical and business KPIs.</p>
 </section>
 <section id="underestimating-production-complexity" class="level3" data-number="6.7">
 <h3 data-number="6.7" class="anchored" data-anchor-id="underestimating-production-complexity"><span class="header-section-number">6.7</span> Underestimating Production Complexity</h3>
-<p>The Problem: Teams successfully demonstrate orchestrated agents in controlled environments, only to face cascading failures when workflows hit production scale. What works for 10 workflows per day breaks at 10,000. The Solution: Address core production challenges from the start:</p>
+<p><strong>The Problem:</strong> Teams successfully demonstrate orchestrated agents in controlled environments, only to face cascading failures when workflows hit production scale. What works for 10 workflows per day breaks at 10,000.<br>
+<strong>The Solution:</strong> Address core production challenges from the start:</p>
 <ul>
 <li><p><strong>State Management:</strong> Banking workflows like loan origination span days or weeks. Orchestration must maintain state across system restarts, agent failures, and infrastructure changes. Implement persistent state stores with versioning and recovery capabilities.</p></li>
 <li><p><strong>Fault Isolation:</strong> When one agent in an orchestrated workflow fails, the entire system shouldn’t collapse. Design orchestration with circuit breakers (automatic stops that prevent cascade failures)—if the fraud detection agent is down, route to enhanced manual review rather than halting all loan processing.</p></li>

@@ -133,40 +133,39 @@ By placing human review at workflow boundaries, banks preserve accountability wh
 
 ---
 
-
 ## Common Pitfalls: Learning from Failed Orchestrations
 
 When banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is key for successful orchestration.
 
 ### Agent Washing
 
-The Problem: Organizations create the illusion of multi-agent systems by using orchestration layers merely to host single functions—like wrapping individual Lambda functions with a "supervisor" that adds no real coordination value.
-The Solution: True orchestration requires dynamic tool selection, data sharing between agents, and intelligent routing based on context. If your supervisor simply calls predetermined agents in sequence, you have workflow automation, not orchestration.
+**The Problem:** Organizations create the illusion of multi-agent systems by using orchestration layers merely to host single functions—like wrapping individual Lambda functions with a "supervisor" that adds no real coordination value.      
+**The Solution:** True orchestration requires dynamic tool selection, data sharing between agents, and intelligent routing based on context. If your supervisor simply calls predetermined agents in sequence, you have workflow automation, not orchestration.
 
 ### Over-Engineering Simple Workflows
 
-The Problem: Teams build complex multi-agent orchestrations for tasks that a single agent—or even traditional automation—could handle effectively.
+**The Problem:** Teams build complex multi-agent orchestrations for tasks that a single agent—or even traditional automation—could handle effectively.       
 The Solution: Start with single agents for well-defined tasks. Only introduce orchestration when you need parallel processing, dynamic routing, or complex state management. Complexity should be justified by measurable benefits.
 
 ### Insufficient Audit Trails
-The Problem: Orchestration obscures the decision path, making it impossible to understand why a particular outcome was reached or which agent contributed what insight.
-The Solution: Build complete logging from day one. Every agent interaction, data transformation, and routing decision must be captured. In regulated environments, the audit trail is as important as the outcome itself.
+**The Problem:** Orchestration obscures the decision path, making it impossible to understand why a particular outcome was reached or which agent contributed what insight.       
+**The Solution:** Build complete logging from day one. Every agent interaction, data transformation, and routing decision must be captured. In regulated environments, the audit trail is as important as the outcome itself.
 
 ### Missing Exception Handling
-The Problem: Orchestrations fail catastrophically when agents return unexpected results or when external systems become unavailable.
-The Solution: Design for failure. Define explicit fallback paths, timeout policies, and escalation procedures. Every orchestration should gracefully degrade rather than halt entirely.
+**The Problem:** Orchestrations fail catastrophically when agents return unexpected results or when external systems become unavailable.    
+**The Solution:** Design for failure. Define explicit fallback paths, timeout policies, and escalation procedures. Every orchestration should gracefully degrade rather than halt entirely.
 
 ### Rigid Human Escalation
-The Problem: Systems require human intervention for every edge case, creating bottlenecks that eliminate efficiency gains.
-The Solution: Implement intelligent escalation that considers context, risk levels, and business impact. Low-risk exceptions might proceed with logging; high-risk scenarios trigger immediate human review.
+**The Problem:** Systems require human intervention for every edge case, creating bottlenecks that eliminate efficiency gains.     
+**The Solution:** Implement intelligent escalation that considers context, risk levels, and business impact. Low-risk exceptions might proceed with logging; high-risk scenarios trigger immediate human review.
 
 ### Poor Performance Monitoring
-The Problem: Teams lack visibility into orchestration performance, making it impossible to identify bottlenecks or optimize workflows.
-The Solution: Instrument every aspect of orchestration—agent response times, queue depths, error rates, and business metrics. Real-time dashboards should show both technical and business KPIs.
+**The Problem:** Teams lack visibility into orchestration performance, making it impossible to identify bottlenecks or optimize workflows.    
+**The Solution:** Instrument every aspect of orchestration—agent response times, queue depths, error rates, and business metrics. Real-time dashboards should show both technical and business KPIs.
 
 ### Underestimating Production Complexity
-The Problem: Teams successfully demonstrate orchestrated agents in controlled environments, only to face cascading failures when workflows hit production scale. What works for 10 workflows per day breaks at 10,000.
-The Solution: Address core production challenges from the start:
+**The Problem:** Teams successfully demonstrate orchestrated agents in controlled environments, only to face cascading failures when workflows hit production scale. What works for 10 workflows per day breaks at 10,000.      
+**The Solution:** Address core production challenges from the start:
 
 - **State Management:** Banking workflows like loan origination span days or weeks. Orchestration must maintain state across system restarts, agent failures, and infrastructure changes. Implement persistent state stores with versioning and recovery capabilities.
 
