@@ -512,14 +512,14 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="7.1" class="anchored" data-anchor-id="implementing-guardrails-across-the-orchestration-layer"><span class="header-section-number">7.1</span> Implementing Guardrails Across the Orchestration Layer</h3>
 <p>Effective orchestration requires multiple types of guardrails operating in concert:<sup>10</sup></p>
 <p><strong>Input Guardrails:</strong> Screen requests before they reach agents—blocking prompt injections, PII leakage attempts, and requests that violate policy. In banking, this includes sanctions screening, authentication validation, and regulatory compliance checks at workflow initiation.</p>
-<p><strong>Output Guardrails:</strong> Validate agent responses before they reach downstream systems or users. This prevents hallucinated account numbers, ensures numerical accuracy in financial calculations, blocks disclosure of sensitive information, and prevents agents from providing regulated advice without proper authorization.</p>
-<p><strong>Execution Guardrails:</strong> Monitor and constrain agent actions during workflow execution. These include transaction value thresholds, rate limits on external API calls, geographic restrictions, time-of-day constraints, and automatic halts when agents attempt operations outside their authorized scope.</p>
-<p><strong>Model-Level Guardrails:</strong> Ensure the underlying AI models behave appropriately—preventing hallucination of financial data, maintaining factual accuracy in regulatory contexts, ensuring consistency across agent responses, and detecting model drift over time.</p>
+<p><strong>Output Guardrails:</strong> Validate agent responses before they reach downstream systems or users—ensuring accuracy, preventing disclosure of sensitive information, and blocking regulated advice without proper authorization.</p>
+<p><strong>Execution Guardrails:</strong> Monitor and constrain agent actions during workflow execution—enforcing transaction thresholds, rate limits, geographic and time-based restrictions, and automatic halts when agents operate outside authorized boundaries.</p>
+<p><strong>Model-Level Guardrails:</strong> Ensure AI models behave reliably in regulated contexts—maintaining factual accuracy, consistency across responses, and detecting model drift that could impact risk or compliance.</p>
 <p>In banking orchestration, these guardrails are not merely safety features—they are compliance requirements. Each guardrail type generates audit events, creating the regulatory trail that distinguishes governed orchestration from ungoverned automation.</p>
 </section>
 <section id="measuring-orchestration-effectiveness" class="level3" data-number="7.2">
 <h3 data-number="7.2" class="anchored" data-anchor-id="measuring-orchestration-effectiveness"><span class="header-section-number">7.2</span> Measuring Orchestration Effectiveness</h3>
-<p>Evals are the cornerstone of successful agent development.<sup>10</sup> For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer’s unique contribution to system reliability and business outcomes.</p>
+<p>Evaluation is the cornerstone of successful agent development. For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer’s unique contribution to system reliability and business outcomes.</p>
 <section id="orchestration-specific-metrics" class="level4" data-number="7.2.1">
 <h4 data-number="7.2.1" class="anchored" data-anchor-id="orchestration-specific-metrics"><span class="header-section-number">7.2.1</span> Orchestration-Specific Metrics:</h4>
 <p><strong>Workflow Completion Rate:</strong> Percentage of workflows reaching successful conclusion without manual intervention. Target: &gt;90% for routine workflows, &gt;60% for complex cases.</p>
@@ -527,7 +527,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Orchestration Overhead:</strong> Time added by orchestration (routing decisions, state management, guardrail checks) versus direct agent execution. Target: &lt;10% for sequential workflows, &lt;25% for complex parallel workflows.</p>
 <p><strong>System-Level Accuracy Improvement:</strong> How orchestration improves overall accuracy compared to individual agent performance. Anthropic’s research system achieved 95%+ system accuracy with 90% component accuracy through orchestrated verification loops<sup>6</sup>.</p>
 <p><strong>Cost per Orchestrated Workflow:</strong> Total compute, API, and infrastructure costs divided by successful workflow completions. Critical for ROI calculations.</p>
-<p>Recovery Success Rate: Percentage of workflows that successfully recover from agent failures or timeouts through orchestration-managed fallbacks.</p>
+<p><strong>Recovery Success Rate:</strong> Percentage of workflows that successfully recover from agent failures or timeouts through orchestration-managed fallbacks.</p>
 </section>
 <section id="business-impact-metrics" class="level4" data-number="7.2.2">
 <h4 data-number="7.2.2" class="anchored" data-anchor-id="business-impact-metrics"><span class="header-section-number">7.2.2</span> Business Impact Metrics:</h4>

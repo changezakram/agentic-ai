@@ -198,17 +198,17 @@ Effective orchestration requires multiple types of guardrails operating in conce
 
 **Input Guardrails:** Screen requests before they reach agents—blocking prompt injections, PII leakage attempts, and requests that violate policy. In banking, this includes sanctions screening, authentication validation, and regulatory compliance checks at workflow initiation.
 
-**Output Guardrails:** Validate agent responses before they reach downstream systems or users. This prevents hallucinated account numbers, ensures numerical accuracy in financial calculations, blocks disclosure of sensitive information, and prevents agents from providing regulated advice without proper authorization.
+**Output Guardrails:** Validate agent responses before they reach downstream systems or users—ensuring accuracy, preventing disclosure of sensitive information, and blocking regulated advice without proper authorization.
 
-**Execution Guardrails:** Monitor and constrain agent actions during workflow execution. These include transaction value thresholds, rate limits on external API calls, geographic restrictions, time-of-day constraints, and automatic halts when agents attempt operations outside their authorized scope.
+**Execution Guardrails:** Monitor and constrain agent actions during workflow execution—enforcing transaction thresholds, rate limits, geographic and time-based restrictions, and automatic halts when agents operate outside authorized boundaries.
 
-**Model-Level Guardrails:** Ensure the underlying AI models behave appropriately—preventing hallucination of financial data, maintaining factual accuracy in regulatory contexts, ensuring consistency across agent responses, and detecting model drift over time.
+**Model-Level Guardrails:** Ensure AI models behave reliably in regulated contexts—maintaining factual accuracy, consistency across responses, and detecting model drift that could impact risk or compliance.
 
 In banking orchestration, these guardrails are not merely safety features—they are compliance requirements. Each guardrail type generates audit events, creating the regulatory trail that distinguishes governed orchestration from ungoverned automation.
 
 ### Measuring Orchestration Effectiveness
 
-Evals are the cornerstone of successful agent development.<sup>10</sup> For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer's unique contribution to system reliability and business outcomes.
+Evaluation is the cornerstone of successful agent development. For orchestration specifically, success metrics differ from individual agent performance. Banks must measure the orchestration layer's unique contribution to system reliability and business outcomes.
 
 #### Orchestration-Specific Metrics:
 
@@ -222,7 +222,7 @@ Evals are the cornerstone of successful agent development.<sup>10</sup> For orch
 
 **Cost per Orchestrated Workflow:** Total compute, API, and infrastructure costs divided by successful workflow completions. Critical for ROI calculations.
 
-Recovery Success Rate: Percentage of workflows that successfully recover from agent failures or timeouts through orchestration-managed fallbacks.
+**Recovery Success Rate:** Percentage of workflows that successfully recover from agent failures or timeouts through orchestration-managed fallbacks.
 
 #### Business Impact Metrics:
 
