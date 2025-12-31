@@ -139,8 +139,8 @@ When banks scale their agentic implementations, certain failure patterns emerge 
 
 ### Agent Washing
 
-**The Problem:** Organizations create the illusion of multi-agent systems by using orchestration layers merely to host single functions—like wrapping individual Lambda functions with a "supervisor" that adds no real coordination value.      
-**The Solution:** True orchestration requires dynamic tool selection, data sharing between agents, and intelligent routing based on context. If your supervisor simply calls predetermined agents in sequence, you have workflow automation, not orchestration.
+**The Problem:** Organizations label systems as “multi-agent” even when there is no real coordination, decision-making, or accountability. In practice, this is often just traditional automation wrapped in new terminology, creating a false sense of AI maturity.      
+**The Solution:** True orchestration coordinates real agents—each with a defined role—by sharing context, routing work intelligently, and enforcing governance. If a “supervisor” simply runs predefined steps in sequence, the system may be automated, but it is not genuinely agentic.
 
 ### Over-Engineering Simple Workflows
 
