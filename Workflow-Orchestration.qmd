@@ -88,11 +88,11 @@ This pattern excels in scenarios requiring differentiated service levels or risk
 
 ---
 
-## Orchestration Maturity: A Roadmap for Banks
+## System Orchestration Maturity
 
-Understanding where your organization stands—and where it needs to go—is essential for planning your orchestration journey. This maturity model provides a framework for assessment and progression.
+Understanding where your organization stands—and where it needs to go—is essential for planning your orchestration journey. This section provides two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.
 
-### Traditional Maturity Levels
+### System Workflow Maturity
 
 | Level | Stage                    | Characteristics                                                                 | Examples                                                     | Technology                                                        | Governance                                   |
 |------:|--------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------|
@@ -103,9 +103,9 @@ Understanding where your organization stands—and where it needs to go—is ess
 | Level 5 | Self-Organizing Networks | Agents autonomously form teams and workflows based on objectives.               | Complex trading strategies, enterprise-wide optimization     | Emergent AI systems, swarm intelligence                            | Outcome-based controls, continuous monitoring |
 
 
-### The Autonomy Perspective
+### Individual Agent Capability
 
-This autonomy framework does not replace the orchestration maturity model above; it provides a complementary lens focused on agent capability rather than workflow governance.
+This framework does not replace the system workflow maturity model above; it provides a complementary lens focused on individual agent capability rather than workflow governance.
 
 | Level | Type          | Capability                                               | Orchestration Role                    |
 |:-----:|---------------|----------------------------------------------------------|---------------------------------------|
@@ -115,7 +115,7 @@ This autonomy framework does not replace the orchestration maturity model above;
 | L4    | Innovators    | Learn and create new capabilities                        | Orchestration enables emergence       |
 | L5    | Organizations | Fully autonomous systems operating independently         | Orchestration IS the organization     |
 
-Most banks today operate at L2, experimenting with L3. Effective orchestration is the bridge that enables progression from L3 (individual agents with tools) to L5 (coordinated autonomous organizations). The jump from L3 to L4 represents not just a technology shift but a fundamental change in how work is conceived and governed.
+Most banks today operate at L2, experimenting with L3. Effective orchestration is the bridge that enables progression toward coordinated autonomous systems.
 
 ---
 
