@@ -179,7 +179,7 @@ The Solution: Address core production challenges from the start:
 
 - **Timeout Discipline:** Anthropic's research system enforces 30-180 second timeouts per agent depending on task complexity.<sup>6</sup> Banks must similarly bound execution—a credit analysis agent that runs indefinitely defeats automation's purpose. Set aggressive timeouts with graceful degradation.
 
-- **Debugging Complexity:** Debugging orchestrated systems is fundamentally different from traditional software. A single workflow might involve dozens of agent interactions, making root cause analysis challenging. Build detailed logging from day one, with the ability to replay exact workflows with point-in-time data.
+- **Debugging Complexity:** Debugging orchestrated systems differs entirely from traditional software. A single workflow might involve dozens of agent interactions, making root cause analysis challenging. Build detailed logging from day one, with the ability to replay exact workflows with point-in-time data.
 
 - **Cost Control at Scale:** Multi-agent workflows can generate massive API costs if not carefully managed. Implement token optimization, intelligent caching of expensive operations, and tiered processing (simple models for routine tasks, advanced models only when necessary).
 
