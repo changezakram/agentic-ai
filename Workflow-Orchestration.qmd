@@ -183,7 +183,7 @@ Production-ready orchestration requires engineering discipline equal to any miss
 
 ## Orchestration as the Control Plane
 
-At scale, orchestration treats workflow state as a first-class asset—allowing long-running processes to pause, resume, replay, and be audited end to end. As a result, orchestration evolves from a coordination mechanism into a control plane that governs how work is initiated, executed, reviewed, and audited across agents.
+At scale, orchestration explicitly manages workflow state—allowing long-running processes to pause, resume, replay, and be audited end to end. As a result, orchestration evolves from a coordination mechanism into a control plane that governs how work is initiated, executed, reviewed, and audited across agents.
 
 Orchestration provides four critical capabilities:
 
