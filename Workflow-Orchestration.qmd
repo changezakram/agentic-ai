@@ -257,16 +257,15 @@ Westpac demonstrates how orchestration can accelerate transformation rather than
 
 ### Cross-Functional Orchestration
 
-Cross-functional orchestration is emerging as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
+Cross-functional orchestration is emerging in practice as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
 
-These implementations share common success factors:
+Across these implementations, several common success factors emerge:
 
 - Starting with high-value, well-bounded use cases        
 - Building orchestration capabilities incrementally       
 - Maintaining human oversight at critical decision points       
 - Investing heavily in monitoring and audit capabilities       
 - Treating orchestration as a capability, not a project         
-
 
 ---
 
