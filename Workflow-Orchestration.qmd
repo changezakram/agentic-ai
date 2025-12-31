@@ -257,7 +257,7 @@ Westpac demonstrates how orchestration can accelerate transformation rather than
 
 ### Cross-Functional Orchestration
 
-Leading European banks are pioneering cross-departmental orchestration where agents span traditional silos. A corporate lending workflow might involve agents from risk, compliance, legal, and relationship management—all coordinated through a central orchestration layer that maintains context and ensures policy compliance across departments.
+Cross-functional orchestration is emerging as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
 
 These implementations share common success factors:
 
