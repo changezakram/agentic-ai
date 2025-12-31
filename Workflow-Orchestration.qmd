@@ -105,7 +105,7 @@ Understanding where your organization stands—and where it needs to go—is ess
 
 ### The Autonomy Perspective
 
-Another critical lens for understanding orchestration maturity comes from the industry's autonomy framework:
+This autonomy framework does not replace the orchestration maturity model above; it provides a complementary lens focused on agent capability rather than workflow governance.
 
 | Level | Type          | Capability                                               | Orchestration Role                    |
 |:-----:|---------------|----------------------------------------------------------|---------------------------------------|
@@ -116,7 +116,6 @@ Another critical lens for understanding orchestration maturity comes from the in
 | L5    | Organizations | Fully autonomous systems operating independently         | Orchestration IS the organization     |
 
 Most banks today operate at L2, experimenting with L3. Effective orchestration is the bridge that enables progression from L3 (individual agents with tools) to L5 (coordinated autonomous organizations). The jump from L3 to L4 represents not just a technology shift but a fundamental change in how work is conceived and governed.
-
 
 ---
 
