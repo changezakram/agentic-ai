@@ -291,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sequential-handoffs" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sequential-handoffs"><span class="header-section-number">3.1</span> Sequential Handoffs</h3>
 <p>In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.</p>
-<p>This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
+<p>In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
 </section>
 <section id="parallel-fan-out-and-aggregation" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="parallel-fan-out-and-aggregation"><span class="header-section-number">3.2</span> Parallel Fan-Out and Aggregation</h3>
@@ -301,12 +301,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="supervisorworker-models" class="level3" data-number="3.3">
 <h3 data-number="3.3" class="anchored" data-anchor-id="supervisorworker-models"><span class="header-section-number">3.3</span> Supervisor–Worker Models</h3>
 <p>In supervisor–worker orchestration, a coordinating component assigns tasks to specialized agents, monitors progress, and resolves conflicts. The supervisor does not perform domain work itself; it manages execution flow and escalation.</p>
-<p>This pattern mirrors how teams operate in practice. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.</p>
+<p>This pattern mirrors how banks already organize work. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.</p>
 </section>
 <section id="event-driven-execution" class="level3" data-number="3.4">
 <h3 data-number="3.4" class="anchored" data-anchor-id="event-driven-execution"><span class="header-section-number">3.4</span> Event-Driven Execution</h3>
-<p>In event-driven orchestration, agents respond to triggers rather than predefined steps. Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically.</p>
-<p>This pattern is powerful but requires strong governance. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.</p>
+<p>In event-driven orchestration, agents respond to triggers rather than predefined steps. This pattern is powerful but requires strong governance.</p>
+<p>Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.</p>
 </section>
 <section id="branching-and-conditional-routing" class="level3" data-number="3.5">
 <h3 data-number="3.5" class="anchored" data-anchor-id="branching-and-conditional-routing"><span class="header-section-number">3.5</span> Branching and Conditional Routing</h3>

@@ -60,7 +60,7 @@ Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In b
 
 In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.
 
-This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
+In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
 
 ### Parallel Fan-Out and Aggregation
 
@@ -72,13 +72,13 @@ This pattern compresses timelines without sacrificing control. It is particularl
 
 In supervisor–worker orchestration, a coordinating component assigns tasks to specialized agents, monitors progress, and resolves conflicts. The supervisor does not perform domain work itself; it manages execution flow and escalation.
 
-This pattern mirrors how teams operate in practice. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.
+This pattern mirrors how banks already organize work. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.
 
 ### Event-Driven Execution
 
-In event-driven orchestration, agents respond to triggers rather than predefined steps. Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically.
+In event-driven orchestration, agents respond to triggers rather than predefined steps. This pattern is powerful but requires strong governance. 
 
-This pattern is powerful but requires strong governance. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
+Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
 
 ### Branching and Conditional Routing
 
