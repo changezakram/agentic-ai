@@ -88,6 +88,8 @@ In event-driven orchestration, agents respond to triggers rather than predefined
 
 Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
 
+![Branching and Conditional Routing. The orchestration layer evaluates intermediate results and dynamically routes cases to different processing paths based on policy, risk, or customer classification. Routing decisions are explicit, auditable control points within the workflow.](images/branching-orchestration.png){#fig-branching-orchestration width="100%" fig-align="center"}
+
 ### Branching and Conditional Routing
 
 In branching orchestration, the workflow dynamically selects different agent paths based on intermediate results or classification outcomes. A loan application might route to standard processing for prime borrowers, enhanced diligence for complex cases, or specialized teams for private banking clients.
