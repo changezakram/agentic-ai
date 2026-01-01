@@ -484,7 +484,7 @@ Figure&nbsp;4: Branching and conditional routing for tiered client service. An i
 <section id="human-review-happens-at-workflow-boundaries" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="human-review-happens-at-workflow-boundaries"><span class="header-section-number">5</span> Human Review Happens at Workflow Boundaries</h2>
 <p>A common misconception in agentic AI discussions is that human-in-the-loop means humans supervising every agent action. In practice, this model does not scale—and in regulated environments, it is neither necessary nor desirable.</p>
-<p>In well-designed agentic systems, humans review outcomes, not execution steps. Orchestration defines explicit checkpoints where human judgment is required, while allowing agents to execute preparatory and analytical work autonomously within those boundaries.</p>
+<p>In well-designed agentic systems, humans focus on reviewing outcomes rather than supervising individual execution steps. Orchestration defines explicit checkpoints where human judgment is required, while allowing agents to execute preparatory and analytical work autonomously within those boundaries.</p>
 <p>This mirrors how banks already operate. Credit officers do not manually verify every document or calculation; they review synthesized information, assess exceptions, and approve decisions. Agentic systems simply automate the work leading up to that judgment point.</p>
 <p>Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited.</p>
 <p>By placing human review at workflow boundaries, banks preserve accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.</p>
@@ -551,7 +551,7 @@ Figure&nbsp;5: Orchestration as the control and governance plane for agentic AI 
 </figure>
 </div>
 <p>This control-plane model clarifies how orchestration separates governance from execution, ensuring agentic workflows remain auditable, interruptible, and accountable as they scale.</p>
-<p>At scale, orchestration explicitly manages workflow state—allowing long-running processes to pause, resume, replay, and be audited end to end. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that controls how work is initiated, executed, reviewed, and audited across agents.</p>
+<p>As workflows stretch across days or weeks, orchestration explicitly manages state—allowing processes to pause, resume, or replay while remaining fully auditable. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that determines how work is initiated, carried through, reviewed, and ultimately audited across agents</p>
 <p>Orchestration provides four critical capabilities:</p>
 <ul>
 <li><strong>State and Context Management</strong> ensures continuity across long-running workflows, tracking what has completed, what is pending, and what conditions must be met next.<br>
@@ -640,7 +640,7 @@ Figure&nbsp;5: Orchestration as the control and governance plane for agentic AI 
 <h2 data-number="10" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">10</span> Conclusion</h2>
 <p>Orchestration does not make agents more intelligent — it makes them governable. It defines how agents interact, where human judgment is required, how exceptions are handled, and how regulators can trace decisions end to end.</p>
 <p>The evidence is compelling: banks implementing orchestrated multi-agent systems are achieving 40-50% acceleration in modernization timelines<sup>4</sup>, 30-50% efficiency gains in complex workflows<sup>1</sup>, and millions in documented savings<sup>3</sup>. But perhaps more importantly, they are building the foundation for continuous adaptation in an AI-driven future.</p>
-<p>The formula is clear: Agent = LLM + Tools + Orchestration. While the industry races to improve the first two components, the third remains the key differentiator. Agent frameworks determine how work gets done. Orchestration determines whether that work can be trusted.</p>
+<p>The formula is clear: Agent = LLM + Tools + Orchestration. While the industry races to improve the first two components, the third remains the key differentiator. Agent frameworks determine how work gets done. Orchestration is what makes that work trustworthy at scale.</p>
 <p>Banks that design orchestration deliberately will not just move faster—they will move forward with confidence, accountability, and regulatory credibility. In a world where AI capabilities double every few months, the winners won’t be those with the smartest agents—they’ll be those with the most governable systems.</p>
 <hr>
 </section>
