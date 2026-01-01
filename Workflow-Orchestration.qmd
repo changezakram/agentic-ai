@@ -201,7 +201,7 @@ Production-ready orchestration requires engineering discipline equal to any miss
 
 This control-plane model clarifies how orchestration separates governance from execution, ensuring agentic workflows remain auditable, interruptible, and accountable as they scale.
 
-At scale, orchestration explicitly manages workflow state—allowing long-running processes to pause, resume, replay, and be audited end to end. As a result, orchestration evolves from a coordination mechanism into the governing layer that controls how work is initiated, executed, reviewed, and audited across agents.
+At scale, orchestration explicitly manages workflow state—allowing long-running processes to pause, resume, replay, and be audited end to end. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that controls how work is initiated, executed, reviewed, and audited across agents.
 
 Orchestration provides four critical capabilities:
 
