@@ -291,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sequential-handoffs" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sequential-handoffs"><span class="header-section-number">3.1</span> Sequential Handoffs</h3>
 <p>In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.</p>
-<p>In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
+<p>This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
 <p>The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.</p>
 <div id="fig-sequential-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -483,7 +483,7 @@ Figure&nbsp;4: Branching and conditional routing for tiered client service. An i
 </section>
 <section id="human-review-happens-at-workflow-boundaries" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="human-review-happens-at-workflow-boundaries"><span class="header-section-number">5</span> Human Review Happens at Workflow Boundaries</h2>
-<p>A common misconception in agentic AI discussions is that human-in-the-loop means humans supervising every agent action. In practice, this model does not scale—and in regulated environments, it is neither necessary nor desirable.</p>
+<p>A common misconception in agentic AI discussions is that human-in-the-loop means humans supervising every agent action. This model does not scale—and in regulated environments, it is neither necessary nor desirable.</p>
 <p>In well-designed agentic systems, humans focus on reviewing outcomes rather than supervising individual execution steps. Orchestration defines explicit checkpoints where human judgment is required, while allowing agents to execute preparatory and analytical work autonomously within those boundaries.</p>
 <p>This mirrors how banks already operate. Credit officers do not manually verify every document or calculation; they review synthesized information, assess exceptions, and approve decisions. Agentic systems simply automate the work leading up to that judgment point.</p>
 <p>Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited.</p>
@@ -495,7 +495,7 @@ Figure&nbsp;4: Branching and conditional routing for tiered client service. An i
 <p>Orchestration failures rarely stem from model errors. They emerge when ownership, escalation authority, and decision rights are left implicit as agents begin to operate across workflows. The pitfalls below reflect failure modes that surface once agentic systems move beyond pilots and into real operational use.</p>
 <section id="agent-washing" class="level3" data-number="6.1">
 <h3 data-number="6.1" class="anchored" data-anchor-id="agent-washing"><span class="header-section-number">6.1</span> Agent Washing</h3>
-<p><strong>The Problem:</strong> Organizations label systems as “multi-agent” even when there is no real coordination, decision-making, or accountability. In practice, this is often just traditional automation wrapped in new terminology, creating a false sense of AI maturity.<br>
+<p><strong>The Problem:</strong> Organizations label systems as “multi-agent” even when there is no real coordination, decision-making, or accountability. This is often just traditional automation wrapped in new terminology, creating a false sense of AI maturity.<br>
 <strong>The Solution:</strong> True orchestration coordinates real agents—each with a defined role—by sharing context, routing work intelligently, and enforcing governance. If a “supervisor” simply runs predefined steps in sequence, the system may be automated, but it is not genuinely agentic.</p>
 </section>
 <section id="over-engineering-simple-workflows" class="level3" data-number="6.2">
@@ -611,7 +611,7 @@ Figure&nbsp;5: Orchestration as the control and governance plane for agentic AI 
 </section>
 <section id="cross-functional-orchestration" class="level3" data-number="8.4">
 <h3 data-number="8.4" class="anchored" data-anchor-id="cross-functional-orchestration"><span class="header-section-number">8.4</span> Cross-Functional Orchestration</h3>
-<p>Cross-functional orchestration is emerging in practice as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.</p>
+<p>Cross-functional orchestration is emerging as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.</p>
 <p>Across these implementations, several common success factors emerge:</p>
 <ul>
 <li>Starting with high-value, well-bounded use cases<br>

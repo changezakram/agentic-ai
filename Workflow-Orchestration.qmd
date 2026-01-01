@@ -60,7 +60,7 @@ Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In b
 
 In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.
 
-In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
+This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
 
 The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.
 
@@ -135,7 +135,7 @@ Most banks today operate at L2, experimenting with L3. Effective orchestration i
 
 ## Human Review Happens at Workflow Boundaries
 
-A common misconception in agentic AI discussions is that human-in-the-loop means humans supervising every agent action. In practice, this model does not scale—and in regulated environments, it is neither necessary nor desirable.
+A common misconception in agentic AI discussions is that human-in-the-loop means humans supervising every agent action. This model does not scale—and in regulated environments, it is neither necessary nor desirable.
 
 In well-designed agentic systems, humans focus on reviewing outcomes rather than supervising individual execution steps. Orchestration defines explicit checkpoints where human judgment is required, while allowing agents to execute preparatory and analytical work autonomously within those boundaries.
 
@@ -153,7 +153,7 @@ Orchestration failures rarely stem from model errors. They emerge when ownership
 
 ### Agent Washing
 
-**The Problem:** Organizations label systems as “multi-agent” even when there is no real coordination, decision-making, or accountability. In practice, this is often just traditional automation wrapped in new terminology, creating a false sense of AI maturity.      
+**The Problem:** Organizations label systems as “multi-agent” even when there is no real coordination, decision-making, or accountability. This is often just traditional automation wrapped in new terminology, creating a false sense of AI maturity.      
 **The Solution:** True orchestration coordinates real agents—each with a defined role—by sharing context, routing work intelligently, and enforcing governance. If a “supervisor” simply runs predefined steps in sequence, the system may be automated, but it is not genuinely agentic.
 
 ### Over-Engineering Simple Workflows
@@ -277,7 +277,7 @@ Large-scale legacy modernization shows why orchestration matters for agentic exe
 
 ### Cross-Functional Orchestration
 
-Cross-functional orchestration is emerging in practice as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
+Cross-functional orchestration is emerging as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
 
 Across these implementations, several common success factors emerge:
 
