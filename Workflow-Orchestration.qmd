@@ -29,7 +29,7 @@ Crucially, orchestration embeds agent execution within enterprise workflows gove
 
 ## The Business Case: Quantifying Orchestration Value
 
-The value of orchestration extends beyond operational efficiency—it completely transforms how quickly banks can adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.
+The value of orchestration extends beyond operational efficiency—it fundamentally changes how quickly banks can adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.
 
 ### Timeline Acceleration
 
@@ -201,7 +201,7 @@ Production-ready orchestration requires engineering discipline equal to any miss
 
 This control-plane model clarifies how orchestration separates governance from execution, ensuring agentic workflows remain auditable, interruptible, and accountable as they scale.
 
-As workflows stretch across days or weeks, orchestration explicitly manages state—allowing processes to pause, resume, or replay while remaining fully auditable. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that determines how work is initiated, carried through, reviewed, and ultimately audited across agents
+As workflows stretch across days or weeks, orchestration explicitly manages state—allowing processes to pause, resume, or replay while remaining fully auditable. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that determines how work is initiated, carried through, reviewed, and ultimately audited across agents.
 
 
 
