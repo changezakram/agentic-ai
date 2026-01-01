@@ -197,11 +197,11 @@ Production-ready orchestration requires engineering discipline equal to any miss
 
 ## Orchestration as the Control Plane
 
-![Orchestration as the governance control plane for agentic AI in banking. Control and compliance define authority through human decision points, audit and replay, and policy enforcement. A centralized orchestration engine manages state, routing, guardrails, and exception escalation across specialized banking agents, while systems of record remain authoritative enterprise platforms.](images/orchestration-control-plane.png){#fig-orchestration-control-plane width="100%" fig-align="center"}
+![Orchestration as the control and governance plane for agentic AI in banking. Control and governance define authority through human decision points, audit and replay, and policy enforcement. A centralized orchestration engine manages state, routing, guardrails, and exception escalation across specialized banking agents, while systems of record remain authoritative enterprise platforms.](images/orchestration-control-plane.png){#fig-orchestration-control-plane width="100%" fig-align="center"}
 
 This control-plane model clarifies how orchestration separates governance from execution, ensuring agentic workflows remain auditable, interruptible, and accountable as they scale.
 
-At scale, orchestration explicitly manages workflow state—allowing long-running processes to pause, resume, replay, and be audited end to end. As a result, orchestration evolves from a coordination mechanism into a control plane that governs how work is initiated, executed, reviewed, and audited across agents.
+At scale, orchestration explicitly manages workflow state—allowing long-running processes to pause, resume, replay, and be audited end to end. As a result, orchestration evolves from a coordination mechanism into the governing layer that controls how work is initiated, executed, reviewed, and audited across agents.
 
 Orchestration provides four critical capabilities:
 
