@@ -88,7 +88,7 @@ In event-driven orchestration, agents respond to triggers rather than predefined
 
 Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
 
-![Branching and Conditional Routing. The orchestration layer evaluates intermediate results and dynamically routes cases to different processing paths based on policy, risk, or customer classification. Routing decisions are explicit, auditable control points within the workflow.](images/branching-orchestration.png){#fig-branching-orchestration width="100%" fig-align="center"}
+![Event-Driven Orchestration for Proactive Credit Offers. A credit bureau trigger initiates a governed orchestration workflow. Eligibility, risk, pricing, and compliance agents run in parallel, with results reconciled centrally before outbound engagement. High-risk cases are escalated for human review.](images/event-driven-orchestration.png){#fig-event-driven-orchestration width="100%" fig-align="center"}
 
 ### Branching and Conditional Routing
 

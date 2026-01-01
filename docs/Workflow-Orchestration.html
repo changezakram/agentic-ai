@@ -329,13 +329,13 @@ Figure&nbsp;2: Parallel Orchestration with Aggregation and Escalation. The orche
 <h3 data-number="3.4" class="anchored" data-anchor-id="event-driven-execution"><span class="header-section-number">3.4</span> Event-Driven Execution</h3>
 <p>In event-driven orchestration, agents respond to triggers rather than predefined steps. This pattern is powerful but requires strong governance.</p>
 <p>Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.</p>
-<div id="fig-branching-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<div id="fig-event-driven-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-branching-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/branching-orchestration.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<div aria-describedby="fig-event-driven-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/event-driven-orchestration.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-branching-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Branching and Conditional Routing. The orchestration layer evaluates intermediate results and dynamically routes cases to different processing paths based on policy, risk, or customer classification. Routing decisions are explicit, auditable control points within the workflow.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-event-driven-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Event-Driven Orchestration for Proactive Credit Offers. A credit bureau trigger initiates a governed orchestration workflow. Eligibility, risk, pricing, and compliance agents run in parallel, with results reconciled centrally before outbound engagement. High-risk cases are escalated for human review.
 </figcaption>
 </figure>
 </div>
