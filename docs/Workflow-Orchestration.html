@@ -293,18 +293,13 @@ ul.task-list li input[type="checkbox"] {
 <p>In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.</p>
 <p>In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
 <p>The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.</p>
-<div id="fig-sequential-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-sequential-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sequential-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/sequential-orchestration.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Sequential Orchestration (Deterministic Handoffs). Each agent completes its task before passing structured output to the next step. Orchestration governs execution order, policy enforcement, escalation, and auditability across the workflow.</figcaption>
-</figure>
+<img src="images/sequential-orchestration.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-sequential-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sequential-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Sequential Orchestration with Deterministic Handoffs. Agents execute in a fixed, predefined order, with each step completing before passing structured output to the next. The orchestration layer governs sequencing, policy enforcement, escalation, and audit logging to ensure predictability and regulatory traceability.
 </figcaption>
 </figure>
 </div>
@@ -320,8 +315,7 @@ Figure&nbsp;1
 <img src="images/parallel-orchestration.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parallel-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Parallel Orchestration with Aggregation and Escalation.<br>
-The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.
+Figure&nbsp;2: Parallel Orchestration with Aggregation and Escalation. The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.
 </figcaption>
 </figure>
 </div>
