@@ -273,7 +273,7 @@ JPMorgan Chase utilizes a "Supervisor Agent" architecture to power its "Ask Davi
 
 ### Legacy Modernization Acceleration
 
-Large-scale legacy modernization highlights why orchestration matters for agentic execution. Rather than automating COBOL migration end to end, teams break the work into coordinated, agent-driven stages. Microsoft’s COBOL Agentic Migration Factory is a clear example: specialized agents handle code analysis, dependency mapping, translation, test generation, and validation, while an orchestration layer sequences execution, maintains state across iterations, and enforces quality gates.<sup>14</sup>  When confidence thresholds are not met, workflows pause for human review before resuming. The result is faster modernization without sacrificing control, auditability, or engineering rigor.
+Large-scale legacy modernization shows why orchestration matters for agentic execution. Rather than automating COBOL migration end to end, teams break the work into coordinated, agent-driven stages. Microsoft’s COBOL Agentic Migration Factory is a clear example: specialized agents handle code analysis, dependency mapping, translation, test generation, and validation, while an orchestration layer sequences execution, maintains state across iterations, and enforces quality gates.<sup>14</sup>  When confidence thresholds are not met, workflows pause for human review before resuming. The result is faster modernization without sacrificing control, auditability, or engineering rigor.
 
 ### Cross-Functional Orchestration
 
