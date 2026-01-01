@@ -92,11 +92,13 @@ Changes in market conditions, customer behavior, or data availability can initia
 
 ### Branching and Conditional Routing
 
+In branching and conditional routing, orchestration acts as a governed decision point that dynamically routes requests to different agent workflows based on classification outcomes and policy-defined criteria. An intake and classification agent first enriches the request with relevant context—such as client profile, complexity, and risk indicators—before passing it to the orchestration engine.
+
+The orchestration engine then applies routing logic to determine the appropriate execution path. Complex or high-touch cases are escalated to human-augmented relationship management, where judgment, discretion, and accountability are required. Standard or low-risk cases proceed through automated advisory workflows optimized for speed and consistency. In both paths, orchestration retains control over sequencing, escalation, and auditability.
+
 ![Branching and conditional routing for tiered client service. An intake and classification agent feeds a governed orchestration engine, which routes requests based on case complexity and risk. Complex or high-touch cases are escalated to human-augmented relationship management, while standard or low-risk cases proceed through automated advisory workflows.](images/branching-triage-orchestration.png){#fig-branching-conditional-routing width="100%" fig-align="center"}
 
-In branching orchestration, the workflow dynamically selects different agent paths based on intermediate results or classification outcomes. A loan application might route to standard processing for prime borrowers, enhanced diligence for complex cases, or specialized teams for private banking clients.
-
-This pattern excels in scenarios requiring differentiated service levels or risk-based processing. It allows banks to maintain efficiency for routine cases while ensuring complex scenarios receive appropriate scrutiny—all within the same orchestration framework. The branching decisions themselves become auditable control points, providing clear documentation of why specific cases received different treatment.
+This pattern is especially effective in scenarios requiring differentiated service levels or risk-based processing. It allows banks to preserve efficiency for routine cases while ensuring complex scenarios receive appropriate scrutiny—without fragmenting workflows or bypassing governance. Importantly, the branching decisions themselves become auditable control points, providing clear documentation of why specific cases received different treatment.
 
 ---
 
