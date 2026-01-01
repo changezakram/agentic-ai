@@ -301,9 +301,6 @@ Banks do not need to replace existing systems to adopt agentic AI. The agentic o
 
 The right balance combines vendor infrastructure with in-house ownership of governance and decision boundaries. This hybrid approach allows banks to move at different speeds across different domains—aggressive in customer service, cautious in risk management—while maintaining a coherent orchestration strategy.
 
-> **What This Means for Bank Leaders**  
-> Orchestration decisions are governance decisions. Where state is managed, where humans intervene, and who owns exceptions determines whether agentic systems scale—or stall. Banks that treat orchestration as plumbing will struggle to govern AI execution. Those that treat it as a control plane can deploy agents with confidence.
-
 ---
 
 ## Conclusion
