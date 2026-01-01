@@ -149,7 +149,7 @@ By placing human review at workflow boundaries, banks preserve accountability wh
 
 ## Common Pitfalls: Learning from Failed Orchestrations
 
-When banks scale their agentic implementations, certain failure patterns emerge repeatedly. Understanding these pitfalls—and their solutions—is key for successful orchestration.
+Orchestration failures rarely stem from model errors. They emerge when ownership, escalation authority, and decision rights are left implicit as agents begin to operate across workflows. The pitfalls below reflect failure modes that surface once agentic systems move beyond pilots and into real operational use.
 
 ### Agent Washing
 
