@@ -315,7 +315,7 @@ Banks that design orchestration deliberately will not just move faster—they wi
 
 ---
 
-## References
+## References and Further Reading
 
 [1] Boston Consulting Group. (2024). Executive Perspectives: Supply Chains Unlocking the Value Potential. https://media-publications.bcg.com/BCG-Executive-Perspectives-Unlocking-Impact-from-AI-Supply-Chains-EP4-7Oct2024.pdf
 
