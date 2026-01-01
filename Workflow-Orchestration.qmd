@@ -339,12 +339,10 @@ Banks that design orchestration deliberately will not just move faster—they wi
 
 [11] Enterprise AI Executive. (2025). "McKinsey: 715 executives on building AI ventures." November 2, 2025. Retrieved from: https://enterpriseaiexecutive.ai/p/mckinsey-715-executives-on-building-ai-ventures
 
-[12] McKinsey & Company. (2025). "The agentic organization: Contours of the next paradigm for the AI era." September 26, 2025. Retrieved from: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
+[12] McKinsey & Company. (2025). The agentic organization: Contours of the next paradigm for the AI era. Retrieved from: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
 
 [13] C. Rohn, *Multi-Agent Frontiers: Building Ask D.A.V.I.D.*, LangChain Interrupt Conference, 2025. https://cameronrohn.com/docs/discover/LangChain-Interrupt-2025/presentations/2.4-Multi-Agent-Frontiers-Building-Ask-D.A.V.I.D/
 
-[14] Microsoft. “How We Use AI Agents for COBOL Migration and Mainframe Modernization.”  
-Microsoft Azure Blog, 2024.  
-https://devblogs.microsoft.com/all-things-azure/how-we-use-ai-agents-for-cobol-migration-and-mainframe-modernization/
+[14] Microsoft. (2024). How We Use AI Agents for COBOL Migration and Mainframe Modernization. https://devblogs.microsoft.com/all-things-azure/how-we-use-ai-agents-for-cobol-migration-and-mainframe-modernization/
 
 
