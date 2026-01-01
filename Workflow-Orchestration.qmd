@@ -92,7 +92,7 @@ Changes in market conditions, customer behavior, or data availability can initia
 
 ### Branching and Conditional Routing
 
-![Branching and conditional routing for tiered client service. An intake and classification agent feeds a governed orchestration engine, which routes requests based on case complexity and risk. Complex or high-touch cases are escalated to human-augmented relationship management, while standard or low-risk cases proceed through automated advisory workflows.](images/branching-orchestration-triage.png){#fig-branching-conditional-routing width="100%" fig-align="center"}
+![Branching and conditional routing for tiered client service. An intake and classification agent feeds a governed orchestration engine, which routes requests based on case complexity and risk. Complex or high-touch cases are escalated to human-augmented relationship management, while standard or low-risk cases proceed through automated advisory workflows.](images/branching-triage-orchestration.png){#fig-branching-conditional-routing width="100%" fig-align="center"}
 
 In branching orchestration, the workflow dynamically selects different agent paths based on intermediate results or classification outcomes. A loan application might route to standard processing for prime borrowers, enhanced diligence for complex cases, or specialized teams for private banking clients.
 
