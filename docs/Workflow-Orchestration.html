@@ -292,6 +292,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-number="3.1" class="anchored" data-anchor-id="sequential-handoffs"><span class="header-section-number">3.1</span> Sequential Handoffs</h3>
 <p>In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.</p>
 <p>In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
+<p>The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.</p>
 <div id="fig-sequential-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sequential-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -312,18 +313,15 @@ Figure&nbsp;1
 <h3 data-number="3.2" class="anchored" data-anchor-id="parallel-fan-out-and-aggregation"><span class="header-section-number">3.2</span> Parallel Fan-Out and Aggregation</h3>
 <p>Some workflows benefit from parallel execution. In fan-out orchestration (where tasks spread out like a fan), multiple agents run simultaneously against the same case—analyzing income, collateral, market conditions, or regulatory constraints in parallel. Their outputs are then aggregated and reconciled before proceeding.</p>
 <p>This pattern compresses timelines without sacrificing control. It is particularly effective when independent analyses can be performed concurrently but still require a consolidated decision or human review at the end.</p>
-<div id="fig-parallel-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.</p>
+<div id="fig-parallel-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-parallel-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/parallel-orchestration.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Parallel Orchestration with Aggregation and Escalation. The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.</figcaption>
-</figure>
+<img src="images/parallel-orchestration.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-parallel-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parallel-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Parallel Orchestration with Aggregation and Escalation.<br>
+The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.
 </figcaption>
 </figure>
 </div>

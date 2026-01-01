@@ -62,6 +62,8 @@ In sequential orchestration, agents operate in a defined order. Each agent compl
 
 In practice, this pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
 
+The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.
+
 ::: {#fig-sequential-orchestration}
 ![Sequential Orchestration (Deterministic Handoffs). Each agent completes its task before passing structured output to the next step. Orchestration governs execution order, policy enforcement, escalation, and auditability across the workflow.](images/sequential-orchestration.png){fig-align="center" width="100%"}
 :::
@@ -72,9 +74,10 @@ Some workflows benefit from parallel execution. In fan-out orchestration (where 
 
 This pattern compresses timelines without sacrificing control. It is particularly effective when independent analyses can be performed concurrently but still require a consolidated decision or human review at the end.
 
-::: {#fig-parallel-orchestration}
-![Parallel Orchestration with Aggregation and Escalation. The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.](images/parallel-orchestration.png){fig-align="center" width="100%"}
-:::
+The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.
+
+![Parallel Orchestration with Aggregation and Escalation.  
+The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.](images/parallel-orchestration.png){#fig-parallel-orchestration width="100%" fig-align="center"}
 
 ### Supervisor–Worker Models
 
