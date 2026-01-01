@@ -603,7 +603,7 @@ Figure&nbsp;5: Orchestration as the control and governance plane for agentic AI 
 </section>
 <section id="platform-enhancement-strategy" class="level3" data-number="8.2">
 <h3 data-number="8.2" class="anchored" data-anchor-id="platform-enhancement-strategy"><span class="header-section-number">8.2</span> Platform Enhancement Strategy</h3>
-<p>JPMorgan Chase layered AI agents atop its wholesale banking platforms through Coach AI and Kasisto integrations.<sup>5</sup> Rather than replacing existing systems, the bank’s orchestration framework augments human workers by providing real-time insights, suggested actions, and automated routine tasks. Bankers maintain control while agents handle research and preparation.</p>
+<p>JPMorgan Chase utilizes a “Supervisor Agent” architecture to power its “Ask David” investment research platform. In this model, a central supervisor agent acts as the orchestrator, interpreting complex advisor queries and delegating tasks to specialized sub-agents—one for querying structured financial data (SQL), another for retrieving internal strategy documents (RAG), and a third for generating analytics curves. The supervisor then aggregates these distinct outputs into a single, compliant response, ensuring that no single agent operates without oversight.</p>
 </section>
 <section id="legacy-modernization-acceleration" class="level3" data-number="8.3">
 <h3 data-number="8.3" class="anchored" data-anchor-id="legacy-modernization-acceleration"><span class="header-section-number">8.3</span> Legacy Modernization Acceleration</h3>
