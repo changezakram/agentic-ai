@@ -269,7 +269,7 @@ Metro Bank successfully deployed Covecta-powered lending agents without modifyin
 
 ### Platform Enhancement Strategy
 
-JPMorgan Chase utilizes a "Supervisor Agent" architecture to power its "Ask David" investment research platform. In this model, a central supervisor agent acts as the orchestrator, interpreting complex advisor queries and delegating tasks to specialized sub-agents—one for querying structured financial data (SQL), another for retrieving internal strategy documents (RAG), and a third for generating analytics curves. The supervisor then aggregates these distinct outputs into a single, compliant response, ensuring that no single agent operates without oversight.
+JPMorgan Chase utilizes a "Supervisor Agent" architecture to power its "Ask David" investment research platform.<sup>13</sup> In this model, a central supervisor agent acts as the orchestrator, interpreting complex advisor queries and delegating tasks to specialized sub-agents—one for querying structured financial data (SQL), another for retrieving internal strategy documents (RAG), and a third for generating analytics curves. The supervisor then aggregates these distinct outputs into a single, compliant response, ensuring that no single agent operates without oversight.
 
 ### Legacy Modernization Acceleration
 
@@ -341,7 +341,6 @@ Banks that design orchestration deliberately will not just move faster—they wi
 
 [12] McKinsey & Company. (2025). "The agentic organization: Contours of the next paradigm for the AI era." September 26, 2025. Retrieved from: https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era
 
-
-
+[13] C. Rohn, *Multi-Agent Frontiers: Building Ask D.A.V.I.D.*, LangChain Interrupt Conference, 2025. https://cameronrohn.com/docs/discover/LangChain-Interrupt-2025/presentations/2.4-Multi-Agent-Frontiers-Building-Ask-D.A.V.I.D/
 
 
