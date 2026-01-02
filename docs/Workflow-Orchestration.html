@@ -253,9 +253,9 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="execution-vs.-orchestration-a-necessary-distinction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="execution-vs.-orchestration-a-necessary-distinction"><span class="header-section-number">1</span> Execution vs.&nbsp;Orchestration: A Necessary Distinction</h2>
-<p>The distinction between execution and orchestration becomes essential once banks deploy multiple agents. These terms are often used interchangeably, but they represent fundamentally different responsibilities in an agentic system.</p>
-<p>Agents can be understood through a simple but powerful formula: Agent = LLM (reasoning) + Tools (action) + Orchestration (coordination). While the industry has focused heavily on improving LLMs and expanding tool libraries, orchestration remains the understudied third pillar—yet it’s the one that determines whether agents can operate safely and effectively at scale.</p>
-<p>Agent frameworks govern execution. They determine how an individual agent plans tasks, invokes tools, manages state, handles failures, and produces outputs. In other words, frameworks define how work gets done at the level of a single agent.</p>
+<p>The distinction between execution and orchestration becomes essential with multiple agents. These terms are often used interchangeably, but they represent fundamentally different responsibilities in an agentic system.</p>
+<p>Agents can be understood through a simple formula: Agent = LLM (reasoning) + Tools (action) + Orchestration (coordination). While the industry has focused heavily on improving LLMs and expanding tool libraries, orchestration remains the understudied third pillar—yet it’s the one that determines whether agents can operate safely and effectively at scale.</p>
+<p>Agent frameworks govern execution. They determine how an individual agent plans tasks, invokes tools, manages state, handles failures, and produces outputs.</p>
 <p>Orchestration governs coordination. It determines how multiple agents work together within a broader business workflow—how tasks are sequenced, when agents run in parallel, where approvals occur, how exceptions are escalated, and how outcomes are audited.</p>
 <p>This distinction matters most in regulated environments. A mortgage underwriting agent may execute income verification flawlessly. A separate agent may assess collateral risk. A third may draft pricing terms. Without orchestration, these agents operate as isolated workers. With orchestration, they become a governed system.</p>
 <p>Crucially, orchestration embeds agent execution within enterprise workflows governed by policy, regulation, and organizational authority. It separates how work is performed from how it is governed — a separation traditional automation platforms already enforce, and one that agentic systems must now replicate at scale.</p>
@@ -263,7 +263,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-business-case-quantifying-orchestration-value" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="the-business-case-quantifying-orchestration-value"><span class="header-section-number">2</span> The Business Case: Quantifying Orchestration Value</h2>
-<p>The value of orchestration extends beyond operational efficiency—it fundamentally changes how quickly banks can adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.</p>
+<p>Orchestration extends beyond operational efficiency—it transforms how quickly banks adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.</p>
 <section id="timeline-acceleration" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="timeline-acceleration"><span class="header-section-number">2.1</span> Timeline Acceleration</h3>
 <p>McKinsey research reveals that orchestrated agent systems can accelerate technology modernization timelines by 40-50% while reducing costs by more than 40%<sup>4</sup>. One global bank achieved even more dramatic results, cutting its IT modernization timelines by over 50% by deploying orchestrated agents to assist engineering teams<sup>3</sup>. This acceleration comes not from individual agent performance but from eliminating handoff delays and coordination overhead.</p>
@@ -291,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sequential-handoffs" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sequential-handoffs"><span class="header-section-number">3.1</span> Sequential Handoffs</h3>
 <p>In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.</p>
-<p>This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
+<p>This pattern is common in regulated processes like underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.</p>
 <p>The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.</p>
 <div id="fig-sequential-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -307,7 +307,7 @@ Figure&nbsp;1: Sequential Orchestration with Deterministic Handoffs. Agents exec
 <section id="parallel-fan-out-and-aggregation" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="parallel-fan-out-and-aggregation"><span class="header-section-number">3.2</span> Parallel Fan-Out and Aggregation</h3>
 <p>Some workflows benefit from parallel execution. In fan-out orchestration (where tasks spread out like a fan), multiple agents run simultaneously against the same case—analyzing income, collateral, market conditions, or regulatory constraints in parallel. Their outputs are then aggregated and reconciled before proceeding.</p>
-<p>This pattern compresses timelines without sacrificing control. It is particularly effective when independent analyses can be performed concurrently but still require a consolidated decision or human review at the end.</p>
+<p>This pattern compresses timelines without sacrificing control. It’s particularly effective when independent analyses can be performed concurrently but require consolidated decision-making.</p>
 <p>The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.</p>
 <div id="fig-parallel-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -360,7 +360,7 @@ Figure&nbsp;4: Branching and conditional routing for tiered client service. An i
 </section>
 <section id="system-orchestration-maturity" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="system-orchestration-maturity"><span class="header-section-number">4</span> System Orchestration Maturity</h2>
-<p>Understanding where your organization stands—and where it needs to go—is essential for planning your orchestration journey. This section introduces two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.</p>
+<p>Understanding where your organization stands is critical for planning your orchestration journey. This section introduces two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.</p>
 <section id="system-workflow-maturity" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="system-workflow-maturity"><span class="header-section-number">4.1</span> System Workflow Maturity</h3>
 <table class="caption-top table">
@@ -487,7 +487,7 @@ Figure&nbsp;4: Branching and conditional routing for tiered client service. An i
 <p>In well-designed agentic systems, humans focus on reviewing outcomes rather than supervising individual execution steps. Orchestration defines explicit checkpoints where human judgment is required, while allowing agents to execute preparatory and analytical work autonomously within those boundaries.</p>
 <p>This mirrors how banks already operate. Credit officers do not manually verify every document or calculation; they review synthesized information, assess exceptions, and approve decisions. Agentic systems simply automate the work leading up to that judgment point.</p>
 <p>Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited.</p>
-<p>By placing human review at workflow boundaries, banks preserve accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.</p>
+<p>Human review at workflow boundaries preserves accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.</p>
 <hr>
 </section>
 <section id="common-pitfalls-learning-from-failed-orchestrations" class="level2" data-number="6">

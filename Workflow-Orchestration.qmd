@@ -13,11 +13,11 @@ In this article, we examine why orchestration is the missing layer in most agent
 
 ## Execution vs. Orchestration: A Necessary Distinction
 
-The distinction between execution and orchestration becomes essential once banks deploy multiple agents. These terms are often used interchangeably, but they represent fundamentally different responsibilities in an agentic system.
+The distinction between execution and orchestration becomes essential with multiple agents. These terms are often used interchangeably, but they represent fundamentally different responsibilities in an agentic system.
 
-Agents can be understood through a simple but powerful formula: Agent = LLM (reasoning) + Tools (action) + Orchestration (coordination). While the industry has focused heavily on improving LLMs and expanding tool libraries, orchestration remains the understudied third pillar—yet it's the one that determines whether agents can operate safely and effectively at scale.
+Agents can be understood through a simple formula: Agent = LLM (reasoning) + Tools (action) + Orchestration (coordination). While the industry has focused heavily on improving LLMs and expanding tool libraries, orchestration remains the understudied third pillar—yet it's the one that determines whether agents can operate safely and effectively at scale.
 
-Agent frameworks govern execution. They determine how an individual agent plans tasks, invokes tools, manages state, handles failures, and produces outputs. In other words, frameworks define how work gets done at the level of a single agent.
+Agent frameworks govern execution. They determine how an individual agent plans tasks, invokes tools, manages state, handles failures, and produces outputs.
 
 Orchestration governs coordination. It determines how multiple agents work together within a broader business workflow—how tasks are sequenced, when agents run in parallel, where approvals occur, how exceptions are escalated, and how outcomes are audited.
 
@@ -29,7 +29,7 @@ Crucially, orchestration embeds agent execution within enterprise workflows gove
 
 ## The Business Case: Quantifying Orchestration Value
 
-The value of orchestration extends beyond operational efficiency—it fundamentally changes how quickly banks can adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.
+Orchestration extends beyond operational efficiency—it transforms how quickly banks adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.
 
 ### Timeline Acceleration
 
@@ -60,7 +60,7 @@ Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In b
 
 In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.
 
-This pattern is common in regulated processes such as underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
+This pattern is common in regulated processes like underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
 
 The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.
 
@@ -70,7 +70,7 @@ The following illustrates a sequential handoff pattern, where agents operate in 
 
 Some workflows benefit from parallel execution. In fan-out orchestration (where tasks spread out like a fan), multiple agents run simultaneously against the same case—analyzing income, collateral, market conditions, or regulatory constraints in parallel. Their outputs are then aggregated and reconciled before proceeding.
 
-This pattern compresses timelines without sacrificing control. It is particularly effective when independent analyses can be performed concurrently but still require a consolidated decision or human review at the end.
+This pattern compresses timelines without sacrificing control. It's particularly effective when independent analyses can be performed concurrently but require consolidated decision-making.
 
 The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.
 
@@ -104,7 +104,7 @@ This pattern is especially effective in scenarios requiring differentiated servi
 
 ## System Orchestration Maturity
 
-Understanding where your organization stands—and where it needs to go—is essential for planning your orchestration journey. This section introduces two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.
+Understanding where your organization stands is critical for planning your orchestration journey. This section introduces two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.
 
 ### System Workflow Maturity
 
@@ -143,7 +143,7 @@ This mirrors how banks already operate. Credit officers do not manually verify e
 
 Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited.
 
-By placing human review at workflow boundaries, banks preserve accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.
+Human review at workflow boundaries preserves accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.
 
 ---
 
