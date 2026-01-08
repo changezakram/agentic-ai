@@ -57,15 +57,17 @@ The true value emerges when orchestration enables what was previously impossible
 
 ## Core Orchestration Patterns in Agentic Systems
 
-As agentic systems scale, banks tend to converge on a small number of orchestration patterns. These patterns define how agents coordinate, not how they reason.
+As agentic systems scale, banks converge on a small number of orchestration patterns. These patterns determine how work is coordinated—not how agents reason.
 
 Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In banking, this means policies can be updated without rewriting agent code, processes can pause for human review or external events, and transactions can be unwound if errors are detected downstream. These properties are not optional in regulated environments—they are fundamental requirements for trustworthy orchestration.
 
 ### Sequential Handoffs
 
+This pattern exists to enforce order, auditability, and control in workflows where steps must occur in sequence.
+
 In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.
 
-This pattern is common in regulated processes like underwriting or compliance reviews, where steps must occur in a specific sequence. Sequential orchestration emphasizes predictability and auditability over speed.
+This pattern is common in regulated processes like underwriting or compliance reviews, where order is dictated by policy or regulation. Sequential orchestration emphasizes predictability and auditability over speed.
 
 The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.
 
@@ -73,9 +75,11 @@ The following illustrates a sequential handoff pattern, where agents operate in 
 
 ### Parallel Fan-Out and Aggregation
 
+This pattern exists to compress cycle time by allowing independent analyses to run simultaneously while preserving a single decision point.
+
 Some workflows benefit from parallel execution. In fan-out orchestration (where tasks spread out like a fan), multiple agents run simultaneously against the same case—analyzing income, collateral, market conditions, or regulatory constraints in parallel. Their outputs are then aggregated and reconciled before proceeding.
 
-This pattern compresses timelines without sacrificing control. It's particularly effective when independent analyses can be performed concurrently but require consolidated decision-making.
+This pattern reduces cycle time without sacrificing control. It's particularly effective when independent analyses can be performed concurrently but require consolidated decision-making.
 
 The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.
 
@@ -83,19 +87,25 @@ The following illustrates a parallel orchestration pattern, where multiple agent
 
 ### Supervisor–Worker Models
 
+This pattern exists to introduce specialization without fragmenting control or accountability.
+
 In supervisor–worker orchestration, a coordinating component assigns tasks to specialized agents, monitors progress, and resolves conflicts. The supervisor does not perform domain work itself; it manages execution flow and escalation.
 
 This pattern mirrors how banks already organize work. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.
 
 ### Event-Driven Execution
 
-In event-driven orchestration, agents respond to triggers rather than predefined steps. This pattern is powerful but requires strong governance. 
+This pattern exists to respond dynamically to external signals rather than predefined process steps.
 
-Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Event-driven systems increase responsiveness, but without clear boundaries they can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
+In event-driven orchestration, agents respond to triggers rather than predefined steps. This pattern increases responsiveness but requires strict governance. 
+
+Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Without clear boundaries, event-driven systems can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
 
 ![Event-Driven Orchestration for Proactive Credit Offers. A credit bureau trigger initiates a governed orchestration workflow. Eligibility, risk, pricing, and compliance agents run in parallel, with results reconciled centrally before outbound engagement. High-risk cases are escalated for human review.](images/event-driven-orchestration_.png){#fig-event-driven-orchestration width="100%" fig-align="center"}
 
 ### Branching and Conditional Routing
+
+This pattern exists to apply differentiated treatment based on risk, complexity, or client segment within a single workflow.
 
 In branching and conditional routing, orchestration acts as a governed decision point that dynamically routes requests to different agent workflows based on classification outcomes and policy-defined criteria. An intake and classification agent first enriches the request with relevant context—such as client profile, complexity, and risk indicators—before passing it to the orchestration engine.
 
