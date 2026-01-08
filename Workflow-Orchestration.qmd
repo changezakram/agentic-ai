@@ -162,7 +162,7 @@ Orchestration determines where approvals are required, who has authority to appr
 
 ## Common Pitfalls: Learning from Failed Orchestrations
 
-Orchestration failures rarely stem from model errors. They emerge when ownership, escalation authority, and decision rights are left implicit as agents begin to operate across workflows. The pitfalls below reflect failure modes that surface once agentic systems move beyond pilots and into real operational use.
+Orchestration failures rarely stem from model errors. They emerge when ownership, escalation authority, and decision rights are left implicit as agents operate across workflows. The pitfalls below surface once agentic systems move beyond pilots and into real operational use.
 
 ### Agent Washing
 
