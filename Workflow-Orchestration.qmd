@@ -119,7 +119,7 @@ This pattern is especially effective in scenarios requiring differentiated servi
 
 ## System Orchestration Maturity
 
-Understanding where your organization stands is critical for planning your orchestration journey. This section introduces two complementary frameworks: one for system-level workflow orchestration maturity, and one for individual agent capability.
+Understanding where your organization stands is critical for planning an orchestration journey. This section introduces two complementary lenses: system-level workflow orchestration maturity, and individual agent capability.
 
 ### System Workflow Maturity
 
@@ -134,7 +134,7 @@ Understanding where your organization stands is critical for planning your orche
 
 ### Individual Agent Capability
 
-This framework does not replace the system workflow maturity framework above; it provides a complementary lens focused on individual agent capability rather than workflow governance.
+This framework complements system workflow maturity by focusing on individual agent capability rather than workflow governance.
 
 | Level | Type          | Capability                                               | Orchestration Role                    |
 |:-----:|---------------|----------------------------------------------------------|---------------------------------------|
@@ -144,7 +144,7 @@ This framework does not replace the system workflow maturity framework above; it
 | L4    | Innovators    | Learn and create new capabilities                        | Orchestration enables emergence       |
 | L5    | Organizations | Fully autonomous systems operating independently         | Orchestration IS the organization     |
 
-Most banks today operate at L2, experimenting with L3. Effective orchestration is the bridge that enables progression toward coordinated autonomous systems.
+Most banks today operate at L2, experimenting with L3. Effective orchestration is what enables progress beyond experimentation toward coordinated, governed execution.
 
 ---
 
