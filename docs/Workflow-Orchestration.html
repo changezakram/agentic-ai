@@ -251,8 +251,7 @@ ul.task-list li input[type="checkbox"] {
 <p>When multiple agents interact—sharing data, triggering actions, and escalating outcomes—the primary risk shifts from what a model generates to how work is executed across systems, people, and controls. In regulated environments, ungoverned execution quickly becomes unacceptable.</p>
 <p>This is where workflow orchestration matters. Orchestration does not make agents smarter. It makes them governable. It defines how agents coordinate, where human approval occurs, how exceptions are handled, and how decisions can be traced end to end.</p>
 <p>In banking, orchestration is not an optimization layer. It is the mechanism that embeds agentic execution inside enterprise workflows governed by policy, regulation, and accountability.</p>
-<p>This article explains why orchestration is the missing layer in most agentic AI discussions—and how banks can design it deliberately, without sacrificing speed, auditability, or trust.</p>
-<p>Agentic systems combine reasoning, action, and orchestration. Most discussions focus on the first two. This one focuses on the third.</p>
+<p>Agentic systems combine reasoning, action, and orchestration. Most discussions focus on the first two—this article focuses on the third.</p>
 <hr>
 <section id="execution-vs.-orchestration-a-necessary-distinction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="execution-vs.-orchestration-a-necessary-distinction"><span class="header-section-number">1</span> Execution vs.&nbsp;Orchestration: A Necessary Distinction</h2>
@@ -293,7 +292,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="sequential-handoffs" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sequential-handoffs"><span class="header-section-number">3.1</span> Sequential Handoffs</h3>
 <p>Sequential handoffs enforce strict order and control in workflows where steps must occur linearly. In regulated processes like underwriting, where order is dictated by policy, this pattern prioritizes predictability and auditability over speed.</p>
-<p>The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.</p>
 <div id="fig-sequential-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sequential-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -308,7 +306,6 @@ Figure&nbsp;1: Sequential Orchestration with Deterministic Handoffs. Agents exec
 <section id="parallel-fan-out-and-aggregation" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="parallel-fan-out-and-aggregation"><span class="header-section-number">3.2</span> Parallel Fan-Out and Aggregation</h3>
 <p>Fan-out orchestration compresses cycle time by running independent analyses simultaneously while preserving a single decision point. Instead of waiting for serial processing, agents analyze income, collateral, and market conditions in parallel, with outputs aggregated for a final decision.</p>
-<p>The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.</p>
 <div id="fig-parallel-orchestration" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-parallel-orchestration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">

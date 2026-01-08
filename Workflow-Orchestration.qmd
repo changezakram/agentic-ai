@@ -11,10 +11,7 @@ This is where workflow orchestration matters. Orchestration does not make agents
 
 In banking, orchestration is not an optimization layer. It is the mechanism that embeds agentic execution inside enterprise workflows governed by policy, regulation, and accountability.
 
-This article explains why orchestration is the missing layer in most agentic AI discussions—and how banks can design it deliberately, without sacrificing speed, auditability, or trust.
-
-Agentic systems combine reasoning, action, and orchestration. Most discussions focus on the first two. This one focuses on the third.
-
+Agentic systems combine reasoning, action, and orchestration. Most discussions focus on the first two—this article focuses on the third.
 
 ---
 
@@ -65,15 +62,11 @@ Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In b
 
 Sequential handoffs enforce strict order and control in workflows where steps must occur linearly. In regulated processes like underwriting, where order is dictated by policy, this pattern prioritizes predictability and auditability over speed.
 
-The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.
-
 ![Sequential Orchestration with Deterministic Handoffs. Agents execute in a fixed, predefined order, with each step completing before passing structured output to the next. The orchestration layer governs sequencing, policy enforcement, escalation, and audit logging to ensure predictability and regulatory traceability.](images/sequential-orchestration.png){#fig-sequential-orchestration width="100%" fig-align="center"}
 
 ### Parallel Fan-Out and Aggregation
 
 Fan-out orchestration compresses cycle time by running independent analyses simultaneously while preserving a single decision point. Instead of waiting for serial processing, agents analyze income, collateral, and market conditions in parallel, with outputs aggregated for a final decision.
-
-The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.
 
 ![Parallel Orchestration with Aggregation and Escalation. The orchestration hub fans out work to specialized agents in parallel, reconciles results, enforces policy, and escalates exceptions before human decision-making.](images/parallel-orchestration.png){#fig-parallel-orchestration width="100%" fig-align="center"}
 
