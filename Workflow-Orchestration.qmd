@@ -156,9 +156,7 @@ In well-designed agentic systems, humans focus on reviewing outcomes rather than
 
 This mirrors how banks already operate. Credit officers do not manually verify every document or calculation; they review synthesized information, assess exceptions, and approve decisions. Agentic systems simply automate the work leading up to that judgment point.
 
-Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited.
-
-Human review at workflow boundaries preserves accountability while avoiding bottlenecks. Agents generate draft outcomes and structured summaries; humans intervene only when judgment or regulatory accountability is required.
+Orchestration determines where approvals are required, who has authority to approve or override outcomes, what evidence is presented, and how decisions are logged and audited—turning human review into a governed control point rather than an execution bottleneck.
 
 ---
 
