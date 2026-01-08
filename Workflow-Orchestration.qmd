@@ -34,7 +34,7 @@ Orchestration does not make agents smarter. It makes them accountable. It embeds
 
 ## The Business Case: Quantifying Orchestration Value
 
-Orchestration extends beyond operational efficiency—it transforms how quickly banks adapt and scale. Recent implementations demonstrate compelling returns that justify the investment in orchestration infrastructure.
+The value of orchestration extends beyond operational efficiency. It changes how quickly banks can adapt and scale as agentic systems move into production. Recent implementations show returns that justify investment in orchestration infrastructure.
 
 ### Timeline Acceleration
 
