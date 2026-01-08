@@ -303,7 +303,7 @@ Evidence from early adopters shows that banks implementing orchestrated multi-ag
 
 The formula is clear: Agent = LLM + Tools + Orchestration. While the industry races to improve the first two components, the third remains the key differentiator. Agent frameworks determine how work gets done. Orchestration is what makes that work trustworthy at scale.
 
-Banks that design orchestration deliberately will not just move faster—they will move forward with confidence, accountability, and regulatory credibility. In a world where AI capabilities double every few months, the winners won't be those with the smartest agents—they'll be those with the most governable systems.
+Banks that design orchestration deliberately will not just move faster—they will move with the confidence required by regulation. AI capabilities will continue to accelerate, but the constraint on banking adoption is no longer intelligence. It is trust. The winners will not be those with the smartest agents—they will be those with the most governable systems.
 
 ---
 
