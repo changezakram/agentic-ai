@@ -63,11 +63,7 @@ Workflows must be configurable, interruptible, and reversible.<sup>10</sup> In b
 
 ### Sequential Handoffs
 
-This pattern exists to enforce order, auditability, and control in workflows where steps must occur in sequence.
-
-In sequential orchestration, agents operate in a defined order. Each agent completes its task and passes structured output to the next step in the workflow.
-
-This pattern is common in regulated processes like underwriting or compliance reviews, where order is dictated by policy or regulation. Sequential orchestration emphasizes predictability and auditability over speed.
+Sequential handoffs enforce strict order and control in workflows where steps must occur linearly. In regulated processes like underwriting, where order is dictated by policy, this pattern prioritizes predictability and auditability over speed.
 
 The following illustrates a sequential handoff pattern, where agents operate in a fixed, deterministic order optimized for predictability and auditability.
 
@@ -75,11 +71,7 @@ The following illustrates a sequential handoff pattern, where agents operate in 
 
 ### Parallel Fan-Out and Aggregation
 
-This pattern exists to compress cycle time by allowing independent analyses to run simultaneously while preserving a single decision point.
-
-Some workflows benefit from parallel execution. In fan-out orchestration (where tasks spread out like a fan), multiple agents run simultaneously against the same case—analyzing income, collateral, market conditions, or regulatory constraints in parallel. Their outputs are then aggregated and reconciled before proceeding.
-
-This pattern reduces cycle time without sacrificing control. It's particularly effective when independent analyses can be performed concurrently but require consolidated decision-making.
+Fan-out orchestration compresses cycle time by running independent analyses simultaneously while preserving a single decision point. Instead of waiting for serial processing, agents analyze income, collateral, and market conditions in parallel, with outputs aggregated for a final decision.
 
 The following illustrates a parallel orchestration pattern, where multiple agents operate simultaneously under centralized workflow and policy control.
 
@@ -87,29 +79,17 @@ The following illustrates a parallel orchestration pattern, where multiple agent
 
 ### Supervisor–Worker Models
 
-This pattern exists to introduce specialization without fragmenting control or accountability.
-
-In supervisor–worker orchestration, a coordinating component assigns tasks to specialized agents, monitors progress, and resolves conflicts. The supervisor does not perform domain work itself; it manages execution flow and escalation.
-
-This pattern mirrors how banks already organize work. It allows banks to introduce specialization—credit analysis agents, compliance agents, pricing agents—while retaining a single coordination point that enforces policy and sequencing.
+The supervisor–worker model introduces specialization without fragmenting accountability. A coordinating supervisor assigns work to domain-specific agents—credit analysis, compliance, pricing—while retaining control over execution flow, escalation, and policy enforcement.
 
 ### Event-Driven Execution
 
-This pattern exists to respond dynamically to external signals rather than predefined process steps.
-
-In event-driven orchestration, agents respond to triggers rather than predefined steps. This pattern increases responsiveness but requires strict governance. 
-
-Changes in market conditions, customer behavior, or data availability can initiate or reroute workflows dynamically. Without clear boundaries, event-driven systems can create uncontrolled cascades. In banking, this pattern is typically paired with strict guardrails and limited autonomy.
+Event-driven execution replaces linear workflows with trigger-based coordination. Agents respond to external signals—such as market movements or fraud alerts—in real time, rather than waiting for scheduled process steps. Because execution is reactive, this pattern requires strict guardrails to prevent uncontrolled cascades.
 
 ![Event-Driven Orchestration for Proactive Credit Offers. A credit bureau trigger initiates a governed orchestration workflow. Eligibility, risk, pricing, and compliance agents run in parallel, with results reconciled centrally before outbound engagement. High-risk cases are escalated for human review.](images/event-driven-orchestration_.png){#fig-event-driven-orchestration width="100%" fig-align="center"}
 
 ### Branching and Conditional Routing
 
-This pattern exists to apply differentiated treatment based on risk, complexity, or client segment within a single workflow.
-
-In branching and conditional routing, orchestration acts as a governed decision point that dynamically routes requests to different agent workflows based on classification outcomes and policy-defined criteria. An intake and classification agent first enriches the request with relevant context—such as client profile, complexity, and risk indicators—before passing it to the orchestration engine.
-
-The orchestration engine then applies routing logic to determine the appropriate execution path. Complex or high-touch cases are escalated to human-augmented relationship management, where judgment, discretion, and accountability are required. Standard or low-risk cases proceed through automated advisory workflows optimized for speed and consistency. In both paths, orchestration retains control over sequencing, escalation, and auditability.
+Branching applies differentiated treatment based on risk or complexity within a single workflow. The orchestration engine evaluates each request and routes it accordingly—standard cases to automated advisory agents, higher-risk cases to human-augmented review paths.
 
 ![Branching and conditional routing for tiered client service. An intake and classification agent feeds a governed orchestration engine, which routes requests based on case complexity and risk. Complex or high-touch cases are escalated to human-augmented relationship management, while standard or low-risk cases proceed through automated advisory workflows.](images/branching-triage-orchestration.png){#fig-branching-conditional-routing width="100%" fig-align="center"}
 
