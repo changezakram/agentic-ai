@@ -266,11 +266,11 @@ Cross-functional orchestration extends agentic systems beyond individual workflo
 
 Across these implementations, several common success factors emerge:
 
-- Starting with high-value, well-bounded use cases        
-- Building orchestration capabilities incrementally       
-- Maintaining human oversight at critical decision points       
-- Investing heavily in monitoring and audit capabilities       
-- Treating orchestration as a capability, not a project         
+- Start with high-value use cases where orchestration directly affects risk, compliance, or customer decisions.        
+- Expand orchestration incrementally, rather than attempting enterprise-wide rollout upfront.       
+- Define explicit human approval points for decisions that carry regulatory or financial exposure.       
+- Instrument orchestration with audit, replay, and performance monitoring from day one.       
+- Treat orchestration as shared infrastructure, not a one-off delivery initiative.      
 
 ---
 
