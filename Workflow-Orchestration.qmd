@@ -273,7 +273,7 @@ These metrics create feedback loops for continuous improvement. Orchestration th
 
 ## Real-World Implementations: Banks Leading the Way
 
-Forward-thinking financial institutions are already demonstrating that orchestrated agent systems can be deployed without wholesale infrastructure replacement. These implementations offer valuable lessons for banks planning their own orchestration strategies.
+Leading banks are already deploying orchestrated agent systems without replacing core infrastructure—providing practical lessons for institutions planning their own orchestration strategies.
 
 ### Modular Overlay Approach
 
@@ -289,7 +289,7 @@ Large-scale legacy modernization shows why orchestration matters for agentic exe
 
 ### Cross-Functional Orchestration
 
-Cross-functional orchestration is emerging as a natural extension of agentic systems in banking. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
+Cross-functional orchestration extends agentic systems beyond individual workflows and into enterprise operations. In complex workflows, agents may span risk, compliance, legal, and relationship management, coordinated through a central orchestration layer that maintains context and enforces policy across organizational boundaries.
 
 Across these implementations, several common success factors emerge:
 
