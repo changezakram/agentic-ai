@@ -212,10 +212,9 @@ Production-ready orchestration requires engineering discipline equal to any miss
 
 ![Orchestration as the control and governance plane for agentic AI in banking. Control and governance define authority through human decision points, audit and replay, and policy enforcement. A centralized orchestration engine manages state, routing, guardrails, and exception escalation across specialized banking agents, while systems of record remain authoritative enterprise platforms.](images/orchestration-control-plane.png){#fig-orchestration-control-plane width="100%" fig-align="center"}
 
-This control-plane model clarifies how orchestration separates governance from execution, ensuring agentic workflows remain auditable, interruptible, and accountable as they scale.
+This control-plane model separates governance from execution—keeping agentic workflows auditable, interruptible, and accountable at scale.
 
-As workflows stretch across days or weeks, orchestration explicitly manages state—allowing processes to pause, resume, or replay while remaining fully auditable. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that determines how work is initiated, carried through, reviewed, and ultimately audited across agents.
-
+As workflows stretch across days or weeks, orchestration manages state—allowing processes to pause, resume, or replay while remaining fully auditable. Because state is persistent and inspectable, orchestration evolves from a coordination mechanism into the governing layer that determines how work is initiated, carried through, reviewed, and ultimately audited across agents.
 
 
 Orchestration provides four critical capabilities:
@@ -267,7 +266,7 @@ Evaluation is the cornerstone of successful agent development. For orchestration
 
 **Customer Experience Scores:** Improvement in satisfaction from faster, more consistent service
 
-These metrics create feedback loops for continuous improvement. Orchestration that doesn't demonstrate measurable improvement across these dimensions isn't delivering value—regardless of individual agent sophistication. Leading banks are already proving these concepts work in production, not just in pilots.
+These metrics create feedback loops for continuous improvement. Orchestration that doesn't demonstrate measurable improvement across these dimensions isn't delivering value—regardless of individual agent sophistication. Leading banks are already proving these concepts in production—not just in pilots.
 
 
 ---
