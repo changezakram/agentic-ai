@@ -260,9 +260,7 @@ The goal of evaluation isn't to prove a system is safe—that's impossible. The 
 
 ## Defenses in Agentic AI — Why Layered Security Is Mandatory
 
-No single control can secure an agentic system.
-
-Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts get bypassed. Filters miss edge cases. Models behave unexpectedly.
+No single control can secure an agentic system. Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts get bypassed. Filters miss edge cases. Models behave unexpectedly.
 
 Technical controls alone are not sufficient; agentic systems also require clear ownership and operational structure. This includes defining who authorizes agent capabilities, who reviews failures, and how agents are modified or retired as systems evolve. Without explicit responsibility and escalation paths, even well-designed controls degrade over time.
 
