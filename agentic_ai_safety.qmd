@@ -202,9 +202,7 @@ Many AI risk programs make a critical mistake — they evaluate the language mod
 
 Traditional LLM testing focuses on prompt behavior, toxicity, hallucinations, and alignment under controlled inputs. These tests remain necessary, but they're insufficient. An agentic system isn't a single model—it's a distributed decision pipeline of prompts, tools, memory, retrieval, execution layers, external data feeds, and third-party services.
 
-Risk emerges from component interaction, not individual components. Security evaluation must shift from model-centric testing to end-to-end system evaluation against intelligent adversaries.
-
-Evaluation must also account for how agent behavior changes as authority expands. An agent that appears safe in advisory mode may become dangerous when allowed to execute actions across systems.
+Risk emerges from component interaction, not individual components. Security evaluation must shift from model-centric testing to end-to-end system evaluation—especially as agents transition from advisory roles to executing actions across systems.
 
 ---
 
