@@ -3,7 +3,7 @@ categories:
 - Agentic AI
 - AI Security
 - Responsible AI
-date: Feb 2026
+date: 2026-01-15
 execute:
   echo: false
   message: false
