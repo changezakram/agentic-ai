@@ -351,7 +351,7 @@ When AI accelerates attackers faster than defenders, the only durable response i
 
 Taken together, the attack classes and defenses form a layered coverage model. The diagram below summarizes how each major agentic attack vector is addressed—and where containment, not prevention, is the primary goal.
 
-![Defense-in-Depth for Agentic AI: Mapping Attack Classes to Prevention and Containment Controls.](images/Agentic-Attack-Defence.png){#fig-Agentic-Attack-Defence fig-align="center" width="900"}
+![Defense-in-Depth for Agentic AI: Mapping Attack Classes to Prevention and Containment Controls. Controls are layered and overlapping; arrows indicate coverage, not sequence.](images/Agentic-Attack-Defence.png){#fig-Agentic-Attack-Defence fig-align="center" width="900"}
 
 
 
