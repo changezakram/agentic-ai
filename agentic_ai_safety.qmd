@@ -351,15 +351,9 @@ When AI accelerates attackers faster than defenders, the only durable response i
 
 Taken together, the attack classes and defenses form a layered coverage model. The table below summarizes how each major agentic attack vector is addressed—and where containment, not prevention, is the primary goal.
 
-| **Attack Class** | **What Can Go Wrong** | **Primary Control** | **Impact Containment** |
-|------------------|----------------------|---------------------|------------------------|
-| Prompt Injection (Direct & Indirect) | Agent follows hidden or malicious instructions | Input Sanitization & Guardrails | Policy Enforcement; Privilege Separation |
-| LLM-Generated SQL Attacks | Destructive queries executed faithfully | Tool-Level Policy Controls | Least Privilege; Monitoring |
-| Remote Code Execution | Model generates and runs malicious code | Execution Controls at Tool Layer | Privilege Separation; Runtime Alerts |
-| Retrieval / Database Poisoning | Hidden instructions embedded in trusted data | Source Validation & Trust Controls | Behavioral Monitoring; Red Teaming |
-| Chained / Cross-Agent Failures | One agent escalates risk across workflows | Privilege Separation | End-to-End Monitoring |
-| Training / Supply Chain Poisoning | Backdoors embedded before deployment | Evaluation & Red Teaming | Secure-by-Construction (Future) |
-| Memorization & Data Leakage | Sensitive data embedded in model weights | Data Minimization by Design | Monitoring; Architectural Controls |
+![**Figure:** Defense-in-Depth for Agentic AI: Mapping Attack Classes to Prevention and Containment Controls.](images/Agentic-Attack-Defence.png){fig-align="center" width="900"}
+
+
 
 ---
 
