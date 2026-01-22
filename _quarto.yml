@@ -42,7 +42,7 @@ website:
           - text: Multi-Agent Orchestration
             href: https://changezakram.github.io/agentic-ai/Workflow-Orchestration.html
           - text: Building Safe & Secure Agentic AI
-            href: https://changezakram.github.io/agentic-ai/agentic_ai_safety.html
+            href: https://changezakram.github.io/agentic-ai/agentic_ai_security.html
 
       - text: AI Strategy
         menu:
