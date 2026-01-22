@@ -40,7 +40,7 @@ Most AI applications in production today are simple LLM applications. A user sub
 
 Agents change this. An agent observes its environment, reasons about goals, plans actions, retrieves knowledge, and executes operations through tools. The LLM is the cognitive core, but it's embedded in a decision-making loop that connects to real systems. The agent perceives, decides, and acts.
 
-![**Figure:** LLMs generate text. Agents take action—and the security implications multiply.](images/LLM_vs_Agentic-AI.png){fig-align="center" width="800"}
+![LLMs generate text. Agents take action—and the security implications multiply.](images/LLM_vs_Agentic-AI.png){#fig-LLM-vs-Agents fig-align="center" width="800"}
 
 This transforms AI from a conversational interface into an autonomous actor inside production workflows.
 
