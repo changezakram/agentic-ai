@@ -15,7 +15,7 @@ format:
     theme: cosmo
     toc: true
     toc-depth: 3
-title: Building Safe and Secure Agentic AI
+title: Securing Agentic AI Systems: A Defense-in-Depth Approach
 ---
 
 ## Introduction — The Year of Agents
