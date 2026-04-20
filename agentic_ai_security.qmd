@@ -157,7 +157,7 @@ For banking, this means treating models as untrusted components. Training pipeli
 
 Agentic systems increasingly rely on continuous learning—adapting from customer interactions, transaction patterns, and operational feedback. This creates privacy risks that go beyond traditional data breaches.
 
-Neural models do not just learn patterns; they retain fragments of their training data. Sensitive information can become embedded in model weights and later extracted through carefully constructed queries. This behavior does not require access to model internals and becomes more pronounced as models scale.
+Neural models primarily learn patterns, but under some conditions they can memorize fragments of training data. Sensitive information can become embedded in model weights and later extracted through carefully constructed queries. This behavior does not require access to model internals and becomes more pronounced as models scale.
 
 This risk compounds over time in continuously learning agents. Customer conversations, transaction details, internal procedures, and operational workflows can gradually accumulate inside the model. Once embedded, this data may surface in unexpected contexts, without logging or clear attribution.
 
