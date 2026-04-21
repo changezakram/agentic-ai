@@ -202,23 +202,15 @@ Risk emerges from component interaction, not individual components. Security eva
 
 ### Black-Box Red Teaming for Agents
 
-Black-box red-teaming frameworks for agentic systems are emerging that test agents under strict, realistic constraints.
-
-The attacker cannot modify the user's request or observe the agent's internal mechanics. The user query is benign. The agent's code, prompts, and orchestration logic are inaccessible. The only control available is the external environment.
+Black-box red-teaming frameworks for agentic systems are emerging that test agents under strict, realistic constraints. The attacker cannot modify the user's request or observe the agent's internal mechanics. The user query is benign. The agent's code, prompts, and orchestration logic are inaccessible. The only control available is the external environment.
 
 This constraint is intentional. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.
 
 The attack surface is the data ecosystem surrounding the agent, not the agent itself.
 
----
+These frameworks use automated adversarial search to find exploits. Instead of mutating input prompts, they mutate elements of the agent's environment—web content, files, documents, and retrieved context. Each mutation is evaluated with a simple test: did the agent perform a prohibited action?
 
-### How Environment-Based Attacks Are Discovered
-
-AgentXploit uses automated adversarial search to find exploits. Instead of mutating input prompts, it mutates elements of the agent's environment—web content, files, documents, and retrieved context.
-
-Each mutation is evaluated with a simple test: did the agent perform a prohibited action, or not?
-
-This pass/fail signal feeds back into the search process, allowing the system to iteratively discover more effective attacks. Over time, the framework uncovers exploits that emerge only through multi-step reasoning inside the agent's planning loop.
+This pass/fail signal feeds back into the search process, allowing the system to iteratively discover more effective attacks that emerge only through multi-step reasoning inside the agent's planning loop.
 
 > We can't anticipate all the ways agents can be exploited. The only way to discover vulnerabilities is to attack the system the way adversaries would.
 

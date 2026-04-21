@@ -227,9 +227,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" id="toc-evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough" class="nav-link" data-scroll-target="#evaluation-and-risk-assessment-why-model-testing-is-no-longer-enough"><span class="header-section-number">5</span> Evaluation and Risk Assessment — Why Model Testing Is No Longer Enough</a>
   <ul class="collapse">
   <li><a href="#black-box-red-teaming-for-agents" id="toc-black-box-red-teaming-for-agents" class="nav-link" data-scroll-target="#black-box-red-teaming-for-agents"><span class="header-section-number">5.1</span> Black-Box Red Teaming for Agents</a></li>
-  <li><a href="#how-environment-based-attacks-are-discovered" id="toc-how-environment-based-attacks-are-discovered" class="nav-link" data-scroll-target="#how-environment-based-attacks-are-discovered"><span class="header-section-number">5.2</span> How Environment-Based Attacks Are Discovered</a></li>
-  <li><a href="#a-real-world-style-exploit-scenario" id="toc-a-real-world-style-exploit-scenario" class="nav-link" data-scroll-target="#a-real-world-style-exploit-scenario"><span class="header-section-number">5.3</span> A Real-World Style Exploit Scenario</a></li>
-  <li><a href="#what-this-means-for-enterprise-risk-programs" id="toc-what-this-means-for-enterprise-risk-programs" class="nav-link" data-scroll-target="#what-this-means-for-enterprise-risk-programs"><span class="header-section-number">5.4</span> What This Means for Enterprise Risk Programs</a></li>
+  <li><a href="#a-real-world-style-exploit-scenario" id="toc-a-real-world-style-exploit-scenario" class="nav-link" data-scroll-target="#a-real-world-style-exploit-scenario"><span class="header-section-number">5.2</span> A Real-World Style Exploit Scenario</a></li>
+  <li><a href="#what-this-means-for-enterprise-risk-programs" id="toc-what-this-means-for-enterprise-risk-programs" class="nav-link" data-scroll-target="#what-this-means-for-enterprise-risk-programs"><span class="header-section-number">5.3</span> What This Means for Enterprise Risk Programs</a></li>
   </ul></li>
   <li><a href="#defenses-in-agentic-ai-why-layered-security-is-mandatory" id="toc-defenses-in-agentic-ai-why-layered-security-is-mandatory" class="nav-link" data-scroll-target="#defenses-in-agentic-ai-why-layered-security-is-mandatory"><span class="header-section-number">6</span> Defenses in Agentic AI — Why Layered Security Is Mandatory</a>
   <ul class="collapse">
@@ -441,24 +440,18 @@ Figure&nbsp;3: The attacker poisons external data sources. The agent retrieves a
 <hr>
 <section id="black-box-red-teaming-for-agents" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="black-box-red-teaming-for-agents"><span class="header-section-number">5.1</span> Black-Box Red Teaming for Agents</h3>
-<p>Black-box red-teaming frameworks for agentic systems are emerging that test agents under strict, realistic constraints.</p>
-<p>The attacker cannot modify the user’s request or observe the agent’s internal mechanics. The user query is benign. The agent’s code, prompts, and orchestration logic are inaccessible. The only control available is the external environment.</p>
+<p>Black-box red-teaming frameworks for agentic systems are emerging that test agents under strict, realistic constraints. The attacker cannot modify the user’s request or observe the agent’s internal mechanics. The user query is benign. The agent’s code, prompts, and orchestration logic are inaccessible. The only control available is the external environment.</p>
 <p>This constraint is intentional. In production, attackers rarely access internal prompts or orchestration logic. What they can influence at scale are websites, documents, search results, reviews, knowledge bases, PDFs, emails, and public data feeds.</p>
 <p>The attack surface is the data ecosystem surrounding the agent, not the agent itself.</p>
-<hr>
-</section>
-<section id="how-environment-based-attacks-are-discovered" class="level3" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="how-environment-based-attacks-are-discovered"><span class="header-section-number">5.2</span> How Environment-Based Attacks Are Discovered</h3>
-<p>AgentXploit uses automated adversarial search to find exploits. Instead of mutating input prompts, it mutates elements of the agent’s environment—web content, files, documents, and retrieved context.</p>
-<p>Each mutation is evaluated with a simple test: did the agent perform a prohibited action, or not?</p>
-<p>This pass/fail signal feeds back into the search process, allowing the system to iteratively discover more effective attacks. Over time, the framework uncovers exploits that emerge only through multi-step reasoning inside the agent’s planning loop.</p>
+<p>These frameworks use automated adversarial search to find exploits. Instead of mutating input prompts, they mutate elements of the agent’s environment—web content, files, documents, and retrieved context. Each mutation is evaluated with a simple test: did the agent perform a prohibited action?</p>
+<p>This pass/fail signal feeds back into the search process, allowing the system to iteratively discover more effective attacks that emerge only through multi-step reasoning inside the agent’s planning loop.</p>
 <blockquote class="blockquote">
 <p>We can’t anticipate all the ways agents can be exploited. The only way to discover vulnerabilities is to attack the system the way adversaries would.</p>
 </blockquote>
 <hr>
 </section>
-<section id="a-real-world-style-exploit-scenario" class="level3" data-number="5.3">
-<h3 data-number="5.3" class="anchored" data-anchor-id="a-real-world-style-exploit-scenario"><span class="header-section-number">5.3</span> A Real-World Style Exploit Scenario</h3>
+<section id="a-real-world-style-exploit-scenario" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="a-real-world-style-exploit-scenario"><span class="header-section-number">5.2</span> A Real-World Style Exploit Scenario</h3>
 <p>Consider a shopping assistant agent that helps users find products across retail sites. A user asks the agent to find a high-quality screen protector for their phone. An attacker doesn’t alter this request; instead, they post a malicious product review on a legitimate e-commerce page with a hidden instruction: visit an external website controlled by the attacker.</p>
 <p>The agent reads the review during normal browsing and interprets the hidden instruction as part of product evaluation. Following its reasoning chain, it navigates to the malicious site—potentially exposing itself to malware, credential theft, or further compromise.</p>
 <blockquote class="blockquote">
@@ -467,8 +460,8 @@ Figure&nbsp;3: The attacker poisons external data sources. The agent retrieves a
 <p>This attack bypasses conventional LLM safety filters. The content routes through retrieval and reasoning layers before reaching the model’s alignment mechanisms. By the time the model sees it, it appears as legitimate context, not adversarial input.</p>
 <hr>
 </section>
-<section id="what-this-means-for-enterprise-risk-programs" class="level3" data-number="5.4">
-<h3 data-number="5.4" class="anchored" data-anchor-id="what-this-means-for-enterprise-risk-programs"><span class="header-section-number">5.4</span> What This Means for Enterprise Risk Programs</h3>
+<section id="what-this-means-for-enterprise-risk-programs" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="what-this-means-for-enterprise-risk-programs"><span class="header-section-number">5.3</span> What This Means for Enterprise Risk Programs</h3>
 <p>The implications for risk management are significant.</p>
 <p>Static prompt testing is insufficient. Passing safety benchmarks on held-out prompt sets doesn’t demonstrate robustness under adversarial environmental pressure. System-level evaluation must be continuous, not episodic. As agents learn, connect to new tools, ingest new data sources, and expand capabilities, the attack surface evolves.</p>
 <p>Risk ownership can’t sit solely with AI or security teams. Agents span data pipelines, application execution, business logic, and external services. Meaningful evaluation requires collaboration across security engineering, data governance, MLOps, compliance, and business operations.</p>
