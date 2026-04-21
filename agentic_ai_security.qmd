@@ -182,7 +182,7 @@ When agents fail, they don't just return error messages—they execute incorrect
 
 **Safety vs. Security**
 
-In banking, *safety* prevents harm caused by the agent's own decisions—even when no attacker is involved. This includes unfair or biased lending outcomes, incorrect credit limits, regulatory violations, or automated decisions that exceed policy boundaries. ^[For detailed coverage of AI safety challenges including discrimination, fairness, privacy, and regulatory compliance, see my article [AI Safety, Ethics, and Bias](https://changezakram.github.io/ai-safety-ethics-bias.html).]
+*Safety* prevents harm caused by the agent's own decisions—even when no attacker is involved. This includes unfair or biased lending outcomes, incorrect credit limits, regulatory violations, or automated decisions that exceed policy boundaries. For detailed coverage of AI safety challenges including discrimination, fairness, privacy, and regulatory compliance, see my article [AI Safety, Ethics, and Bias](https://changezakram.github.io/ai-safety-ethics-bias.html).
 
 *Security*, prevents external actors from manipulating the agent into causing harm. 
 
