@@ -36,9 +36,9 @@ AI agents operate like digital insiders. They work inside trusted environments w
 
 ### LLMs vs. Agents
 
-Most AI applications in production today are simple LLM applications. A user submits text, the model processes it, and the system returns text. This linear pattern underpins chatbots, summarization tools, and search copilots. These systems respond but don't act.
+Most AI applications in production today are simple LLM applications. A user submits text, the model processes it, and the system returns text. This linear pattern underpins chatbots, summarization tools, and search copilots.
 
-Agents change this. An agent observes its environment, reasons about goals, plans actions, retrieves knowledge, and executes operations through tools. The LLM is the cognitive core, but it's embedded in a decision-making loop that connects to real systems. The agent perceives, decides, and acts.
+Agents change this. An agent observes its environment, reasons about goals, plans actions, retrieves knowledge, and executes operations through tools. The LLM is the cognitive core, embedded in a decision-making loop that connects to real systems.
 
 ![LLMs generate text. Agents take action—and the security implications multiply.](images/LLM_vs_Agentic-AI.png){#fig-LLM-vs-Agents fig-align="center" width="800"}
 
@@ -50,9 +50,9 @@ This transforms AI from a conversational interface into an autonomous actor insi
 
 Agents combine two types of components. Traditional software—APIs, databases, schedulers, business logic—follows deterministic rules and fixed execution paths. Neural components like LLMs add probabilistic reasoning and generative decision-making.
 
-These components operate together. A developer deploys the agent framework. Users submit requests. The system builds prompts, calls the LLM, retrieves external data, evaluates options, and executes actions that affect real systems. The model’s output isn’t just informational—it’s operational.
+These components operate together. A developer deploys the agent framework. Users submit requests. The system builds prompts, calls the LLM, retrieves external data, evaluates options, and executes actions that affect real systems. The model's output isn't just informational—it's operational.
 
-This hybrid architecture gives agents their power. It also makes them harder to secure. This fusion creates attack surfaces that don’t exist in traditional systems. Probabilistic reasoning can be manipulated. External data can be poisoned. Tools can be chained in unexpected ways. Each component adds risk, and their interactions create failure modes that are difficult to predict.
+This hybrid architecture creates attack surfaces that don't exist in traditional systems. Probabilistic reasoning can be manipulated. External data can be poisoned. Tools can be chained in unexpected ways.
 
 ---
 
