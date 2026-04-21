@@ -398,8 +398,7 @@ Figure&nbsp;3: The attacker poisons external data sources. The agent retrieves a
 <h4 data-number="3.1.6" class="anchored" data-anchor-id="supply-chain-poisoning-compromise-before-deployment"><span class="header-section-number">3.1.6</span> Supply Chain Poisoning — Compromise Before Deployment</h4>
 <p>Agentic systems can be compromised before they ever reach production. Training-time attacks introduce hidden behaviors that persist through fine-tuning, alignment, and deployment.</p>
 <p>Attackers inject malicious samples into training or fine-tuning data. The model behaves normally under most conditions but executes specific actions when triggered. Early work on image classifiers demonstrated this pattern—models behaved correctly under normal conditions but misidentified anyone wearing specific glasses as a target person. Similar backdoors can be introduced in language models.</p>
-<p>This creates supply chain risk. Models fine-tuned on internal data may ingest adversarial content. Malicious insiders can poison training pipelines. Vendor or open-source models may arrive pre-compromised.</p>
-<p>For banking, this means treating models as untrusted components. Training pipelines, fine-tuning data, and vendor models require the same scrutiny as third-party software dependencies.</p>
+<p>For banking, this means models require the same scrutiny as third-party software dependencies—verification of training pipelines, validation of fine-tuning data, and provenance checks for vendor models.</p>
 <hr>
 </section>
 <section id="memorization-risk-in-continuous-learning-agents" class="level4" data-number="3.1.7">
