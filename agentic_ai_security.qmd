@@ -160,13 +160,9 @@ In banking, exposure can include personally identifiable information, account de
 
 ### Why These Attacks Are Fundamentally Different
 
-Traditional software does what the code tells it to do. Agents do what they're convinced is the right thing to do—and attackers exploit this difference.
-
-In traditional systems, attackers need buffer overflows or memory corruption. With agents, they just need convincing language. Instead of exploiting technical vulnerabilities, they exploit the agent's reasoning process.
+Traditional software does what the code tells it to do. Agents do what they're convinced is the right thing to do. In traditional systems, attackers need buffer overflows or memory corruption. With agents, they just need convincing language—exploiting reasoning, not technical vulnerabilities.
 
 Once compromised, agents chain actions across systems, turning small manipulations into cascading operational failures.
-
-In banking, this makes defense-in-depth not a best practice, but a necessity.
 
 ---
 
