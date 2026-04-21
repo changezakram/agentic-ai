@@ -214,18 +214,6 @@ This pass/fail signal feeds back into the search process, allowing the system to
 
 ---
 
-### A Real-World Style Exploit Scenario
-
-Consider a shopping assistant agent that helps users find products across retail sites. A user asks the agent to find a high-quality screen protector for their phone. An attacker doesn't alter this request; instead, they post a malicious product review on a legitimate e-commerce page with a hidden instruction: visit an external website controlled by the attacker.
-
-The agent reads the review during normal browsing and interprets the hidden instruction as part of product evaluation. Following its reasoning chain, it navigates to the malicious site—potentially exposing itself to malware, credential theft, or further compromise.
-
-> The agent was never "prompted" in the traditional sense. It was misled by its environment.
-
-This attack bypasses conventional LLM safety filters. The content routes through retrieval and reasoning layers before reaching the model's alignment mechanisms. By the time the model processes it, the instruction appears as legitimate context.
-
----
-
 ### What This Means for Enterprise Risk Programs
 
 Static prompt testing is insufficient. Passing safety benchmarks on held-out prompt sets doesn't demonstrate robustness under adversarial environmental pressure.
