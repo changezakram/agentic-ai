@@ -456,13 +456,13 @@ Figure&nbsp;3: The attacker poisons external data sources. The agent retrieves a
 <blockquote class="blockquote">
 <p>The agent was never “prompted” in the traditional sense. It was misled by its environment.</p>
 </blockquote>
-<p>This attack bypasses conventional LLM safety filters. The content routes through retrieval and reasoning layers before reaching the model’s alignment mechanisms. By the time the model sees it, it appears as legitimate context, not adversarial input.</p>
+<p>This attack bypasses conventional LLM safety filters. The content routes through retrieval and reasoning layers before reaching the model’s alignment mechanisms. By the time the model processes it, the instruction appears as legitimate context.</p>
 <hr>
 </section>
 <section id="what-this-means-for-enterprise-risk-programs" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="what-this-means-for-enterprise-risk-programs"><span class="header-section-number">5.3</span> What This Means for Enterprise Risk Programs</h3>
-<p>The implications for risk management are significant.</p>
-<p>Static prompt testing is insufficient. Passing safety benchmarks on held-out prompt sets doesn’t demonstrate robustness under adversarial environmental pressure. System-level evaluation must be continuous, not episodic. As agents learn, connect to new tools, ingest new data sources, and expand capabilities, the attack surface evolves.</p>
+<p>Static prompt testing is insufficient. Passing safety benchmarks on held-out prompt sets doesn’t demonstrate robustness under adversarial environmental pressure.</p>
+<p>System-level evaluation must be continuous, not episodic. As agents learn, connect to new tools, ingest new data sources, and expand capabilities, the attack surface evolves.</p>
 <p>Risk ownership can’t sit solely with AI or security teams. Agents span data pipelines, application execution, business logic, and external services. Meaningful evaluation requires collaboration across security engineering, data governance, MLOps, compliance, and business operations.</p>
 <p>The goal of evaluation isn’t to prove a system is safe—that’s impossible. The objective is to continuously characterize how and where it can fail, before an adversary does.</p>
 <hr>
