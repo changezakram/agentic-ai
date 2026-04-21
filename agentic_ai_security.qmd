@@ -230,13 +230,13 @@ The goal of evaluation isn't to prove a system is safe—that's impossible. The 
 
 No single control can secure an agentic system. Agents combine probabilistic reasoning, external data, third-party tools, and autonomous execution. Individual defenses will fail. Prompts get bypassed. Filters miss edge cases. Models behave unexpectedly.
 
-Technical controls alone are not sufficient; agentic systems also require clear ownership and operational structure. This includes defining who authorizes agent capabilities, who reviews failures, and how agents are modified or retired as systems evolve. Without explicit responsibility and escalation paths, even well-designed controls degrade over time.
+Technical controls alone are not sufficient. Agentic systems also require clear ownership and operational structure—defining who authorizes agent capabilities, who reviews failures, and how agents are modified or retired as systems evolve.
 
-Agent risk increases as agents move from recommendation to execution, and from isolated tasks to multi-step workflows that span systems. Controls must therefore scale with both autonomy and scope—not just with model capability.
+Agent risk increases as agents move from recommendation to execution, and from isolated tasks to multi-step workflows that span systems. Controls must scale with both autonomy and scope.
 
 Effective defense requires layered controls across the full system lifecycle—from model hardening and input validation to privilege separation, policy enforcement, and continuous monitoring. For high-stakes systems, these controls must eventually be replaced by architectures that enforce critical safety properties by design.
 
-Consider a banking agent processing wire transfers. It can initiate transfers up to a threshold but cannot modify authorization rules, access unrelated accounts, or operate outside defined boundaries. Policy engines validate every transaction. If the agent is compromised, the damage is contained.
+Consider a banking agent processing wire transfers. It can initiate transfers up to a threshold but cannot modify authorization rules, access unrelated accounts, or operate outside defined boundaries. Policy engines validate every transaction. If compromised, damage is contained.
 
 ---
 
@@ -244,9 +244,9 @@ Consider a banking agent processing wire transfers. It can initiate transfers up
 
 Model hardening improves the base model's resistance to manipulation through safety pre-training, alignment techniques, and data quality controls that reduce harmful behaviors.
 
-These techniques are necessary but don't eliminate risk. Aligned models remain vulnerable to novel prompt attacks, indirect injections, and multi-step exploit chains. Model hardening raises the bar for attackers but doesn't block determined adversaries.
+These techniques are necessary but don't eliminate risk. Aligned models remain vulnerable to novel prompt attacks, indirect injections, and multi-step exploit chains.
 
-Empirical evaluations reinforce this limitation. Studies such as Berkeley’s DecodingTrust show that alignment and safety training provide only partial protection. Determined adversaries continue to bypass safeguards through indirect manipulation and multi-step interactions. Model hardening raises the cost of exploitation, but it does not prevent it. It should be treated as a baseline defense—not a primary security control.
+Empirical evaluations reinforce this limitation. Studies such as Berkeley's DecodingTrust show that alignment and safety training provide only partial protection. Determined adversaries continue to bypass safeguards through indirect manipulation and multi-step interactions. Model hardening should be treated as a baseline defense—not a primary security control.
 
 ---
 
@@ -256,9 +256,7 @@ External data should be validated before the model processes it.
 
 Input sanitization detects unsafe patterns, filters special characters, applies schema validation, and enforces structural constraints. Guardrails add checks on content—preventing requests that bypass authorization logic, generate executable payloads, or override system instructions.
 
-This layer addresses risk while malicious input is still visible and easier to control. Once harmful content reaches the reasoning chain, containment becomes difficult.
-
-For agentic systems, input validation must go beyond basic filtering. Guardrails should detect instruction-override attempts, identify where retrieved content comes from, and flag untrusted or manipulated sources before they influence decisions. Once malicious content becomes part of the agent’s planning loop, downstream controls are far less reliable.
+For agentic systems, input validation must go beyond basic filtering. Guardrails should detect instruction-override attempts, identify where retrieved content comes from, and flag untrusted or manipulated sources before they influence decisions.
 
 
 ---
@@ -285,9 +283,9 @@ The system is decomposed into components with differentiated privileges. A commo
 
 The worker performs reasoning, planning, and interaction with external data. The monitor evaluates and authorizes actions. If the worker is compromised, the attacker cannot inherit the monitor's authority.
 
-Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level. Compromise is contained by design, not patched after the fact.
+Frameworks like Privtrans automate this by rewriting code to enforce privilege boundaries at the architectural level.
 
-Privilege separation limits the impact of inevitable failures by isolating reasoning, data access, and execution. A compromised component cannot automatically escalate its authority. Causing harm requires breaching multiple independent controls, allowing the system to continue operating with reduced capability rather than failing catastrophically.
+Privilege separation limits the impact of inevitable failures by isolating reasoning, data access, and execution. A compromised component cannot automatically escalate its authority, allowing the system to continue operating with reduced capability rather than failing catastrophically.
 
 ---
 
@@ -298,8 +296,6 @@ Some attacks will succeed despite layered defenses. Monitoring and detection are
 Real-time anomaly detection flags suspicious information flows, abnormal tool usage, unexpected execution paths, and deviations from historical baselines. These signals trigger automated containment, human review, or full system shutdowns.
 
 Monitoring must track more than infrastructure metrics. It must track what the agent is trying to accomplish, how it interprets instructions, and whether its actions remain consistent with authorized goals.
-
-Security is an ongoing process of observation, feedback, and adaptation—not a one-time configuration.
 
 Emerging research suggests that monitoring may extend beyond external behavior into internal reasoning signals. Techniques such as representation-level monitoring aim to detect early signs of unsafe or deceptive behavior during execution, before actions are taken. While still experimental and without formal guarantees, these approaches point toward a future where monitoring spans both execution and reasoning—complementing traditional detection rather than replacing it.
 
@@ -334,15 +330,11 @@ sequence.](images/Agentic-Attack-Defence.png){#fig-Agentic-Attack-Defence fig-al
 
 Agentic AI represents a shift in how intelligent systems interact with the world. These aren't isolated models producing text in response to prompts. They're complex hybrid systems where symbolic software components interact continuously with neural reasoning engines, memory, retrieval pipelines, and real-world execution tools. This fusion expands the attack surface—and with it, the potential scale of harm.
 
-Security must be assessed across the full agentic system—not inferred from model behavior alone. Frameworks like AgentXploit demonstrate why environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.
+Security must be assessed across the full agentic system—not inferred from model behavior alone. Environment-based red teaming is essential for uncovering failure modes that traditional testing cannot reveal.
 
-Protection requires defense-in-depth. Model hardening raises the cost of exploitation. Input sanitization filters threats before they reach reasoning layers. Policy enforcement controls tool execution independent of the model's judgment. Privilege separation contains the blast radius of compromise. Continuous monitoring assumes breaches will occur and detects them when they do.
+Protection requires defense-in-depth: model hardening, input sanitization, policy enforcement, privilege separation, and continuous monitoring. For high-stakes systems, these controls are a foundation—not an endpoint. Long-term trust will require architectures that enforce critical safety and security properties by design.
 
-For high-stakes systems, these controls are a foundation—not an endpoint. Long-term trust will require architectures that enforce critical safety and security properties by design.
-
-The challenge is architectural, operational, and organizational. Agents are already being deployed. The question is whether they'll be deployed with the rigor, resilience, and accountability that their autonomy demands.
-
-The next phase of AI will be defined by whether we can trust the systems we empower to act on our behalf.
+The challenge is architectural, operational, and organizational. Agents are already being deployed. The question is whether they'll be deployed with the rigor, resilience, and accountability that their autonomy demands—and whether we can trust the systems we empower to act on our behalf.
 
 --- 
 
